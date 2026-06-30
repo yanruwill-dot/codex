@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>颜汝的 AI 技能箱 | AI Beauty / Skin Analysis</title>
+  <meta name="description" content="一个以 AI Beauty / Skin Analysis 气质包装的颜汝 AI 技能与 MCP 能力落地页。">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <main>
+    <section class="hero" id="top" aria-label="颜汝的 AI 技能箱">
+      <header class="nav">
+        <a class="brand" href="#top">颜汝的 AI 技能库</a>
+        <button class="menu-btn" type="button" aria-label="打开菜单">
+          <span></span><span></span><span></span>
+        </button>
+      </header>
+
+      <div class="year-scale" aria-hidden="true">
+        <span>2026</span>
+        <span>AI</span>
+        <span>MCP</span>
+        <span>SKIN</span>
+        <span>INDEX</span>
+      </div>
+
+      <div class="hero-copy">
+        <p class="kicker">AI Skill Beauty System</p>
+        <h1>颜汝的AI<br>技能库</h1>
+        <p class="lead">把本机 skills、MCP、浏览器、图片、文档和发布流程收拢成一个可检索、可调用、可复利的 AI 能力库。</p>
+        <div class="hero-actions">
+          <a class="primary-action" href="#scan">启动技能诊断</a>
+          <a class="ghost-action" href="#mcp">查看 MCP 层</a>
+        </div>
+      </div>
+
+      <div class="visual-stage" aria-label="AI beauty skin analysis visual">
+        <img class="portrait" src="assets/hero-portrait.png" alt="未来感 AI 美学人物特写">
+        <figure class="film-card card-a">
+          <img src="assets/float-portrait.png" alt="颜汝口播照片">
+          <figcaption>SKILL SCAN</figcaption>
+        </figure>
+        <figure class="film-card card-b">
+          <img src="assets/float-field.png" alt="颜汝现场照片">
+          <figcaption>FORMULA</figcaption>
+        </figure>
+        <figure class="film-card card-c">
+          <img src="assets/float-workflow.png" alt="颜汝工作流照片">
+          <figcaption>PERSONAL</figcaption>
+        </figure>
+        <figure class="film-card card-d">
+          <img src="assets/float-signal.png" alt="颜汝技能库照片">
+          <figcaption>INDEX</figcaption>
+        </figure>
+      </div>
+
+      <div class="mega-title" aria-hidden="true">AI SKILLBOX</div>
+    </section>
+
+    <section class="scan-section" id="scan">
+      <div class="section-heading">
+        <p class="kicker">Neural Skill Scan</p>
+        <h2>每个 Skill 都要能说清名字、功能和适合进入的工作流位置。</h2>
+      </div>
+      <div class="skill-grid">
+        <article class="skill-card">
+          <span class="chip cyan">Content</span>
+          <h3>content-system</h3>
+          <p>用于内容生产、资料整理、文章包装和发布检查，把素材变成可交付内容。</p>
+        </article>
+        <article class="skill-card">
+          <span class="chip pink">Image</span>
+          <h3>images2 / imagegen</h3>
+          <p>用于生成主视觉、海报、配图和商品图，并完成基础尺寸与发布质量检查。</p>
+        </article>
+        <article class="skill-card">
+          <span class="chip amber">Product</span>
+          <h3>product-design</h3>
+          <p>用于产品页面、交互原型和视觉方向，把想法变成可打开、可验证的界面。</p>
+        </article>
+        <article class="skill-card">
+          <span class="chip violet">Data</span>
+          <h3>data-analytics</h3>
+          <p>用于指标设计、数据诊断、图表报告和管理看板，把数据变成判断依据。</p>
+        </article>
+        <article class="skill-card">
+          <span class="chip green">Browser</span>
+          <h3>playwright / browser</h3>
+          <p>用于页面预览、点击测试、截图检查和 smoke check，在 Codex 内完成验证。</p>
+        </article>
+        <article class="skill-card">
+          <span class="chip blue">MCP</span>
+          <h3>mcp-tools</h3>
+          <p>用于连接 Figma、Firecrawl、文档、表格、浏览器和发布工具，扩展真实执行能力。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="table-section" id="skills">
+      <div class="section-heading">
+        <p class="kicker">Complete Skills Index</p>
+        <h2>全部 Skills 场景库</h2>
+      </div>
+      <div class="table-toolbar">
+        <label for="skillSearch">搜索 Skill</label>
+        <input id="skillSearch" type="search" autocomplete="off" placeholder="输入名字、场景、公众号、小红书、短视频、获客等关键词">
+        <span id="skillCount">282 skills</span>
+      </div>
+      <div class="scenario-filter" id="scenarioFilter" aria-label="按场景筛选 Skills"></div>
+      <div class="skill-index-list" id="skillsTableBody" aria-live="polite">
+      </div>
+    </section>
+
+    <section class="industry-section" id="industries">
+      <div class="section-heading">
+        <p class="kicker">Industry Fit Map</p>
+        <h2>不只适合内容行业，也适合能被流程化的生意。</h2>
+      </div>
+      <div class="industry-grid" id="industryGrid"></div>
+    </section>
+
+    <section class="combo-section" id="combos">
+      <div class="section-heading">
+        <p class="kicker">Skill Combination Graph</p>
+        <h2>一个 Skill 是工具，一组 Skills 才是一条能交付的业务链路。</h2>
+      </div>
+      <div class="combo-board" id="comboBoard"></div>
+    </section>
+
+    <section class="example-section" id="examples">
+      <div class="section-heading">
+        <p class="kicker">Open And Use</p>
+        <h2>直接复制输入内容，就能在 Codex 里调用这组 Skills 开始干活。</h2>
+      </div>
+      <div class="example-grid" id="exampleGrid"></div>
+    </section>
+
+    <section class="formula-section">
+      <div class="formula-visual">
+        <img src="assets/formula-card.png" alt="AI 技能配方视觉">
+      </div>
+      <div class="formula-copy">
+        <p class="kicker">Personalized Protocol</p>
+        <h2>同一套 AI，不同的人应该有不同配方。</h2>
+        <div class="protocol-list">
+          <div>
+            <span>01</span>
+            <h3>诊断</h3>
+            <p>先看任务类型、输出表面、风险边界和可验证证据。</p>
+          </div>
+          <div>
+            <span>02</span>
+            <h3>调配</h3>
+            <p>把写作、图片、数据、浏览器、发布和 MCP 连接按目标重组。</p>
+          </div>
+          <div>
+            <span>03</span>
+            <h3>进化</h3>
+            <p>每次交付后沉淀脚本、skill、清单和审计记录，下一次更快。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mcp-section" id="mcp">
+      <div class="section-heading narrow">
+        <p class="kicker">MCP Connective Layer</p>
+        <h2>Skills 是配方，MCP 是连接真实世界的仪器。</h2>
+      </div>
+      <div class="mcp-ring">
+        <div class="core">
+          <span>Yanru AI OS</span>
+          <strong>判断力中枢</strong>
+        </div>
+        <div class="node n1">Firecrawl<br><small>找对标</small></div>
+        <div class="node n2">Figma<br><small>转设计</small></div>
+        <div class="node n3">Browser<br><small>跑预览</small></div>
+        <div class="node n4">Docs<br><small>出文档</small></div>
+        <div class="node n5">Images2<br><small>生视觉</small></div>
+        <div class="node n6">Data<br><small>做报告</small></div>
+      </div>
+    </section>
+
+    <section class="closing-section">
+      <p class="kicker">End State</p>
+      <h2>终局不是拥有很多 AI 工具，而是让每个工具都进入一套会复利的工作系统。</h2>
+      <a class="primary-action" href="#top">回到首屏</a>
+    </section>
+  </main>
+  <script src="skills-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>五人专属顾问思考系统</title>
+  <meta name="description" content="用五位商业与科技人物的思维镜头，重新审视产品、营销、公关、市场预测和增长问题。">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="kicker">Five Advisor System</p>
+        <h1>五人顾问工作台</h1>
+        <p class="lead">输入问题，直接拿到 5 组具体建议、朋友圈文案、口播文案、短视频文案、社群文案和 7 天行动计划。</p>
+      </div>
+      <figure class="reference-card">
+        <img src="assets/advisor-reference.png" alt="五位专属顾问参考图">
+      </figure>
+    </section>
+
+    <section class="workspace" aria-label="顾问思考工作台">
+      <div class="input-panel">
+        <div class="panel-heading">
+          <p class="kicker">Question</p>
+          <h2>输入问题</h2>
+        </div>
+        <label for="questionInput">你的问题</label>
+        <textarea id="questionInput">我想把一个面向实体老板的 AI 获客课程卖出去，应该怎么设计产品、内容、公关和成交路径？</textarea>
+
+        <div class="control-row">
+          <label for="modeSelect">问题类型</label>
+          <select id="modeSelect">
+            <option value="growth">营销增长</option>
+            <option value="product">产品设计</option>
+            <option value="market">市场预测</option>
+            <option value="pr">公关破局</option>
+            <option value="strategy">战略选择</option>
+          </select>
+        </div>
+
+        <div class="advisor-picker" id="advisorPicker" aria-label="选择顾问"></div>
+
+        <div class="action-row">
+          <button class="primary-button" id="runButton" type="button">生成结果</button>
+          <button class="ghost-button" id="copyPromptButton" type="button">复制完整提示词</button>
+        </div>
+      </div>
+
+      <div class="output-panel">
+        <div class="panel-heading">
+          <p class="kicker">Synthesis</p>
+          <h2>具体建议</h2>
+        </div>
+        <div class="summary-strip" id="summaryStrip"></div>
+        <div class="result-brief" id="resultBrief"></div>
+        <div class="advisor-output" id="advisorOutput"></div>
+        <div class="final-output" id="finalOutput"></div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
