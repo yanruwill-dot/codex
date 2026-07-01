@@ -1,0 +1,1336 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>颜汝能力看台</title>
+  <style>
+    :root {
+      --bg: #f6f7f4;
+      --panel: #ffffff;
+      --line: #dfe5dc;
+      --line-strong: #b8cabc;
+      --ink: #18211c;
+      --muted: #66736b;
+      --soft: #eef4ee;
+      --green: #128158;
+      --green-dark: #0e6647;
+      --gold: #b88528;
+      --red: #c95345;
+      --blue: #37678f;
+      --shadow: 0 16px 36px rgba(18, 36, 24, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        linear-gradient(180deg, rgba(246, 247, 244, 0.94), rgba(246, 247, 244, 1)),
+        radial-gradient(circle at 18% 12%, rgba(18, 129, 88, 0.12), transparent 28%),
+        radial-gradient(circle at 88% 6%, rgba(184, 133, 40, 0.12), transparent 25%);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      letter-spacing: 0;
+    }
+
+    button,
+    input {
+      font: inherit;
+    }
+
+    .app {
+      min-height: 100vh;
+      display: grid;
+      grid-template-rows: 66px 1fr;
+    }
+
+    .topbar {
+      display: grid;
+      grid-template-columns: 250px minmax(260px, 1fr) auto;
+      align-items: center;
+      gap: 22px;
+      padding: 0 20px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.86);
+      backdrop-filter: blur(18px);
+      position: sticky;
+      top: 0;
+      z-index: 20;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+    }
+
+    .brand-mark {
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      color: #fff;
+      background: linear-gradient(135deg, #111714, #1d8a61);
+      font-weight: 800;
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.24);
+    }
+
+    .brand h1 {
+      margin: 0;
+      font-size: 23px;
+      line-height: 1.1;
+      white-space: nowrap;
+    }
+
+    .search {
+      position: relative;
+      max-width: 560px;
+      min-width: 220px;
+    }
+
+    .search input {
+      width: 100%;
+      height: 42px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 0 44px;
+      outline: 0;
+      background: #fff;
+      color: var(--ink);
+      box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.02);
+    }
+
+    .search input:focus {
+      border-color: var(--green);
+      box-shadow: 0 0 0 3px rgba(18, 129, 88, 0.12);
+    }
+
+    .search::before {
+      content: "⌕";
+      position: absolute;
+      left: 16px;
+      top: 7px;
+      color: var(--muted);
+      font-size: 21px;
+    }
+
+    .top-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    .top-action {
+      height: 36px;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      border: 1px solid transparent;
+      border-radius: 8px;
+      padding: 0 10px;
+      background: transparent;
+      color: var(--ink);
+    }
+
+    .top-action:hover {
+      background: var(--soft);
+      border-color: var(--line);
+    }
+
+    .avatar-dot {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: var(--green);
+      color: #fff;
+      font-weight: 800;
+    }
+
+    .main {
+      display: grid;
+      grid-template-columns: 238px minmax(440px, 1fr) 492px;
+      min-height: calc(100vh - 66px);
+    }
+
+    .sidebar {
+      border-right: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.72);
+      padding: 18px 14px;
+    }
+
+    .side-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 8px 6px 10px;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .side-add {
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--ink);
+    }
+
+    .nav-list {
+      display: grid;
+      gap: 6px;
+    }
+
+    .nav-item {
+      border: 0;
+      width: 100%;
+      min-height: 40px;
+      border-radius: 8px;
+      padding: 0 12px;
+      background: transparent;
+      color: var(--ink);
+      display: grid;
+      grid-template-columns: 26px 1fr auto;
+      align-items: center;
+      text-align: left;
+      cursor: pointer;
+    }
+
+    .nav-item.active,
+    .nav-item:hover {
+      background: #e4f2ea;
+      color: var(--green-dark);
+    }
+
+    .nav-icon {
+      font-weight: 800;
+      color: var(--green);
+    }
+
+    .nav-name {
+      font-size: 14px;
+      font-weight: 650;
+    }
+
+    .nav-count {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .side-section {
+      border-top: 1px solid var(--line);
+      margin-top: 18px;
+      padding-top: 16px;
+    }
+
+    .status-box {
+      margin-top: 28px;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+
+    .status-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+
+    .status-row b {
+      color: var(--green);
+    }
+
+    .meter {
+      height: 7px;
+      border-radius: 999px;
+      background: #e9ece8;
+      overflow: hidden;
+      margin: 8px 0 12px;
+    }
+
+    .meter span {
+      display: block;
+      width: 72%;
+      height: 100%;
+      background: linear-gradient(90deg, var(--green), var(--gold));
+    }
+
+    .content {
+      padding: 18px 20px 22px;
+      border-right: 1px solid var(--line);
+    }
+
+    .toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 16px;
+    }
+
+    .filters {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .select-like,
+    .filter-button,
+    .view-button {
+      height: 36px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      padding: 0 12px;
+      color: var(--ink);
+    }
+
+    .select-like {
+      color: var(--green-dark);
+      font-weight: 750;
+    }
+
+    .view-switch {
+      display: flex;
+      gap: 6px;
+    }
+
+    .view-button.active {
+      background: #dff0e6;
+      border-color: var(--line-strong);
+      color: var(--green-dark);
+    }
+
+    .cards {
+      display: grid;
+      gap: 14px;
+    }
+
+    .skill-card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.92);
+      padding: 14px;
+      display: grid;
+      grid-template-columns: 84px 1fr auto;
+      gap: 16px;
+      min-height: 158px;
+      cursor: pointer;
+      box-shadow: 0 8px 22px rgba(20, 30, 22, 0.04);
+    }
+
+    .skill-card:hover {
+      border-color: var(--line-strong);
+      box-shadow: var(--shadow);
+    }
+
+    .skill-card.active {
+      border-color: var(--green);
+      box-shadow: 0 0 0 2px rgba(18, 129, 88, 0.1), var(--shadow);
+    }
+
+    .skill-logo {
+      width: 84px;
+      height: 84px;
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      color: #fff;
+      background: #111714;
+      font-size: 15px;
+      font-weight: 900;
+      line-height: 1.1;
+      text-align: center;
+      padding: 8px;
+      word-break: normal;
+      overflow-wrap: normal;
+    }
+
+    .skill-logo.green {
+      background: linear-gradient(145deg, #0e5a42, #1da06b);
+    }
+
+    .skill-logo.gold {
+      background: linear-gradient(145deg, #2d2415, #b88528);
+    }
+
+    .skill-logo.blue {
+      background: linear-gradient(145deg, #172735, #37678f);
+    }
+
+    .skill-logo.red {
+      background: linear-gradient(145deg, #321918, #c95345);
+    }
+
+    .skill-logo.long-logo {
+      font-size: 11px;
+      letter-spacing: 0;
+    }
+
+    .card-main {
+      min-width: 0;
+    }
+
+    .card-head {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 5px;
+    }
+
+    .card-head h2 {
+      font-size: 18px;
+      line-height: 1.25;
+      margin: 0;
+    }
+
+    .badge {
+      min-height: 22px;
+      border-radius: 7px;
+      padding: 3px 8px;
+      font-size: 12px;
+      font-weight: 750;
+      background: #e8f3ec;
+      color: var(--green-dark);
+      border: 1px solid #cfe4d6;
+    }
+
+    .badge.warn {
+      background: #fff5e6;
+      color: #8b5b11;
+      border-color: #ecd2a5;
+    }
+
+    .repo {
+      margin: 0 0 10px;
+      color: var(--muted);
+      font-size: 13px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .desc {
+      margin: 0;
+      color: #2c3a31;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-top: 12px;
+    }
+
+    .tag {
+      border: 1px solid var(--line);
+      background: #fbfcfa;
+      border-radius: 7px;
+      padding: 4px 9px;
+      color: #46524a;
+      font-size: 12px;
+    }
+
+    .card-meta {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: space-between;
+      min-width: 64px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .star {
+      width: 30px;
+      height: 30px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      background: #fff;
+      color: var(--gold);
+    }
+
+    .usage {
+      display: grid;
+      gap: 7px;
+      text-align: right;
+    }
+
+    .usage span {
+      white-space: nowrap;
+    }
+
+    .detail {
+      padding: 26px 22px;
+      background: rgba(255, 255, 255, 0.88);
+      overflow: auto;
+    }
+
+    .detail-top {
+      display: grid;
+      grid-template-columns: 92px 1fr auto;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .detail-logo {
+      width: 92px;
+      height: 92px;
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      color: #fff;
+      background: #111714;
+      font-weight: 900;
+      text-align: center;
+      line-height: 1.1;
+      padding: 10px;
+      word-break: normal;
+      overflow-wrap: normal;
+    }
+
+    .detail-logo.long-logo {
+      font-size: 12px;
+    }
+
+    .detail h2 {
+      margin: 0 0 6px;
+      font-size: 24px;
+      line-height: 1.22;
+    }
+
+    .detail .repo {
+      margin-bottom: 8px;
+    }
+
+    .detail-close {
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+      font-size: 24px;
+      align-self: start;
+      cursor: pointer;
+    }
+
+    .statline {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 4px;
+    }
+
+    .detail-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      border-bottom: 1px solid var(--line);
+      padding: 4px 0 18px;
+      margin-bottom: 20px;
+    }
+
+    .detail-section {
+      margin: 0 0 20px;
+    }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+
+    .section-title h3 {
+      margin: 0;
+      font-size: 17px;
+      line-height: 1.3;
+    }
+
+    .edit-mark {
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .detail-section p,
+    .detail-section li {
+      color: #26332b;
+      font-size: 14px;
+      line-height: 1.75;
+    }
+
+    .detail-section p {
+      margin: 0;
+    }
+
+    .detail-section ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .prompt-box {
+      border: 1px solid var(--line);
+      background: #fbfcfa;
+      border-radius: 8px;
+      padding: 14px;
+      color: #233029;
+      font-size: 13px;
+      line-height: 1.72;
+      white-space: pre-wrap;
+      overflow: auto;
+      max-height: 172px;
+    }
+
+    .copy-button {
+      width: 100%;
+      height: 44px;
+      border: 0;
+      border-radius: 8px;
+      background: var(--green);
+      color: #fff;
+      font-weight: 800;
+      cursor: pointer;
+      margin-top: 16px;
+    }
+
+    .copy-button:hover {
+      background: var(--green-dark);
+    }
+
+    .identity-card {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: 74px 1fr;
+      gap: 12px;
+      align-items: center;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 12px;
+      background: #fbfcfa;
+    }
+
+    .identity-card img {
+      width: 74px;
+      height: 74px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #fff;
+      box-shadow: 0 0 0 1px var(--line);
+    }
+
+    .identity-card strong {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 15px;
+    }
+
+    .identity-card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: 13px;
+    }
+
+    .empty {
+      display: none;
+      padding: 56px 20px;
+      color: var(--muted);
+      text-align: center;
+      border: 1px dashed var(--line-strong);
+      border-radius: 8px;
+      background: #fff;
+    }
+
+    @media (max-width: 1120px) {
+      .topbar {
+        grid-template-columns: 1fr;
+        height: auto;
+        padding: 14px 16px;
+      }
+
+      .top-actions {
+        display: none;
+      }
+
+      .main {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .nav-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .detail {
+        border-top: 1px solid var(--line);
+      }
+    }
+
+    @media (max-width: 720px) {
+      .brand h1 {
+        font-size: 20px;
+      }
+
+      .content {
+        padding: 14px;
+      }
+
+      .toolbar {
+        align-items: stretch;
+        flex-direction: column;
+      }
+
+      .skill-card {
+        grid-template-columns: 64px 1fr;
+      }
+
+      .skill-logo {
+        width: 64px;
+        height: 64px;
+        font-size: 13px;
+      }
+
+      .skill-logo.long-logo {
+        font-size: 9px;
+      }
+
+      .card-meta {
+        grid-column: 1 / -1;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .detail-top {
+        grid-template-columns: 72px 1fr auto;
+      }
+
+      .detail-logo {
+        width: 72px;
+        height: 72px;
+        font-size: 13px;
+      }
+
+      .detail-logo.long-logo {
+        font-size: 10px;
+      }
+
+      .detail h2 {
+        font-size: 20px;
+      }
+
+      .nav-list {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">YR</div>
+        <h1>颜汝能力看台</h1>
+      </div>
+      <label class="search" aria-label="搜索能力">
+        <input id="searchInput" type="search" placeholder="搜索任务、场景或能力..." autocomplete="off">
+      </label>
+      <div class="top-actions" aria-label="看台操作">
+        <button class="top-action" type="button">＋ 新建能力</button>
+        <button class="top-action" type="button">⚙ 设置</button>
+        <button class="top-action" type="button">↻ 同步 Skills</button>
+        <button class="top-action" type="button">？ 帮助</button>
+        <div class="avatar-dot">汝</div>
+      </div>
+    </header>
+
+    <main class="main">
+      <aside class="sidebar">
+        <div class="side-title">
+          <span>场景</span>
+          <button class="side-add" type="button" aria-label="新增场景">+</button>
+        </div>
+        <nav class="nav-list" id="categoryNav" aria-label="能力分类"></nav>
+
+        <div class="side-section">
+          <div class="side-title"><span>视图</span></div>
+          <div class="nav-list">
+            <button class="nav-item secondary" type="button">
+              <span class="nav-icon">◎</span><span class="nav-name">最近使用</span><span class="nav-count">12</span>
+            </button>
+            <button class="nav-item secondary" type="button">
+              <span class="nav-icon">☆</span><span class="nav-name">核心能力</span><span class="nav-count">6</span>
+            </button>
+            <button class="nav-item secondary" type="button">
+              <span class="nav-icon">□</span><span class="nav-name">待接 API</span><span class="nav-count">3</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="status-box">
+          <div class="status-row"><span>知识库连接状态</span><b>已连接</b></div>
+          <div class="status-row"><span>身份锚点</span><span>颜汝 / 智焰科技</span></div>
+          <div class="meter"><span></span></div>
+          <div class="status-row"><span>可复用资产</span><span>12 / 16</span></div>
+          <div class="status-row"><span>核心原则</span><span>判断变资产</span></div>
+        </div>
+      </aside>
+
+      <section class="content">
+        <div class="toolbar">
+          <div class="filters">
+            <button class="select-like" type="button" id="allButton">全部能力</button>
+            <button class="filter-button" type="button" id="verifiedButton">已验证</button>
+            <button class="filter-button" type="button" id="usableButton">可调用</button>
+          </div>
+          <div class="view-switch" aria-label="视图切换">
+            <button class="view-button active" type="button">☷</button>
+            <button class="view-button" type="button">▦</button>
+          </div>
+        </div>
+        <div class="cards" id="cards"></div>
+        <div class="empty" id="emptyState">没有匹配的能力。换个关键词试试。</div>
+      </section>
+
+      <aside class="detail" id="detail"></aside>
+    </main>
+  </div>
+
+  <script>
+    const categories = [
+      { key: "all", name: "全部", icon: "≡" },
+      { key: "content", name: "内容增长", icon: "文" },
+      { key: "video", name: "AI 视频", icon: "影" },
+      { key: "visual", name: "视觉图像", icon: "图" },
+      { key: "publish", name: "自动发布", icon: "发" },
+      { key: "knowledge", name: "知识系统", icon: "库" },
+      { key: "agent", name: "Agent", icon: "智" },
+      { key: "ops", name: "待整理", icon: "整" }
+    ];
+
+    const skills = [
+      {
+        id: "seedance-prompt-skill",
+        name: "Seedance Prompt Skill",
+        repo: "Yanru/Seedance-Prompt-Skill",
+        category: "video",
+        logo: "SEEDANCE\\nPROMPT",
+        color: "",
+        verified: true,
+        usable: true,
+        updated: "今天 09:12",
+        used: "今天 10:24",
+        views: 128,
+        stars: "重点",
+        tags: ["AI视频", "Prompt", "镜头语言", "Seedance"],
+        desc: "把颜汝的口播、课程案例和商业判断，整理成可直接交给 Seedance 的视频提示词，控制镜头、节奏、风格和成片一致性。",
+        oneLine: "我可以把一个颜汝选题转成 Seedance 可执行的视频生成提示词，让画面风格、镜头、动作和成片目标更稳定。",
+        moments: [
+          "要把公众号文章、课程片段或案例讲解转成 AI 视频。",
+          "需要统一镜头语言、角色状态、场景气质和节奏。",
+          "需要给 Codex、Claude 或视频模型一个可复制的调用模板。"
+        ],
+        prompt: "请基于 Yanru/Seedance-Prompt-Skill 输出 Seedance 视频提示词。\\n\\n需求：\\n- 主题/内容：{{这里填颜汝的文章、课程片段或视频脚本}}\\n- 时长：{{例如 5 秒 / 10 秒 / 30 秒}}\\n- 风格参考：老板视角、真实商业现场、克制高级、可落地\\n- 镜头语言：{{例如 推镜 / 跟拍 / 俯拍 / 手持纪实}}\\n- 画面细节：{{人物状态、场景、道具、文字不要乱写}}\\n\\n请输出：\\n1. Seedance 主提示词\\n2. 分镜头提示词\\n3. 负面提示词\\n4. 可复用参数建议"
+      },
+      {
+        id: "yanru-wechat-publisher",
+        name: "颜汝公众号从写到发",
+        repo: "~/.codex/skills/yanru-wechat-publisher",
+        category: "content",
+        logo: "公众号\\nSkill",
+        color: "green",
+        verified: true,
+        usable: true,
+        updated: "6月30日",
+        used: "昨天 16:45",
+        views: 256,
+        stars: "核心",
+        tags: ["公众号", "HTML预览", "配图", "发布核验"],
+        desc: "把中文长文任务当成从选题、写作、配图、HTML预览、公众号草稿到公开页核验的完整交付。",
+        oneLine: "我负责把一篇颜汝风格文章做成能打开、能检查、能进入公众号发布流程的成品包。",
+        moments: [
+          "用户说写成公众号、配图、排版、打开给我看。",
+          "文章要有老板视角、具体场景和可执行方法。",
+          "需要区分本地包、后台草稿、已发表和公开页核验。"
+        ],
+        prompt: "用 yanru-wechat-publisher 执行：\\n主题：{{主题}}\\n读者：老板/企业管理者/AI学习者\\n要求：颜汝口吻，先判断再表达，生成本地预览 HTML、配图和 publish_payload。\\n边界：不授权时只到预览或草稿，不声称已公开发布。"
+      },
+      {
+        id: "yanru-ai-writing-avatar",
+        name: "颜汝 AI 写作分身",
+        repo: "~/.codex/skills/yanru-ai-writing-avatar",
+        category: "content",
+        logo: "写作\\n分身",
+        color: "gold",
+        verified: true,
+        usable: true,
+        updated: "6月29日",
+        used: "今天 08:36",
+        views: 214,
+        stars: "高频",
+        tags: ["颜汝口吻", "老板视角", "课程文案", "商业判断"],
+        desc: "把颜汝的表达方式变成写作入口：直接、口语、锋利，先判断、再讲人话、最后给行动。",
+        oneLine: "我可以把模糊想法变成颜汝口吻的文章、课程文案、案例稿或销售表达。",
+        moments: [
+          "需要用你的口吻写文章、朋友圈、课程大纲或销售文案。",
+          "需要把 AI 工具叙事改成老板能听懂的商业判断。",
+          "需要避免 AI 味、模板味和空泛方法论。"
+        ],
+        prompt: "用颜汝 AI 写作分身改写：\\n材料：{{粘贴原文或想法}}\\n目标：{{公众号/课程文案/短视频口播/销售页}}\\n语气：老板视角、事实优先、长期主义、说人话。\\n输出：可直接发布或继续排版的版本。"
+      },
+      {
+        id: "images2",
+        name: "Image2 视觉生成",
+        repo: "~/.codex/skills/images2",
+        category: "visual",
+        logo: "IMAGE\\n2",
+        color: "blue",
+        verified: true,
+        usable: true,
+        updated: "6月28日",
+        used: "今天 09:48",
+        views: 198,
+        stars: "图像",
+        tags: ["主视觉", "海报", "配图", "中文修复"],
+        desc: "图片、海报、封面、人物图和主视觉默认先走 Image2，再用本地排版修正中文和版式。",
+        oneLine: "我负责把图像需求先走 Image2，必要时再修中文、框体和版式，保证能用于正式交付。",
+        moments: [
+          "需要公众号封面、课程海报、内容配图或视觉稿。",
+          "图片里有中文、框体、标签或信息卡，需要避免压字和乱码。",
+          "需要在 Codex 内完成，不接管主 Mac。"
+        ],
+        prompt: "用 Image2 生成视觉资产：\\n画面目标：{{用途}}\\n品牌气质：颜汝，克制、高级、真实商业现场、可落地。\\n文字策略：中文尽量少，复杂文字后期本地排版。\\n验证：检查尺寸、文字、框体、是否可发布。"
+      },
+      {
+        id: "xhs-image2-publisher",
+        name: "小红书 Image2 图文发布",
+        repo: "~/.codex/skills/xhs-image2-publisher",
+        category: "publish",
+        logo: "XHS\\n图文",
+        color: "red",
+        verified: true,
+        usable: true,
+        updated: "6月27日",
+        used: "6月27日",
+        views: 142,
+        stars: "平台",
+        tags: ["小红书", "图文卡片", "安全检查", "发布包"],
+        desc: "把内容想法生成 3-10 张小红书分图、标题正文、话题标签和上传包，登录可用时再走平台发布。",
+        oneLine: "我可以把一个选题做成小红书可上传的分图包和平台安全文案。",
+        moments: [
+          "需要一组小红书图文，不是只要一张拼图。",
+          "需要先过平台安全表达，不写绝对收益和导流暗示。",
+          "需要验证图片数量、尺寸和上传文件夹。"
+        ],
+        prompt: "用 xhs-image2-publisher 生成小红书图文：\\n主题：{{主题}}\\n卡片数：{{3-9}}\\n人设：颜汝，AI商业化老师。\\n输出：标题、正文、话题、单张上传图片文件夹、manifest 和安全检查。"
+      },
+      {
+        id: "yanru-video-multipublish",
+        name: "颜汝视频多平台发布",
+        repo: "~/.codex/skills/yanru-video-multipublish",
+        category: "publish",
+        logo: "视频\\n分发",
+        color: "green",
+        verified: true,
+        usable: true,
+        updated: "6月29日",
+        used: "6月29日",
+        views: 176,
+        stars: "Hermes",
+        tags: ["蚁小二", "抖音", "视频号", "发布状态"],
+        desc: "面向颜汝视频资产的 API 优先多平台分发流程，按平台记录成功、阻断、待审和公开核验。",
+        oneLine: "我把视频发布拆成真实状态板，不把任务 ID 当成公开成功。",
+        moments: [
+          "用户说发到各大平台、用蚁小二发出去。",
+          "需要先查账号状态，再分平台提交和记录阻断。",
+          "需要确保公开文件名、文案和 payload 不泄露内部标签。"
+        ],
+        prompt: "用 yanru-video-multipublish 发布：\\n视频：{{本地视频路径}}\\n标题：{{公开标题}}\\n平台：抖音/小红书/视频号/公众号/知乎/头条/百家号。\\n要求：API 优先，逐平台记录 publish_status，公开页能核验才算已发布。"
+      },
+      {
+        id: "yanru-xiaohei-illustrations",
+        name: "颜汝漫画小人配图",
+        repo: "~/.codex/skills/yanru-xiaohei-illustrations",
+        category: "visual",
+        logo: "小黑\\n配图",
+        color: "gold",
+        verified: true,
+        usable: true,
+        updated: "6月28日",
+        used: "6月28日",
+        views: 121,
+        stars: "风格",
+        tags: ["手绘", "正文配图", "隐喻", "方法图"],
+        desc: "把文章里的关键判断、流程、结构和状态变成颜汝漫画小人风格的 16:9 正文配图。",
+        oneLine: "我把抽象观点变成一张能解释方法的正文图，而不是装饰插画。",
+        moments: [
+          "文章需要穿插有意思但不幼稚的手绘解释图。",
+          "需要图服务观点、流程、坑点或前后对比。",
+          "需要保持白底、黑色线稿、少量红橙蓝批注。"
+        ],
+        prompt: "用 yanru-xiaohei-illustrations 生成正文配图：\\n文章段落：{{粘贴段落}}\\n图的任务：解释核心判断/流程/对比/坑点。\\n风格：纯白背景，黑色手绘线稿，少量中文批注，颜汝漫画小人参与核心动作。"
+      },
+      {
+        id: "getnote",
+        name: "得到大脑知识库",
+        repo: "~/.codex/skills/getnote",
+        category: "knowledge",
+        logo: "GET\\nNOTE",
+        color: "blue",
+        verified: true,
+        usable: true,
+        updated: "6月30日",
+        used: "今天 07:50",
+        views: 94,
+        stars: "知识",
+        tags: ["笔记", "搜索", "知识库", "素材沉淀"],
+        desc: "保存、搜索和管理个人笔记，把链接、图片、想法和资料变成可召回的知识库资产。",
+        oneLine: "我负责把临时素材沉淀为可搜索、可复用、可进入内容生产的笔记资产。",
+        moments: [
+          "用户说记一下、保存、搜一下、找找笔记。",
+          "需要把公众号、课程、案例和截图沉淀成知识库。",
+          "需要严格区分内链、分享链接和 API 返回状态。"
+        ],
+        prompt: "用 GetNote 执行：\\n动作：保存/搜索/查看/加标签。\\n内容：{{链接、图片、文字或关键词}}\\n要求：以 API 返回为准，不编造 note_id，不跳过异步任务轮询。"
+      },
+      {
+        id: "multi-platform-content-sync",
+        name: "多平台内容同步包",
+        repo: "~/.codex/skills/multi-platform-content-sync",
+        category: "publish",
+        logo: "多端\\n同步",
+        color: "green",
+        verified: true,
+        usable: true,
+        updated: "6月27日",
+        used: "6月27日",
+        views: 88,
+        stars: "分发",
+        tags: ["知乎", "掘金", "CSDN", "百家号"],
+        desc: "把一篇源文章改成知乎、掘金、CSDN、B站、百家号等平台各自适合的发布包。",
+        oneLine: "我把一篇内容变成多平台各自能用的草稿，而不是简单复制粘贴。",
+        moments: [
+          "需要同步到知乎、掘金、CSDN、B站或百家号。",
+          "需要生成平台标题、摘要、正文、标签和检查清单。",
+          "需要清楚区分本地包、草稿箱和公开发布。"
+        ],
+        prompt: "用 multi-platform-content-sync 生成同步包：\\n源文件：{{文章 Markdown 或 HTML 路径}}\\n平台：知乎/掘金/CSDN/B站/百家号。\\n输出：manifest、copy_board、platform_matrix、各平台草稿和 handoff_checklist。"
+      },
+      {
+        id: "codex-workspace-control",
+        name: "Codex 分屏控机规则",
+        repo: "~/.codex/skills/codex-workspace-control",
+        category: "agent",
+        logo: "CODEX\\nIAB",
+        color: "blue",
+        verified: true,
+        usable: true,
+        updated: "6月30日",
+        used: "今天",
+        views: 165,
+        stars: "控制面",
+        tags: ["分屏", "IAB", "不占主机", "RPA"],
+        desc: "把任务尽量放在 Codex app、shell、本地文件、API 和 in-app Browser 里完成，不占用主 Mac。",
+        oneLine: "我确保执行面在 Codex 内闭环，必要时再交付 RPA handoff，而不是接管主界面。",
+        moments: [
+          "需要打开 HTML、跑本地预览、截图或视觉 QA。",
+          "需要避免 Computer Use、主 Chrome 和 macOS 桌面接管。",
+          "需要把跑通流程沉淀成 skill、脚本或检查清单。"
+        ],
+        prompt: "用 codex-workspace-control 执行：\\n请求：{{用户任务}}\\n要求：Codex app / shell / 本地文件 / IAB 优先，不使用主 Mac。\\n验证：生成 RPA 报告或预览检查，说明边界。"
+      },
+      {
+        id: "task-router",
+        name: "Task Router 任务路由",
+        repo: "~/.codex/skills/task-router",
+        category: "agent",
+        logo: "TASK\\nROUTE",
+        color: "gold",
+        verified: true,
+        usable: true,
+        updated: "6月26日",
+        used: "今天",
+        views: 117,
+        stars: "入口",
+        tags: ["任务分类", "Skill选择", "执行路径", "验证方式"],
+        desc: "把用户短指令翻译成具体交付任务，选择该用的 skill、资料、工具、边界和验证方式。",
+        oneLine: "我把一句模糊请求变成可执行路径，减少反复问和跑错方向。",
+        moments: [
+          "用户短句包含写作、图片、自动化、发布、代码或研究混合需求。",
+          "需要先判断交付物是什么，再选择 skill。",
+          "需要把对标、验证和禁止事项前置。"
+        ],
+        prompt: "用 task-router 路由：\\n用户原话：{{原始请求}}\\n输出：任务类型、推荐 skill、改写后的执行指令、注意事项、禁止事项。\\n如果能直接执行，路由后继续做。"
+      },
+      {
+        id: "codex-self-evolution",
+        name: "Codex 自我进化总控",
+        repo: "~/.codex/skills/codex-self-evolution",
+        category: "agent",
+        logo: "SELF\\nEVOLVE",
+        color: "red",
+        verified: true,
+        usable: true,
+        updated: "6月29日",
+        used: "6月29日",
+        views: 103,
+        stars: "耐久",
+        tags: ["复盘", "Skill沉淀", "检查清单", "持续优化"],
+        desc: "把一次经验变成下次自动更容易做对的规则、skill、脚本、清单或记忆更新。",
+        oneLine: "我不只写复盘，而是把复盘变成可验证的耐久改进。",
+        moments: [
+          "用户说以后都这样、总结成 skill、你自己优化。",
+          "同类错误重复出现，需要变成规则或检查脚本。",
+          "需要让下一次少消耗 token、少走弯路。"
+        ],
+        prompt: "用 codex-self-evolution 处理：\\n经验/问题：{{本次要沉淀的经验}}\\n目标：让下次自动更容易做对。\\n输出：skill/规则/脚本/清单/记忆 note 中至少一种，并运行验证。"
+      }
+    ];
+
+    let activeCategory = "all";
+    let activeId = skills[0].id;
+    let verifiedOnly = false;
+    let usableOnly = false;
+
+    const nav = document.getElementById("categoryNav");
+    const cards = document.getElementById("cards");
+    const detail = document.getElementById("detail");
+    const emptyState = document.getElementById("emptyState");
+    const searchInput = document.getElementById("searchInput");
+    const verifiedButton = document.getElementById("verifiedButton");
+    const usableButton = document.getElementById("usableButton");
+    const allButton = document.getElementById("allButton");
+
+    function countByCategory(key) {
+      if (key === "all") return skills.length;
+      return skills.filter(skill => skill.category === key).length;
+    }
+
+    function renderNav() {
+      nav.innerHTML = categories.map(category => `
+        <button class="nav-item ${activeCategory === category.key ? "active" : ""}" type="button" data-category="${category.key}">
+          <span class="nav-icon">${category.icon}</span>
+          <span class="nav-name">${category.name}</span>
+          <span class="nav-count">${countByCategory(category.key)}</span>
+        </button>
+      `).join("");
+
+      nav.querySelectorAll("[data-category]").forEach(button => {
+        button.addEventListener("click", () => {
+          activeCategory = button.dataset.category;
+          render();
+        });
+      });
+    }
+
+    function skillMatches(skill) {
+      const query = searchInput.value.trim().toLowerCase();
+      const haystack = [
+        skill.name,
+        skill.repo,
+        skill.desc,
+        skill.oneLine,
+        skill.tags.join(" "),
+        skill.moments.join(" ")
+      ].join(" ").toLowerCase();
+
+      return (activeCategory === "all" || skill.category === activeCategory)
+        && (!verifiedOnly || skill.verified)
+        && (!usableOnly || skill.usable)
+        && (!query || haystack.includes(query));
+    }
+
+    function filteredSkills() {
+      return skills.filter(skillMatches);
+    }
+
+    function logoClass(skill) {
+      return skill.color ? ` ${skill.color}` : "";
+    }
+
+    function logoFitClass(skill) {
+      return skill.logo.replace(/\\n|\n/g, "").length > 11 ? " long-logo" : "";
+    }
+
+    function formatLogo(logo) {
+      return logo.replace(/\\n|\n/g, "<br>");
+    }
+
+    function promptText(skill) {
+      return skill.prompt.replace(/\\n/g, "\n");
+    }
+
+    function renderCards() {
+      const list = filteredSkills();
+      if (!list.some(skill => skill.id === activeId) && list.length) {
+        activeId = list[0].id;
+      }
+
+      cards.innerHTML = list.map(skill => `
+        <article class="skill-card ${activeId === skill.id ? "active" : ""}" data-id="${skill.id}" tabindex="0" aria-label="${skill.name}">
+          <div class="skill-logo${logoClass(skill)}${logoFitClass(skill)}">${formatLogo(skill.logo)}</div>
+          <div class="card-main">
+            <div class="card-head">
+              <h2>${skill.name}</h2>
+              <span class="badge ${skill.verified ? "" : "warn"}">${skill.verified ? "已验证" : "待验证"}</span>
+            </div>
+            <p class="repo">${skill.repo}</p>
+            <p class="desc">${skill.desc}</p>
+            <div class="tags">${skill.tags.map(tag => `<span class="tag">${tag}</span>`).join("")}</div>
+          </div>
+          <div class="card-meta">
+            <span class="star">☆</span>
+            <div class="usage">
+              <span>◎ ${skill.views}</span>
+              <span>↻ ${skill.used}</span>
+            </div>
+          </div>
+        </article>
+      `).join("");
+
+      emptyState.style.display = list.length ? "none" : "block";
+
+      cards.querySelectorAll(".skill-card").forEach(card => {
+        card.addEventListener("click", () => {
+          activeId = card.dataset.id;
+          renderCards();
+          renderDetail();
+        });
+        card.addEventListener("keydown", event => {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            activeId = card.dataset.id;
+            renderCards();
+            renderDetail();
+          }
+        });
+      });
+    }
+
+    function renderDetail() {
+      const skill = skills.find(item => item.id === activeId) || filteredSkills()[0];
+      if (!skill) {
+        detail.innerHTML = "";
+        return;
+      }
+
+      detail.innerHTML = `
+        <div class="detail-top">
+          <div class="detail-logo${logoClass(skill)}${logoFitClass(skill)}">${formatLogo(skill.logo)}</div>
+          <div>
+            <h2>${skill.name}</h2>
+            <p class="repo">${skill.repo}</p>
+            <div class="statline">
+              <span>◎ ${skill.views}</span>
+              <span>☆ ${skill.stars}</span>
+              <span>更新：${skill.updated}</span>
+            </div>
+          </div>
+          <button class="detail-close" type="button" aria-label="关闭详情">×</button>
+        </div>
+
+        <div class="detail-tags">${skill.tags.map(tag => `<span class="tag">${tag}</span>`).join("")}<span class="tag">＋</span></div>
+
+        <section class="detail-section">
+          <div class="section-title">
+            <h3>一句话能力</h3>
+            <span class="edit-mark">⌁</span>
+          </div>
+          <p>${skill.oneLine}</p>
+        </section>
+
+        <section class="detail-section">
+          <div class="section-title">
+            <h3>什么时候想起它</h3>
+            <span class="edit-mark">⌁</span>
+          </div>
+          <ul>${skill.moments.map(item => `<li>${item}</li>`).join("")}</ul>
+        </section>
+
+        <section class="detail-section">
+          <div class="section-title">
+            <h3>给 Codex/Claude 的调用提示</h3>
+            <span class="edit-mark">⌁</span>
+          </div>
+          <div class="prompt-box" id="promptBox">${promptText(skill)}</div>
+          <button class="copy-button" type="button" id="copyPrompt">复制调用提示</button>
+        </section>
+
+        <div class="identity-card">
+          <img src="assets/yanru-avatar.png" alt="颜汝">
+          <div>
+            <strong>颜汝能力圈</strong>
+            <p>不是工具清单，而是把内容、知识库、自动化、发布和复盘串成一套可持续生产系统。</p>
+          </div>
+        </div>
+      `;
+
+      detail.querySelector("#copyPrompt").addEventListener("click", async () => {
+        const text = promptText(skill);
+        try {
+          await navigator.clipboard.writeText(text);
+          detail.querySelector("#copyPrompt").textContent = "已复制";
+          setTimeout(() => detail.querySelector("#copyPrompt").textContent = "复制调用提示", 1200);
+        } catch (error) {
+          const range = document.createRange();
+          range.selectNodeContents(detail.querySelector("#promptBox"));
+          const selection = window.getSelection();
+          selection.removeAllRanges();
+          selection.addRange(range);
+          detail.querySelector("#copyPrompt").textContent = "已选中提示词";
+        }
+      });
+    }
+
+    function render() {
+      renderNav();
+      renderCards();
+      renderDetail();
+      verifiedButton.classList.toggle("active", verifiedOnly);
+      usableButton.classList.toggle("active", usableOnly);
+    }
+
+    searchInput.addEventListener("input", render);
+    verifiedButton.addEventListener("click", () => {
+      verifiedOnly = !verifiedOnly;
+      render();
+    });
+    usableButton.addEventListener("click", () => {
+      usableOnly = !usableOnly;
+      render();
+    });
+    allButton.addEventListener("click", () => {
+      activeCategory = "all";
+      verifiedOnly = false;
+      usableOnly = false;
+      searchInput.value = "";
+      render();
+    });
+
+    render();
+  </script>
+</body>
+</html>
