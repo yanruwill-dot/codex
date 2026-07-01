@@ -12,6 +12,9 @@
 - [七个葫芦娃自动化](calabash-automation/)  
   七个智能体协同的内容工厂看板，包含品牌、选题、写作、图片、发布、复盘和调度角色。
 
+- [Get笔记 · 得到大脑](getnote-brain/)  
+  保存、搜索、管理个人笔记和知识库，把临时素材变成可召回、可复用的内容资产。
+
 - [颜汝的 AI 技能库](skillbox/)  
   可检索、可组合、可调用的 AI skills 与 MCP 能力网站。
 
@@ -22,6 +25,7 @@
 
 - `https://yanruwill-dot.github.io/codex/skill-stand/`
 - `https://yanruwill-dot.github.io/codex/calabash-automation/`
+- `https://yanruwill-dot.github.io/codex/getnote-brain/`
 - `https://yanruwill-dot.github.io/codex/skillbox/`
 - `https://yanruwill-dot.github.io/codex/advisor-council-studio/`
 

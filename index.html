@@ -249,7 +249,7 @@
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 16px;
     }
 
@@ -282,6 +282,10 @@
     }
 
     .thumb.calabash img {
+      object-position: center;
+    }
+
+    .thumb.getnote img {
       object-position: center;
     }
 
@@ -429,6 +433,7 @@
       <div class="nav-links">
         <a href="./skill-stand/">能力看台</a>
         <a href="./calabash-automation/">七个葫芦娃自动化</a>
+        <a href="./getnote-brain/">得到大脑</a>
         <a href="./skillbox/">Skills 网站</a>
       </div>
     </nav>
@@ -437,7 +442,7 @@
       <section class="hero-copy">
         <span class="eyebrow">Codex / Skills / 自动化中控</span>
         <h1>把颜汝的 AI 能力放到一个公开页面</h1>
-        <p class="lead">这里不是作品陈列柜，而是一个可进入、可检索、可调用的 AI 工作台：能力看台负责找能力，葫芦娃自动化负责跑流程，skills 网站负责沉淀方法。</p>
+        <p class="lead">这里不是作品陈列柜，而是一个可进入、可检索、可调用的 AI 工作台：能力看台负责找能力，葫芦娃自动化负责跑流程，得到大脑负责存素材，skills 网站负责沉淀方法。</p>
         <div class="hero-actions">
           <a class="button primary" href="./skill-stand/">打开能力看台</a>
           <a class="button" href="./calabash-automation/">进入自动化中控</a>
@@ -458,8 +463,8 @@
 
     <section>
       <div class="section-head">
-        <h2>三个入口</h2>
-        <p>先把最常用的三块放在一个 GitHub Pages 页面里，后面可以继续往这里挂课程、文章包、视频发布包和 RPA 报告。</p>
+        <h2>四个入口</h2>
+        <p>先把最常用的四块放在一个 GitHub Pages 页面里，后面可以继续往这里挂课程、文章包、视频发布包和 RPA 报告。</p>
       </div>
 
       <div class="grid">
@@ -513,11 +518,28 @@
             <a class="button primary" href="./skillbox/">打开 Skills</a>
           </div>
         </article>
+
+        <article class="card">
+          <a class="thumb getnote" href="./getnote-brain/">
+            <img src="assets/home/getnote-preview.svg" alt="Get笔记得到大脑预览">
+          </a>
+          <div class="card-body">
+            <span class="tag">知识入口</span>
+            <h3>Get笔记 · 得到大脑</h3>
+            <p>把链接、图片、想法、课程资料和对标素材先沉淀，再通过搜索、标签和知识库进入写作、课程、自动化和发布流程。</p>
+            <ul class="list">
+              <li>负责保存、搜索、管理个人笔记和知识库</li>
+              <li>强调 API 状态、异步轮询和 note_id 边界</li>
+              <li>让素材从收藏变成可复用资产</li>
+            </ul>
+            <a class="button primary" href="./getnote-brain/">打开得到大脑</a>
+          </div>
+        </article>
       </div>
     </section>
 
     <section class="status" aria-label="当前发布状态">
-      <div class="metric"><strong>3</strong><span>已挂载页面入口</span></div>
+      <div class="metric"><strong>4</strong><span>已挂载页面入口</span></div>
       <div class="metric"><strong>12</strong><span>能力看台收录能力</span></div>
       <div class="metric"><strong>7</strong><span>葫芦娃自动化角色</span></div>
       <div class="metric"><strong>1</strong><span>统一 GitHub Pages 地址</span></div>

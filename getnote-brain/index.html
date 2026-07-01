@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Get笔记 · 得到大脑</title>
+  <style>
+    :root {
+      --bg: #f6f7f4;
+      --ink: #17201b;
+      --muted: #657168;
+      --panel: #ffffff;
+      --line: #dfe6dc;
+      --green: #128158;
+      --green-dark: #0d6848;
+      --gold: #b8842b;
+      --blue: #37678f;
+      --red: #c95345;
+      --shadow: 0 22px 60px rgba(18, 32, 24, 0.11);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      background:
+        linear-gradient(180deg, rgba(246, 247, 244, .92), #f6f7f4 54%),
+        radial-gradient(circle at 14% 8%, rgba(18, 129, 88, .14), transparent 28%),
+        radial-gradient(circle at 92% 4%, rgba(55, 103, 143, .12), transparent 24%);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      letter-spacing: 0;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .shell {
+      width: min(1160px, calc(100% - 36px));
+      margin: 0 auto;
+      padding: 24px 0 42px;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 34px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 19px;
+      font-weight: 900;
+    }
+
+    .mark {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      color: #fff;
+      background: linear-gradient(135deg, #111714, #18865f);
+    }
+
+    .nav {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .nav a {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, .75);
+      color: #35433b;
+      padding: 9px 13px;
+      font-size: 14px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(360px, .95fr);
+      gap: 28px;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      width: fit-content;
+      min-height: 28px;
+      align-items: center;
+      border: 1px solid #cfe4d6;
+      border-radius: 999px;
+      background: #e7f4ec;
+      color: var(--green-dark);
+      padding: 5px 10px;
+      font-size: 13px;
+      font-weight: 850;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(40px, 7vw, 82px);
+      line-height: .96;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      max-width: 680px;
+      margin: 22px 0 0;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.82;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .button {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      padding: 0 16px;
+      font-weight: 850;
+    }
+
+    .button.primary {
+      color: #fff;
+      background: var(--green);
+      border-color: var(--green);
+    }
+
+    .brain-panel {
+      min-height: 470px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      box-shadow: var(--shadow);
+      padding: 18px;
+      overflow: hidden;
+    }
+
+    .brain-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 16px;
+    }
+
+    .brain-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 900;
+      font-size: 18px;
+    }
+
+    .brain-logo {
+      width: 44px;
+      height: 44px;
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      color: #fff;
+      background: linear-gradient(145deg, #173044, var(--blue));
+      font-size: 12px;
+      line-height: 1.05;
+      font-weight: 900;
+      text-align: center;
+    }
+
+    .state {
+      border: 1px solid #cfe4d6;
+      border-radius: 999px;
+      background: #e8f4ed;
+      color: var(--green-dark);
+      padding: 5px 9px;
+      font-size: 12px;
+      font-weight: 850;
+    }
+
+    .search-bar {
+      height: 44px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fbfcfa;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 0 13px;
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+
+    .preview-image {
+      width: 100%;
+      display: block;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      margin-bottom: 14px;
+      background: #eef6f0;
+    }
+
+    .pipeline {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .pipe {
+      min-height: 122px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fbfcfa;
+      padding: 13px;
+    }
+
+    .pipe strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 16px;
+    }
+
+    .pipe p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    .note-stack {
+      display: grid;
+      gap: 10px;
+    }
+
+    .note {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      padding: 12px;
+      display: grid;
+      grid-template-columns: 90px 1fr auto;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .label {
+      min-height: 28px;
+      border-radius: 7px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      background: var(--green);
+      font-size: 12px;
+      font-weight: 850;
+    }
+
+    .label.blue {
+      background: var(--blue);
+    }
+
+    .label.gold {
+      background: var(--gold);
+    }
+
+    .note strong {
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    .note span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .check {
+      color: var(--green);
+      font-weight: 900;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 18px;
+      margin: 34px 0 14px;
+    }
+
+    .section-head h2 {
+      margin: 0;
+      font-size: clamp(24px, 4vw, 40px);
+      line-height: 1.1;
+    }
+
+    .section-head p {
+      margin: 0;
+      max-width: 500px;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      padding: 18px;
+      min-height: 236px;
+      box-shadow: 0 10px 28px rgba(18, 32, 24, .06);
+    }
+
+    .card small {
+      display: inline-flex;
+      color: var(--green-dark);
+      background: #e8f4ed;
+      border: 1px solid #cfe4d6;
+      border-radius: 999px;
+      padding: 4px 9px;
+      font-weight: 850;
+      margin-bottom: 13px;
+    }
+
+    .card h3 {
+      margin: 0 0 10px;
+      font-size: 22px;
+      line-height: 1.2;
+    }
+
+    .card p,
+    .card li {
+      color: var(--muted);
+      line-height: 1.72;
+      font-size: 15px;
+    }
+
+    .card p {
+      margin: 0;
+    }
+
+    .card ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .command {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #111714;
+      color: #e8fff1;
+      padding: 16px;
+      overflow: auto;
+      line-height: 1.68;
+      font-size: 14px;
+      white-space: pre-wrap;
+    }
+
+    footer {
+      margin-top: 30px;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 14px;
+    }
+
+    @media (max-width: 960px) {
+      .hero,
+      .grid,
+      .pipeline {
+        grid-template-columns: 1fr;
+      }
+
+      .section-head {
+        align-items: start;
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .shell {
+        width: min(100% - 24px, 1160px);
+        padding-top: 16px;
+      }
+
+      .topbar {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .nav {
+        justify-content: flex-start;
+      }
+
+      .lead {
+        font-size: 16px;
+      }
+
+      .brain-panel {
+        min-height: auto;
+      }
+
+      .note {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <nav class="topbar" aria-label="主导航">
+      <a class="brand" href="../">
+        <span class="mark">YR</span>
+        <span>颜汝 Codex 工作台</span>
+      </a>
+      <div class="nav">
+        <a href="../skill-stand/">能力看台</a>
+        <a href="../calabash-automation/">七个葫芦娃自动化</a>
+        <a href="../skillbox/">Skills 网站</a>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <section>
+        <span class="eyebrow">Get笔记 / 得到大脑 / 知识库</span>
+        <h1>把临时素材变成能被 AI 召回的资产</h1>
+        <p class="lead">得到大脑不是“收藏夹”，而是颜汝内容工厂的记忆入口：链接、图片、想法、文章、课程素材先沉淀，再被搜索、组合、改写、发布和复盘调用。</p>
+        <div class="actions">
+          <a class="button primary" href="../skill-stand/">回到能力看台</a>
+          <a class="button" href="../">返回 Codex 总入口</a>
+        </div>
+      </section>
+
+      <aside class="brain-panel" aria-label="得到大脑工作流预览">
+        <div class="brain-head">
+          <div class="brain-title">
+            <span class="brain-logo">GET<br>NOTE</span>
+            <span>得到大脑知识流</span>
+          </div>
+          <span class="state">API 优先</span>
+        </div>
+        <div class="search-bar">⌕ 搜索文章、截图、课程素材、客户问题...</div>
+        <img class="preview-image" src="../assets/home/getnote-preview.svg" alt="Get笔记得到大脑工作流">
+        <div class="pipeline">
+          <div class="pipe"><strong>保存</strong><p>链接、图片、文本进入笔记；异步任务必须轮询到 success 或 failed。</p></div>
+          <div class="pipe"><strong>召回</strong><p>按关键词和语义搜索素材，避免写作、课程和发布每次从零开始。</p></div>
+          <div class="pipe"><strong>复用</strong><p>沉淀到知识库、标签和工作流，成为内容工厂的长期资产。</p></div>
+        </div>
+        <div class="note-stack">
+          <div class="note">
+            <span class="label">文章素材</span>
+            <div><strong>公众号选题和案例库</strong><span>可进入写作分身、能力看台、发布包</span></div>
+            <span class="check">已沉淀</span>
+          </div>
+          <div class="note">
+            <span class="label blue">截图图片</span>
+            <div><strong>海报、课程、对标图</strong><span>先保存，再拆结构、做视觉和内容改写</span></div>
+            <span class="check">可召回</span>
+          </div>
+          <div class="note">
+            <span class="label gold">知识库</span>
+            <div><strong>颜汝长期判断系统</strong><span>事实、风格、流程、禁忌都要能被 AI 读取</span></div>
+            <span class="check">复利资产</span>
+          </div>
+        </div>
+      </aside>
+    </header>
+
+    <section>
+      <div class="section-head">
+        <h2>它在系统里的位置</h2>
+        <p>Get笔记负责输入和召回，能力看台负责调用，葫芦娃自动化负责推进，Skills 网站负责沉淀方法。</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <small>保存入口</small>
+          <h3>把素材先存住</h3>
+          <p>看到文章、案例、截图、课程资料时，先进入得到大脑。真正有价值的内容生产，不靠临时聊天记录，而靠可搜索的素材池。</p>
+        </article>
+        <article class="card">
+          <small>搜索入口</small>
+          <h3>写作前先召回</h3>
+          <p>写公众号、做小红书、准备课程或搭建工作流前，先问知识库里有没有同类素材、旧判断、对标案例和历史表达。</p>
+        </article>
+        <article class="card">
+          <small>管理入口</small>
+          <h3>知识库要有边界</h3>
+          <p>笔记 ID 必须来自 API 返回；异步任务不能跳过轮询；内链和分享链接不能混用。素材属于用户隐私，不能随便公开展示。</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h2>给 Codex 的调用提示</h2>
+        <p>这不是公开 API 密钥说明，只是以后调用 GetNote skill 时的任务边界。</p>
+      </div>
+      <div class="command">用「得到大脑（Get笔记）」处理：
+动作：保存 / 搜索 / 查看 / 加标签 / 知识库管理
+内容：{{链接、图片、文字或关键词}}
+要求：
+- 先检查 GETNOTE_API_KEY 和 GETNOTE_CLIENT_ID 是否存在
+- Base URL 使用 https://openapi.biji.com
+- note_id 按字符串处理，不编造 ID
+- 链接/图片保存拿到 task_id 后必须轮询任务进度
+- API 返回 success:false 时报告真实错误，不假装已保存</div>
+    </section>
+
+    <footer>
+      <strong>长期判断：</strong>内容工厂真正值钱的不是一次生成，而是把素材、判断、案例和风格沉淀成可召回的资产。得到大脑负责让这些东西留下来。
+    </footer>
+  </div>
+</body>
+</html>
