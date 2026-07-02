@@ -268,13 +268,111 @@
       position: relative;
       background: #e9efe9;
       overflow: hidden;
+      display: grid;
+      place-items: center;
     }
 
     .thumb img {
+      position: absolute;
+      inset: 0;
       width: 100%;
       height: 100%;
       object-fit: cover;
       display: block;
+      z-index: 0;
+    }
+
+    .thumb.has-icon img {
+      opacity: .16;
+      filter: saturate(.82) contrast(.92);
+    }
+
+    .thumb::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background:
+        radial-gradient(circle at 50% 48%, rgba(18, 129, 88, .18), transparent 32%),
+        linear-gradient(180deg, rgba(255,255,255,.2), rgba(255,255,255,.72));
+      pointer-events: none;
+    }
+
+    .icon-scene {
+      position: relative;
+      z-index: 2;
+      width: min(74%, 260px);
+      aspect-ratio: 1.18;
+      display: grid;
+      place-items: center;
+      color: var(--green-dark);
+    }
+
+    .icon-scene::before,
+    .icon-scene::after {
+      content: "";
+      position: absolute;
+      border: 1px solid rgba(18,129,88,.16);
+      border-radius: 999px;
+      animation: iconOrbit 8s linear infinite;
+    }
+
+    .icon-scene::before {
+      width: 100%;
+      height: 58%;
+      transform: rotate(-12deg);
+    }
+
+    .icon-scene::after {
+      width: 74%;
+      height: 74%;
+      animation-direction: reverse;
+      animation-duration: 11s;
+    }
+
+    .icon-orb {
+      width: 108px;
+      height: 108px;
+      border-radius: 28px;
+      display: grid;
+      place-items: center;
+      background:
+        linear-gradient(145deg, rgba(255,255,255,.96), rgba(232,244,237,.82));
+      border: 1px solid rgba(18,129,88,.18);
+      box-shadow: 0 22px 46px rgba(18, 32, 24, .12), inset 0 0 0 1px rgba(255,255,255,.7);
+    }
+
+    .icon-orb svg {
+      width: 54px;
+      height: 54px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .icon-label {
+      position: absolute;
+      left: 50%;
+      bottom: 4px;
+      transform: translateX(-50%);
+      min-width: 124px;
+      text-align: center;
+      border-radius: 999px;
+      padding: 7px 12px;
+      color: #1c513d;
+      background: rgba(255,255,255,.86);
+      border: 1px solid rgba(18,129,88,.16);
+      box-shadow: 0 10px 24px rgba(18, 32, 24, .08);
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .thumb.calabash .icon-scene,
+    .thumb.skillbox .icon-scene,
+    .thumb.getnote .icon-scene {
+      color: var(--green-dark);
     }
 
     .thumb.skillbox img {
@@ -289,6 +387,42 @@
       object-position: center;
     }
 
+    .thumb.calabash::before {
+      background:
+        radial-gradient(circle at 50% 48%, rgba(184,132,43,.18), transparent 34%),
+        linear-gradient(180deg, rgba(255,255,255,.24), rgba(255,248,232,.74));
+    }
+
+    .thumb.calabash .icon-orb {
+      color: #8a5a17;
+      border-color: rgba(184,132,43,.22);
+      background: linear-gradient(145deg, #fffaf0, #f4ead4);
+    }
+
+    .thumb.skillbox::before {
+      background:
+        radial-gradient(circle at 50% 48%, rgba(55,103,143,.18), transparent 34%),
+        linear-gradient(180deg, rgba(255,255,255,.2), rgba(236,245,250,.74));
+    }
+
+    .thumb.skillbox .icon-orb {
+      color: #28577a;
+      border-color: rgba(55,103,143,.22);
+      background: linear-gradient(145deg, #f8fcff, #e7f1f6);
+    }
+
+    .thumb.getnote::before {
+      background:
+        radial-gradient(circle at 50% 48%, rgba(201,83,69,.16), transparent 34%),
+        linear-gradient(180deg, rgba(255,255,255,.2), rgba(255,240,238,.7));
+    }
+
+    .thumb.getnote .icon-orb {
+      color: #9a3a31;
+      border-color: rgba(201,83,69,.22);
+      background: linear-gradient(145deg, #fffafa, #f7e9e6);
+    }
+
     .thumb.zhiyan {
       display: grid;
       place-items: center;
@@ -301,6 +435,8 @@
     }
 
     .zhiyan-preview {
+      position: relative;
+      z-index: 2;
       width: min(100%, 330px);
       min-height: 150px;
       border: 1px solid rgba(232, 98, 44, 0.18);
@@ -311,7 +447,6 @@
       align-content: center;
       gap: 8px;
       padding: 20px;
-      position: relative;
       overflow: hidden;
     }
 
@@ -362,6 +497,11 @@
     @keyframes zhiyanThumbFlame {
       from { transform: translateY(4px) scaleX(.98); opacity: .62; }
       to { transform: translateY(-4px) scaleX(1.05); opacity: .92; }
+    }
+
+    @keyframes iconOrbit {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
     }
 
     .card-body {
@@ -545,8 +685,14 @@
 
       <div class="grid">
         <article class="card">
-          <a class="thumb" href="./skill-stand/">
+          <a class="thumb has-icon" href="./skill-stand/" aria-label="打开能力看台">
             <img src="assets/home/skill-stand-preview.png" alt="颜汝能力看台页面预览">
+            <div class="icon-scene" aria-hidden="true">
+              <div class="icon-orb">
+                <svg viewBox="0 0 64 64"><path d="M16 46V18M16 18h16c8 0 14 6 14 14s-6 14-14 14H16"/><path d="M28 32h24M42 22l10 10-10 10"/></svg>
+              </div>
+              <span class="icon-label">能力入口</span>
+            </div>
           </a>
           <div class="card-body">
             <span class="tag">能力入口</span>
@@ -562,8 +708,14 @@
         </article>
 
         <article class="card">
-          <a class="thumb calabash" href="./calabash-automation/">
+          <a class="thumb has-icon calabash" href="./calabash-automation/" aria-label="打开七个葫芦娃自动化">
             <img src="assets/home/calabash-preview.png" alt="七个葫芦娃自动化预览">
+            <div class="icon-scene" aria-hidden="true">
+              <div class="icon-orb">
+                <svg viewBox="0 0 64 64"><path d="M20 18h24v12H20z"/><path d="M12 42h16v12H12zM36 42h16v12H36z"/><path d="M32 30v7M20 37h24"/></svg>
+              </div>
+              <span class="icon-label">自动化中控</span>
+            </div>
           </a>
           <div class="card-body">
             <span class="tag">自动化中控</span>
@@ -579,8 +731,14 @@
         </article>
 
         <article class="card">
-          <a class="thumb skillbox" href="./skillbox/">
+          <a class="thumb has-icon skillbox" href="./skillbox/" aria-label="打开颜汝的 AI 技能库">
             <img src="assets/home/skillbox-preview.png" alt="颜汝 Skills 网站预览">
+            <div class="icon-scene" aria-hidden="true">
+              <div class="icon-orb">
+                <svg viewBox="0 0 64 64"><path d="M18 16h28a6 6 0 0 1 6 6v26a6 6 0 0 1-6 6H18a6 6 0 0 1-6-6V22a6 6 0 0 1 6-6z"/><path d="M22 28h20M22 38h12"/><path d="M46 31l4 4-4 4M18 31l-4 4 4 4"/></svg>
+              </div>
+              <span class="icon-label">Skills 网站</span>
+            </div>
           </a>
           <div class="card-body">
             <span class="tag">Skills 网站</span>
@@ -596,8 +754,14 @@
         </article>
 
         <article class="card">
-          <a class="thumb getnote" href="./getnote-brain/">
+          <a class="thumb has-icon getnote" href="./getnote-brain/" aria-label="打开 Get笔记得到大脑">
             <img src="assets/home/getnote-preview.svg" alt="Get笔记得到大脑预览">
+            <div class="icon-scene" aria-hidden="true">
+              <div class="icon-orb">
+                <svg viewBox="0 0 64 64"><path d="M18 12h22l8 8v32H18z"/><path d="M40 12v10h10"/><path d="M24 30h18M24 39h18M24 48h10"/></svg>
+              </div>
+              <span class="icon-label">知识入口</span>
+            </div>
           </a>
           <div class="card-body">
             <span class="tag">知识入口</span>
