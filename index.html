@@ -436,6 +436,19 @@
       background: linear-gradient(145deg, #f7fffd, #dff8f3);
     }
 
+    .thumb.opc-agent::before {
+      background:
+        radial-gradient(circle at 42% 38%, rgba(118, 76, 255, .18), transparent 32%),
+        radial-gradient(circle at 72% 68%, rgba(33, 205, 226, .2), transparent 30%),
+        linear-gradient(180deg, rgba(255,255,255,.18), rgba(239,245,255,.76));
+    }
+
+    .thumb.opc-agent .icon-orb {
+      color: #3347a8;
+      border-color: rgba(82,106,255,.24);
+      background: linear-gradient(145deg, #fbfcff, #e8edff);
+    }
+
     .thumb.zhiyan {
       display: grid;
       place-items: center;
@@ -664,6 +677,7 @@
         <a href="./getnote-brain/">得到大脑</a>
         <a href="./skillbox/">Skills 网站</a>
         <a href="./douyin-feishu/">抖音飞书</a>
+        <a href="./opc-lead-agent/">OPC 获客</a>
         <a href="./zhiyan-tech/">智焰官网</a>
       </div>
     </nav>
@@ -672,7 +686,7 @@
       <section class="hero-copy">
         <span class="eyebrow">Codex / Skills / 自动化中控</span>
         <h1>把颜汝的 AI 能力放到一个公开页面</h1>
-        <p class="lead">这里不是作品陈列柜，而是一个可进入、可检索、可调用的 AI 工作台：能力看台负责找能力，葫芦娃自动化负责跑流程，得到大脑负责存素材，skills 网站负责沉淀方法，抖音飞书负责对标复盘，智焰官网负责对外展示。</p>
+        <p class="lead">这里不是作品陈列柜，而是一个可进入、可检索、可调用的 AI 工作台：能力看台负责找能力，葫芦娃自动化负责跑流程，得到大脑负责存素材，skills 网站负责沉淀方法，抖音飞书负责对标复盘，OPC 获客智能体负责全平台内容生成，智焰官网负责对外展示。</p>
         <div class="hero-actions">
           <a class="button primary" href="./skill-stand/">打开能力看台</a>
           <a class="button" href="./calabash-automation/">进入自动化中控</a>
@@ -693,8 +707,8 @@
 
     <section>
       <div class="section-head">
-        <h2>六个入口</h2>
-        <p>先把最常用的六块放在一个 GitHub Pages 页面里，后面可以继续往这里挂课程、文章包、视频发布包和 RPA 报告。</p>
+        <h2>七个入口</h2>
+        <p>先把最常用的七块放在一个 GitHub Pages 页面里，后面可以继续往这里挂课程、文章包、视频发布包和 RPA 报告。</p>
       </div>
 
       <div class="grid">
@@ -813,6 +827,28 @@
         </article>
 
         <article class="card">
+          <a class="thumb has-icon opc-agent" href="./opc-lead-agent/" aria-label="打开 OPC 获客智能体">
+            <div class="icon-scene" aria-hidden="true">
+              <div class="icon-orb">
+                <svg viewBox="0 0 64 64"><path d="M14 19h36v26H14z"/><path d="M22 27h18M22 35h12"/><path d="M46 15v12h6M46 49V37h6"/><path d="M10 32H4M60 32h-6"/><path d="M26 51h12"/></svg>
+              </div>
+              <span class="icon-label">OPC 获客</span>
+            </div>
+          </a>
+          <div class="card-body">
+            <span class="tag">获客智能体</span>
+            <h3>OPC 获客智能体</h3>
+            <p>从一个 IP 主题生成朋友圈、公众号、小红书、抖音、视频号、直播话术和风控清洗结果，已接入 Gemini API Key 输入。</p>
+            <ul class="list">
+              <li>浏览器本机保存 API Key，不写入 GitHub</li>
+              <li>支持知识库上传、视频分析、全平台内容批量生成</li>
+              <li>适合个人 IP、课程获客和私域转化内容生产</li>
+            </ul>
+            <a class="button primary" href="./opc-lead-agent/">打开智能体</a>
+          </div>
+        </article>
+
+        <article class="card">
           <a class="thumb zhiyan" href="./zhiyan-tech/" aria-label="打开智焰科技官网">
             <div class="zhiyan-preview">
               <span>智焰科技</span>
@@ -836,7 +872,7 @@
     </section>
 
     <section class="status" aria-label="当前发布状态">
-      <div class="metric"><strong>6</strong><span>已挂载页面入口</span></div>
+      <div class="metric"><strong>7</strong><span>已挂载页面入口</span></div>
       <div class="metric"><strong>12</strong><span>能力看台收录能力</span></div>
       <div class="metric"><strong>7</strong><span>葫芦娃自动化角色</span></div>
       <div class="metric"><strong>1</strong><span>统一 GitHub Pages 地址</span></div>

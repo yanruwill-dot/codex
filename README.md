@@ -21,6 +21,9 @@
 - [抖音抓取 → 飞书复盘系统](douyin-feishu/)  
   展示抖音对标账号抓取、爆款视频拆解、标题钩子、口播结构和飞书沉淀链路；已有真实抓取样本和飞书写入记录。
 
+- [OPC 获客智能体](opc-lead-agent/)  
+  用 Gemini API 生成朋友圈、公众号、小红书、抖音、视频号、直播话术和小红书风控清洗结果；API Key 保存在用户浏览器本机。
+
 - [智焰科技官网](zhiyan-tech/)  
   橙白版公司官网，加入首屏光晕、粒子漂浮、滚动入场、卡片扫光和悬浮动效。
 
@@ -34,6 +37,7 @@
 - `https://yanruwill-dot.github.io/codex/getnote-brain/`
 - `https://yanruwill-dot.github.io/codex/skillbox/`
 - `https://yanruwill-dot.github.io/codex/douyin-feishu/`
+- `https://yanruwill-dot.github.io/codex/opc-lead-agent/`
 - `https://yanruwill-dot.github.io/codex/zhiyan-tech/`
 - `https://yanruwill-dot.github.io/codex/advisor-council-studio/`
 
