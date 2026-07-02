@@ -40,8 +40,9 @@
     </header>
 
     <section class="notice">
-      <strong>线上页面用于长期展示。</strong>
-      <span>GitHub Pages 不能直接执行本地抓取和飞书写入；真实抓取在本机运行 `python3 app.py` 后执行，这里展示最近一批真实样本和完整链路。</span>
+      <strong>飞书已经打通。</strong>
+      <span>最近一次真实抓取在 2026-06-27 写入飞书表，当前页面用于长期展示样本和链路；继续抓取新账号时，在本机运行 `python3 app.py` 后会复用这套写入流程。</span>
+      <a class="inline-link" id="feishuSheetLink" href="https://www.feishu.cn/sheets/J5AQsSMTGhMHPQtrlsEcuprgn6c" target="_blank" rel="noreferrer">打开飞书表</a>
     </section>
 
     <section class="metrics" aria-label="样本指标">
@@ -105,14 +106,14 @@
     <section id="runbook" class="runbook">
       <article>
         <h2>本地抓取和写飞书</h2>
-        <p>在本机项目里运行后，就能调后端接口抓取、拆解、写 CSV / SQLite，并在飞书权限齐全时同步表格。</p>
+        <p>在本机项目里运行后，就能调后端接口抓取、拆解、写 CSV / SQLite，并同步到已创建的飞书表。</p>
         <pre><code>cd /Users/will/Desktop/00-AI资料/outputs/douyin-benchmark-system-20260627
 python3 app.py</code></pre>
       </article>
       <article>
-        <h2>飞书权限</h2>
-        <p>需要 Lark CLI 已登录，并开启表格创建和写入权限。权限不足时，本地页面会给出飞书开发者控制台链接。</p>
-        <a class="button" href="./feishu-auth.html">查看飞书权限说明</a>
+        <h2>飞书表状态</h2>
+        <p>数据库记录显示最近一次 `verified_douyin` 运行写入成功：`ok: true`，表格 `Sheet1`，共 23 行。</p>
+        <a class="button" href="https://www.feishu.cn/sheets/J5AQsSMTGhMHPQtrlsEcuprgn6c" target="_blank" rel="noreferrer">打开飞书表</a>
       </article>
     </section>
   </main>

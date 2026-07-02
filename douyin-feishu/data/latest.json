@@ -3,7 +3,7 @@
   "mode": "github_pages_static_snapshot",
   "scraped_at": "2026-06-27T10:15:46.351Z",
   "source_status": "static_snapshot",
-  "source_message": "GitHub Pages 展示最近真实抓取样本；实时抓取和写入飞书需要在本地运行 python3 app.py。",
+  "source_message": "已验证真实抖音抓取样本，并写入飞书表；继续抓取新账号时在本地运行 python3 app.py。",
   "account": {
     "name": "抖音-飞书对标样本库",
     "fans": 0,
@@ -328,8 +328,10 @@
     }
   ],
   "feishu": {
-    "blocked": "github_pages_static",
-    "url": "",
+    "ok": true,
+    "url": "https://www.feishu.cn/sheets/J5AQsSMTGhMHPQtrlsEcuprgn6c",
+    "sheet_name": "Sheet1",
+    "rows": 23,
     "csv_path": "本地项目 data/douyin_benchmark_*.csv",
     "local_command": "cd /Users/will/Desktop/00-AI资料/outputs/douyin-benchmark-system-20260627 && python3 app.py"
   },

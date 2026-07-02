@@ -208,6 +208,7 @@ h1 {
   display: flex;
   gap: 10px;
   align-items: baseline;
+  flex-wrap: wrap;
   margin-bottom: 14px;
   padding: 14px 16px;
   color: #d9f5f0;
@@ -216,6 +217,13 @@ h1 {
 
 .notice strong {
   color: var(--gold);
+}
+
+.inline-link {
+  color: var(--hot);
+  font-weight: 900;
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .metrics {
