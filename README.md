@@ -18,6 +18,9 @@
 - [颜汝的 AI 技能库](skillbox/)  
   可检索、可组合、可调用的 AI skills 与 MCP 能力网站。
 
+- [抖音抓取 → 飞书复盘系统](douyin-feishu/)  
+  展示抖音对标账号抓取、爆款视频拆解、标题钩子、口播结构和飞书沉淀链路；实时抓取与写飞书在本地运行。
+
 - [智焰科技官网](zhiyan-tech/)  
   橙白版公司官网，加入首屏光晕、粒子漂浮、滚动入场、卡片扫光和悬浮动效。
 
@@ -30,6 +33,7 @@
 - `https://yanruwill-dot.github.io/codex/calabash-automation/`
 - `https://yanruwill-dot.github.io/codex/getnote-brain/`
 - `https://yanruwill-dot.github.io/codex/skillbox/`
+- `https://yanruwill-dot.github.io/codex/douyin-feishu/`
 - `https://yanruwill-dot.github.io/codex/zhiyan-tech/`
 - `https://yanruwill-dot.github.io/codex/advisor-council-studio/`
 

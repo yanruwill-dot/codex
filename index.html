@@ -423,6 +423,19 @@
       background: linear-gradient(145deg, #fffafa, #f7e9e6);
     }
 
+    .thumb.douyin-feishu::before {
+      background:
+        radial-gradient(circle at 35% 42%, rgba(45,243,194,.24), transparent 32%),
+        radial-gradient(circle at 72% 62%, rgba(255,77,141,.18), transparent 30%),
+        linear-gradient(180deg, rgba(255,255,255,.16), rgba(232,250,246,.74));
+    }
+
+    .thumb.douyin-feishu .icon-orb {
+      color: #0b6d67;
+      border-color: rgba(45,243,194,.26);
+      background: linear-gradient(145deg, #f7fffd, #dff8f3);
+    }
+
     .thumb.zhiyan {
       display: grid;
       place-items: center;
@@ -650,6 +663,7 @@
         <a href="./calabash-automation/">七个葫芦娃自动化</a>
         <a href="./getnote-brain/">得到大脑</a>
         <a href="./skillbox/">Skills 网站</a>
+        <a href="./douyin-feishu/">抖音飞书</a>
         <a href="./zhiyan-tech/">智焰官网</a>
       </div>
     </nav>
@@ -658,7 +672,7 @@
       <section class="hero-copy">
         <span class="eyebrow">Codex / Skills / 自动化中控</span>
         <h1>把颜汝的 AI 能力放到一个公开页面</h1>
-        <p class="lead">这里不是作品陈列柜，而是一个可进入、可检索、可调用的 AI 工作台：能力看台负责找能力，葫芦娃自动化负责跑流程，得到大脑负责存素材，skills 网站负责沉淀方法，智焰官网负责对外展示。</p>
+        <p class="lead">这里不是作品陈列柜，而是一个可进入、可检索、可调用的 AI 工作台：能力看台负责找能力，葫芦娃自动化负责跑流程，得到大脑负责存素材，skills 网站负责沉淀方法，抖音飞书负责对标复盘，智焰官网负责对外展示。</p>
         <div class="hero-actions">
           <a class="button primary" href="./skill-stand/">打开能力看台</a>
           <a class="button" href="./calabash-automation/">进入自动化中控</a>
@@ -679,8 +693,8 @@
 
     <section>
       <div class="section-head">
-        <h2>五个入口</h2>
-        <p>先把最常用的五块放在一个 GitHub Pages 页面里，后面可以继续往这里挂课程、文章包、视频发布包和 RPA 报告。</p>
+        <h2>六个入口</h2>
+        <p>先把最常用的六块放在一个 GitHub Pages 页面里，后面可以继续往这里挂课程、文章包、视频发布包和 RPA 报告。</p>
       </div>
 
       <div class="grid">
@@ -777,6 +791,28 @@
         </article>
 
         <article class="card">
+          <a class="thumb has-icon douyin-feishu" href="./douyin-feishu/" aria-label="打开抖音抓取飞书复盘系统">
+            <div class="icon-scene" aria-hidden="true">
+              <div class="icon-orb">
+                <svg viewBox="0 0 64 64"><path d="M16 18h20a10 10 0 0 1 0 20H24v10"/><path d="M24 38h12"/><path d="M43 20h9M43 30h9M43 40h9"/><path d="M12 52h40"/></svg>
+              </div>
+              <span class="icon-label">抖音飞书</span>
+            </div>
+          </a>
+          <div class="card-body">
+            <span class="tag">对标复盘</span>
+            <h3>抖音抓取 → 飞书</h3>
+            <p>把抖音对标账号、爆款视频、互动指标、标题钩子、口播结构和可复刻脚本，沉淀到飞书复盘表。</p>
+            <ul class="list">
+              <li>线上展示最近真实抓取样本和拆解字段</li>
+              <li>本地运行后可抓取、导出 CSV、写入飞书</li>
+              <li>适合短视频、零售、本地获客和带货复盘</li>
+            </ul>
+            <a class="button primary" href="./douyin-feishu/">打开系统</a>
+          </div>
+        </article>
+
+        <article class="card">
           <a class="thumb zhiyan" href="./zhiyan-tech/" aria-label="打开智焰科技官网">
             <div class="zhiyan-preview">
               <span>智焰科技</span>
@@ -800,7 +836,7 @@
     </section>
 
     <section class="status" aria-label="当前发布状态">
-      <div class="metric"><strong>5</strong><span>已挂载页面入口</span></div>
+      <div class="metric"><strong>6</strong><span>已挂载页面入口</span></div>
       <div class="metric"><strong>12</strong><span>能力看台收录能力</span></div>
       <div class="metric"><strong>7</strong><span>葫芦娃自动化角色</span></div>
       <div class="metric"><strong>1</strong><span>统一 GitHub Pages 地址</span></div>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>飞书权限说明</title>
+  <link rel="stylesheet" href="./static/style.css">
+</head>
+<body>
+  <main class="shell">
+    <nav class="nav">
+      <a class="brand" href="./">CreatorBench OS</a>
+      <div class="nav-links">
+        <a href="./">返回看板</a>
+        <a href="../">总入口</a>
+      </div>
+    </nav>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">FEISHU / LARK SETUP</p>
+        <h1>飞书表格写入权限</h1>
+        <p class="lead">本地系统写飞书时，需要 Lark CLI 登录，并给应用开启 Drive 和 Sheets 权限。权限不足时，本地接口会返回开发者控制台链接。</p>
+      </div>
+      <section class="command-card">
+        <span class="live-dot">REQUIRED SCOPES</span>
+        <ol class="flow">
+          <li><b>1</b><span>drive:drive</span></li>
+          <li><b>2</b><span>sheets:spreadsheet</span></li>
+          <li><b>3</b><span>sheets:spreadsheet:create</span></li>
+          <li><b>4</b><span>发布应用版本后重新运行抓取</span></li>
+        </ol>
+      </section>
+    </section>
+    <section class="panel">
+      <div class="panel-head">
+        <h2>本地命令</h2>
+        <span>在 Codex 工作区执行</span>
+      </div>
+      <pre><code>cd /Users/will/Desktop/00-AI资料/outputs/douyin-benchmark-system-20260627
+python3 app.py</code></pre>
+    </section>
+  </main>
+</body>
+</html>

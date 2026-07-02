@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>抖音抓取 → 飞书复盘系统</title>
+  <link rel="stylesheet" href="./static/style.css">
+</head>
+<body>
+  <main class="shell">
+    <nav class="nav" aria-label="页面导航">
+      <a class="brand" href="../">YR Codex</a>
+      <div class="nav-links">
+        <a href="../">总入口</a>
+        <a href="#samples">样本拆解</a>
+        <a href="#runbook">本地运行</a>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <section class="hero-copy">
+        <p class="eyebrow">CreatorBench OS / Douyin to Feishu</p>
+        <h1>抖音抓取 → 飞书复盘系统</h1>
+        <p class="lead">把对标账号、爆款视频、互动指标、标题钩子、口播结构和可复刻脚本，沉淀成一个能继续运营的飞书表。</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#samples">查看样本拆解</a>
+          <a class="button" href="#runbook">看本地运行命令</a>
+        </div>
+      </section>
+
+      <section class="command-card" aria-label="工作流">
+        <span class="live-dot">STATIC SNAPSHOT</span>
+        <ol class="flow">
+          <li><b>1</b><span>输入抖音主页 / 视频候选</span></li>
+          <li><b>2</b><span>抓取标题、文案、点赞、评论、收藏、分享</span></li>
+          <li><b>3</b><span>拆标题、钩子、人群、痛点、复刻脚本</span></li>
+          <li><b>4</b><span>同步到飞书，进入复盘和选题池</span></li>
+        </ol>
+      </section>
+    </header>
+
+    <section class="notice">
+      <strong>线上页面用于长期展示。</strong>
+      <span>GitHub Pages 不能直接执行本地抓取和飞书写入；真实抓取在本机运行 `python3 app.py` 后执行，这里展示最近一批真实样本和完整链路。</span>
+    </section>
+
+    <section class="metrics" aria-label="样本指标">
+      <article><span>样本作品</span><strong id="works">0</strong><small>最近抓取样本</small></article>
+      <article><span>总互动</span><strong id="interactions">0</strong><small>赞评藏转合计</small></article>
+      <article><span>最高评论</span><strong id="topComments">0</strong><small>优先看讨论度</small></article>
+      <article><span>最高收藏</span><strong id="topCollects">0</strong><small>优先看可复用度</small></article>
+    </section>
+
+    <section class="dashboard">
+      <article class="panel">
+        <div class="panel-head">
+          <h2>系统适合做什么</h2>
+          <span id="sourceStatus">加载中</span>
+        </div>
+        <div class="use-grid">
+          <div><b>对标账号</b><p>把同行账号、达人账号、门店账号放进同一个候选池，先看数据，再看内容。</p></div>
+          <div><b>爆款拆解</b><p>按评论、收藏和分享排序，找到真正值得复刻的标题、选题和口播结构。</p></div>
+          <div><b>飞书沉淀</b><p>把每条作品拆成结构化字段，团队可以继续筛选、复盘、改写和拍摄。</p></div>
+        </div>
+      </article>
+
+      <article class="panel accent">
+        <div class="panel-head">
+          <h2>当前样本库</h2>
+          <span id="accountMeta">等待数据</span>
+        </div>
+        <p id="niche" class="big-copy">-</p>
+        <dl class="mini-list">
+          <div><dt>人设</dt><dd id="persona">-</dd></div>
+          <div><dt>商业模式</dt><dd id="business">-</dd></div>
+        </dl>
+      </article>
+    </section>
+
+    <section id="samples" class="panel table-panel">
+      <div class="panel-head">
+        <h2>作品数据与可复刻脚本</h2>
+        <span id="rowCount">0 条</span>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>标题</th>
+              <th>账号</th>
+              <th>互动</th>
+              <th>场景</th>
+              <th>痛点</th>
+              <th>标题方法</th>
+              <th>文案结构</th>
+              <th>可复刻脚本</th>
+              <th>拍摄建议</th>
+            </tr>
+          </thead>
+          <tbody id="videoRows"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="runbook" class="runbook">
+      <article>
+        <h2>本地抓取和写飞书</h2>
+        <p>在本机项目里运行后，就能调后端接口抓取、拆解、写 CSV / SQLite，并在飞书权限齐全时同步表格。</p>
+        <pre><code>cd /Users/will/Desktop/00-AI资料/outputs/douyin-benchmark-system-20260627
+python3 app.py</code></pre>
+      </article>
+      <article>
+        <h2>飞书权限</h2>
+        <p>需要 Lark CLI 已登录，并开启表格创建和写入权限。权限不足时，本地页面会给出飞书开发者控制台链接。</p>
+        <a class="button" href="./feishu-auth.html">查看飞书权限说明</a>
+      </article>
+    </section>
+  </main>
+
+  <script src="./static/app.js"></script>
+</body>
+</html>
