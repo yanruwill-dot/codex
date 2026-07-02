@@ -18,6 +18,9 @@
 - [颜汝的 AI 技能库](skillbox/)  
   可检索、可组合、可调用的 AI skills 与 MCP 能力网站。
 
+- [智焰科技官网](zhiyan-tech/)  
+  橙白版公司官网，加入首屏光晕、粒子漂浮、滚动入场、卡片扫光和悬浮动效。
+
 - [Advisor Council Studio](advisor-council-studio/)  
   五人顾问商业思考工作台，保留为历史入口。
 
@@ -27,6 +30,7 @@
 - `https://yanruwill-dot.github.io/codex/calabash-automation/`
 - `https://yanruwill-dot.github.io/codex/getnote-brain/`
 - `https://yanruwill-dot.github.io/codex/skillbox/`
+- `https://yanruwill-dot.github.io/codex/zhiyan-tech/`
 - `https://yanruwill-dot.github.io/codex/advisor-council-studio/`
 
 ## 说明
