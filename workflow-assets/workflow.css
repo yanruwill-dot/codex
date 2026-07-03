@@ -257,10 +257,100 @@ pre {
   line-height: 1.65;
 }
 
+.writer-grid {
+  display: grid;
+  grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+  gap: 18px;
+  align-items: start;
+}
+
+.writer-panel {
+  border: 1px solid rgba(31, 27, 22, .1);
+  background: rgba(255,255,255,.86);
+  border-radius: 8px;
+  padding: 18px;
+}
+
+.writer-panel label {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 14px;
+  font-weight: 900;
+}
+
+.writer-panel input,
+.writer-panel textarea,
+.writer-panel select {
+  width: 100%;
+  border: 1px solid rgba(31, 27, 22, .14);
+  border-radius: 8px;
+  padding: 12px;
+  background: #fff;
+  color: #181512;
+  font: inherit;
+  outline: none;
+}
+
+.writer-panel textarea {
+  min-height: 360px;
+  resize: vertical;
+  line-height: 1.7;
+}
+
+.writer-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.writer-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.writer-output {
+  min-height: 560px;
+  white-space: pre-wrap;
+  line-height: 1.8;
+  color: #2b251f;
+}
+
+.writer-empty {
+  min-height: 560px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: #7a6f64;
+  border: 1px dashed rgba(31, 27, 22, .18);
+  border-radius: 8px;
+  background: rgba(255,255,255,.54);
+}
+
+.title-stack {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.title-stack button {
+  border: 1px solid rgba(31, 27, 22, .12);
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px 12px;
+  text-align: left;
+  font-weight: 900;
+  color: #2a231c;
+  cursor: pointer;
+}
+
 @media (max-width: 860px) {
   .hero,
   .grid,
-  .image-pair {
+  .image-pair,
+  .writer-grid,
+  .writer-row {
     grid-template-columns: 1fr;
   }
 

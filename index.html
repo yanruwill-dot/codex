@@ -449,6 +449,19 @@
       background: linear-gradient(145deg, #fbfcff, #e8edff);
     }
 
+    .thumb.aistudio-opc::before {
+      background:
+        radial-gradient(circle at 36% 32%, rgba(66, 133, 244, .2), transparent 32%),
+        radial-gradient(circle at 70% 68%, rgba(251, 188, 5, .22), transparent 30%),
+        linear-gradient(180deg, rgba(255,255,255,.18), rgba(239,247,255,.78));
+    }
+
+    .thumb.aistudio-opc .icon-orb {
+      color: #1a5cc8;
+      border-color: rgba(66,133,244,.24);
+      background: linear-gradient(145deg, #fbfdff, #e2efff);
+    }
+
     .thumb.retail-pdp::before {
       background:
         radial-gradient(circle at 28% 34%, rgba(255, 118, 69, .2), transparent 34%),
@@ -732,6 +745,7 @@
         <a href="./skillbox/">Skills 网站</a>
         <a href="./douyin-feishu/">抖音飞书</a>
         <a href="./opc-lead-agent/">OPC 获客</a>
+        <a href="./aistudio-opc/">AIStudio OPC</a>
         <a href="./zhiyan-tech/">智焰官网</a>
         <a href="./wechat-publish-pipeline/">公众号发布</a>
       </div>
@@ -762,8 +776,8 @@
 
     <section>
       <div class="section-head">
-        <h2>十二个入口</h2>
-        <p>把最常用的十二块放在一个 GitHub Pages 页面里，后面继续挂课程、文章包、视频发布包、Hermes 多平台和 RPA 报告。</p>
+        <h2>十三个入口</h2>
+        <p>把最常用的十三块放在一个 GitHub Pages 页面里，后面继续挂课程、文章包、视频发布包、Hermes 多平台和 RPA 报告。</p>
       </div>
 
       <div class="grid">
@@ -904,6 +918,28 @@
         </article>
 
         <article class="card">
+          <a class="thumb has-icon aistudio-opc" href="./aistudio-opc/" aria-label="打开 AIStudio OPC 获客智能体">
+            <div class="icon-scene" aria-hidden="true">
+              <div class="icon-orb">
+                <svg viewBox="0 0 64 64"><path d="M14 18h36v28H14z"/><path d="M23 27h18M23 35h11"/><path d="M46 16l6 6-6 6"/><path d="M18 52h28"/></svg>
+              </div>
+              <span class="icon-label">AIStudio OPC</span>
+            </div>
+          </a>
+          <div class="card-body">
+            <span class="tag">AI Studio 原版</span>
+            <h3>AIStudio OPC 获客智能体</h3>
+            <p>保留原 AI Studio app 入口，和当前 GitHub Pages 版 OPC 分开：一个看原始工程，一个长期公开使用。</p>
+            <ul class="list">
+              <li>链接到 AI Studio 原版 app</li>
+              <li>同时保留 GitHub Pages 版 OPC</li>
+              <li>适合回看原始提示词和能力设计</li>
+            </ul>
+            <a class="button primary" href="./aistudio-opc/">打开 AIStudio OPC</a>
+          </div>
+        </article>
+
+        <article class="card">
           <a class="thumb zhiyan" href="./zhiyan-tech/" aria-label="打开智焰科技官网">
             <div class="zhiyan-preview">
               <span>智焰科技</span>
@@ -957,14 +993,14 @@
           </a>
           <div class="card-body">
             <span class="tag">公众号闭环</span>
-            <h3>公众号选题 + 图片 + 排版 + 发布</h3>
-            <p>把选题、标题、正文、Image API 配图、公众号安全排版、草稿保存、正式发布和公开页核验串成一条线。</p>
+            <h3>公众号文章生成器</h3>
+            <p>把别人文章或对标文章粘贴进去，直接生成新的公众号文章、标题候选、HTML 排版和 Image API 配图提示词。</p>
             <ul class="list">
+              <li>粘贴参考文章即可生成新稿</li>
               <li>图片必须走 Image API / Image2</li>
-              <li>区分草稿、已发表、公开页核验</li>
               <li>发布前清理内部标签和占位词</li>
             </ul>
-            <a class="button primary" href="./wechat-publish-pipeline/">打开流程</a>
+            <a class="button primary" href="./wechat-publish-pipeline/">打开写作器</a>
           </div>
         </article>
 
@@ -1037,7 +1073,7 @@
     </section>
 
     <section class="status" aria-label="当前发布状态">
-      <div class="metric"><strong>12</strong><span>已挂载页面入口</span></div>
+      <div class="metric"><strong>13</strong><span>已挂载页面入口</span></div>
       <div class="metric"><strong>12</strong><span>能力看台收录能力</span></div>
       <div class="metric"><strong>7</strong><span>葫芦娃自动化角色</span></div>
       <div class="metric"><strong>1</strong><span>统一 GitHub Pages 地址</span></div>
