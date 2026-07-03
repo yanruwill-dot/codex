@@ -462,6 +462,47 @@
       background: linear-gradient(145deg, #fffdf8, #ffe7d8);
     }
 
+    .thumb.wechat-flow::before,
+    .thumb.wechat-pack::before {
+      background:
+        radial-gradient(circle at 32% 30%, rgba(41, 170, 112, .2), transparent 32%),
+        radial-gradient(circle at 78% 70%, rgba(255, 177, 80, .22), transparent 30%),
+        linear-gradient(180deg, rgba(255,255,255,.18), rgba(239,252,246,.76));
+    }
+
+    .thumb.wechat-flow .icon-orb,
+    .thumb.wechat-pack .icon-orb {
+      color: #18764e;
+      border-color: rgba(41,170,112,.24);
+      background: linear-gradient(145deg, #f8fffb, #ddf7e8);
+    }
+
+    .thumb.hermes-cli::before {
+      background:
+        radial-gradient(circle at 26% 30%, rgba(24, 32, 54, .18), transparent 32%),
+        radial-gradient(circle at 76% 72%, rgba(82, 122, 255, .16), transparent 34%),
+        linear-gradient(180deg, rgba(255,255,255,.18), rgba(240,244,255,.78));
+    }
+
+    .thumb.hermes-cli .icon-orb {
+      color: #23336f;
+      border-color: rgba(82,122,255,.24);
+      background: linear-gradient(145deg, #fbfcff, #e4eaff);
+    }
+
+    .thumb.video-remix::before {
+      background:
+        radial-gradient(circle at 34% 30%, rgba(255, 74, 92, .2), transparent 32%),
+        radial-gradient(circle at 78% 72%, rgba(255, 207, 77, .24), transparent 34%),
+        linear-gradient(180deg, rgba(255,255,255,.18), rgba(255,243,242,.8));
+    }
+
+    .thumb.video-remix .icon-orb {
+      color: #9d2635;
+      border-color: rgba(255,74,92,.24);
+      background: linear-gradient(145deg, #fffafa, #ffe2e5);
+    }
+
     .thumb.zhiyan {
       display: grid;
       place-items: center;
@@ -692,6 +733,7 @@
         <a href="./douyin-feishu/">抖音飞书</a>
         <a href="./opc-lead-agent/">OPC 获客</a>
         <a href="./zhiyan-tech/">智焰官网</a>
+        <a href="./wechat-publish-pipeline/">公众号发布</a>
       </div>
     </nav>
 
@@ -699,7 +741,7 @@
       <section class="hero-copy">
         <span class="eyebrow">Codex / Skills / 自动化中控</span>
         <h1>把颜汝的 AI 能力放到一个公开页面</h1>
-        <p class="lead">这里不是作品陈列柜，而是一个可进入、可检索、可调用的 AI 工作台：能力看台负责找能力，葫芦娃自动化负责跑流程，得到大脑负责存素材，skills 网站负责沉淀方法，抖音飞书负责对标复盘，OPC 获客智能体负责全平台内容生成，智焰官网负责对外展示。</p>
+        <p class="lead">这里不是作品陈列柜，而是一个可进入、可检索、可调用的 AI 工作台：能力看台负责找能力，葫芦娃自动化负责跑流程，得到大脑负责存素材，skills 网站负责沉淀方法，抖音飞书负责对标复盘，OPC 获客智能体负责全平台内容生成，公众号与 Hermes 入口负责发布闭环。</p>
         <div class="hero-actions">
           <a class="button primary" href="./skill-stand/">打开能力看台</a>
           <a class="button" href="./calabash-automation/">进入自动化中控</a>
@@ -720,8 +762,8 @@
 
     <section>
       <div class="section-head">
-        <h2>七个入口</h2>
-        <p>先把最常用的七块放在一个 GitHub Pages 页面里，后面可以继续往这里挂课程、文章包、视频发布包和 RPA 报告。</p>
+        <h2>十二个入口</h2>
+        <p>把最常用的十二块放在一个 GitHub Pages 页面里，后面继续挂课程、文章包、视频发布包、Hermes 多平台和 RPA 报告。</p>
       </div>
 
       <div class="grid">
@@ -903,11 +945,99 @@
             <a class="button primary" href="./retail-pdp-copy-system/">打开系统</a>
           </div>
         </article>
+
+        <article class="card">
+          <a class="thumb has-icon wechat-flow" href="./wechat-publish-pipeline/" aria-label="打开公众号选题图片排版发布系统">
+            <div class="icon-scene" aria-hidden="true">
+              <div class="icon-orb">
+                <svg viewBox="0 0 64 64"><path d="M16 14h32v38H16z"/><path d="M22 24h20M22 32h14M22 40h20"/><path d="M48 20l6 4-6 4"/></svg>
+              </div>
+              <span class="icon-label">公众号发布</span>
+            </div>
+          </a>
+          <div class="card-body">
+            <span class="tag">公众号闭环</span>
+            <h3>公众号选题 + 图片 + 排版 + 发布</h3>
+            <p>把选题、标题、正文、Image API 配图、公众号安全排版、草稿保存、正式发布和公开页核验串成一条线。</p>
+            <ul class="list">
+              <li>图片必须走 Image API / Image2</li>
+              <li>区分草稿、已发表、公开页核验</li>
+              <li>发布前清理内部标签和占位词</li>
+            </ul>
+            <a class="button primary" href="./wechat-publish-pipeline/">打开流程</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <a class="thumb has-icon wechat-pack" href="./wechat-two-image-pack/" aria-label="打开公众号两张贴图工作流">
+            <div class="icon-scene" aria-hidden="true">
+              <div class="icon-orb">
+                <svg viewBox="0 0 64 64"><path d="M12 18h18v28H12zM34 18h18v28H34z"/><path d="M17 36l5-6 5 6M39 36l5-6 5 6"/><path d="M18 52h28"/></svg>
+              </div>
+              <span class="icon-label">两张贴图</span>
+            </div>
+          </a>
+          <div class="card-body">
+            <span class="tag">公众号贴图</span>
+            <h3>公众号选题 + 2 张图贴图</h3>
+            <p>轻量公众号工作流：一个强选题、一篇正文、两张 Image API 配图，一张首屏图，一张正文解释图。</p>
+            <ul class="list">
+              <li>页面内放入 2 张 Image2 示例图</li>
+              <li>固定贴图顺序和正文承接方式</li>
+              <li>适合快速做可发文章包</li>
+            </ul>
+            <a class="button primary" href="./wechat-two-image-pack/">打开贴图包</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <a class="thumb has-icon hermes-cli" href="./hermes-multipublish-cli/" aria-label="打开 Hermes 蚁小二 CLI 多平台发布">
+            <div class="icon-scene" aria-hidden="true">
+              <div class="icon-orb">
+                <svg viewBox="0 0 64 64"><path d="M14 18h36v28H14z"/><path d="M20 28l8 6-8 6"/><path d="M32 40h12"/><path d="M18 52h28"/></svg>
+              </div>
+              <span class="icon-label">Hermes CLI</span>
+            </div>
+          </a>
+          <div class="card-body">
+            <span class="tag">多平台发布</span>
+            <h3>蚁小二 CLI Hermes 多平台</h3>
+            <p>把公众号、小红书、抖音、视频号等内容交给 Hermes / 蚁小二 CLI，按平台分别记录成功、跳过和阻断。</p>
+            <ul class="list">
+              <li>API 优先，Playwright 兜底</li>
+              <li>先查账号状态，再发布内容</li>
+              <li>保存 publish_status 和平台回执</li>
+            </ul>
+            <a class="button primary" href="./hermes-multipublish-cli/">打开 Hermes</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <a class="thumb has-icon video-remix" href="./video-remix-workflow/" aria-label="打开一键视频改写工作流">
+            <div class="icon-scene" aria-hidden="true">
+              <div class="icon-orb">
+                <svg viewBox="0 0 64 64"><path d="M14 18h28v28H14z"/><path d="M42 26l10-6v24l-10-6z"/><path d="M23 26l10 6-10 6z"/><path d="M18 52h28"/></svg>
+              </div>
+              <span class="icon-label">视频改写</span>
+            </div>
+          </a>
+          <div class="card-body">
+            <span class="tag">视频生产</span>
+            <h3>一键修改别人视频</h3>
+            <p>对标视频不搬运，拆结构、换案例、换脚本、换分镜，生成新的口播、封面、字幕和发布素材。</p>
+            <ul class="list">
+              <li>只做授权素材或结构化改写</li>
+              <li>不提供去水印和侵权搬运流程</li>
+              <li>可接抖音飞书复盘和 Hermes 发布</li>
+            </ul>
+            <a class="button primary" href="./video-remix-workflow/">打开视频流程</a>
+          </div>
+        </article>
       </div>
     </section>
 
     <section class="status" aria-label="当前发布状态">
-      <div class="metric"><strong>8</strong><span>已挂载页面入口</span></div>
+      <div class="metric"><strong>12</strong><span>已挂载页面入口</span></div>
       <div class="metric"><strong>12</strong><span>能力看台收录能力</span></div>
       <div class="metric"><strong>7</strong><span>葫芦娃自动化角色</span></div>
       <div class="metric"><strong>1</strong><span>统一 GitHub Pages 地址</span></div>

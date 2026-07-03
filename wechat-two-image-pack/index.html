@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>公众号选题两张贴图工作流</title>
+  <link rel="stylesheet" href="../workflow-assets/workflow.css">
+</head>
+<body>
+  <main class="shell">
+    <nav class="topbar">
+      <a class="brand" href="../"><span class="mark">YR</span><span>颜汝 Codex 工作台</span></a>
+      <a class="back" href="../">返回总入口</a>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">WECHAT IMAGE PACK / 2 IMAGES</span>
+        <h1>公众号选题 + 2 张图 + 贴图</h1>
+        <p class="lead">适合轻量公众号：一个强选题、一篇正文、两张 Image API 配图。第一张做首屏/封面，第二张做正文解释或行动图，最后生成公众号可贴图版 HTML。</p>
+        <div class="actions">
+          <a class="button primary" href="../wechat-publish-pipeline/">查看完整发布链路</a>
+          <a class="button" href="../skill-stand/">打开能力看台</a>
+        </div>
+      </div>
+      <aside class="panel">
+        <div class="diagram">
+          <div class="node"><strong>题</strong><span>一个读者必须点开的选题。</span></div>
+          <div class="node"><strong>文</strong><span>短段落、强首屏、老板视角。</span></div>
+          <div class="node"><strong>图 1</strong><span>Image API 首图，负责停留。</span></div>
+          <div class="node"><strong>图 2</strong><span>Image API 解释图，负责理解和转发。</span></div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section">
+      <h2>两张 Image API 示例图</h2>
+      <p class="lead">下面两张来自本地已有 Image2 产物，用来固定“公众号贴图包”的版式感。正式执行新选题时重新调用 Image API 生成。</p>
+      <div class="image-pair">
+        <figure>
+          <img src="../workflow-assets/wechat-image-api-01.png" alt="Image API 公众号首图示例">
+          <figcaption>图 1：首屏视觉，用来承接标题和核心冲突</figcaption>
+        </figure>
+        <figure>
+          <img src="../workflow-assets/wechat-image-api-02.png" alt="Image API 公众号解释图示例">
+          <figcaption>图 2：正文解释图，用来拆结构和行动路径</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>输出清单</h2>
+      <div class="grid">
+        <div class="asset-card"><b>标题候选</b><p>3-5 个爆款标题，每个标题说明点击理由，不只概括文章。</p></div>
+        <div class="asset-card"><b>正文 HTML</b><p>公众号安全排版，图片可直接贴入，正文不出现内部素材标签。</p></div>
+        <div class="asset-card"><b>图片记录</b><p>保存 prompt、尺寸、生成文件和贴图顺序，方便下次复用。</p></div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

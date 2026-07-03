@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>公众号选题图片排版发布系统</title>
+  <link rel="stylesheet" href="../workflow-assets/workflow.css">
+</head>
+<body>
+  <main class="shell">
+    <nav class="topbar">
+      <a class="brand" href="../"><span class="mark">YR</span><span>颜汝 Codex 工作台</span></a>
+      <a class="back" href="../">返回总入口</a>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">WECHAT PIPELINE / IMAGE API FIRST</span>
+        <h1>公众号选题 + 图片 + 排版 + 发布</h1>
+        <p class="lead">把一篇公众号从选题判断、标题、正文、Image API 配图、HTML 排版、草稿保存、正式发表和公开页核验串成一条线。图片一律走 Image API / Image2，不用手工占位图冒充最终配图。</p>
+        <div class="actions">
+          <a class="button primary" href="../calabash-automation/">进入自动化中控</a>
+          <a class="button" href="../skillbox/">查看相关 Skills</a>
+        </div>
+      </div>
+      <aside class="panel">
+        <div class="diagram">
+          <div class="node"><strong>01</strong><span>找对标、定选题、给 3-5 个爆款标题候选。</span></div>
+          <div class="node"><strong>02</strong><span>正文按颜汝口吻写成可发布稿，不放内部标签。</span></div>
+          <div class="node"><strong>03</strong><span>Image API 生成封面和正文图，中文叠字要二次检查。</span></div>
+          <div class="node"><strong>04</strong><span>排版成公众号安全 HTML，走 API 或后台保存草稿，再核验。</span></div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section">
+      <h2>一键链路</h2>
+      <div class="grid">
+        <div class="step"><b>选题判断</b><p>输入行业、受众、目标和素材，先判断为什么值得写、读者焦虑是什么、标题怎么制造点击理由。</p></div>
+        <div class="step"><b>Image API 配图</b><p>封面图和正文图必须走 Image API / Image2，保留 prompt、生成结果和失败边界。</p></div>
+        <div class="step"><b>排版清理</b><p>删除“作者、封面、draft、placeholder”等内部词，正文只保留读者需要看的内容。</p></div>
+        <div class="step"><b>保存草稿</b><p>优先公众号官方 API；不可用时再走后台 UI，并截图保存草稿状态。</p></div>
+        <div class="step"><b>正式发布</b><p>只有用户明确说发表/发出去，才进入发布；遇到扫码、手机确认、实名拦截就停下说明。</p></div>
+        <div class="step"><b>公开核验</b><p>发布后必须拿公开页或后台状态回查，不能只说“应该发了”。</p></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>接口边界</h2>
+      <div class="warning">图片 API Key 不写进公开页面。实际执行时在本地或后端读取环境变量，前端入口只作为工作流说明和跳转中控。</div>
+    </section>
+  </main>
+</body>
+</html>

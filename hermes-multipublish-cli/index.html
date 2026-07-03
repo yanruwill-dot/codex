@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hermes 蚁小二 CLI 多平台发布</title>
+  <link rel="stylesheet" href="../workflow-assets/workflow.css">
+</head>
+<body>
+  <main class="shell">
+    <nav class="topbar">
+      <a class="brand" href="../"><span class="mark">YR</span><span>颜汝 Codex 工作台</span></a>
+      <a class="back" href="../">返回总入口</a>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">HERMES / YIXIAOER CLI</span>
+        <h1>蚁小二 CLI Hermes 多平台发布</h1>
+        <p class="lead">把公众号、视频号、小红书、抖音、快手、B 站等平台发布状态统一接入 Hermes：先查账号状态，再发内容，再分别记录成功、跳过和阻断原因。</p>
+        <div class="actions">
+          <a class="button primary" href="../opc-lead-agent/">生成全平台内容</a>
+          <a class="button" href="../douyin-feishu/">查看对标复盘</a>
+        </div>
+      </div>
+      <aside class="panel">
+        <pre>优先级：
+1. Hermes / 蚁小二 API
+2. 平台官方 API
+3. Playwright 后台兜底
+4. 人工确认阻断边界</pre>
+      </aside>
+    </section>
+
+    <section class="section">
+      <h2>CLI 作战顺序</h2>
+      <div class="grid">
+        <div class="command-card"><b>账号检查</b><p>先读账号状态：登录、实名、设备、代理、平台权限，不能把账号阻断当内容失败。</p></div>
+        <div class="command-card"><b>内容打包</b><p>每个平台拆出标题、正文、图片、视频、话题、封面和发布时间。</p></div>
+        <div class="command-card"><b>发布回执</b><p>记录 publish_status、平台原始返回、公开 URL 或需要人工处理的阻断。</p></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>本地约定</h2>
+      <div class="warning">优先读取本机 Hermes 环境配置，不在公开页面展示密钥。发布完成态要区分：本地包、后台草稿、已发表、公开页已核验。</div>
+    </section>
+  </main>
+</body>
+</html>
