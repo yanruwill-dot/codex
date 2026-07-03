@@ -449,6 +449,19 @@
       background: linear-gradient(145deg, #fbfcff, #e8edff);
     }
 
+    .thumb.retail-pdp::before {
+      background:
+        radial-gradient(circle at 28% 34%, rgba(255, 118, 69, .2), transparent 34%),
+        radial-gradient(circle at 76% 68%, rgba(33, 156, 118, .18), transparent 32%),
+        linear-gradient(180deg, rgba(255,255,255,.18), rgba(255,249,242,.78));
+    }
+
+    .thumb.retail-pdp .icon-orb {
+      color: #b64921;
+      border-color: rgba(255,118,69,.24);
+      background: linear-gradient(145deg, #fffdf8, #ffe7d8);
+    }
+
     .thumb.zhiyan {
       display: grid;
       place-items: center;
@@ -868,11 +881,33 @@
             <a class="button primary" href="./zhiyan-tech/">打开官网</a>
           </div>
         </article>
+
+        <article class="card">
+          <a class="thumb has-icon retail-pdp" href="./retail-pdp-copy-system/" aria-label="打开零售详情页文案生成系统">
+            <div class="icon-scene" aria-hidden="true">
+              <div class="icon-orb">
+                <svg viewBox="0 0 64 64"><path d="M14 18h36v34H14z"/><path d="M22 26h20M22 34h16M22 42h10"/><path d="M46 16l4 4-4 4"/><path d="M18 12h20"/></svg>
+              </div>
+              <span class="icon-label">零售 PDP</span>
+            </div>
+          </a>
+          <div class="card-body">
+            <span class="tag">零售详情页</span>
+            <h3>零售 PDP 文案系统</h3>
+            <p>面向电商、直播、小红书和货架电商的商品详情页文案工作台，从商品信息、图片识别、卖点拆解到爆款评分和详情页预览。</p>
+            <ul class="list">
+              <li>支持快速加载多零售品类样例</li>
+              <li>生成卖点、人群、完整文案、爆款评分和转化建议</li>
+              <li>附带 `/site`、`/detail`、`/xhs` 预览入口</li>
+            </ul>
+            <a class="button primary" href="./retail-pdp-copy-system/">打开系统</a>
+          </div>
+        </article>
       </div>
     </section>
 
     <section class="status" aria-label="当前发布状态">
-      <div class="metric"><strong>7</strong><span>已挂载页面入口</span></div>
+      <div class="metric"><strong>8</strong><span>已挂载页面入口</span></div>
       <div class="metric"><strong>12</strong><span>能力看台收录能力</span></div>
       <div class="metric"><strong>7</strong><span>葫芦娃自动化角色</span></div>
       <div class="metric"><strong>1</strong><span>统一 GitHub Pages 地址</span></div>
