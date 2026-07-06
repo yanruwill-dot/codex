@@ -226,6 +226,91 @@
       display: block;
     }
 
+    .hero-photos {
+      height: 100%;
+      min-height: 0;
+      display: grid;
+      grid-template-columns: 1.18fr .82fr;
+      grid-template-rows: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+      padding: 10px;
+      background:
+        radial-gradient(circle at 20% 18%, rgba(18,129,88,.16), transparent 32%),
+        linear-gradient(135deg, #f7faf6, #eef4ed);
+    }
+
+    .hero-photo-card,
+    .field-photo {
+      position: relative;
+      margin: 0;
+      min-width: 0;
+      overflow: hidden;
+      border: 1px solid rgba(18, 32, 24, .12);
+      border-radius: 8px;
+      background: #dfe6dc;
+    }
+
+    .hero-photo-card {
+      min-height: 0;
+      box-shadow: 0 14px 34px rgba(18, 32, 24, .14);
+    }
+
+    .hero-photo-card.large {
+      grid-row: span 2;
+    }
+
+    .hero-photo-card img,
+    .field-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .hero-photo-card span,
+    .field-photo span {
+      position: absolute;
+      left: 12px;
+      bottom: 12px;
+      max-width: calc(100% - 24px);
+      border-radius: 999px;
+      padding: 6px 10px;
+      color: #fff;
+      background: rgba(18, 32, 24, .72);
+      backdrop-filter: blur(10px);
+      font-size: 12px;
+      font-weight: 900;
+      line-height: 1.25;
+    }
+
+    .field-section {
+      margin: 8px 0 36px;
+    }
+
+    .field-gallery {
+      display: grid;
+      grid-template-columns: 1.18fr .82fr .82fr;
+      gap: 12px;
+    }
+
+    .field-photo {
+      min-height: 270px;
+      box-shadow: 0 12px 34px rgba(18, 32, 24, .08);
+    }
+
+    .field-photo.wide {
+      min-height: 330px;
+    }
+
+    .field-photo img {
+      object-position: center;
+      transition: transform .5s ease;
+    }
+
+    .field-photo:hover img {
+      transform: scale(1.025);
+    }
+
     .section-head {
       display: flex;
       align-items: end;
@@ -695,6 +780,14 @@
         min-height: 340px;
       }
 
+      .field-gallery {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .field-photo.wide {
+        grid-column: 1 / -1;
+      }
+
       .section-head {
         align-items: start;
         flex-direction: column;
@@ -727,6 +820,25 @@
       .card {
         grid-template-rows: 190px 1fr;
         min-height: auto;
+      }
+
+      .hero-photos,
+      .field-gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-photos {
+        height: auto;
+        grid-template-rows: repeat(3, 190px);
+      }
+
+      .hero-photo-card.large {
+        grid-row: auto;
+      }
+
+      .field-photo,
+      .field-photo.wide {
+        min-height: 230px;
       }
     }
   </style>
@@ -769,10 +881,44 @@
           <span class="url">yanruwill-dot.github.io/codex/skill-stand/</span>
         </div>
         <div class="hero-image">
-          <img src="assets/home/skill-stand-preview.png" alt="颜汝能力看台预览">
+          <div class="hero-photos" aria-label="AI 课堂与活动现场照片">
+            <figure class="hero-photo-card large">
+              <img src="assets/home/event-collage.jpg" alt="AI 课堂活动现场拼图">
+              <span>真实课堂与顾问交流</span>
+            </figure>
+            <figure class="hero-photo-card">
+              <img src="assets/home/workshop-room.jpg" alt="AI 课程现场讲解">
+              <span>线下实战课</span>
+            </figure>
+            <figure class="hero-photo-card">
+              <img src="assets/home/gold-rush-panel.jpg" alt="AI 活动嘉宾现场">
+              <span>行业活动现场</span>
+            </figure>
+          </div>
         </div>
       </a>
     </header>
+
+    <section class="field-section">
+      <div class="section-head">
+        <h2>真实课堂现场</h2>
+        <p>这些不是装饰图，是颜汝做 AI 课程、老板交流、行业分享和现场共创的真实场景，让入口页一眼看到人、内容和业务落地。</p>
+      </div>
+      <div class="field-gallery" aria-label="真实课堂和活动照片">
+        <figure class="field-photo wide">
+          <img src="assets/home/workshop-room.jpg" alt="线下 AI 课程现场">
+          <span>AI 课程现场 · 老板与团队一起听课</span>
+        </figure>
+        <figure class="field-photo">
+          <img src="assets/home/seminar-review.jpg" alt="AI 权力版图课程讲解">
+          <span>行业趋势拆解 · AI 权力版图</span>
+        </figure>
+        <figure class="field-photo">
+          <img src="assets/home/gold-rush-panel.jpg" alt="AI 先行者学院活动现场">
+          <span>活动现场 · AI 先行者学院</span>
+        </figure>
+      </div>
+    </section>
 
     <section>
       <div class="section-head">
