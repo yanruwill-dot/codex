@@ -24,9 +24,6 @@
 - [小红书抓取 → 飞书复盘系统](xhs-feishu/)
   作为抖音抓取旁边的小红书入口，承接关键词、笔记、评论、收藏、封面钩子和种草结构复盘。
 
-- [颜汝教学视频库](teaching-videos/)
-  收录最近产出的 AI 自动化、老板提问、小红书工作流、抖音自动化和 AI 案例讲解视频，GitHub Pages 可直接播放。
-
 - [OPC 获客智能体](opc-lead-agent/)  
   优先连接 GPT-5.5 auth 代理，兜底使用 OpenAI API Key，生成朋友圈、公众号、小红书、抖音、视频号、直播话术和小红书风控清洗结果。
 
@@ -44,7 +41,6 @@
 - `https://yanruwill-dot.github.io/codex/skillbox/`
 - `https://yanruwill-dot.github.io/codex/douyin-feishu/`
 - `https://yanruwill-dot.github.io/codex/xhs-feishu/`
-- `https://yanruwill-dot.github.io/codex/teaching-videos/`
 - `https://yanruwill-dot.github.io/codex/opc-lead-agent/`
 - `https://yanruwill-dot.github.io/codex/zhiyan-tech/`
 - `https://yanruwill-dot.github.io/codex/advisor-council-studio/`
