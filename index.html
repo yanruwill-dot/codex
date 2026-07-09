@@ -735,6 +735,108 @@
       width: 100%;
     }
 
+    .wins-section {
+      margin-top: 34px;
+    }
+
+    .wins-band {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,.94), rgba(248,252,248,.86)),
+        radial-gradient(circle at 12% 0%, rgba(18,129,88,.14), transparent 30%),
+        radial-gradient(circle at 88% 10%, rgba(184,132,43,.14), transparent 28%);
+      box-shadow: 0 14px 42px rgba(18, 32, 24, .08);
+      overflow: hidden;
+    }
+
+    .wins-top {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(360px, .92fr);
+      gap: 18px;
+      padding: 24px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .wins-top h2 {
+      margin: 0;
+      font-size: clamp(26px, 4.2vw, 44px);
+      line-height: 1.08;
+    }
+
+    .wins-top p {
+      margin: 12px 0 0;
+      max-width: 680px;
+      color: var(--muted);
+      line-height: 1.72;
+    }
+
+    .wins-metrics {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .win-metric {
+      min-height: 118px;
+      border: 1px solid rgba(18, 129, 88, .16);
+      border-radius: 8px;
+      background: rgba(255,255,255,.82);
+      padding: 16px;
+    }
+
+    .win-metric strong {
+      display: block;
+      font-size: 34px;
+      line-height: 1;
+      margin-bottom: 8px;
+      color: var(--green-dark);
+    }
+
+    .win-metric span {
+      color: var(--muted);
+      line-height: 1.45;
+      font-size: 14px;
+    }
+
+    .wins-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      padding: 18px 24px 24px;
+    }
+
+    .win-card {
+      min-height: 210px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255,255,255,.86);
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .win-card b {
+      font-size: 18px;
+      line-height: 1.24;
+    }
+
+    .win-card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: 14px;
+    }
+
+    .win-card a {
+      margin-top: auto;
+      width: fit-content;
+      color: var(--green-dark);
+      font-weight: 900;
+      border-bottom: 1px solid rgba(13,101,71,.35);
+    }
+
     .status {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -772,6 +874,7 @@
     @media (max-width: 980px) {
       .hero,
       .grid,
+      .wins-top,
       .status {
         grid-template-columns: 1fr;
       }
@@ -786,6 +889,10 @@
 
       .field-photo.wide {
         grid-column: 1 / -1;
+      }
+
+      .wins-grid {
+        grid-template-columns: 1fr 1fr;
       }
 
       .section-head {
@@ -815,6 +922,16 @@
 
       .lead {
         font-size: 16px;
+      }
+
+      .wins-top,
+      .wins-grid {
+        padding: 18px;
+      }
+
+      .wins-metrics,
+      .wins-grid {
+        grid-template-columns: 1fr;
       }
 
       .card {
@@ -1215,6 +1332,54 @@
             <a class="button primary" href="./video-remix-workflow/">打开视频流程</a>
           </div>
         </article>
+      </div>
+    </section>
+
+    <section class="wins-section" aria-label="公开战绩">
+      <div class="section-head">
+        <h2>公开战绩</h2>
+        <p>不是写在文档里的计划，而是已经沉淀到页面、台账、发布链路和公开链接里的结果。</p>
+      </div>
+      <div class="wins-band">
+        <div class="wins-top">
+          <div>
+            <span class="eyebrow">Proof / 截至 2026-07-09</span>
+            <h2>从内容生产到多平台发布，已经跑出一批可复用资产</h2>
+            <p>数据来自本地发布台账、GitHub Pages 仓库和自动化复盘记录：能打开的页面、能查到的公开链接、能复用的工作流，才算进这张战绩表。</p>
+          </div>
+          <div class="wins-metrics">
+            <div class="win-metric"><strong>224</strong><span>发布与内容台账记录，覆盖公众号、小红书、蚁小二和本地发布包。</span></div>
+            <div class="win-metric"><strong>40</strong><span>已发表或有公开页的记录，包含后台状态与公开链接核验。</span></div>
+            <div class="win-metric"><strong>38</strong><span>已归档公开链接，便于复盘标题、正文、图片和分发路径。</span></div>
+            <div class="win-metric"><strong>18</strong><span>当前 codex 仓库中的可打开子页面，统一挂在这个总控台。</span></div>
+          </div>
+        </div>
+        <div class="wins-grid">
+          <article class="win-card">
+            <span class="tag">GitHub Pages</span>
+            <b>零售 PDP 文案系统上线</b>
+            <p>商品详情页文案系统已做成长期可打开样机，并进入发布台账。</p>
+            <a href="./retail-pdp-copy-system/">打开样机</a>
+          </article>
+          <article class="win-card">
+            <span class="tag">Hermes / 蚁小二</span>
+            <b>多平台链路已跑通</b>
+            <p>公众号、小红书、百家号等平台按账号状态记录成功、跳过和阻断原因。</p>
+            <a href="./hermes-multipublish-cli/">看发布入口</a>
+          </article>
+          <article class="win-card">
+            <span class="tag">公众号</span>
+            <b>公开页核验成为标准动作</b>
+            <p>已发表内容不只看提交成功，还看后台状态、公开页标题、正文和图片加载。</p>
+            <a href="./wechat-publish-pipeline/">看公众号链路</a>
+          </article>
+          <article class="win-card">
+            <span class="tag">中台沉淀</span>
+            <b>能力入口集中到一个总控台</b>
+            <p>Skills、得到大脑、OPC、抖音飞书、视频改写和公众号生产线都从这里进入。</p>
+            <a href="./skill-stand/">看能力看台</a>
+          </article>
+        </div>
       </div>
     </section>
 
