@@ -525,6 +525,19 @@
       background: linear-gradient(145deg, #f7fffd, #dff8f3);
     }
 
+    .thumb.xhs-feishu::before {
+      background:
+        radial-gradient(circle at 34% 35%, rgba(255, 60, 88, .2), transparent 32%),
+        radial-gradient(circle at 74% 66%, rgba(255, 203, 76, .2), transparent 30%),
+        linear-gradient(180deg, rgba(255,255,255,.18), rgba(255,244,247,.78));
+    }
+
+    .thumb.xhs-feishu .icon-orb {
+      color: #b22d45;
+      border-color: rgba(255,60,88,.24);
+      background: linear-gradient(145deg, #fffafa, #ffe3e8);
+    }
+
     .thumb.opc-agent::before {
       background:
         radial-gradient(circle at 42% 38%, rgba(118, 76, 255, .18), transparent 32%),
@@ -603,6 +616,19 @@
       color: #9d2635;
       border-color: rgba(255,74,92,.24);
       background: linear-gradient(145deg, #fffafa, #ffe2e5);
+    }
+
+    .thumb.teaching-videos::before {
+      background:
+        radial-gradient(circle at 34% 30%, rgba(255, 126, 57, .24), transparent 32%),
+        radial-gradient(circle at 78% 72%, rgba(18, 129, 88, .2), transparent 34%),
+        linear-gradient(180deg, rgba(255,255,255,.18), rgba(255,248,238,.8));
+    }
+
+    .thumb.teaching-videos .icon-orb {
+      color: #a94b17;
+      border-color: rgba(255,126,57,.28);
+      background: linear-gradient(145deg, #fffaf4, #ffe9d4);
     }
 
     .thumb.zhiyan {
@@ -977,6 +1003,8 @@
         <a href="./getnote-brain/">得到大脑</a>
         <a href="./skillbox/">Skills 网站</a>
         <a href="./douyin-feishu/">抖音飞书</a>
+        <a href="./xhs-feishu/">小红书飞书</a>
+        <a href="./teaching-videos/">教学视频</a>
         <a href="./opc-lead-agent/">OPC 获客</a>
         <a href="./aistudio-opc/">AIStudio OPC</a>
         <a href="./zhiyan-tech/">智焰官网</a>
@@ -988,7 +1016,7 @@
       <section class="hero-copy">
         <span class="eyebrow">Codex / Skills / 自动化中控</span>
         <h1>把颜汝的 AI 能力放到一个公开页面</h1>
-        <p class="lead">这里不是作品陈列柜，而是一个可进入、可检索、可调用的 AI 工作台：能力看台负责找能力，葫芦娃自动化负责跑流程，得到大脑负责存素材，skills 网站负责沉淀方法，抖音飞书负责对标复盘，OPC 获客智能体负责全平台内容生成，公众号与 Hermes 入口负责发布闭环。</p>
+        <p class="lead">这里不是作品陈列柜，而是一个可进入、可检索、可调用的 AI 工作台：能力看台负责找能力，葫芦娃自动化负责跑流程，得到大脑负责存素材，skills 网站负责沉淀方法，抖音和小红书飞书负责对标复盘，教学视频库负责展示最终成片，公众号与 Hermes 入口负责发布闭环。</p>
         <div class="hero-actions">
           <a class="button primary" href="./skill-stand/">打开能力看台</a>
           <a class="button" href="./calabash-automation/">进入自动化中控</a>
@@ -1043,8 +1071,8 @@
 
     <section>
       <div class="section-head">
-        <h2>十三个入口</h2>
-        <p>把最常用的十三块放在一个 GitHub Pages 页面里，后面继续挂课程、文章包、视频发布包、Hermes 多平台和 RPA 报告。</p>
+        <h2>十五个入口</h2>
+        <p>把最常用的十五块放在一个 GitHub Pages 页面里，后面继续挂课程、文章包、视频发布包、Hermes 多平台和 RPA 报告。</p>
       </div>
 
       <div class="grid">
@@ -1159,6 +1187,28 @@
               <li>适合短视频、零售、本地获客和带货复盘</li>
             </ul>
             <a class="button primary" href="./douyin-feishu/">打开系统</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <a class="thumb has-icon xhs-feishu" href="./xhs-feishu/" aria-label="打开小红书抓取飞书复盘系统">
+            <div class="icon-scene" aria-hidden="true">
+              <div class="icon-orb">
+                <svg viewBox="0 0 64 64"><path d="M16 18h32v28H16z"/><path d="M24 28h16M24 36h10"/><path d="M20 52h24"/><path d="M46 18l6 6-6 6"/><path d="M18 14l-6 6 6 6"/></svg>
+              </div>
+              <span class="icon-label">小红书飞书</span>
+            </div>
+          </a>
+          <div class="card-body">
+            <span class="tag">种草复盘</span>
+            <h3>小红书抓取 → 飞书</h3>
+            <p>把小红书关键词、笔记、评论、收藏、封面钩子和种草结构，沉淀到飞书复盘看板，和抖音抓取并排使用。</p>
+            <ul class="list">
+              <li>本地 MediaCrawler 抓取小红书公开信息</li>
+              <li>拆封面、标题、正文结构和评论高频词</li>
+              <li>适合做种草选题、封面复盘和内容矩阵</li>
+            </ul>
+            <a class="button primary" href="./xhs-feishu/">打开系统</a>
           </div>
         </article>
 
@@ -1336,6 +1386,28 @@
             <a class="button primary" href="./video-remix-workflow/">打开视频流程</a>
           </div>
         </article>
+
+        <article class="card">
+          <a class="thumb has-icon teaching-videos" href="./teaching-videos/" aria-label="打开颜汝教学视频库">
+            <div class="icon-scene" aria-hidden="true">
+              <div class="icon-orb">
+                <svg viewBox="0 0 64 64"><path d="M14 18h36v28H14z"/><path d="M26 27l12 7-12 7z"/><path d="M18 52h28"/><path d="M50 22l6 4-6 4M50 34l6 4-6 4"/></svg>
+              </div>
+              <span class="icon-label">教学视频</span>
+            </div>
+          </a>
+          <div class="card-body">
+            <span class="tag">最终成片</span>
+            <h3>颜汝教学视频库</h3>
+            <p>把最后产出的 AI 自动化、老板提问、小红书工作流、抖音自动化和 AI 案例讲解视频放进中台，线上可直接播放。</p>
+            <ul class="list">
+              <li>收录 5 个已产出的教学 / 讲解视频</li>
+              <li>支持 GitHub Pages 直接播放</li>
+              <li>适合课程展示、复盘和继续分发</li>
+            </ul>
+            <a class="button primary" href="./teaching-videos/">打开视频库</a>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -1355,7 +1427,7 @@
             <div class="win-metric"><strong>224</strong><span>发布与内容台账记录，覆盖公众号、小红书、蚁小二和本地发布包。</span></div>
             <div class="win-metric"><strong>40</strong><span>已发表或有公开页的记录，包含后台状态与公开链接核验。</span></div>
             <div class="win-metric"><strong>38</strong><span>已归档公开链接，便于复盘标题、正文、图片和分发路径。</span></div>
-            <div class="win-metric"><strong>18</strong><span>当前 codex 仓库中的可打开子页面，统一挂在这个总控台。</span></div>
+            <div class="win-metric"><strong>19</strong><span>当前 codex 仓库中的可打开子页面，统一挂在这个总控台。</span></div>
           </div>
         </div>
         <div class="wins-grid">
@@ -1380,7 +1452,7 @@
           <article class="win-card">
             <span class="tag">中台沉淀</span>
             <b>能力入口集中到一个总控台</b>
-            <p>Skills、得到大脑、OPC、抖音飞书、视频改写和公众号生产线都从这里进入。</p>
+            <p>Skills、得到大脑、OPC、抖音飞书、教学视频、视频改写和公众号生产线都从这里进入。</p>
             <a href="./skill-stand/">看能力看台</a>
           </article>
         </div>
@@ -1388,7 +1460,7 @@
     </section>
 
     <section class="status" aria-label="当前发布状态">
-      <div class="metric"><strong>13</strong><span>已挂载页面入口</span></div>
+      <div class="metric"><strong>15</strong><span>已挂载页面入口</span></div>
       <div class="metric"><strong>12</strong><span>能力看台收录能力</span></div>
       <div class="metric"><strong>7</strong><span>葫芦娃自动化角色</span></div>
       <div class="metric"><strong>1</strong><span>统一 GitHub Pages 地址</span></div>

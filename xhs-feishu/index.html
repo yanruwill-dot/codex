@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>小红书抓取 → 飞书复盘系统</title>
+  <link rel="stylesheet" href="../douyin-feishu/static/style.css">
+</head>
+<body>
+  <main class="shell">
+    <nav class="nav" aria-label="页面导航">
+      <a class="brand" href="../">YR Codex</a>
+      <div class="nav-links">
+        <a href="../">总入口</a>
+        <a href="../douyin-feishu/">抖音抓取</a>
+        <a href="#runbook">本地运行</a>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <section class="hero-copy">
+        <p class="eyebrow">CreatorBench OS / Xiaohongshu to Feishu</p>
+        <h1>小红书抓取 → 飞书复盘系统</h1>
+        <p class="lead">把小红书关键词、笔记、评论、收藏、标题钩子、封面角度和可复刻结构，沉淀成和抖音并排的内容对标看板。</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#runbook">看本地运行命令</a>
+          <a class="button" href="../douyin-feishu/">旁边的抖音抓取</a>
+        </div>
+      </section>
+
+      <section class="command-card" aria-label="工作流">
+        <span class="live-dot">LOCAL CRAWLER</span>
+        <ol class="flow">
+          <li><b>1</b><span>输入小红书关键词、主页或笔记候选</span></li>
+          <li><b>2</b><span>抓取标题、正文、互动、评论和作者信息</span></li>
+          <li><b>3</b><span>拆封面、标题、人群、痛点和转化钩子</span></li>
+          <li><b>4</b><span>同步到飞书，进入选题池和内容复盘</span></li>
+        </ol>
+      </section>
+    </header>
+
+    <section class="notice">
+      <strong>和抖音抓取并排使用。</strong>
+      <span>小红书侧负责种草、封面和笔记结构；抖音侧负责口播、视频节奏和互动指标。两边都进入飞书后，才方便做统一复盘。</span>
+    </section>
+
+    <section class="metrics" aria-label="抓取范围">
+      <article><span>平台</span><strong>小红书</strong><small>关键词 / 笔记 / 作者</small></article>
+      <article><span>底层</span><strong>XHS</strong><small>MediaCrawler 本地抓取</small></article>
+      <article><span>去向</span><strong>飞书</strong><small>结构化复盘看板</small></article>
+      <article><span>状态</span><strong>本地</strong><small>登录态和风控需现场确认</small></article>
+    </section>
+
+    <section class="dashboard">
+      <article class="panel">
+        <div class="panel-head">
+          <h2>系统适合做什么</h2>
+          <span>小红书对标</span>
+        </div>
+        <div class="use-grid">
+          <div><b>封面拆解</b><p>看首图标题、视觉结构、强对比词和评论区真实关注点。</p></div>
+          <div><b>笔记复刻</b><p>把爆款笔记拆成开头、正文节奏、痛点表达、种草理由和行动句。</p></div>
+          <div><b>飞书沉淀</b><p>把小红书字段和抖音字段放到同一个中台，方便横向复盘。</p></div>
+        </div>
+      </article>
+
+      <article class="panel accent">
+        <div class="panel-head">
+          <h2>当前边界</h2>
+          <span>真实运行在本机</span>
+        </div>
+        <p class="big-copy">公开页面只作为中台入口；真正抓取依赖本机登录态、关键词配置、平台风控和飞书写入权限。</p>
+        <dl class="mini-list">
+          <div><dt>登录</dt><dd>小红书二维码或本地浏览器登录态。</dd></div>
+          <div><dt>输出</dt><dd>CSV / SQLite / DB，再按字段写入飞书。</dd></div>
+        </dl>
+      </article>
+    </section>
+
+    <section id="runbook" class="runbook">
+      <article>
+        <h2>本地抓取命令</h2>
+        <p>在本机 MediaCrawler 项目里运行。首次运行可能需要扫码登录，抓取前先确认关键词和保存方式。</p>
+        <pre><code>cd /Users/will/Desktop/02-项目代码/MediaCrawler
+python main.py --platform xhs --lt qrcode --type search
+python main.py --platform xhs --lt qrcode --type search --save_data_option sqlite</code></pre>
+      </article>
+      <article>
+        <h2>接入中台</h2>
+        <p>下一步把小红书输出字段对齐抖音飞书表：标题、封面钩子、正文结构、互动、评论高频词、可复刻脚本和发布建议。</p>
+        <a class="button" href="../douyin-feishu/">查看抖音抓取样板</a>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
