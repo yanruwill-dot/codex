@@ -1,16 +1,12 @@
 # OPC 获客智能体本机 Codex API
 
-OPC 页面默认直连本机 Codex Relay：
+OPC 页面默认直连本机 OPC Codex 适配器：
 
-`http://127.0.0.1:8787/api/openai`
+`http://127.0.0.1:8790/api/openai`
 
-如果本机 Relay 未配对，接口会返回：
+如果本机 OPC 适配器未启动，接口会不可用；启动后 `/status` 会返回 `ok: true`。
 
-```json
-{"error":{"code":"unauthorized","message":"Pair this device with the Codex Relay server."}}
-```
-
-完成配对后，前端会优先走本机 Codex API；不可用时才提示输入 OpenAI API Key 或自定义代理地址。
+启动适配器后，前端会优先走本机 Codex API；不可用时才提示输入 OpenAI API Key 或自定义代理地址。
 
 ## Endpoints
 
