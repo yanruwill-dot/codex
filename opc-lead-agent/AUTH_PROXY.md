@@ -1,16 +1,26 @@
-# OPC 获客智能体 Auth Proxy
+# OPC 获客智能体本机 Codex API
 
-GitHub Pages 是静态站点，不能直接读取本机 Codex 或 ChatGPT 登录态。要自动连接 GPT auth，请在同域或反向代理下提供 `/api/openai` 服务，前端会优先使用它；不可用时才提示输入 OpenAI API Key。
+OPC 页面默认直连本机 Codex Relay：
+
+`http://127.0.0.1:8787/api/openai`
+
+如果本机 Relay 未配对，接口会返回：
+
+```json
+{"error":{"code":"unauthorized","message":"Pair this device with the Codex Relay server."}}
+```
+
+完成配对后，前端会优先走本机 Codex API；不可用时才提示输入 OpenAI API Key 或自定义代理地址。
 
 ## Endpoints
 
-`GET /api/openai/status`
+`GET /status`
 
 ```json
 { "ok": true, "model": "gpt-5.5" }
 ```
 
-`POST /api/openai/responses`
+`POST /responses`
 
 Request:
 
@@ -29,7 +39,7 @@ Response may be a normal OpenAI Responses API payload, or a compact shape:
 { "output_text": "generated content" }
 ```
 
-`POST /api/openai/images`
+`POST /images`
 
 Request:
 

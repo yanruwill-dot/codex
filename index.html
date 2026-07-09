@@ -551,19 +551,6 @@
       background: linear-gradient(145deg, #fbfcff, #e8edff);
     }
 
-    .thumb.aistudio-opc::before {
-      background:
-        radial-gradient(circle at 36% 32%, rgba(66, 133, 244, .2), transparent 32%),
-        radial-gradient(circle at 70% 68%, rgba(251, 188, 5, .22), transparent 30%),
-        linear-gradient(180deg, rgba(255,255,255,.18), rgba(239,247,255,.78));
-    }
-
-    .thumb.aistudio-opc .icon-orb {
-      color: #1a5cc8;
-      border-color: rgba(66,133,244,.24);
-      background: linear-gradient(145deg, #fbfdff, #e2efff);
-    }
-
     .thumb.retail-pdp::before {
       background:
         radial-gradient(circle at 28% 34%, rgba(255, 118, 69, .2), transparent 34%),
@@ -575,21 +562,6 @@
       color: #b64921;
       border-color: rgba(255,118,69,.24);
       background: linear-gradient(145deg, #fffdf8, #ffe7d8);
-    }
-
-    .thumb.wechat-flow::before,
-    .thumb.wechat-pack::before {
-      background:
-        radial-gradient(circle at 32% 30%, rgba(41, 170, 112, .2), transparent 32%),
-        radial-gradient(circle at 78% 70%, rgba(255, 177, 80, .22), transparent 30%),
-        linear-gradient(180deg, rgba(255,255,255,.18), rgba(239,252,246,.76));
-    }
-
-    .thumb.wechat-flow .icon-orb,
-    .thumb.wechat-pack .icon-orb {
-      color: #18764e;
-      border-color: rgba(41,170,112,.24);
-      background: linear-gradient(145deg, #f8fffb, #ddf7e8);
     }
 
     .thumb.hermes-cli::before {
@@ -979,9 +951,7 @@
         <a href="./douyin-feishu/">抖音飞书</a>
         <a href="./xhs-feishu/">小红书飞书</a>
         <a href="./opc-lead-agent/">OPC 获客</a>
-        <a href="./aistudio-opc/">AIStudio OPC</a>
         <a href="./zhiyan-tech/">智焰官网</a>
-        <a href="./wechat-publish-pipeline/">公众号发布</a>
       </div>
     </nav>
 
@@ -989,7 +959,7 @@
       <section class="hero-copy">
         <span class="eyebrow">Codex / Skills / 自动化中控</span>
         <h1>把颜汝的 AI 能力放到一个公开页面</h1>
-        <p class="lead">这里不是作品陈列柜，而是一个可进入、可检索、可调用的 AI 工作台：能力看台负责找能力，葫芦娃自动化负责跑流程，得到大脑负责存素材，skills 网站负责沉淀方法，抖音和小红书飞书负责对标复盘，公众号与 Hermes 入口负责发布闭环。</p>
+        <p class="lead">这里不是作品陈列柜，而是一个可进入、可检索、可调用的 AI 工作台：能力看台负责找能力，葫芦娃自动化负责跑流程，得到大脑负责存素材，skills 网站负责沉淀方法，抖音和小红书飞书负责对标复盘，Hermes 入口负责发布闭环。</p>
         <div class="hero-actions">
           <a class="button primary" href="./skill-stand/">打开能力看台</a>
           <a class="button" href="./calabash-automation/">进入自动化中控</a>
@@ -1044,8 +1014,8 @@
 
     <section>
       <div class="section-head">
-        <h2>十三个入口</h2>
-        <p>把最常用的十三块放在一个 GitHub Pages 页面里，后面继续挂课程、文章包、Hermes 多平台和 RPA 报告。</p>
+        <h2>十个入口</h2>
+        <p>把最常用的十块放在一个 GitHub Pages 页面里，后面继续挂课程、文章包、Hermes 多平台和 RPA 报告。</p>
       </div>
 
       <div class="grid">
@@ -1197,35 +1167,13 @@
           <div class="card-body">
             <span class="tag">获客智能体</span>
             <h3>OPC 获客智能体</h3>
-            <p>从一个 IP 主题生成朋友圈、公众号、小红书、抖音、视频号、直播话术和风控清洗结果，已接入 GPT-5.5 auth 代理优先、OpenAI Key 兜底。</p>
+            <p>从一个 IP 主题生成朋友圈、公众号、小红书、抖音、视频号、直播话术和风控清洗结果，默认直连本机 Codex API。</p>
             <ul class="list">
-              <li>优先自动连接 `/api/openai`，没有代理才手动填 Key</li>
+              <li>优先自动连接本机 Codex API，未配对时给出明确提示</li>
               <li>支持知识库上传、视频分析、全平台内容批量生成</li>
               <li>适合个人 IP、课程获客和私域转化内容生产</li>
             </ul>
             <a class="button primary" href="./opc-lead-agent/">打开智能体</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <a class="thumb has-icon aistudio-opc" href="./aistudio-opc/" aria-label="打开 AIStudio OPC 获客智能体">
-            <div class="icon-scene" aria-hidden="true">
-              <div class="icon-orb">
-                <svg viewBox="0 0 64 64"><path d="M14 18h36v28H14z"/><path d="M23 27h18M23 35h11"/><path d="M46 16l6 6-6 6"/><path d="M18 52h28"/></svg>
-              </div>
-              <span class="icon-label">AIStudio OPC</span>
-            </div>
-          </a>
-          <div class="card-body">
-            <span class="tag">AI Studio 原版</span>
-            <h3>AIStudio OPC 获客智能体</h3>
-            <p>保留原 AI Studio app 入口，和当前 GitHub Pages 版 OPC 分开：一个看原始工程，一个长期公开使用。</p>
-            <ul class="list">
-              <li>链接到 AI Studio 原版 app</li>
-              <li>同时保留 GitHub Pages 版 OPC</li>
-              <li>适合回看原始提示词和能力设计</li>
-            </ul>
-            <a class="button primary" href="./aistudio-opc/">打开 AIStudio OPC</a>
           </div>
         </article>
 
@@ -1273,50 +1221,6 @@
         </article>
 
         <article class="card">
-          <a class="thumb has-icon wechat-flow" href="./wechat-publish-pipeline/" aria-label="打开公众号选题图片排版发布系统">
-            <div class="icon-scene" aria-hidden="true">
-              <div class="icon-orb">
-                <svg viewBox="0 0 64 64"><path d="M16 14h32v38H16z"/><path d="M22 24h20M22 32h14M22 40h20"/><path d="M48 20l6 4-6 4"/></svg>
-              </div>
-              <span class="icon-label">公众号发布</span>
-            </div>
-          </a>
-          <div class="card-body">
-            <span class="tag">公众号闭环</span>
-            <h3>公众号文章生成器</h3>
-            <p>把别人文章或对标文章粘贴进去，直接生成新的公众号文章、标题候选、HTML 排版和 Image API 配图提示词。</p>
-            <ul class="list">
-              <li>粘贴参考文章即可生成新稿</li>
-              <li>图片必须走 Image API / Image2</li>
-              <li>发布前清理内部标签和占位词</li>
-            </ul>
-            <a class="button primary" href="./wechat-publish-pipeline/">打开写作器</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <a class="thumb has-icon wechat-pack" href="./wechat-two-image-pack/" aria-label="打开公众号两张贴图工作流">
-            <div class="icon-scene" aria-hidden="true">
-              <div class="icon-orb">
-                <svg viewBox="0 0 64 64"><path d="M12 18h18v28H12zM34 18h18v28H34z"/><path d="M17 36l5-6 5 6M39 36l5-6 5 6"/><path d="M18 52h28"/></svg>
-              </div>
-              <span class="icon-label">两张贴图</span>
-            </div>
-          </a>
-          <div class="card-body">
-            <span class="tag">公众号贴图</span>
-            <h3>公众号选题 + 2 张图贴图</h3>
-            <p>轻量公众号工作流：一个强选题、一篇正文、两张 Image API 配图，一张首屏图，一张正文解释图。</p>
-            <ul class="list">
-              <li>页面内放入 2 张 Image2 示例图</li>
-              <li>固定贴图顺序和正文承接方式</li>
-              <li>适合快速做可发文章包</li>
-            </ul>
-            <a class="button primary" href="./wechat-two-image-pack/">打开贴图包</a>
-          </div>
-        </article>
-
-        <article class="card">
           <a class="thumb has-icon hermes-cli" href="./hermes-multipublish-cli/" aria-label="打开 Hermes 蚁小二 CLI 多平台发布">
             <div class="icon-scene" aria-hidden="true">
               <div class="icon-orb">
@@ -1357,7 +1261,7 @@
             <div class="win-metric"><strong>224</strong><span>发布与内容台账记录，覆盖公众号、小红书、蚁小二和本地发布包。</span></div>
             <div class="win-metric"><strong>40</strong><span>已发表或有公开页的记录，包含后台状态与公开链接核验。</span></div>
             <div class="win-metric"><strong>38</strong><span>已归档公开链接，便于复盘标题、正文、图片和分发路径。</span></div>
-            <div class="win-metric"><strong>14</strong><span>当前 codex 仓库中的可打开子页面，统一挂在这个总控台。</span></div>
+            <div class="win-metric"><strong>11</strong><span>当前 codex 仓库中的可打开子页面，统一挂在这个总控台。</span></div>
           </div>
         </div>
         <div class="wins-grid">
@@ -1374,15 +1278,9 @@
             <a href="./hermes-multipublish-cli/">看发布入口</a>
           </article>
           <article class="win-card">
-            <span class="tag">公众号</span>
-            <b>公开页核验成为标准动作</b>
-            <p>已发表内容不只看提交成功，还看后台状态、公开页标题、正文和图片加载。</p>
-            <a href="./wechat-publish-pipeline/">看公众号链路</a>
-          </article>
-          <article class="win-card">
             <span class="tag">中台沉淀</span>
             <b>能力入口集中到一个总控台</b>
-            <p>Skills、得到大脑、OPC、抖音飞书和公众号生产线都从这里进入。</p>
+            <p>Skills、得到大脑、OPC、抖音飞书和小红书飞书都从这里进入。</p>
             <a href="./skill-stand/">看能力看台</a>
           </article>
         </div>
@@ -1390,7 +1288,7 @@
     </section>
 
     <section class="status" aria-label="当前发布状态">
-      <div class="metric"><strong>13</strong><span>已挂载页面入口</span></div>
+      <div class="metric"><strong>10</strong><span>已挂载页面入口</span></div>
       <div class="metric"><strong>12</strong><span>能力看台收录能力</span></div>
       <div class="metric"><strong>7</strong><span>葫芦娃自动化角色</span></div>
       <div class="metric"><strong>1</strong><span>统一 GitHub Pages 地址</span></div>
