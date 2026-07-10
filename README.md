@@ -30,6 +30,9 @@
 - [智焰科技官网](zhiyan-tech/)  
   橙白版公司官网，加入首屏光晕、粒子漂浮、滚动入场、卡片扫光和悬浮动效。
 
+- [颜汝个人官网](yanru-official/)
+  展示颜汝的个人定位、经历、业务、方法论、长期使命与当前 OKR。
+
 - [Advisor Council Studio](advisor-council-studio/)  
   五人顾问商业思考工作台，保留为历史入口。
 
@@ -43,6 +46,7 @@
 - `https://yanruwill-dot.github.io/codex/xhs-feishu/`
 - `https://yanruwill-dot.github.io/codex/opc-lead-agent/`
 - `https://yanruwill-dot.github.io/codex/zhiyan-tech/`
+- `https://yanruwill-dot.github.io/codex/yanru-official/`
 - `https://yanruwill-dot.github.io/codex/advisor-council-studio/`
 
 ## 说明
