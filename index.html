@@ -551,6 +551,35 @@
       background: linear-gradient(145deg, #fbfcff, #e8edff);
     }
 
+    .thumb.yan-game::before {
+      background:
+        radial-gradient(circle at 30% 34%, rgba(255, 201, 40, .34), transparent 34%),
+        radial-gradient(circle at 76% 68%, rgba(231, 53, 42, .25), transparent 32%),
+        linear-gradient(145deg, rgba(15,16,18,.92), rgba(34,31,25,.86));
+    }
+
+    .thumb.yan-game .icon-scene {
+      color: #17130c;
+    }
+
+    .thumb.yan-game .icon-scene::before,
+    .thumb.yan-game .icon-scene::after {
+      border-color: rgba(255,201,40,.34);
+    }
+
+    .thumb.yan-game .icon-orb {
+      color: #17130c;
+      border-color: rgba(255,201,40,.52);
+      background: linear-gradient(145deg, #ffe46c, #f4a900);
+      box-shadow: 0 22px 46px rgba(0,0,0,.32), inset 0 0 0 1px rgba(255,255,255,.48);
+    }
+
+    .thumb.yan-game .icon-label {
+      color: #17130c;
+      border-color: rgba(255,201,40,.52);
+      background: rgba(255,225,103,.94);
+    }
+
     .thumb.retail-pdp::before {
       background:
         radial-gradient(circle at 28% 34%, rgba(255, 118, 69, .2), transparent 34%),
@@ -946,6 +975,7 @@
       <div class="nav-links">
         <a href="./skill-stand/">能力看台</a>
         <a href="./calabash-automation/">七个葫芦娃自动化</a>
+        <a href="https://yanruwill-dot.github.io/yan-teacher-ai-zombie-3d/" target="_blank" rel="noopener">颜老师3D游戏</a>
         <a href="./getnote-brain/">得到大脑</a>
         <a href="./skillbox/">Skills 网站</a>
         <a href="./douyin-feishu/">抖音飞书</a>
@@ -960,7 +990,7 @@
       <section class="hero-copy">
         <span class="eyebrow">Codex / Skills / 自动化中控</span>
         <h1>把颜汝的 AI 能力放到一个公开页面</h1>
-        <p class="lead">这里不是作品陈列柜，而是一个可进入、可检索、可调用的 AI 工作台：能力看台负责找能力，葫芦娃自动化负责跑流程，得到大脑负责存素材，skills 网站负责沉淀方法，抖音和小红书飞书负责对标复盘，Hermes 入口负责发布闭环。</p>
+        <p class="lead">这里不是作品陈列柜，而是一个可进入、可检索、可调用的 AI 工作台：能力看台负责找能力，葫芦娃自动化负责跑流程，颜老师 3D 游戏负责互动演示，得到大脑负责存素材，skills 网站负责沉淀方法，抖音和小红书飞书负责对标复盘，Hermes 入口负责发布闭环。</p>
         <div class="hero-actions">
           <a class="button primary" href="./skill-stand/">打开能力看台</a>
           <a class="button" href="./calabash-automation/">进入自动化中控</a>
@@ -1015,8 +1045,8 @@
 
     <section>
       <div class="section-head">
-        <h2>十个入口</h2>
-        <p>把最常用的十块放在一个 GitHub Pages 页面里，后面继续挂课程、文章包、Hermes 多平台和 RPA 报告。</p>
+        <h2>十二个入口</h2>
+        <p>把最常用的十二块放在一个 GitHub Pages 页面里，后面继续挂课程、文章包、Hermes 多平台和 RPA 报告。</p>
       </div>
 
       <div class="grid">
@@ -1063,6 +1093,28 @@
               <li>适合演示 AI 内容工厂的作战方式</li>
             </ul>
             <a class="button primary" href="./calabash-automation/">进入中控台</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <a class="thumb has-icon yan-game" href="https://yanruwill-dot.github.io/yan-teacher-ai-zombie-3d/" target="_blank" rel="noopener" aria-label="打开颜老师大战丧尸3D游戏">
+            <div class="icon-scene" aria-hidden="true">
+              <div class="icon-orb">
+                <svg viewBox="0 0 64 64"><path d="M14 25h36v23H14z"/><path d="M22 36h12M28 30v12"/><circle cx="42" cy="33" r="2.5"/><circle cx="47" cy="39" r="2.5"/><path d="M19 25l4-8h18l4 8"/></svg>
+              </div>
+              <span class="icon-label">3D AI GAME</span>
+            </div>
+          </a>
+          <div class="card-body">
+            <span class="tag">3D AI 游戏</span>
+            <h3>颜老师大战丧尸</h3>
+            <p>颜老师专属的 3D 积木风生存射击游戏，把提示词、知识库、AI 课程和智能体升级变成可玩的战斗系统。</p>
+            <ul class="list">
+              <li>3 张 180 × 132 大地图与 9 种专属怪物</li>
+              <li>提示词连发器、知识检索霰弹枪、智能体激光器</li>
+              <li>原创循环音乐、战斗音效和移动端触控</li>
+            </ul>
+            <a class="button primary" href="https://yanruwill-dot.github.io/yan-teacher-ai-zombie-3d/" target="_blank" rel="noopener">打开游戏</a>
           </div>
         </article>
 
@@ -1283,7 +1335,7 @@
             <div class="win-metric"><strong>224</strong><span>发布与内容台账记录，覆盖公众号、小红书、蚁小二和本地发布包。</span></div>
             <div class="win-metric"><strong>40</strong><span>已发表或有公开页的记录，包含后台状态与公开链接核验。</span></div>
             <div class="win-metric"><strong>38</strong><span>已归档公开链接，便于复盘标题、正文、图片和分发路径。</span></div>
-            <div class="win-metric"><strong>11</strong><span>当前 codex 仓库中的可打开子页面，统一挂在这个总控台。</span></div>
+            <div class="win-metric"><strong>12</strong><span>当前中台统一挂载的可打开页面与独立作品入口。</span></div>
           </div>
         </div>
         <div class="wins-grid">
@@ -1305,12 +1357,18 @@
             <p>Skills、得到大脑、OPC、抖音飞书和小红书飞书都从这里进入。</p>
             <a href="./skill-stand/">看能力看台</a>
           </article>
+          <article class="win-card">
+            <span class="tag">3D 互动作品</span>
+            <b>颜老师大战丧尸已上线</b>
+            <p>三张大型地图、九种怪物和三把 AI 武器已经做成可长期打开的网页游戏。</p>
+            <a href="https://yanruwill-dot.github.io/yan-teacher-ai-zombie-3d/" target="_blank" rel="noopener">进入游戏</a>
+          </article>
         </div>
       </div>
     </section>
 
     <section class="status" aria-label="当前发布状态">
-      <div class="metric"><strong>10</strong><span>已挂载页面入口</span></div>
+      <div class="metric"><strong>12</strong><span>已挂载页面入口</span></div>
       <div class="metric"><strong>12</strong><span>能力看台收录能力</span></div>
       <div class="metric"><strong>7</strong><span>葫芦娃自动化角色</span></div>
       <div class="metric"><strong>1</strong><span>统一 GitHub Pages 地址</span></div>
