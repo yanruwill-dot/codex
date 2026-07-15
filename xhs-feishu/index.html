@@ -17,6 +17,47 @@
       </div>
     </nav>
 
+    <section id="pet-trends" class="pet-feature" aria-labelledby="pet-trends-title">
+      <div class="pet-feature-head">
+        <div>
+          <p class="eyebrow">REAL XHS FEED / PET ECOMMERCE</p>
+          <h2 id="pet-trends-title">近期宠物电商爆款</h2>
+          <p class="pet-feature-intro">2026-07-15 从小红书推荐流真实抓取，筛选近一个月宠物用品帖子；点赞数为抓取时快照。</p>
+        </div>
+        <div class="pet-feature-kpi" aria-label="三条真实帖子">
+          <strong>3</strong>
+          <span>条真实帖子</span>
+        </div>
+      </div>
+
+      <div class="pet-note-grid">
+        <article class="pet-note-card">
+          <span class="pet-note-rank">01</span>
+          <p class="pet-note-category">狗玩具</p>
+          <h3>这玩具逗我都手拿把掐</h3>
+          <p class="pet-note-meta">甜心汤圆 · 2026-06-13</p>
+          <strong class="pet-note-likes">1.1 万赞</strong>
+          <a class="button" href="https://www.xiaohongshu.com/explore/6a2cd1e300000000060333da?xsec_token=ABECBE4FTMDZiYv2rtAPNccjZUiMiDXXobiMz4u6KGc54%3D&amp;xsec_source=pc_feed" target="_blank" rel="noopener noreferrer">打开小红书原文</a>
+        </article>
+        <article class="pet-note-card">
+          <span class="pet-note-rank">02</span>
+          <p class="pet-note-category">猫抓板</p>
+          <h3>养猫人一定没见过这样的猫抓板吧？</h3>
+          <p class="pet-note-meta">好想睡觉 · 2026-06-17</p>
+          <strong class="pet-note-likes">2866 赞</strong>
+          <a class="button" href="https://www.xiaohongshu.com/explore/6a3203ff00000000060200ca?xsec_token=ABRiGZ26Fk5njd4REBi_1Cpw2ITJYP3VeJJ6n7Sm5m8do%3D&amp;xsec_source=pc_feed" target="_blank" rel="noopener noreferrer">打开小红书原文</a>
+        </article>
+        <article class="pet-note-card">
+          <span class="pet-note-rank">03</span>
+          <p class="pet-note-category">猫砂盆</p>
+          <h3>怎么会有这么好看的猫砂盆</h3>
+          <p class="pet-note-meta">星爪宠物用品店 · 2026-06-16</p>
+          <strong class="pet-note-likes">1906 赞</strong>
+          <a class="button" href="https://www.xiaohongshu.com/explore/6a30d713000000001101e3bf?xsec_token=AB6QQdQhsOscwyr1BA-SwnFu5R3_SId05ZPqBn8UdHC5A%3D&amp;xsec_source=pc_feed" target="_blank" rel="noopener noreferrer">打开小红书原文</a>
+        </article>
+      </div>
+    </section>
+
     <header class="hero">
       <section class="hero-copy">
         <p class="eyebrow">CreatorBench OS / Xiaohongshu to Feishu</p>
@@ -77,34 +118,13 @@
       </article>
     </section>
 
-    <section id="runbook" class="runbook">
+    <section id="runbook" class="runbook single">
       <article>
         <h2>本地抓取命令</h2>
         <p>在本机 MediaCrawler 项目里运行。首次运行可能需要扫码登录，抓取前先确认关键词和保存方式。</p>
         <pre><code>cd /Users/will/Desktop/02-项目代码/MediaCrawler
 python main.py --platform xhs --lt qrcode --type search
 python main.py --platform xhs --lt qrcode --type search --save_data_option sqlite</code></pre>
-      </article>
-      <article>
-        <h2>近期宠物电商爆款</h2>
-        <p>2026-07-15 从小红书推荐流真实抓取，筛选近一个月宠物用品帖子；点赞数为抓取时快照。</p>
-        <dl class="mini-list">
-          <div>
-            <dt>狗玩具｜这玩具逗我都手拿把掐</dt>
-            <dd>甜心汤圆 · 2026-06-13 · 1.1 万赞</dd>
-            <dd><a class="button" href="https://www.xiaohongshu.com/explore/6a2cd1e300000000060333da?xsec_token=ABECBE4FTMDZiYv2rtAPNccjZUiMiDXXobiMz4u6KGc54%3D&amp;xsec_source=pc_feed" target="_blank" rel="noopener noreferrer">打开小红书原文</a></dd>
-          </div>
-          <div>
-            <dt>猫抓板｜养猫人一定没见过这样的猫抓板吧？</dt>
-            <dd>好想睡觉 · 2026-06-17 · 2866 赞</dd>
-            <dd><a class="button" href="https://www.xiaohongshu.com/explore/6a3203ff00000000060200ca?xsec_token=ABRiGZ26Fk5njd4REBi_1Cpw2ITJYP3VeJJ6n7Sm5m8do%3D&amp;xsec_source=pc_feed" target="_blank" rel="noopener noreferrer">打开小红书原文</a></dd>
-          </div>
-          <div>
-            <dt>猫砂盆｜怎么会有这么好看的猫砂盆</dt>
-            <dd>星爪宠物用品店 · 2026-06-16 · 1906 赞</dd>
-            <dd><a class="button" href="https://www.xiaohongshu.com/explore/6a30d713000000001101e3bf?xsec_token=AB6QQdQhsOscwyr1BA-SwnFu5R3_SId05ZPqBn8UdHC5A%3D&amp;xsec_source=pc_feed" target="_blank" rel="noopener noreferrer">打开小红书原文</a></dd>
-          </div>
-        </dl>
       </article>
     </section>
   </main>
