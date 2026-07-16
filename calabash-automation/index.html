@@ -1387,19 +1387,19 @@
   <div class="app">
     <nav class="rail" aria-label="主导航">
       <div class="mark">AI</div>
-      <button class="active" aria-label="作战室">
+      <button class="active" aria-label="作战室" data-nav-target="workspace" aria-current="page">
         <svg class="icon" viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/></svg>
       </button>
-      <button aria-label="任务">
+      <button aria-label="任务" data-nav-target="tasks">
         <svg class="icon" viewBox="0 0 24 24"><path d="M9 6h11"/><path d="M9 12h11"/><path d="M9 18h11"/><path d="M4 6h1"/><path d="M4 12h1"/><path d="M4 18h1"/></svg>
       </button>
-      <button aria-label="数据">
+      <button aria-label="数据" data-nav-target="data">
         <svg class="icon" viewBox="0 0 24 24"><path d="M4 19V5"/><path d="M4 19h16"/><path d="M8 16V9"/><path d="M13 16V6"/><path d="M18 16v-4"/></svg>
       </button>
-      <button aria-label="知识库">
+      <button aria-label="知识库" data-nav-target="knowledge">
         <svg class="icon" viewBox="0 0 24 24"><path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3z"/><path d="M8 8h7"/><path d="M8 12h6"/></svg>
       </button>
-      <button aria-label="设置">
+      <button aria-label="设置" data-nav-target="settings">
         <svg class="icon" viewBox="0 0 24 24"><path d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"/><path d="M4 12h2"/><path d="M18 12h2"/><path d="M12 4v2"/><path d="M12 18v2"/></svg>
       </button>
     </nav>
@@ -1423,7 +1423,7 @@
         </div>
       </header>
 
-      <section class="metrics" aria-label="核心指标">
+      <section class="metrics" id="data" aria-label="核心指标">
         <article class="metric"><small>在线智能体</small><strong id="metricOnline">6</strong><em>5 个协作智能体 + 复盘哥</em></article>
         <article class="metric"><small>今日已完成</small><strong id="metricDone">86</strong><em>比昨日 +18%</em></article>
         <article class="metric"><small>平均交付时长</small><strong>11m</strong><em>低于警戒线 34m</em></article>
@@ -1434,34 +1434,34 @@
         <article class="status-card" style="--status-color: var(--green);">
           <div class="status-card-head">
             <div class="status-title"><span class="buddy ready"></span><span>Hermes 网关</span></div>
-            <span class="status-badge">运行中</span>
+            <span class="status-badge" id="publishChannelState">待检测</span>
           </div>
           <div class="status-lines">
-            <span>进程：<b>pid 740</b>，gateway_state：<b>running</b></span>
-            <span>平台：飞书 <b>connected</b>，微信 <b>connected</b></span>
-            <span>配置：蚁小二、微信、OpenAI/Image2 关键项均已读取，不显示密钥</span>
+            <span id="publishChannelDetail">请在“设置”里检查真实发布通道。</span>
+            <span>公开页面不会连接访问者电脑上的本地服务。</span>
+            <span>检测成功后才显示蚁小二和小红书的实时状态。</span>
           </div>
         </article>
         <article class="status-card" style="--status-color: var(--cyan);">
           <div class="status-card-head">
-            <div class="status-title"><span class="buddy working"></span><span>Codex 工作台</span></div>
-            <span class="status-badge">在线</span>
+            <div class="status-title"><span class="buddy working"></span><span>当前环境</span></div>
+            <span class="status-badge" id="environmentMode">正在识别</span>
           </div>
           <div class="status-lines">
-            <span>CLI：<b>codex-cli 0.139.0</b></span>
-            <span>规则：notify=[]，浏览器后端 <b>iab</b>，不接管主 Mac</span>
-            <span>服务：Codex app、app-server、CodeGraph/LSP 进程已检测到</span>
+            <span id="environmentDescription">正在识别当前打开方式。</span>
+            <span>页面运行：<b>浏览器端静态控制台</b></span>
+            <span>状态原则：只显示本次检测结果，不沿用历史进程状态。</span>
           </div>
         </article>
         <article class="status-card" style="--status-color: var(--amber);">
           <div class="status-card-head">
             <div class="status-title"><span class="buddy review"></span><span>我的当前状态</span></div>
-            <span class="status-badge">正在验收</span>
+            <span class="status-badge">页面就绪</span>
           </div>
           <div class="status-lines">
-            <span>当前页面：<b>agent-kanban-system/index.html</b></span>
-            <span>打开方式：Codex 内置浏览器 file 页面</span>
-            <span>最近动作：读取本机状态，更新智能体看板视觉与状态区</span>
+            <span>当前页面：<b>七个葫芦娃自动化中控台</b></span>
+            <span>左侧导航可以直达作战室、任务、数据、知识库和设置。</span>
+            <span>发布功能会先检查真实通道，不再显示过期在线状态。</span>
             <span class="tool-links">
               <a href="industry-hotspot-html-factory.html" target="_blank">行业热点 HTML 工厂</a>
               <a href="industry-hotspot-solution.html" target="_blank">整体方案 HTML</a>
@@ -1470,7 +1470,7 @@
         </article>
       </section>
 
-      <section class="workspace">
+      <section class="workspace" id="workspace">
         <div class="office-card">
           <div class="section-head">
             <h2>数字办公室</h2>
@@ -1544,7 +1544,7 @@
         </div>
       </section>
 
-      <section class="board">
+      <section class="board" id="tasks">
         <div class="section-head">
           <h2>任务看板</h2>
           <span>按钮流转是可操作的，适合演示和二次开发</span>
@@ -1634,7 +1634,14 @@
     const office = document.getElementById("office");
     const columnsEl = document.getElementById("columns");
     const toast = document.getElementById("toast");
-    const publishApiBase = "http://127.0.0.1:8788/api";
+    function getPublishApiBase() {
+      const configured = new URLSearchParams(location.search).get("publishApi");
+      if (configured && (location.protocol !== "https:" || configured.startsWith("https://"))) {
+        return configured.replace(/\/$/, "");
+      }
+      const isLocal = location.protocol === "file:" || ["localhost", "127.0.0.1"].includes(location.hostname);
+      return isLocal ? "http://127.0.0.1:8788/api" : "";
+    }
     let selectedAgent = agents[0];
     const dollSprites = [
       "assets/calabash-dolls/transparent-glasses/doll-red.png",
@@ -1770,7 +1777,24 @@
       document.getElementById("publishStatus").textContent = message;
     }
 
+    function syncEnvironmentStatus() {
+      const isLocal = location.protocol === "file:" || ["localhost", "127.0.0.1"].includes(location.hostname);
+      document.getElementById("environmentMode").textContent = isLocal ? "本机模式" : "公开页面";
+      document.getElementById("environmentDescription").textContent = isLocal
+        ? "可以检测这台电脑上的本地发布代理。"
+        : "当前为 GitHub 公开页面，可查看与演示；真实发布需要本机代理或已配置的 HTTPS 接口。";
+      if (!getPublishApiBase()) {
+        document.getElementById("publishChannelState").textContent = "需本机连接";
+        document.getElementById("publishChannelDetail").textContent = "公开页面未配置发布接口，当前不会发起无效的本机请求。";
+      }
+    }
+
     async function checkPublishStatus() {
+      const publishApiBase = getPublishApiBase();
+      if (!publishApiBase) {
+        setPublishStatus("当前是公开页面，不能连接你电脑上的本地发布代理。\n请在本机打开中控台并启动发布代理；公开页仍可查看任务、热点和产出。");
+        return;
+      }
       setPublishStatus("正在检查本地发布代理、蚁小二账号和小红书登录态...");
       try {
         const response = await fetch(`${publishApiBase}/status`);
@@ -1788,6 +1812,11 @@
     }
 
     async function runPublisherAction(target) {
+      const publishApiBase = getPublishApiBase();
+      if (!publishApiBase) {
+        setPublishStatus("当前是公开页面，真实发布功能未连接。\n请在本机中控台完成发布，避免把访问者电脑误当成服务器。");
+        return;
+      }
       const industry = document.getElementById("publishIndustry").value || "education";
       const rawMode = document.getElementById("publishMode").value || "dry-run";
       const mode = rawMode === "staged" ? ["d", "r", "a", "f", "t"].join("") : rawMode;
@@ -1977,6 +2006,25 @@
       window.toastTimer = setTimeout(() => toast.classList.remove("show"), 1800);
     }
 
+    function activateNavigation(target, button) {
+      document.querySelectorAll(".rail [data-nav-target]").forEach(item => {
+        const active = item === button;
+        item.classList.toggle("active", active);
+        if (active) item.setAttribute("aria-current", "page");
+        else item.removeAttribute("aria-current");
+      });
+      if (target === "settings") {
+        selectAgent("publisher");
+        document.getElementById("publishConsole").scrollIntoView({ behavior: "smooth", block: "center" });
+        return;
+      }
+      if (target === "knowledge") {
+        document.getElementById("artifacts").scrollIntoView({ behavior: "smooth", block: "center" });
+        return;
+      }
+      document.getElementById(target)?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
     document.getElementById("dispatchForm").addEventListener("submit", event => {
       event.preventDefault();
       const teamMap = {
@@ -2016,6 +2064,9 @@
     document.querySelectorAll("[data-publish-target]").forEach(button => {
       button.addEventListener("click", () => runPublisherAction(button.dataset.publishTarget));
     });
+    document.querySelectorAll(".rail [data-nav-target]").forEach(button => {
+      button.addEventListener("click", () => activateNavigation(button.dataset.navTarget, button));
+    });
 
     setInterval(() => {
       const value = 70 + Math.round(Math.random() * 8);
@@ -2027,6 +2078,7 @@
     renderBoard();
     renderIndustryLab();
     selectAgent("brand");
+    syncEnvironmentStatus();
   </script>
 </body>
 </html>
