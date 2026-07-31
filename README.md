@@ -6,6 +6,9 @@
 
 ## 当前页面
 
+- [颜汝内容数据中台](media-data-dashboard/)
+  汇总所有作品、真实平台指标、效果好与效果差内容，并提供爆款分析、发布前预测和时间回测。
+
 - [颜汝能力看台](skill-stand/)  
   按场景整理 Seedance Prompt Skill、公众号、Image2、小红书、视频发布、知识库和 Codex 自我进化等能力。
 
@@ -38,6 +41,7 @@
 
 ## 公开 URL
 
+- `https://yanruwill-dot.github.io/codex/media-data-dashboard/`
 - `https://yanruwill-dot.github.io/codex/skill-stand/`
 - `https://yanruwill-dot.github.io/codex/calabash-automation/`
 - `https://yanruwill-dot.github.io/codex/getnote-brain/`

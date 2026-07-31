@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5f5f7" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>颜汝内容数据中台</title>
+    <link rel="stylesheet" href="./styles.css?v=20260731-1" />
+  </head>
+  <body class="media-mode">
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar">
+        <div class="brand">
+          <span class="brand-mark">颜</span>
+          <div><strong>颜汝 AI 获客大脑</strong><small>YANRU ACQUISITION OS</small></div>
+        </div>
+
+        <nav class="side-nav" aria-label="主导航">
+          <button class="active" data-view="media">
+            <span class="nav-icon">数</span><b>数据中台</b>
+          </button>
+        </nav>
+
+        <div class="side-bottom">
+          <button class="system-status" id="apiStatusButton"><span></span><div><b id="systemStatusTitle">正在连接 API</b><small id="systemStatusDetail">读取真实运行状态</small></div></button>
+          <button class="profile">
+            <span>颜</span><div><b>颜汝 Studio</b><small>管理员</small></div><i>···</i>
+          </button>
+        </div>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <button class="menu-button" id="menuButton" aria-label="打开菜单">☰</button>
+          <div class="breadcrumb"><a class="codex-home-link" href="../">Codex 工作台</a><i>/</i><b id="breadcrumbCurrent">内容数据中台</b></div>
+          <div class="top-actions">
+            <button class="icon-button" aria-label="搜索">⌕</button>
+            <button class="icon-button notification" aria-label="通知">♧<i></i></button>
+            <button class="help-button">帮助中心</button>
+          </div>
+        </header>
+
+        <div class="workspace">
+          <section class="project-bar reveal" style="--delay: 0ms">
+            <div class="project-info">
+              <div class="project-title-row">
+                <span class="project-kicker">获客项目</span>
+                <h1>四行业内容获客计划</h1>
+                <span class="running-pill"><i></i>运行中</span>
+              </div>
+              <div class="project-meta">
+                <span>负责人：<b class="avatar-mini">颜</b><strong>颜汝</strong></span>
+                <i></i>
+                <span>启动日期：<strong>2026-07-27</strong></span>
+                <i></i>
+                <span>核心目标：<strong>持续被目标客户看见</strong></span>
+              </div>
+            </div>
+            <div class="project-actions">
+              <button class="outline-button" id="projectSwitcher">⌄ <span>切换项目</span></button>
+              <button class="soft-button" id="apiConsoleButton">◉ API 状态</button>
+              <button class="soft-button" data-modal="edit">✎ 编辑项目</button>
+              <button class="primary-button" data-modal="new">＋ 新建项目</button>
+            </div>
+            <div class="project-menu" id="projectMenu">
+              <button class="selected"><span>四行业内容获客计划</span><i>✓</i></button>
+              <button><span>境内行业内容计划</span></button>
+              <button><span>跨境行业增长计划</span></button>
+            </div>
+          </section>
+
+          <section class="dashboard view-panel" data-view-panel="planning">
+            <div class="left-column">
+              <article class="panel strategy-panel reveal" style="--delay: 100ms">
+                <div class="panel-head">
+                  <div class="panel-title"><span class="title-icon blue">⌁</span><div><h2>获客增长主线</h2><p>只围绕“被看见 → 被信任 → 主动咨询”</p></div></div>
+                  <div class="panel-actions"><span class="updated" id="overviewUpdated">正在同步</span><button data-edit="strategy">✎ 编辑</button></div>
+                </div>
+                <div class="strategy-body">
+                  <div class="strategy-col">
+                    <h3><span></span>核心目标</h3>
+                    <div class="objective-list">
+                      <button class="objective active" data-objective="0">
+                        <i>01</i><div><b>持续被目标客户看见</b><p>每天稳定产出和分发，不再靠临时想起。</p></div>
+                      </button>
+                      <button class="objective" data-objective="1">
+                        <i>02</i><div><b>建立垂直行业专业认知</b><p>按教育、保险、制造业和新零售的真实业务边界，形成可信标签。</p></div>
+                      </button>
+                      <button class="objective" data-objective="2">
+                        <i>03</i><div><b>把公域注意力变成咨询</b><p>每条内容绑定具体赠品、关键词和承接入口。</p></div>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="strategy-divider"></div>
+                  <div class="strategy-col">
+                    <h3><span></span>增长策略</h3>
+                    <div class="strategy-list" id="strategyList">
+                      <div><span>选题</span><p>按当前行业与境内 / 跨境场景筛选需求，确定一个高相关选题。</p><b>每日</b></div>
+                      <div><span>内容</span><p>同一业务问题讲清适用条件、真实步骤与合规边界，再适配多端内容。</p><b>1 → 3</b></div>
+                      <div><span>发布</span><p>固定时间进入小红书、公众号、抖音矩阵，并回查真实状态。</p><b>3 平台</b></div>
+                      <div><span>承接</span><p>用资料包关键词收口，记录来源和意向，进入人工跟进。</p><b>可追踪</b></div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <div class="plan-pair">
+                <article class="panel compact-panel reveal" style="--delay: 180ms">
+                  <div class="panel-head">
+                    <div class="panel-title"><span class="title-icon violet">季</span><div><h2>季度流量重点</h2><p>Q3 · 建立稳定内容流水线</p></div></div>
+                    <button class="icon-edit" data-edit="quarter">✎</button>
+                  </div>
+                  <div class="focus-banner"><span>核心指标</span><b>每周 15 条有效内容</b><small>优先稳定，不赌单条爆款</small></div>
+                  <div class="progress-row">
+                    <div><span>选题库</span><b>68%</b></div><div class="progress"><i style="width: 68%"></i></div>
+                  </div>
+                  <ul class="check-list">
+                    <li class="done"><i>✓</i><span><b>建立四行业需求监控</b><small>境内与跨境场景分开归档，每日更新</small></span></li>
+                    <li><i></i><span><b>跑通一题三发</b><small>图文、长文、短视频同源生产</small></span></li>
+                    <li><i></i><span><b>建立线索归因表</b><small>知道哪条内容带来真实咨询</small></span></li>
+                  </ul>
+                </article>
+
+                <article class="panel compact-panel reveal" style="--delay: 260ms">
+                  <div class="panel-head">
+                    <div class="panel-title"><span class="title-icon cyan">月</span><div><h2>本月执行清单</h2><p>7 月 · 先把获客闭环跑顺</p></div></div>
+                    <button class="icon-edit" data-edit="month">✎</button>
+                  </div>
+                  <div class="month-score"><div><b>21</b><span>/ 30 天</span></div><p>本月连续运行</p><i>70%</i></div>
+                  <ul class="task-list">
+                    <li><span class="task-date">每天</span><p>3 个当前行业需求 → 1 个主选题</p><b class="green">自动</b></li>
+                    <li><span class="task-date">周一</span><p>生成本周 15 条内容计划</p><b class="blue">进行中</b></li>
+                    <li><span class="task-date">周三</span><p>复盘互动、私信与咨询来源</p><b>待执行</b></li>
+                    <li><span class="task-date">周五</span><p>淘汰低效栏目，补充新钩子</p><b>待执行</b></li>
+                  </ul>
+                </article>
+              </div>
+            </div>
+
+            <aside class="right-column">
+              <article class="panel calendar-panel reveal" style="--delay: 160ms">
+                <div class="panel-head">
+                  <div class="panel-title"><span class="title-icon orange">日</span><div><h2>获客日历</h2><p>今天该发什么、做什么</p></div></div>
+                  <button class="icon-edit" data-edit="calendar">✎</button>
+                </div>
+
+                <div class="calendar-nav">
+                  <button id="prevMonth">‹</button>
+                  <strong id="calendarMonth">2026 年 7 月</strong>
+                  <button id="nextMonth">›</button>
+                  <button class="today-button" id="todayButton">今天</button>
+                </div>
+                <div class="week-row"><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span><span>日</span></div>
+                <div class="calendar-grid" id="calendarGrid"></div>
+
+                <div class="day-events">
+                  <div class="events-head"><div><span id="selectedDate">07 月 27 日</span><b>今日动作</b></div><small id="eventCount">3 项</small></div>
+                  <div id="eventsList">
+                    <button class="event-item blue-event"><i></i><div><b>发布：产品出海前先核对市场、合规与履约</b><small>10:30 · 小红书图文</small></div><span>待发</span></button>
+                    <button class="event-item violet-event"><i></i><div><b>复用：改写公众号深度版</b><small>14:00 · 微信公众号</small></div><span>生成中</span></button>
+                    <button class="event-item green-event"><i></i><div><b>回查：昨日内容咨询数据</b><small>18:30 · 线索归因</small></div><span>自动</span></button>
+                  </div>
+                </div>
+                <button class="calendar-cta" data-modal="task"><span>＋ 添加获客动作</span><small>交给系统按时执行</small></button>
+              </article>
+            </aside>
+          </section>
+
+          <section class="module-page view-panel" data-view-panel="overview">
+            <div class="module-hero">
+              <div><span>REAL-TIME ACQUISITION</span><h2>获客总览</h2><p>把选题、内容、发布与线索放在一张实时经营图里。</p></div>
+              <button class="primary-button" data-open-view="topics">进入选题中心</button>
+            </div>
+            <div class="metric-grid">
+              <article><small>已验证选题</small><b id="metricTopics">—</b><span>真实选题库</span></article>
+              <article><small>内容草稿</small><b id="metricDrafts">—</b><span id="metricWeeklyDrafts">本周 — 条</span></article>
+              <article><small>发布任务</small><b id="metricJobs">—</b><span>运行中队列</span></article>
+              <article><small>获客线索</small><b id="metricLeads">—</b><span id="metricWeeklyLeads">本周 — 条</span></article>
+            </div>
+            <div class="module-grid">
+              <article class="module-card wide"><div class="module-card-head"><div><h3>最近选题</h3><p>来自真实选题接口</p></div><button data-open-view="topics">查看全部</button></div><div class="record-list" id="overviewTopics"></div></article>
+              <article class="module-card"><div class="module-card-head"><div><h3>系统连接</h3><p>各 API 当前状态</p></div><button id="refreshOverview">刷新</button></div><div class="endpoint-list compact" id="overviewEndpoints"></div></article>
+            </div>
+          </section>
+
+          <section class="module-page view-panel media-control active" data-view-panel="media">
+            <div class="media-command">
+              <div class="media-command-copy">
+                <span>自动选题 × 自动内容 × 自动发布</span>
+                <h2>看清哪条内容有效，下一条就照着做。</h2>
+                <p>所有作品数据、好内容和差内容，都放在这一页。</p>
+                <div class="media-sync-line">
+                  <i></i><b id="mediaSyncState">正在读取真实数据</b>
+                  <span id="mediaSyncTime">—</span>
+                </div>
+              </div>
+              <div class="media-command-actions">
+                <button class="media-secondary-button" id="exportMediaButton">导出数据</button>
+                <button class="media-primary-button" id="refreshMediaButton">刷新数据</button>
+              </div>
+            </div>
+
+            <nav class="media-page-tabs" aria-label="内容数据视图">
+              <button class="active" data-media-tab="brain">数据总览</button>
+              <button data-media-tab="decision">数据判断</button>
+              <button data-media-tab="viral">爆款分析</button>
+            </nav>
+
+            <section class="data-dashboard" data-media-tab-panel="brain" aria-live="polite">
+              <header class="data-dashboard-head">
+                <div>
+                  <small>内容数据总览</small>
+                  <h3>你只要看这 6 个数</h3>
+                  <p id="brainStatusDetail">正在读取真实平台数据。</p>
+                </div>
+                <span class="data-sync-state" id="brainSystemState"><i></i>正在更新</span>
+              </header>
+
+              <div class="data-kpi-grid" aria-label="内容经营核心数据">
+                <article class="data-kpi-card">
+                  <small>接通平台</small><b id="brainPerceptionValue">—</b>
+                  <p id="brainPerceptionDetail">正在读取</p>
+                </article>
+                <article class="data-kpi-card">
+                  <small>有数据作品</small><b id="brainJudgementValue">—</b>
+                  <p id="brainJudgementDetail">正在读取</p>
+                </article>
+                <article class="data-kpi-card">
+                  <small>可比较作品</small><b id="brainGenerationValue">—</b>
+                  <p id="brainGenerationDetail">正在计算</p>
+                </article>
+                <article class="data-kpi-card good">
+                  <small>效果好</small><b id="brainDistributionValue">—</b>
+                  <p id="brainDistributionDetail">值得继续做</p>
+                </article>
+                <article class="data-kpi-card bad">
+                  <small>效果差</small><b id="brainLearningValue">—</b>
+                  <p id="brainLearningDetail">建议停掉或重做</p>
+                </article>
+                <article class="data-kpi-card primary">
+                  <small>总播放 / 阅读</small><b id="brainTotalViews">—</b>
+                  <p id="brainTotalInteractions">正在汇总互动</p>
+                </article>
+              </div>
+
+              <div class="data-dashboard-lower">
+                <article class="data-takeaway">
+                  <small>一句话结论</small>
+                  <h4 id="brainActionTitle">正在判断哪些内容值得继续做</h4>
+                  <p id="brainActionProof">只比较同平台、发布满 48 小时的作品。</p>
+                  <span id="brainActionSource">真实平台数据</span>
+                  <div class="data-takeaway-actions">
+                    <button type="button" data-brain-action-tab="decision">看效果好和差</button>
+                    <button type="button" data-brain-action-tab="viral">看爆款原因</button>
+                  </div>
+                </article>
+
+                <section class="data-platform-panel">
+                  <header>
+                    <div><small>各平台表现</small><h3>数据从哪里来</h3></div>
+                    <span id="brainEvidenceTime">—</span>
+                  </header>
+                  <div class="data-platform-list" id="brainEvidenceList">
+                    <div class="empty-state"><b>正在读取平台数据</b><span>数据到达后按平台显示。</span></div>
+                  </div>
+                </section>
+              </div>
+            </section>
+
+            <div data-media-tab-panel="decision" hidden>
+              <section class="media-thesis" aria-live="polite">
+                <small>当前最强信号</small>
+                <h3 id="mediaCoreInsight">正在找出最值得复制的内容</h3>
+                <p id="mediaInsightProof">只比较同一平台内的真实表现，避免拿不同平台的数字硬比。</p>
+              </section>
+
+              <div class="media-decision-grid">
+                <section class="media-decision-panel">
+                  <header>
+                    <div><span>继续做</span><h3>效果好</h3></div>
+                    <b id="mediaGoodCount">—</b>
+                  </header>
+                  <p>平台前 20%。保留它的结构，再换相邻主题测试。</p>
+                  <div class="media-decision-list" id="mediaGoodList"></div>
+                </section>
+
+                <section class="media-decision-panel bad">
+                  <header>
+                    <div><span>先停掉</span><h3>效果差</h3></div>
+                    <b id="mediaStopCount">—</b>
+                  </header>
+                  <p>显著低于平台中位数。先改标题和首屏，不要重复发。</p>
+                  <div class="media-decision-list" id="mediaBadList"></div>
+                </section>
+              </div>
+
+              <details class="media-raw">
+                <summary><span>完整数据</span><small>搜索、筛选和导出全部作品</small></summary>
+                <section class="media-table-panel">
+                  <div class="media-table-head">
+                    <div>
+                      <h3>作品数据</h3>
+                      <p id="mediaResultSummary">正在加载全部作品</p>
+                    </div>
+                    <div class="media-source-switch" aria-label="数据范围">
+                      <button class="active" data-media-source="metrics">已回传作品</button>
+                      <button data-media-source="all">全部发布记录</button>
+                    </div>
+                  </div>
+                  <div class="media-toolbar">
+                    <label><span>搜索</span><input id="mediaSearch" type="search" placeholder="搜索标题、主题或账号" /></label>
+                    <label><span>平台</span><select id="mediaPlatformFilter"><option value="all">全部平台</option></select></label>
+                    <label><span>状态</span><select id="mediaStatusFilter"><option value="all">全部状态</option><option value="已回传">已回传</option><option value="等待回传">等待回传</option><option value="失败">发布失败</option></select></label>
+                  </div>
+                  <div class="media-table-wrap">
+                    <table class="media-table">
+                      <thead><tr><th>作品</th><th>平台</th><th>阅读/播放</th><th>互动</th><th>数据状态</th><th>诊断</th></tr></thead>
+                      <tbody id="mediaTableBody"></tbody>
+                    </table>
+                  </div>
+                </section>
+              </details>
+            </div>
+
+            <section class="media-analysis-view" data-media-tab-panel="viral" hidden>
+              <header class="viral-heading">
+                <div>
+                  <small>从结果反推结构</small>
+                  <h3>为什么会爆。</h3>
+                  <p>先从历史高表现内容提取共同点，再用发布后的真实数据回测。</p>
+                </div>
+                <span id="viralModelState">正在训练</span>
+              </header>
+
+              <div class="viral-grid">
+                <article class="viral-panel">
+                  <header><div><small>历史证据</small><h4>爆款的共同原因</h4></div><span>动态更新</span></header>
+                  <div class="viral-cause-list" id="viralCauseList"></div>
+                </article>
+
+                <article class="viral-panel predictor-panel">
+                  <header><div><small>发布之前</small><h4>预判这条内容</h4></div><span>不承诺播放量</span></header>
+                  <form class="viral-predict-form" id="viralPredictForm">
+                    <label class="viral-title-field"><span>标题或第一句话</span><input id="viralTitle" maxlength="80" required placeholder="把准备发布的标题粘贴到这里" /></label>
+                    <label><span>平台</span><select id="viralPlatform"><option value="抖音">抖音</option><option value="小红书">小红书</option></select></label>
+                    <label><span>形式</span><select id="viralContentType"><option value="video">视频</option><option value="note">图文</option></select></label>
+                    <button type="submit">预判表现</button>
+                  </form>
+                  <div class="viral-result" id="viralPredictionResult">
+                    <div><small>结构潜力</small><b>—</b><span>/ 100</span></div>
+                    <p>填入标题后，会告诉你为什么可能有效，以及最该补什么。</p>
+                  </div>
+                </article>
+              </div>
+
+              <article class="viral-backtest">
+                <div class="viral-backtest-copy">
+                  <small>四段时间回测</small>
+                  <h4>模型可信度</h4>
+                  <p id="viralBacktestVerdict">正在用较早作品训练、较新作品验证。</p>
+                </div>
+                <div class="viral-backtest-metrics">
+                  <div><small>验证样本</small><b id="viralBacktestSamples">—</b></div>
+                  <div><small>命中率</small><b id="viralBacktestPrecision">—</b></div>
+                  <div><small>自然基线</small><b id="viralBacktestBaseline">—</b></div>
+                  <div><small>召回率</small><b id="viralBacktestRecall">—</b></div>
+                </div>
+                <div class="viral-folds" id="viralBacktestFolds" aria-label="四段时间回测结果"></div>
+              </article>
+
+              <p class="viral-method-note">
+                方法参考
+                <a href="https://github.com/anshumanvatsa/Social-Media-engagement-prediction">Pre-Publication Predictor</a>、
+                <a href="https://github.com/OcraM17/EngagementGNN">EngagementGNN</a> 与
+                <a href="https://github.com/SpaceZephyr/creator-buddy">Creator Buddy</a>；
+                当前权重只由颜汝自己的回传数据校准。相关性不是因果。
+              </p>
+            </section>
+          </section>
+
+          <section class="module-page view-panel" data-view-panel="topics">
+            <div class="module-hero">
+              <div><span>INDUSTRY DEMAND</span><h2>选题中心</h2><p>按行业与业务场景读取核验需求，选中后直接进入内容生产。</p></div>
+              <button class="primary-button" id="refreshTopics">刷新选题</button>
+            </div>
+            <div class="toolbar">
+              <select id="topicIndustryGroup" aria-label="选题行业">
+                <option value="education">教育</option>
+                <option value="insurance" selected>保险</option>
+                <option value="manufacturing">制造业</option>
+                <option value="new-retail">新零售</option>
+              </select>
+              <select id="topicMarketMode" aria-label="选题业务场景">
+                <option value="domestic">境内</option>
+                <option value="cross-border" selected>跨境</option>
+              </select>
+              <input id="topicSearch" type="search" placeholder="搜索选题、角度或关键词" />
+              <select id="topicFilter"><option value="all">全部选题</option><option value="high">高咨询信号</option></select>
+              <span id="topicResultCount">0 个结果</span>
+            </div>
+            <div class="topic-board" id="topicBoard"></div>
+          </section>
+
+          <section class="module-page view-panel" data-view-panel="content">
+            <div class="module-hero">
+              <div><span>CONTENT FACTORY</span><h2>内容生产</h2><p>从一个真实选题生成适配平台的内容任务，过程和失败都会如实显示。</p></div>
+            </div>
+            <div class="module-grid content-layout">
+              <article class="module-card">
+                <div class="module-card-head"><div><h3>新建内容任务</h3><p>调用 /api/content/generate</p></div></div>
+                <form class="generation-form" id="generationForm">
+                  <div class="form-grid">
+                    <label><span>行业</span><select id="generationIndustryGroup">
+                      <option value="education">教育</option>
+                      <option value="insurance" selected>保险</option>
+                      <option value="manufacturing">制造业</option>
+                      <option value="new-retail">新零售</option>
+                    </select></label>
+                    <label><span>业务场景</span><select id="generationMarketMode">
+                      <option value="domestic">境内</option>
+                      <option value="cross-border" selected>跨境</option>
+                    </select></label>
+                  </div>
+                  <label><span>核心选题</span><textarea id="generationTopic" required placeholder="请输入当前行业里一个真实、具体、可验证的问题"></textarea></label>
+                  <div class="form-grid">
+                    <label><span>发布平台</span><select id="generationPlatform"><option value="xiaohongshu">小红书</option><option value="wechat">微信公众号</option><option value="douyin">抖音</option></select></label>
+                    <label><span>生成阶段</span><select id="generationPhase"><option value="copy">首轮文案</option></select></label>
+                  </div>
+                  <button class="primary-button" id="generateButton" type="submit">创建生成任务</button>
+                </form>
+              </article>
+              <article class="module-card">
+                <div class="module-card-head"><div><h3>任务回执</h3><p>API 返回的真实状态</p></div></div>
+                <div class="job-result empty" id="generationResult">提交任务后，结果会显示在这里。</div>
+              </article>
+            </div>
+          </section>
+
+          <section class="module-page view-panel" data-view-panel="publish">
+            <div class="module-hero">
+              <div><span>PUBLISH MATRIX</span><h2>矩阵发布</h2><p>查看账号连接与发布队列。正式发布仍需明确授权，避免误发。</p></div>
+              <button class="primary-button" id="refreshPublish">刷新队列</button>
+            </div>
+            <div class="module-grid">
+              <article class="module-card"><div class="module-card-head"><div><h3>平台账号</h3><p>来自自动化桥接心跳</p></div></div><div class="account-grid" id="accountGrid"></div></article>
+              <article class="module-card wide"><div class="module-card-head"><div><h3>发布任务</h3><p>读取真实任务，不自动提交</p></div></div><div class="record-list" id="publishJobs"></div></article>
+            </div>
+          </section>
+
+          <section class="module-page view-panel" data-view-panel="leads">
+            <div class="module-hero">
+              <div><span>LEAD ATTRIBUTION</span><h2>线索回收</h2><p>查看承接结果与来源归因，先把线索数据跑通，再谈放大流量。</p></div>
+            </div>
+            <div class="metric-grid lead-metrics">
+              <article><small>累计线索</small><b id="leadTotal">—</b><span>网站及内容入口</span></article>
+              <article><small>本周新增</small><b id="leadWeekly">—</b><span>近 7 天</span></article>
+              <article><small>有效转化率</small><b>待归因</b><span>需要补充跟进结果</span></article>
+            </div>
+            <article class="module-card lead-empty"><span>◎</span><h3>线索接口已经接通</h3><p>当前只展示真实计数；联系人明细将在取得业务授权后开放，避免在前端泄露隐私。</p></article>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <div class="drawer-backdrop" id="drawerBackdrop"></div>
+    <aside class="api-drawer" id="apiDrawer" aria-label="API 接入状态">
+      <div class="drawer-head"><div><small>LIVE INTEGRATIONS</small><h2>API 接入状态</h2></div><button id="closeApiDrawer">×</button></div>
+      <div class="drawer-summary"><span id="drawerHealthDot"></span><div><b id="drawerHealthTitle">正在检查</b><small id="drawerHealthDetail">读取同源服务</small></div><button id="drawerRefresh">刷新</button></div>
+      <div class="endpoint-list" id="endpointList"></div>
+      <div class="drawer-note"><b>安全边界</b><p>密钥只保留在服务端；本页不会因点击而直接发布内容。</p></div>
+    </aside>
+
+    <div class="toast" id="toast"><span>✓</span><p></p></div>
+
+    <div class="modal-backdrop" id="modalBackdrop">
+      <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-head"><div><small>INDUSTRY PROJECT</small><h2 id="modalTitle">编辑获客项目</h2></div><button id="closeModal">×</button></div>
+        <form id="modalForm">
+          <label><span>项目名称</span><input id="modalName" value="四行业内容获客计划" /></label>
+          <label><span>本阶段核心目标</span><textarea id="modalGoal">围绕教育、保险、制造业和新零售的真实需求，持续生产专业、合规、可验证的获客内容，并记录咨询来源。</textarea></label>
+          <div class="form-grid">
+            <label><span>主阵地</span><select><option>小红书 + 公众号 + 抖音</option><option>小红书</option><option>微信公众号</option></select></label>
+            <label><span>复盘节奏</span><select><option>每周一次</option><option>每天一次</option><option>每月一次</option></select></label>
+          </div>
+          <div class="modal-actions"><button type="button" class="cancel-button" id="cancelModal">取消</button><button type="submit" class="primary-button">保存并更新规划</button></div>
+        </form>
+      </section>
+    </div>
+    <script src="./app.js?v=20260731-1"></script>
+  </body>
+</html>
