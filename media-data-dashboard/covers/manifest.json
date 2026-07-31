@@ -1,0 +1,75 @@
+{
+  "generatedAt": "2026-07-30T21:25:00+08:00",
+  "items": [
+    {
+      "platform": "小红书",
+      "contentId": "68d405c6000000001003d8b4",
+      "category": "good",
+      "asset": "./covers/xhs-68d405c6000000001003d8b4.webp",
+      "sourceType": "authenticated-title-search"
+    },
+    {
+      "platform": "抖音",
+      "contentId": "7656295487254973746",
+      "category": "good",
+      "asset": "./covers/douyin-7656295487254973746.jpeg",
+      "sourceType": "authorized-work-page"
+    },
+    {
+      "platform": "抖音",
+      "contentId": "7663402613316029746",
+      "category": "good",
+      "asset": "./covers/douyin-7663402613316029746.jpeg",
+      "sourceType": "authorized-work-page"
+    },
+    {
+      "platform": "小红书",
+      "contentId": "691323d20000000005000737",
+      "category": "good",
+      "asset": "./covers/xhs-691323d20000000005000737.webp",
+      "sourceType": "authenticated-title-search"
+    },
+    {
+      "platform": "小红书",
+      "contentId": "69229f24000000001e022515",
+      "category": "good",
+      "asset": "./covers/xhs-69229f24000000001e022515.webp",
+      "sourceType": "authenticated-title-search"
+    },
+    {
+      "platform": "小红书",
+      "contentId": "6a60850a000000000503a258",
+      "category": "bad",
+      "asset": "./covers/xhs-6a60850a000000000503a258.jpg",
+      "sourceType": "platform-metric-snapshot"
+    },
+    {
+      "platform": "抖音",
+      "contentId": "7667500804366028058",
+      "category": "bad",
+      "asset": "./covers/douyin-7667500804366028058.jpeg",
+      "sourceType": "platform-metric-snapshot"
+    },
+    {
+      "platform": "小红书",
+      "contentId": "6a68324c00000000140046f0",
+      "category": "bad",
+      "asset": "./covers/xhs-6a68324c00000000140046f0.jpg",
+      "sourceType": "platform-metric-snapshot"
+    },
+    {
+      "platform": "小红书",
+      "contentId": "6a686d760000000013026cca",
+      "category": "bad",
+      "asset": "./covers/xhs-6a686d760000000013026cca.jpg",
+      "sourceType": "platform-metric-snapshot"
+    },
+    {
+      "platform": "小红书",
+      "contentId": "6a6824e500000000060117f6",
+      "category": "bad",
+      "asset": "./covers/xhs-6a6824e500000000060117f6.jpg",
+      "sourceType": "platform-metric-snapshot"
+    }
+  ]
+}
