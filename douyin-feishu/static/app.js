@@ -8,11 +8,30 @@ const els = {
   rows: document.querySelector("#videoRows"),
   creatorRows: document.querySelector("#creatorRows"),
   creatorCount: document.querySelector("#creatorCount"),
+  skillTabs: document.querySelector("#skillTabs"),
+  skillSearch: document.querySelector("#skillSearch"),
+  skillSummary: document.querySelector("#skillSummary"),
+  skillBars: document.querySelector("#skillBars"),
   search: document.querySelector("#searchInput"),
   filter: document.querySelector("#nicheFilter"),
 };
 
 let videos = [];
+let legalLibrary = [];
+let legalStatus = [];
+let selectedCreator = "all";
+
+const skillLabels = {
+  opening: "开头钩子",
+  copy: "文案结构",
+  suspense: "悬念机制",
+  narration: "讲述方式",
+  camera: "画面镜头",
+  interaction: "互动动作",
+  compliance: "合规边界",
+};
+
+const barDimensions = ["opening", "suspense", "narration", "camera"];
 
 function escapeHtml(value) {
   return String(value ?? "").replace(/[&<>"']/g, ch => ({
@@ -66,17 +85,82 @@ function renderRows() {
   `).join("") || '<tr><td class="empty" colspan="6">没有匹配的项目，换个关键词或分类。</td></tr>';
 }
 
-function renderCreatorSpotlight(items) {
-  els.creatorCount.textContent = `${items.length} 条公开候选`;
-  els.creatorRows.innerHTML = items.map((item, index) => `
-    <article class="copy-card">
-      <div class="copy-card-top"><span class="copy-rank">${String(index + 1).padStart(2, "0")}</span><span class="copy-tag">${escapeHtml(item.niche)}</span><span class="copy-date">${escapeHtml(item.published_at)}</span></div>
+function skillValue(item, key) {
+  const value = item.skills?.[key];
+  return typeof value === "string" ? { label: value, score: 3 } : (value || { label: "待拆解", score: 0 });
+}
+
+function skillItems() {
+  const query = (els.skillSearch.value || "").trim().toLowerCase();
+  return legalLibrary.filter(item => {
+    const creatorMatch = selectedCreator === "all" || item.creator === selectedCreator;
+    const haystack = [item.creator, item.title, item.copy_summary, item.source_status, ...Object.keys(skillLabels).map(key => skillValue(item, key).label)].join(" ").toLowerCase();
+    return creatorMatch && (!query || haystack.includes(query));
+  });
+}
+
+function renderSkillTabs() {
+  const creators = legalStatus.length ? legalStatus : [...new Set(legalLibrary.map(item => item.creator))].map(name => ({ name, target_count: 30 }));
+  const allLabel = `全部样本 <small>${legalLibrary.length}</small>`;
+  els.skillTabs.innerHTML = `<button class="skill-tab ${selectedCreator === "all" ? "active" : ""}" data-creator="all" role="tab" aria-selected="${selectedCreator === "all"}">${allLabel}</button>` + creators.map(item => {
+    const count = legalLibrary.filter(record => record.creator === item.name).length;
+    const state = count ? `${count}/${item.target_count || 30}` : "待核验";
+    return `<button class="skill-tab ${selectedCreator === item.name ? "active" : ""} ${count ? "" : "muted"}" data-creator="${escapeHtml(item.name)}" role="tab" aria-selected="${selectedCreator === item.name}">${escapeHtml(item.name)} <small>${state}</small></button>`;
+  }).join("");
+  els.skillTabs.querySelectorAll(".skill-tab").forEach(button => button.addEventListener("click", () => {
+    selectedCreator = button.dataset.creator;
+    renderSkillDashboard();
+  }));
+}
+
+function renderSkillSummary(items) {
+  const creators = new Set(items.map(item => item.creator));
+  const highHook = items.filter(item => skillValue(item, "opening").score >= 4).length;
+  const highSuspense = items.filter(item => skillValue(item, "suspense").score >= 4).length;
+  const direct = items.filter(item => item.source_status === "direct").length;
+  const cards = [
+    ["当前样本", items.length, "公开作品结构化记录"],
+    ["账号数量", creators.size, selectedCreator === "all" ? "已进入技能库" : "当前筛选账号"],
+    ["强开头", highHook, "开头评分 4 分及以上"],
+    ["强悬念", highSuspense, "悬念评分 4 分及以上"],
+    ["独立链接", direct, "可直接回到公开作品页"],
+  ];
+  els.skillSummary.innerHTML = cards.map(([label, value, note]) => `<article><span>${escapeHtml(label)}</span><strong>${formatCount(value)}</strong><small>${escapeHtml(note)}</small></article>`).join("");
+}
+
+function renderSkillBars(items) {
+  els.skillBars.innerHTML = barDimensions.map(key => {
+    const counts = {};
+    items.forEach(item => {
+      const label = skillValue(item, key).label;
+      counts[label] = (counts[label] || 0) + 1;
+    });
+    const ranked = Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, 3);
+    const max = ranked[0]?.[1] || 1;
+    return `<article class="skill-bar-card"><div class="skill-bar-head"><span>${escapeHtml(skillLabels[key])}</span><small>TOP PATTERNS</small></div>${ranked.map(([label, count]) => `<div class="skill-bar-row"><div><span>${escapeHtml(label)}</span><b>${count}</b></div><i><em style="width:${Math.round(count / max * 100)}%"></em></i></div>`).join("") || '<p class="skill-empty">暂无匹配样本</p>'}</article>`;
+  }).join("");
+}
+
+function renderSkillSamples(items) {
+  els.creatorCount.textContent = `${items.length} 条样本 · ${new Set(items.map(item => item.creator)).size} 个账号`;
+  els.creatorRows.innerHTML = items.map((item, index) => {
+    const sourceNote = item.source_status === "direct" ? "独立公开作品页" : "账号公开列表标题";
+    return `<article class="copy-card skill-card">
+      <div class="copy-card-top"><span class="copy-rank">${String(index + 1).padStart(2, "0")}</span><span class="copy-tag">${escapeHtml(item.creator)}</span><span class="copy-date">${escapeHtml(item.published_at || "日期未返回")}</span></div>
       <h3><a href="${escapeHtml(item.source_url)}" target="_blank" rel="noreferrer">${escapeHtml(item.title)}</a></h3>
-      <div class="copy-block"><span>公开文案摘要</span><p>${escapeHtml(item.public_copy)}</p></div>
-      <div class="copy-method"><div><span>开场钩子</span><strong>${escapeHtml(item.hook)}</strong></div><div><span>具体方法</span><strong>${escapeHtml(item.method)}</strong></div></div>
-      <a class="source-link" href="${escapeHtml(item.source_url)}" target="_blank" rel="noreferrer">打开抖音公开页 ↗</a>
-    </article>
-  `).join("");
+      <div class="copy-block"><span>文案拆解</span><p>${escapeHtml(item.copy_summary || item.title)}</p></div>
+      <div class="skill-chip-grid">${Object.entries(skillLabels).map(([key, label]) => { const value = skillValue(item, key); return `<div class="skill-chip"><span>${escapeHtml(label)}</span><strong>${escapeHtml(value.label)}</strong><i aria-label="评分 ${value.score || 0} / 5"><em style="width:${Math.min(100, Number(value.score || 0) / 5 * 100)}%"></em></i></div>`; }).join("")}</div>
+      <div class="skill-card-foot"><span>${escapeHtml(sourceNote)}</span><a class="source-link" href="${escapeHtml(item.source_url)}" target="_blank" rel="noreferrer">打开公开页 ↗</a></div>
+    </article>`;
+  }).join("") || `<div class="skill-empty-panel"><strong>这个账号还没有进入已核验样本</strong><span>需要抖音主页、抖音号或作品链接，才能继续补齐技能数据。</span></div>`;
+}
+
+function renderSkillDashboard() {
+  const items = skillItems();
+  renderSkillTabs();
+  renderSkillSummary(items);
+  renderSkillBars(items);
+  renderSkillSamples(items);
 }
 
 async function loadLatest() {
@@ -85,17 +169,20 @@ async function loadLatest() {
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const payload = await response.json();
     videos = payload.videos || [];
+    legalLibrary = payload.legal_ip_library || [];
+    legalStatus = payload.legal_ip_status || [];
     renderMetrics(payload);
     renderFilters();
     renderRows();
-    renderCreatorSpotlight(payload.creator_spotlight || []);
+    renderSkillDashboard();
   } catch (error) {
     els.sourceStatus.textContent = `项目加载失败：${error.message}`;
     els.rows.innerHTML = '<tr><td class="empty" colspan="6">项目暂时无法加载，请检查 data/latest.json。</td></tr>';
-    els.creatorRows.innerHTML = '<p class="empty">郭庆梓公开样本暂时无法加载。</p>';
+    els.creatorRows.innerHTML = '<p class="empty">法律 IP Skills 样本暂时无法加载。</p>';
   }
 }
 
 els.search.addEventListener("input", renderRows);
 els.filter.addEventListener("change", renderRows);
+els.skillSearch.addEventListener("input", renderSkillDashboard);
 loadLatest();
