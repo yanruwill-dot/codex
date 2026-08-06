@@ -3,121 +3,124 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>抖音抓取 → 飞书复盘系统</title>
+  <meta name="description" content="公开核验的抖音法律行业 IP 爆款候选池，按题材、钩子、结构和复刻方向沉淀到飞书。">
+  <title>法律行业 IP 爆款雷达 · 抖音公开样本</title>
   <link rel="stylesheet" href="./static/style.css">
 </head>
 <body>
+  <div class="page-noise" aria-hidden="true"></div>
   <main class="shell">
     <nav class="nav" aria-label="页面导航">
-      <a class="brand" href="../">YR Codex</a>
+      <a class="brand" href="../"><span class="brand-mark">YR</span><span>Codex / Radar</span></a>
       <div class="nav-links">
-        <a href="../">总入口</a>
-        <a href="#samples">样本拆解</a>
-        <a href="#runbook">本地运行</a>
+        <a href="#candidates">候选池</a>
+        <a href="#method">筛选规则</a>
+        <a href="#feishu">飞书沉淀</a>
       </div>
     </nav>
 
     <header class="hero">
       <section class="hero-copy">
-        <p class="eyebrow">CreatorBench OS / Douyin to Feishu</p>
-        <h1>抖音抓取 → 飞书复盘系统</h1>
-        <p class="lead">把对标账号、爆款视频、互动指标、标题钩子、口播结构和可复刻脚本，沉淀成一个能继续运营的飞书表。</p>
+        <p class="eyebrow">LEGAL IP · DOUYIN PUBLIC SAMPLE RADAR</p>
+        <h1>法律行业 IP<br><em>爆款雷达</em></h1>
+        <p class="lead">从抖音公开页里找律师、律所和法务 IP 的高讨论题材，把“为什么有人停下来”“怎么讲得像人话”“能不能拍成下一条”拆出来。</p>
         <div class="hero-actions">
-          <a class="button primary" href="#samples">查看样本拆解</a>
-          <a class="button" href="#runbook">看本地运行命令</a>
+          <a class="button primary" href="#candidates">查看爆款候选</a>
+          <a class="button" href="#method">看筛选口径</a>
         </div>
       </section>
 
-      <section class="command-card" aria-label="工作流">
-        <span class="live-dot">STATIC SNAPSHOT</span>
+      <section class="command-card" aria-label="法律 IP 抓取工作流">
+        <div class="command-top"><span class="status-dot"></span><span>LEGAL-IP / PUBLIC-SAMPLE</span><span class="command-time">RUN 2026.08.06</span></div>
+        <div class="command-title">从“看见爆款”<br><strong>到“拍得出来”</strong></div>
         <ol class="flow">
-          <li><b>1</b><span>输入抖音主页 / 视频候选</span></li>
-          <li><b>2</b><span>抓取标题、文案、点赞、评论、收藏、分享</span></li>
-          <li><b>3</b><span>拆标题、钩子、人群、痛点、复刻脚本</span></li>
-          <li><b>4</b><span>同步到飞书，进入复盘和选题池</span></li>
+          <li><b>01</b><span>按婚家、劳动、刑事、企业风险找公开样本</span></li>
+          <li><b>02</b><span>核对作品页 / 账号页，再记录标题和内容信号</span></li>
+          <li><b>03</b><span>拆钩子、案例、动作和咨询意图</span></li>
+          <li><b>04</b><span>沉淀为飞书选题池，继续改写和拍摄</span></li>
         </ol>
       </section>
     </header>
 
     <section class="notice">
-      <strong>飞书已经打通。</strong>
-      <span>最近一次真实抓取在 2026-06-27 写入飞书表，当前页面用于长期展示样本和链路；继续抓取新账号时，在本机运行 `python3 app.py` 后会复用这套写入流程。</span>
-      <a class="inline-link" id="feishuSheetLink" href="https://www.feishu.cn/sheets/J5AQsSMTGhMHPQtrlsEcuprgn6c" target="_blank" rel="noreferrer">打开飞书表</a>
+      <span class="notice-label">本次已切换</span>
+      <strong>法律行业 IP 爆款候选池</strong>
+      <span>样本来自抖音公开搜索 / 精选页 / 账号页的人工核验，不等于平台官方全站榜单；点赞、评论等未公开字段不补猜。</span>
+      <a class="inline-link" href="https://www.douyin.com/" target="_blank" rel="noreferrer">打开抖音</a>
     </section>
 
     <section class="metrics" aria-label="样本指标">
-      <article><span>样本作品</span><strong id="works">0</strong><small>最近抓取样本</small></article>
-      <article><span>总互动</span><strong id="interactions">0</strong><small>赞评藏转合计</small></article>
-      <article><span>最高评论</span><strong id="topComments">0</strong><small>优先看讨论度</small></article>
-      <article><span>最高收藏</span><strong id="topCollects">0</strong><small>优先看可复用度</small></article>
+      <article><span>公开样本</span><strong id="works">0</strong><small>法律 IP 候选作品</small></article>
+      <article><span>高意图题材</span><strong id="highIntent">0</strong><small>维权 / 咨询动作明确</small></article>
+      <article><span>已核验来源</span><strong id="verifiedSources">0</strong><small>作品页或账号页可回查</small></article>
+      <article><span>覆盖赛道</span><strong id="nicheCount">0</strong><small>法律内容方向</small></article>
     </section>
 
-    <section class="dashboard">
-      <article class="panel">
-        <div class="panel-head">
-          <h2>系统适合做什么</h2>
-          <span id="sourceStatus">加载中</span>
-        </div>
-        <div class="use-grid">
-          <div><b>对标账号</b><p>把同行账号、达人账号、门店账号放进同一个候选池，先看数据，再看内容。</p></div>
-          <div><b>爆款拆解</b><p>按评论、收藏和分享排序，找到真正值得复刻的标题、选题和口播结构。</p></div>
-          <div><b>飞书沉淀</b><p>把每条作品拆成结构化字段，团队可以继续筛选、复盘、改写和拍摄。</p></div>
-        </div>
-      </article>
-
-      <article class="panel accent">
-        <div class="panel-head">
-          <h2>当前样本库</h2>
-          <span id="accountMeta">等待数据</span>
-        </div>
-        <p id="niche" class="big-copy">-</p>
-        <dl class="mini-list">
-          <div><dt>人设</dt><dd id="persona">-</dd></div>
-          <div><dt>商业模式</dt><dd id="business">-</dd></div>
-        </dl>
-      </article>
+    <section class="signal-strip" aria-label="内容方向">
+      <div class="signal-intro"><span class="section-kicker">WHAT TO CATCH</span><h2>法律 IP 最容易<br><em>起量的三种信号</em></h2></div>
+      <article><span class="signal-index">01</span><h3>把复杂事讲成一个判断</h3><p>“签了合作协议就不是员工？”“净身出户有用吗？”先用一个反常识问题把人拉进来。</p></article>
+      <article><span class="signal-index">02</span><h3>给具体人一个下一步</h3><p>不是泛泛普法，而是告诉当事人先留什么证据、先做哪一步、什么时候别再拖。</p></article>
+      <article><span class="signal-index">03</span><h3>用真实案情承担信任</h3><p>案例、庭审、办案日常和律师选择，能把专业身份变成可感知的“这个人懂我”。</p></article>
     </section>
 
-    <section id="samples" class="panel table-panel">
-      <div class="panel-head">
-        <h2>作品数据与可复刻脚本</h2>
-        <span id="rowCount">0 条</span>
+    <section id="candidates" class="panel table-panel">
+      <div class="panel-head table-head">
+        <div><span class="section-kicker">CANDIDATE POOL / 01</span><h2>抖音法律 IP 爆款候选</h2></div>
+        <div class="table-meta"><span id="sourceStatus">加载中</span><strong id="rowCount">0 条</strong></div>
+      </div>
+      <div class="toolbar">
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="搜标题、账号、题材或复刻方向" autocomplete="off"></label>
+        <label class="filter-box"><span>方向</span><select id="nicheFilter" aria-label="按法律方向筛选"><option value="all">全部方向</option></select></label>
       </div>
       <div class="table-wrap">
         <table>
           <thead>
-            <tr>
-              <th>标题</th>
-              <th>账号</th>
-              <th>互动</th>
-              <th>场景</th>
-              <th>痛点</th>
-              <th>标题方法</th>
-              <th>文案结构</th>
-              <th>可复刻脚本</th>
-              <th>拍摄建议</th>
-            </tr>
+            <tr><th>候选作品</th><th>公开信号</th><th>标题 / 开场钩子</th><th>内容结构</th><th>法律 IP 复刻方向</th><th>来源</th></tr>
           </thead>
           <tbody id="videoRows"></tbody>
         </table>
       </div>
+      <p class="table-footnote">提示：这里展示的是“值得继续核验和拆解”的候选，不把公开页摘要误写成完整播放、点赞或转化数据。</p>
     </section>
 
-    <section id="runbook" class="runbook">
-      <article>
-        <h2>本地抓取和写飞书</h2>
-        <p>在本机项目里运行后，就能调后端接口抓取、拆解、写 CSV / SQLite，并同步到已创建的飞书表。</p>
-        <pre><code>cd /Users/will/Desktop/00-AI资料/outputs/douyin-benchmark-system-20260627
-python3 app.py</code></pre>
+    <section id="method" class="method-grid">
+      <article class="panel method-card dark-card">
+        <span class="section-kicker">FILTER LOGIC / 02</span>
+        <h2>这次怎么判断<br><em>“值得追”</em></h2>
+        <div class="rule-list">
+          <div><b>01</b><span><strong>题材有明确当事人</strong><small>婚姻、劳动、工伤、刑事、合同、继承等可直接命名的问题。</small></span></div>
+          <div><b>02</b><span><strong>标题能制造判断缺口</strong><small>先抛反常识、风险或结果，再让观众想知道“到底怎么办”。</small></span></div>
+          <div><b>03</b><span><strong>内容能落到一个动作</strong><small>留证、协商、仲裁、报案、保全或尽早咨询，而不是只讲道理。</small></span></div>
+        </div>
       </article>
-      <article>
-        <h2>飞书表状态</h2>
-        <p>数据库记录显示最近一次 `verified_douyin` 运行写入成功：`ok: true`，表格 `Sheet1`，共 23 行。</p>
-        <a class="button" href="https://www.feishu.cn/sheets/J5AQsSMTGhMHPQtrlsEcuprgn6c" target="_blank" rel="noreferrer">打开飞书表</a>
+      <article class="panel method-card">
+        <span class="section-kicker">OUTPUT / 03</span>
+        <h2>抓完以后<br><em>留下什么</em></h2>
+        <div class="output-stack">
+          <div><span class="output-icon">A</span><span><strong>标题与开场</strong><small>记录原句、冲突点和前 3 秒为什么能留人。</small></span></div>
+          <div><span class="output-icon">B</span><span><strong>结构与证据</strong><small>把案例、法理、动作和风险提醒拆成可复用顺序。</small></span></div>
+          <div><span class="output-icon">C</span><span><strong>下一条怎么拍</strong><small>改成自己的行业场景、人物和边界，不复制原作品。</small></span></div>
+        </div>
       </article>
     </section>
+
+    <section id="feishu" class="runbook">
+      <article>
+        <span class="section-kicker">FEISHU WORKSPACE / 04</span>
+        <h2>把候选池变成法律 IP 选题池</h2>
+        <p>页面保留原来的飞书沉淀链路，字段已按“作品、账号、题材、钩子、结构、复刻方向、来源边界”重新组织。真实新增抓取仍在本机执行，GitHub Pages 负责展示已核验样本。</p>
+        <div class="field-pills"><span>原始标题</span><span>法律方向</span><span>咨询意图</span><span>开场钩子</span><span>复刻脚本</span><span>来源链接</span></div>
+      </article>
+      <article class="runbook-action">
+        <span class="section-kicker">CURRENT STATE</span>
+        <strong>公开样本看板已更新</strong>
+        <p id="feishuState">法律 IP 样本先在页面完成核验，再进入飞书。</p>
+        <a class="button primary" href="https://www.feishu.cn/sheets/J5AQsSMTGhMHPQtrlsEcuprgn6c" target="_blank" rel="noreferrer">打开飞书表</a>
+      </article>
+    </section>
+
+    <footer><span>YR CODEX / LEGAL IP RADAR</span><span>公开样本 · 人工核验 · 不替代法律意见</span></footer>
   </main>
-
   <script src="./static/app.js"></script>
 </body>
 </html>
