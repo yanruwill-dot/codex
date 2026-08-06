@@ -111,7 +111,8 @@ function renderSkillTabs() {
   const allLabel = `全部样本 <small>${legalLibrary.length}</small>`;
   els.skillTabs.innerHTML = `<button class="skill-tab ${selectedCreator === "all" ? "active" : ""}" data-creator="all" role="tab" aria-selected="${selectedCreator === "all"}">${allLabel}</button>` + creators.map(item => {
     const count = legalLibrary.filter(record => record.creator === item.name).length;
-    const state = count ? `${count}/${item.target_count || 30}` : "待核验";
+    const verified = item.verified_count ?? count;
+    const state = count ? `${verified}直链/${item.target_count || 30}` : "待核验";
     return `<button class="skill-tab ${selectedCreator === item.name ? "active" : ""} ${count ? "" : "muted"}" data-creator="${escapeHtml(item.name)}" role="tab" aria-selected="${selectedCreator === item.name}">${escapeHtml(item.name)} <small>${state}</small></button>`;
   }).join("");
   els.skillTabs.querySelectorAll(".skill-tab").forEach(button => button.addEventListener("click", () => {
