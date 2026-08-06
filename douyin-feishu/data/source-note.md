@@ -29,3 +29,26 @@
 - https://github.com/langgenius/dify
 - https://github.com/open-webui/open-webui
 - https://github.com/langchain-ai/langchain
+
+## 郭庆梓公开抖音样本
+
+- 采集时间：2026-08-06（Asia/Shanghai）
+- 创作者：郭庆梓律师
+- 范围：抖音公开精选页和公开作品页；不下载视频，不读取私密内容
+- 产出：10 条公开页爆款候选，保留标题、作品链接、公开可见摘要和方法提炼
+- 核验记录：`7659264816644689179`、`7649701258182765819`、`7662225567424466191`
+- 边界：抖音公开页未统一返回播放、点赞、评论、收藏、分享字段；页面不补猜数字，也不把候选池称为账号全量榜单。
+- 文案处理：标题为公开页可见原题；“公开文案摘要”是对可见上下文的短摘要；长文案不整段搬运，避免把不完整页面内容伪装成完整口播稿。
+
+### 来源
+
+- https://jingxuan.douyin.com/m/video/7659264816644689179
+- https://jingxuan.douyin.com/m/video/7649701258182765819
+- https://jingxuan.douyin.com/m/video/7662225567424466191
+- https://jingxuan.douyin.com/m/video/7634366525448736000
+- https://jingxuan.douyin.com/m/video/7637544547899820914
+- https://jingxuan.douyin.com/m/video/7593198304607931684
+- https://jingxuan.douyin.com/m/video/7571680582975982848
+- https://jingxuan.douyin.com/m/video/7541328981027458358
+- https://jingxuan.douyin.com/m/video/7515283870188621113
+- https://jingxuan.douyin.com/m/video/7603273049199582137

@@ -6,6 +6,8 @@ const els = {
   sourceStatus: document.querySelector("#sourceStatus"),
   rowCount: document.querySelector("#rowCount"),
   rows: document.querySelector("#videoRows"),
+  creatorRows: document.querySelector("#creatorRows"),
+  creatorCount: document.querySelector("#creatorCount"),
   search: document.querySelector("#searchInput"),
   filter: document.querySelector("#nicheFilter"),
 };
@@ -64,6 +66,19 @@ function renderRows() {
   `).join("") || '<tr><td class="empty" colspan="6">没有匹配的项目，换个关键词或分类。</td></tr>';
 }
 
+function renderCreatorSpotlight(items) {
+  els.creatorCount.textContent = `${items.length} 条公开候选`;
+  els.creatorRows.innerHTML = items.map((item, index) => `
+    <article class="copy-card">
+      <div class="copy-card-top"><span class="copy-rank">${String(index + 1).padStart(2, "0")}</span><span class="copy-tag">${escapeHtml(item.niche)}</span><span class="copy-date">${escapeHtml(item.published_at)}</span></div>
+      <h3><a href="${escapeHtml(item.source_url)}" target="_blank" rel="noreferrer">${escapeHtml(item.title)}</a></h3>
+      <div class="copy-block"><span>公开文案摘要</span><p>${escapeHtml(item.public_copy)}</p></div>
+      <div class="copy-method"><div><span>开场钩子</span><strong>${escapeHtml(item.hook)}</strong></div><div><span>具体方法</span><strong>${escapeHtml(item.method)}</strong></div></div>
+      <a class="source-link" href="${escapeHtml(item.source_url)}" target="_blank" rel="noreferrer">打开抖音公开页 ↗</a>
+    </article>
+  `).join("");
+}
+
 async function loadLatest() {
   try {
     const response = await fetch("./data/latest.json", { cache: "no-store" });
@@ -73,9 +88,11 @@ async function loadLatest() {
     renderMetrics(payload);
     renderFilters();
     renderRows();
+    renderCreatorSpotlight(payload.creator_spotlight || []);
   } catch (error) {
     els.sourceStatus.textContent = `项目加载失败：${error.message}`;
     els.rows.innerHTML = '<tr><td class="empty" colspan="6">项目暂时无法加载，请检查 data/latest.json。</td></tr>';
+    els.creatorRows.innerHTML = '<p class="empty">郭庆梓公开样本暂时无法加载。</p>';
   }
 }
 
