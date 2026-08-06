@@ -1,0 +1,72 @@
+[
+  {
+    "id": "civil-code",
+    "title": "中华人民共和国民法典",
+    "category": "民法商法",
+    "status": "有效",
+    "effective_date": "2021-01-01",
+    "focus": ["民事主体", "合同", "侵权责任", "婚姻家庭", "继承"],
+    "content_use": "把日常纠纷翻译成当事人听得懂的权利、义务、证据和救济路径。",
+    "source_url": "https://flk.npc.gov.cn/detail?id=ff808081729d1efe01729d50b5c500bf&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E6%B0%91%E6%B3%95%E5%85%B8"
+  },
+  {
+    "id": "company-law",
+    "title": "中华人民共和国公司法",
+    "category": "民法商法 / 企业法",
+    "status": "有效",
+    "effective_date": "2024-07-01",
+    "focus": ["公司设立", "股东责任", "治理结构", "出资与转让", "解散清算"],
+    "content_use": "把企业经营中的股东、出资、章程、董事高管和清算问题做成场景化内容。",
+    "source_url": "https://flk.npc.gov.cn/detail?fileId=&id=ff8081818c9108eb018cb6922f750c07&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8F%B8%E6%B3%95&type="
+  },
+  {
+    "id": "enterprise-bankruptcy-law",
+    "title": "中华人民共和国企业破产法",
+    "category": "经济法 / 企业法",
+    "status": "有效",
+    "effective_date": "2007-06-01",
+    "focus": ["重整", "和解", "破产清算", "债权申报", "清偿顺序"],
+    "content_use": "用企业危机、债权人选择和重整路径解释复杂的破产程序，避免只讲结论。",
+    "source_url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf63c7c0343&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E4%BC%81%E4%B8%9A%E7%A0%B4%E4%BA%A7%E6%B3%95"
+  },
+  {
+    "id": "labor-contract-law",
+    "title": "中华人民共和国劳动合同法",
+    "category": "社会法 / 企业法",
+    "status": "有效",
+    "effective_date": "2013-07-01",
+    "focus": ["劳动合同", "试用期", "解除与终止", "经济补偿", "竞业限制"],
+    "content_use": "从员工最常遇到的合同、离职、补偿和用工证据切入，形成可连续更新的企业法选题。",
+    "source_url": "https://flk.npc.gov.cn/detail?fileId=&id=2c909fdd678bf17901678bf74d7106b3&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&type="
+  },
+  {
+    "id": "personal-information-protection-law",
+    "title": "中华人民共和国个人信息保护法",
+    "category": "数字法 / 企业合规",
+    "status": "有效",
+    "effective_date": "2021-11-01",
+    "focus": ["个人信息处理", "告知同意", "敏感个人信息", "跨境提供", "法律责任"],
+    "content_use": "把企业收集、使用、共享个人信息的动作拆成风险点、流程和检查清单。",
+    "source_url": "https://flk.npc.gov.cn/detail?fileId=&id=ff8081817b6472a3017b656cc2040044&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF%E4%BF%9D%E6%8A%A4%E6%B3%95&type="
+  },
+  {
+    "id": "data-security-law",
+    "title": "中华人民共和国数据安全法",
+    "category": "数字法 / 企业合规",
+    "status": "有效",
+    "effective_date": "2021-09-01",
+    "focus": ["数据处理", "数据分类分级", "安全保护", "风险监测", "法律责任"],
+    "content_use": "把数据采集、存储、使用和公开等动作映射到企业日常工作流程。",
+    "source_url": "https://flk.npc.gov.cn/detail?fileId=&id=ff80818179f5e0800179f885c7e70392&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E6%95%B0%E6%8D%AE%E5%AE%89%E5%85%A8%E6%B3%95&type="
+  },
+  {
+    "id": "cybersecurity-law",
+    "title": "中华人民共和国网络安全法",
+    "category": "数字法 / 企业合规",
+    "status": "有效",
+    "effective_date": "2026-01-01",
+    "focus": ["网络运行安全", "网络信息安全", "关键信息基础设施", "法律责任"],
+    "content_use": "用于企业网络安全、平台运营和数据治理主题的内容选题与复核入口。",
+    "source_url": "https://flk.npc.gov.cn/detail?fileId=&id=021e7d7684474107b8f3febbb1c4f8b5&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%B3%95&type="
+  }
+]

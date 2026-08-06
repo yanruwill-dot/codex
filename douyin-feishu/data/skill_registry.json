@@ -1,0 +1,2126 @@
+{
+  "version": "0.2.0",
+  "generated_at": "2026-08-06T15:28:40.912Z",
+  "source_note": "技能标签基于公开抖音精选页标题、账号关系和可见信息做结构化拆解；不代表全站热度排名，不替代原始作品核验。",
+  "dimensions": [
+    "opening",
+    "copy",
+    "suspense",
+    "narration",
+    "camera",
+    "interaction",
+    "compliance"
+  ],
+  "records": [
+    {
+      "creator": "交通事故律师余逸飞",
+      "source_url": "https://jingxuan.douyin.com/m/video/7543485564100644142",
+      "source_status": "direct",
+      "published_at": "",
+      "title": "摩托车时速70撞死人 为何家属找公司要30万？",
+      "copy_summary": "标题先把事故结果、责任冲突或赔偿风险摆出来，再把观众带进责任、证据与赔偿。",
+      "skills": {
+        "opening": {
+          "label": "数字事故开场",
+          "score": 5
+        },
+        "copy": {
+          "label": "事故细节 + 责任追问",
+          "score": 4
+        },
+        "suspense": {
+          "label": "赔偿结果悬念",
+          "score": 5
+        },
+        "narration": {
+          "label": "先抛案情，再回到规则",
+          "score": 5
+        },
+        "camera": {
+          "label": "律师口播 + 案件素材字幕",
+          "score": 3
+        },
+        "interaction": {
+          "label": "评论区追问责任比例",
+          "score": 3
+        },
+        "compliance": {
+          "label": "事实与责任需以证据和裁判为准",
+          "score": 5
+        }
+      }
+    },
+    {
+      "creator": "交通事故律师余逸飞",
+      "source_url": "https://jingxuan.douyin.com/m/video/7620752712191216942",
+      "source_status": "direct",
+      "published_at": "",
+      "title": "人开改装三轮被撞飞6米！83岁还能开三轮车？",
+      "copy_summary": "标题先把事故结果、责任冲突或赔偿风险摆出来，再把观众带进责任、证据与赔偿。",
+      "skills": {
+        "opening": {
+          "label": "数字事故开场",
+          "score": 5
+        },
+        "copy": {
+          "label": "事故细节 + 责任追问",
+          "score": 4
+        },
+        "suspense": {
+          "label": "责任归属悬念",
+          "score": 5
+        },
+        "narration": {
+          "label": "先抛案情，再回到规则",
+          "score": 5
+        },
+        "camera": {
+          "label": "律师口播 + 案件素材字幕",
+          "score": 3
+        },
+        "interaction": {
+          "label": "评论区追问责任比例",
+          "score": 3
+        },
+        "compliance": {
+          "label": "事实与责任需以证据和裁判为准",
+          "score": 5
+        }
+      }
+    },
+    {
+      "creator": "交通事故律师余逸飞",
+      "source_url": "https://jingxuan.douyin.com/m/video/7552867090304388406",
+      "source_status": "direct",
+      "published_at": "",
+      "title": "四大凶局之一的T字路口，“同责”为何让我赔掉一套房？",
+      "copy_summary": "标题先把事故结果、责任冲突或赔偿风险摆出来，再把观众带进责任、证据与赔偿。",
+      "skills": {
+        "opening": {
+          "label": "问题追问开场",
+          "score": 4
+        },
+        "copy": {
+          "label": "事故细节 + 责任追问",
+          "score": 4
+        },
+        "suspense": {
+          "label": "责任归属悬念",
+          "score": 5
+        },
+        "narration": {
+          "label": "先抛案情，再回到规则",
+          "score": 5
+        },
+        "camera": {
+          "label": "律师口播 + 案件素材字幕",
+          "score": 3
+        },
+        "interaction": {
+          "label": "评论区追问责任比例",
+          "score": 3
+        },
+        "compliance": {
+          "label": "事实与责任需以证据和裁判为准",
+          "score": 5
+        }
+      }
+    },
+    {
+      "creator": "交通事故律师余逸飞",
+      "source_url": "https://jingxuan.douyin.com/m/video/7647746591696178442",
+      "source_status": "direct",
+      "published_at": "",
+      "title": "转弯撞上直行电动车，转弯就一定是全责吗？",
+      "copy_summary": "标题先把事故结果、责任冲突或赔偿风险摆出来，再把观众带进责任、证据与赔偿。",
+      "skills": {
+        "opening": {
+          "label": "问题追问开场",
+          "score": 5
+        },
+        "copy": {
+          "label": "事故细节 + 责任追问",
+          "score": 4
+        },
+        "suspense": {
+          "label": "责任归属悬念",
+          "score": 5
+        },
+        "narration": {
+          "label": "先抛案情，再回到规则",
+          "score": 5
+        },
+        "camera": {
+          "label": "律师口播 + 案件素材字幕",
+          "score": 3
+        },
+        "interaction": {
+          "label": "评论区追问责任比例",
+          "score": 3
+        },
+        "compliance": {
+          "label": "事实与责任需以证据和裁判为准",
+          "score": 5
+        }
+      }
+    },
+    {
+      "creator": "交通事故律师余逸飞",
+      "source_url": "https://jingxuan.douyin.com/m/video/7621876195608595721",
+      "source_status": "direct",
+      "published_at": "",
+      "title": "一个闯红灯一个闯黄灯！交通事故赔偿有差价？",
+      "copy_summary": "标题先把事故结果、责任冲突或赔偿风险摆出来，再把观众带进责任、证据与赔偿。",
+      "skills": {
+        "opening": {
+          "label": "问题追问开场",
+          "score": 5
+        },
+        "copy": {
+          "label": "事故细节 + 责任追问",
+          "score": 4
+        },
+        "suspense": {
+          "label": "赔偿结果悬念",
+          "score": 5
+        },
+        "narration": {
+          "label": "先抛案情，再回到规则",
+          "score": 5
+        },
+        "camera": {
+          "label": "律师口播 + 案件素材字幕",
+          "score": 3
+        },
+        "interaction": {
+          "label": "评论区追问责任比例",
+          "score": 3
+        },
+        "compliance": {
+          "label": "事实与责任需以证据和裁判为准",
+          "score": 5
+        }
+      }
+    },
+    {
+      "creator": "交通事故律师余逸飞",
+      "source_url": "https://jingxuan.douyin.com/m/video/7634853587444665610",
+      "source_status": "direct",
+      "published_at": "",
+      "title": "买保险是朋友，理赔变对手，谁能帮你要回赔偿？大型交通普法综艺节目-《百万赔偿》敬请期待",
+      "copy_summary": "标题先把事故结果、责任冲突或赔偿风险摆出来，再把观众带进责任、证据与赔偿。",
+      "skills": {
+        "opening": {
+          "label": "问题追问开场",
+          "score": 5
+        },
+        "copy": {
+          "label": "事故细节 + 责任追问",
+          "score": 4
+        },
+        "suspense": {
+          "label": "赔偿结果悬念",
+          "score": 5
+        },
+        "narration": {
+          "label": "先抛案情，再回到规则",
+          "score": 5
+        },
+        "camera": {
+          "label": "律师口播 + 案件素材字幕",
+          "score": 3
+        },
+        "interaction": {
+          "label": "评论区追问责任比例",
+          "score": 3
+        },
+        "compliance": {
+          "label": "事实与责任需以证据和裁判为准",
+          "score": 5
+        }
+      }
+    },
+    {
+      "creator": "交通事故律师余逸飞",
+      "source_url": "https://jingxuan.douyin.com/m/video/7636588450476576026",
+      "source_status": "direct",
+      "published_at": "",
+      "title": "68%伤者拿不到应赔，有保险就真的安全吗？大型交通普法综艺节目-《百万赔偿》敬请期待",
+      "copy_summary": "标题先把事故结果、责任冲突或赔偿风险摆出来，再把观众带进责任、证据与赔偿。",
+      "skills": {
+        "opening": {
+          "label": "数字事故开场",
+          "score": 5
+        },
+        "copy": {
+          "label": "事故细节 + 责任追问",
+          "score": 4
+        },
+        "suspense": {
+          "label": "赔偿结果悬念",
+          "score": 5
+        },
+        "narration": {
+          "label": "先抛案情，再回到规则",
+          "score": 5
+        },
+        "camera": {
+          "label": "律师口播 + 案件素材字幕",
+          "score": 3
+        },
+        "interaction": {
+          "label": "评论区追问责任比例",
+          "score": 3
+        },
+        "compliance": {
+          "label": "事实与责任需以证据和裁判为准",
+          "score": 5
+        }
+      }
+    },
+    {
+      "creator": "交通事故律师余逸飞",
+      "source_url": "https://jingxuan.douyin.com/m/video/7633750251270196490",
+      "source_status": "direct",
+      "published_at": "",
+      "title": "25岁小伙严重超速撞亡71岁老人，驾照都逾期一年还有路权？",
+      "copy_summary": "标题先把事故结果、责任冲突或赔偿风险摆出来，再把观众带进责任、证据与赔偿。",
+      "skills": {
+        "opening": {
+          "label": "数字事故开场",
+          "score": 5
+        },
+        "copy": {
+          "label": "事故细节 + 责任追问",
+          "score": 4
+        },
+        "suspense": {
+          "label": "责任归属悬念",
+          "score": 5
+        },
+        "narration": {
+          "label": "先抛案情，再回到规则",
+          "score": 5
+        },
+        "camera": {
+          "label": "律师口播 + 案件素材字幕",
+          "score": 3
+        },
+        "interaction": {
+          "label": "评论区追问责任比例",
+          "score": 3
+        },
+        "compliance": {
+          "label": "事实与责任需以证据和裁判为准",
+          "score": 5
+        }
+      }
+    },
+    {
+      "creator": "交通事故律师余逸飞",
+      "source_url": "https://jingxuan.douyin.com/m/video/7606240936590380294",
+      "source_status": "direct",
+      "published_at": "",
+      "title": "红律灯交通安全律师团队《模拟法庭大赛》——第二期-追逐肇事逃逸者是见义勇为还是公路私刑？",
+      "copy_summary": "标题先把事故结果、责任冲突或赔偿风险摆出来，再把观众带进责任、证据与赔偿。",
+      "skills": {
+        "opening": {
+          "label": "问题追问开场",
+          "score": 4
+        },
+        "copy": {
+          "label": "角色对抗 + 规则拆解",
+          "score": 4
+        },
+        "suspense": {
+          "label": "刑责或证据悬念",
+          "score": 5
+        },
+        "narration": {
+          "label": "模拟法庭对抗式",
+          "score": 4
+        },
+        "camera": {
+          "label": "多角色模拟法庭 + 字幕",
+          "score": 4
+        },
+        "interaction": {
+          "label": "评论区追问责任比例",
+          "score": 3
+        },
+        "compliance": {
+          "label": "事实与责任需以证据和裁判为准",
+          "score": 5
+        }
+      }
+    },
+    {
+      "creator": "交通事故律师余逸飞",
+      "source_url": "https://jingxuan.douyin.com/m/video/7601068306623221030",
+      "source_status": "direct",
+      "published_at": "",
+      "title": "专业律师团队，为公为民",
+      "copy_summary": "标题先把事故结果、责任冲突或赔偿风险摆出来，再把观众带进责任、证据与赔偿。",
+      "skills": {
+        "opening": {
+          "label": "身份承诺开场",
+          "score": 4
+        },
+        "copy": {
+          "label": "角色对抗 + 规则拆解",
+          "score": 4
+        },
+        "suspense": {
+          "label": "责任归属悬念",
+          "score": 5
+        },
+        "narration": {
+          "label": "模拟法庭对抗式",
+          "score": 4
+        },
+        "camera": {
+          "label": "多角色模拟法庭 + 字幕",
+          "score": 4
+        },
+        "interaction": {
+          "label": "评论区追问责任比例",
+          "score": 3
+        },
+        "compliance": {
+          "label": "事实与责任需以证据和裁判为准",
+          "score": 5
+        }
+      }
+    },
+    {
+      "creator": "交通事故律师余逸飞",
+      "source_url": "https://jingxuan.douyin.com/m/video/7610322815568366863",
+      "source_status": "direct",
+      "published_at": "",
+      "title": "红律灯交通安全律师团队《模拟法庭大赛》——第三期-行人违法横穿高速悲壮，司机要不要承担相应后果？",
+      "copy_summary": "标题先把事故结果、责任冲突或赔偿风险摆出来，再把观众带进责任、证据与赔偿。",
+      "skills": {
+        "opening": {
+          "label": "问题追问开场",
+          "score": 4
+        },
+        "copy": {
+          "label": "角色对抗 + 规则拆解",
+          "score": 4
+        },
+        "suspense": {
+          "label": "责任归属悬念",
+          "score": 5
+        },
+        "narration": {
+          "label": "模拟法庭对抗式",
+          "score": 4
+        },
+        "camera": {
+          "label": "多角色模拟法庭 + 字幕",
+          "score": 4
+        },
+        "interaction": {
+          "label": "评论区追问责任比例",
+          "score": 3
+        },
+        "compliance": {
+          "label": "事实与责任需以证据和裁判为准",
+          "score": 5
+        }
+      }
+    },
+    {
+      "creator": "交通事故律师余逸飞",
+      "source_url": "https://jingxuan.douyin.com/m/video/7602961331481857330",
+      "source_status": "direct",
+      "published_at": "",
+      "title": "红律灯交通安全律师团队《模拟法庭大赛》——第一期-高速事故后，是应该先撤离？还是先放三角反光牌？",
+      "copy_summary": "标题先把事故结果、责任冲突或赔偿风险摆出来，再把观众带进责任、证据与赔偿。",
+      "skills": {
+        "opening": {
+          "label": "问题追问开场",
+          "score": 4
+        },
+        "copy": {
+          "label": "角色对抗 + 规则拆解",
+          "score": 4
+        },
+        "suspense": {
+          "label": "责任归属悬念",
+          "score": 5
+        },
+        "narration": {
+          "label": "模拟法庭对抗式",
+          "score": 4
+        },
+        "camera": {
+          "label": "多角色模拟法庭 + 字幕",
+          "score": 4
+        },
+        "interaction": {
+          "label": "评论区追问责任比例",
+          "score": 3
+        },
+        "compliance": {
+          "label": "事实与责任需以证据和裁判为准",
+          "score": 5
+        }
+      }
+    },
+    {
+      "creator": "交通事故律师余逸飞",
+      "source_url": "https://jingxuan.douyin.com/m/video/7658230376065666338",
+      "source_status": "direct",
+      "published_at": "",
+      "title": "摩托严重超速撞亡汽车车主，摩托车主仅交强要掏三方钱？",
+      "copy_summary": "标题先把事故结果、责任冲突或赔偿风险摆出来，再把观众带进责任、证据与赔偿。",
+      "skills": {
+        "opening": {
+          "label": "问题追问开场",
+          "score": 5
+        },
+        "copy": {
+          "label": "事故细节 + 责任追问",
+          "score": 4
+        },
+        "suspense": {
+          "label": "赔偿结果悬念",
+          "score": 5
+        },
+        "narration": {
+          "label": "先抛案情，再回到规则",
+          "score": 5
+        },
+        "camera": {
+          "label": "律师口播 + 案件素材字幕",
+          "score": 3
+        },
+        "interaction": {
+          "label": "评论区追问责任比例",
+          "score": 3
+        },
+        "compliance": {
+          "label": "事实与责任需以证据和裁判为准",
+          "score": 5
+        }
+      }
+    },
+    {
+      "creator": "交通事故律师余逸飞",
+      "source_url": "https://jingxuan.douyin.com/m/video/7536786682417073449",
+      "source_status": "direct",
+      "published_at": "",
+      "title": "半挂车国道正常行驶遇无路口处横穿的电动三轮车，对向有车避让不及致老者身亡初判主责",
+      "copy_summary": "标题先把事故结果、责任冲突或赔偿风险摆出来，再把观众带进责任、证据与赔偿。",
+      "skills": {
+        "opening": {
+          "label": "问题追问开场",
+          "score": 4
+        },
+        "copy": {
+          "label": "事故细节 + 责任追问",
+          "score": 4
+        },
+        "suspense": {
+          "label": "责任归属悬念",
+          "score": 5
+        },
+        "narration": {
+          "label": "先抛案情，再回到规则",
+          "score": 5
+        },
+        "camera": {
+          "label": "律师口播 + 案件素材字幕",
+          "score": 3
+        },
+        "interaction": {
+          "label": "评论区追问责任比例",
+          "score": 3
+        },
+        "compliance": {
+          "label": "事实与责任需以证据和裁判为准",
+          "score": 5
+        }
+      }
+    },
+    {
+      "creator": "交通事故律师余逸飞",
+      "source_url": "https://jingxuan.douyin.com/m/video/7632272288800328998",
+      "source_status": "direct",
+      "published_at": "",
+      "title": "20码把两个80岁老人撞重伤？无接触一键解锁永恒的赡养",
+      "copy_summary": "标题先把事故结果、责任冲突或赔偿风险摆出来，再把观众带进责任、证据与赔偿。",
+      "skills": {
+        "opening": {
+          "label": "数字事故开场",
+          "score": 5
+        },
+        "copy": {
+          "label": "事故细节 + 责任追问",
+          "score": 4
+        },
+        "suspense": {
+          "label": "责任归属悬念",
+          "score": 5
+        },
+        "narration": {
+          "label": "先抛案情，再回到规则",
+          "score": 5
+        },
+        "camera": {
+          "label": "律师口播 + 案件素材字幕",
+          "score": 3
+        },
+        "interaction": {
+          "label": "评论区追问责任比例",
+          "score": 3
+        },
+        "compliance": {
+          "label": "事实与责任需以证据和裁判为准",
+          "score": 5
+        }
+      }
+    },
+    {
+      "creator": "交通事故律师余逸飞",
+      "source_url": "https://jingxuan.douyin.com/m/video/7540511169753222438",
+      "source_status": "direct",
+      "published_at": "",
+      "title": "行人横穿封闭道路的破坏缺口，司机因超速与之发生事故，初判司机主责，其恐担刑责委托律师",
+      "copy_summary": "标题先把事故结果、责任冲突或赔偿风险摆出来，再把观众带进责任、证据与赔偿。",
+      "skills": {
+        "opening": {
+          "label": "问题追问开场",
+          "score": 4
+        },
+        "copy": {
+          "label": "事故细节 + 责任追问",
+          "score": 4
+        },
+        "suspense": {
+          "label": "刑责或证据悬念",
+          "score": 5
+        },
+        "narration": {
+          "label": "先抛案情，再回到规则",
+          "score": 5
+        },
+        "camera": {
+          "label": "律师口播 + 案件素材字幕",
+          "score": 3
+        },
+        "interaction": {
+          "label": "评论区追问责任比例",
+          "score": 3
+        },
+        "compliance": {
+          "label": "事实与责任需以证据和裁判为准",
+          "score": 5
+        }
+      }
+    },
+    {
+      "creator": "交通事故律师余逸飞",
+      "source_url": "https://jingxuan.douyin.com/m/video/7615919808533581083",
+      "source_status": "direct",
+      "published_at": "",
+      "title": "红律灯交通安全律师团队《模拟法庭大赛》——第四期-肇事司机留下“你看着办”，离场就医，是求生本能？还是肇事逃逸？",
+      "copy_summary": "标题先把事故结果、责任冲突或赔偿风险摆出来，再把观众带进责任、证据与赔偿。",
+      "skills": {
+        "opening": {
+          "label": "问题追问开场",
+          "score": 4
+        },
+        "copy": {
+          "label": "角色对抗 + 规则拆解",
+          "score": 4
+        },
+        "suspense": {
+          "label": "刑责或证据悬念",
+          "score": 5
+        },
+        "narration": {
+          "label": "模拟法庭对抗式",
+          "score": 4
+        },
+        "camera": {
+          "label": "多角色模拟法庭 + 字幕",
+          "score": 4
+        },
+        "interaction": {
+          "label": "评论区追问责任比例",
+          "score": 3
+        },
+        "compliance": {
+          "label": "事实与责任需以证据和裁判为准",
+          "score": 5
+        }
+      }
+    },
+    {
+      "creator": "交通事故律师余逸飞",
+      "source_url": "https://jingxuan.douyin.com/m/video/7613334635711434019",
+      "source_status": "direct",
+      "published_at": "",
+      "title": "停车没动却摊上事故！保险还拒赔这波冤不冤？",
+      "copy_summary": "标题先把事故结果、责任冲突或赔偿风险摆出来，再把观众带进责任、证据与赔偿。",
+      "skills": {
+        "opening": {
+          "label": "问题追问开场",
+          "score": 5
+        },
+        "copy": {
+          "label": "事故细节 + 责任追问",
+          "score": 4
+        },
+        "suspense": {
+          "label": "赔偿结果悬念",
+          "score": 5
+        },
+        "narration": {
+          "label": "先抛案情，再回到规则",
+          "score": 5
+        },
+        "camera": {
+          "label": "律师口播 + 案件素材字幕",
+          "score": 3
+        },
+        "interaction": {
+          "label": "评论区追问责任比例",
+          "score": 3
+        },
+        "compliance": {
+          "label": "事实与责任需以证据和裁判为准",
+          "score": 5
+        }
+      }
+    },
+    {
+      "creator": "交通事故律师余逸飞",
+      "source_url": "https://jingxuan.douyin.com/m/video/7620375882938567986",
+      "source_status": "direct",
+      "published_at": "",
+      "title": "高速追尾致4人殒命！大货车仅100万三者险？",
+      "copy_summary": "标题先把事故结果、责任冲突或赔偿风险摆出来，再把观众带进责任、证据与赔偿。",
+      "skills": {
+        "opening": {
+          "label": "数字事故开场",
+          "score": 5
+        },
+        "copy": {
+          "label": "事故细节 + 责任追问",
+          "score": 4
+        },
+        "suspense": {
+          "label": "赔偿结果悬念",
+          "score": 5
+        },
+        "narration": {
+          "label": "先抛案情，再回到规则",
+          "score": 5
+        },
+        "camera": {
+          "label": "律师口播 + 案件素材字幕",
+          "score": 3
+        },
+        "interaction": {
+          "label": "评论区追问责任比例",
+          "score": 3
+        },
+        "compliance": {
+          "label": "事实与责任需以证据和裁判为准",
+          "score": 5
+        }
+      }
+    },
+    {
+      "creator": "交通事故律师余逸飞",
+      "source_url": "https://jingxuan.douyin.com/m/video/7634853986595638574",
+      "source_status": "direct",
+      "published_at": "",
+      "title": "21岁终身瘫痪、肇事者倾家荡产，这场悲剧谁来负责？大型交通普法综艺节目-《百万赔偿》敬请期待",
+      "copy_summary": "标题先把事故结果、责任冲突或赔偿风险摆出来，再把观众带进责任、证据与赔偿。",
+      "skills": {
+        "opening": {
+          "label": "数字事故开场",
+          "score": 5
+        },
+        "copy": {
+          "label": "事故细节 + 责任追问",
+          "score": 4
+        },
+        "suspense": {
+          "label": "赔偿结果悬念",
+          "score": 5
+        },
+        "narration": {
+          "label": "先抛案情，再回到规则",
+          "score": 5
+        },
+        "camera": {
+          "label": "律师口播 + 案件素材字幕",
+          "score": 3
+        },
+        "interaction": {
+          "label": "评论区追问责任比例",
+          "score": 3
+        },
+        "compliance": {
+          "label": "事实与责任需以证据和裁判为准",
+          "score": 5
+        }
+      }
+    },
+    {
+      "creator": "交通事故律师余逸飞",
+      "source_url": "https://jingxuan.douyin.com/m/video/7503015715570552099",
+      "source_status": "direct",
+      "published_at": "",
+      "title": "绿灯起步撞飞电动车大爷！车主遭家属围殴！还赔谅解费？",
+      "copy_summary": "标题先把事故结果、责任冲突或赔偿风险摆出来，再把观众带进责任、证据与赔偿。",
+      "skills": {
+        "opening": {
+          "label": "数字事故开场",
+          "score": 5
+        },
+        "copy": {
+          "label": "事故细节 + 责任追问",
+          "score": 4
+        },
+        "suspense": {
+          "label": "责任归属悬念",
+          "score": 5
+        },
+        "narration": {
+          "label": "先抛案情，再回到规则",
+          "score": 5
+        },
+        "camera": {
+          "label": "律师口播 + 案件素材字幕",
+          "score": 3
+        },
+        "interaction": {
+          "label": "评论区追问责任比例",
+          "score": 3
+        },
+        "compliance": {
+          "label": "事实与责任需以证据和裁判为准",
+          "score": 5
+        }
+      }
+    },
+    {
+      "creator": "交通事故律师余逸飞",
+      "source_url": "https://jingxuan.douyin.com/m/video/7602552485865147691",
+      "source_status": "direct",
+      "published_at": "",
+      "title": "大货车“死亡弯月”竟碾压到冒烟当场离世！",
+      "copy_summary": "标题先把事故结果、责任冲突或赔偿风险摆出来，再把观众带进责任、证据与赔偿。",
+      "skills": {
+        "opening": {
+          "label": "问题追问开场",
+          "score": 5
+        },
+        "copy": {
+          "label": "事故细节 + 责任追问",
+          "score": 4
+        },
+        "suspense": {
+          "label": "责任归属悬念",
+          "score": 5
+        },
+        "narration": {
+          "label": "先抛案情，再回到规则",
+          "score": 5
+        },
+        "camera": {
+          "label": "律师口播 + 案件素材字幕",
+          "score": 3
+        },
+        "interaction": {
+          "label": "评论区追问责任比例",
+          "score": 3
+        },
+        "compliance": {
+          "label": "事实与责任需以证据和裁判为准",
+          "score": 5
+        }
+      }
+    },
+    {
+      "creator": "交通事故律师余逸飞",
+      "source_url": "https://jingxuan.douyin.com/m/video/7632239013721689353",
+      "source_status": "direct",
+      "published_at": "",
+      "title": "4月27日晚9:30，来直播间看清交通事故刑事风险。",
+      "copy_summary": "标题先把事故结果、责任冲突或赔偿风险摆出来，再把观众带进责任、证据与赔偿。",
+      "skills": {
+        "opening": {
+          "label": "直播行动开场",
+          "score": 5
+        },
+        "copy": {
+          "label": "事故细节 + 责任追问",
+          "score": 4
+        },
+        "suspense": {
+          "label": "赔偿结果悬念",
+          "score": 5
+        },
+        "narration": {
+          "label": "直播预告承接式",
+          "score": 5
+        },
+        "camera": {
+          "label": "律师口播 + 案件素材字幕",
+          "score": 3
+        },
+        "interaction": {
+          "label": "直播间承接追问",
+          "score": 4
+        },
+        "compliance": {
+          "label": "事实与责任需以证据和裁判为准",
+          "score": 5
+        }
+      }
+    },
+    {
+      "creator": "交通事故律师余逸飞",
+      "source_url": "https://jingxuan.douyin.com/m/video/7508226720957320500",
+      "source_status": "direct",
+      "published_at": "",
+      "title": "3少年骑电动车被货车撞飞！没监控没证人！逝者父亲难维权？",
+      "copy_summary": "标题先把事故结果、责任冲突或赔偿风险摆出来，再把观众带进责任、证据与赔偿。",
+      "skills": {
+        "opening": {
+          "label": "数字事故开场",
+          "score": 5
+        },
+        "copy": {
+          "label": "事故细节 + 责任追问",
+          "score": 4
+        },
+        "suspense": {
+          "label": "刑责或证据悬念",
+          "score": 5
+        },
+        "narration": {
+          "label": "先抛案情，再回到规则",
+          "score": 5
+        },
+        "camera": {
+          "label": "律师口播 + 案件素材字幕",
+          "score": 3
+        },
+        "interaction": {
+          "label": "评论区追问责任比例",
+          "score": 3
+        },
+        "compliance": {
+          "label": "事实与责任需以证据和裁判为准",
+          "score": 5
+        }
+      }
+    },
+    {
+      "creator": "交通事故律师余逸飞",
+      "source_url": "https://jingxuan.douyin.com/m/video/7565419058213752064",
+      "source_status": "direct",
+      "published_at": "",
+      "title": "心脏病突发猝死车前？无接触事故为何要赔钱？",
+      "copy_summary": "标题先把事故结果、责任冲突或赔偿风险摆出来，再把观众带进责任、证据与赔偿。",
+      "skills": {
+        "opening": {
+          "label": "问题追问开场",
+          "score": 5
+        },
+        "copy": {
+          "label": "事故细节 + 责任追问",
+          "score": 4
+        },
+        "suspense": {
+          "label": "赔偿结果悬念",
+          "score": 5
+        },
+        "narration": {
+          "label": "先抛案情，再回到规则",
+          "score": 5
+        },
+        "camera": {
+          "label": "律师口播 + 案件素材字幕",
+          "score": 3
+        },
+        "interaction": {
+          "label": "评论区追问责任比例",
+          "score": 3
+        },
+        "compliance": {
+          "label": "事实与责任需以证据和裁判为准",
+          "score": 5
+        }
+      }
+    },
+    {
+      "creator": "交通事故律师余逸飞",
+      "source_url": "https://jingxuan.douyin.com/m/video/7589563373293997322",
+      "source_status": "direct",
+      "published_at": "",
+      "title": "专业律师，撕开法条盲区，为公正兜底！",
+      "copy_summary": "标题先把事故结果、责任冲突或赔偿风险摆出来，再把观众带进责任、证据与赔偿。",
+      "skills": {
+        "opening": {
+          "label": "身份承诺开场",
+          "score": 4
+        },
+        "copy": {
+          "label": "事故细节 + 责任追问",
+          "score": 4
+        },
+        "suspense": {
+          "label": "责任归属悬念",
+          "score": 5
+        },
+        "narration": {
+          "label": "先抛案情，再回到规则",
+          "score": 5
+        },
+        "camera": {
+          "label": "律师口播 + 案件素材字幕",
+          "score": 3
+        },
+        "interaction": {
+          "label": "评论区追问责任比例",
+          "score": 3
+        },
+        "compliance": {
+          "label": "事实与责任需以证据和裁判为准",
+          "score": 5
+        }
+      }
+    },
+    {
+      "creator": "何智娟律师",
+      "source_url": "https://jingxuan.douyin.com/m/video/7591458652054129961",
+      "source_status": "direct",
+      "published_at": "",
+      "title": "何智娟律师｜《辩护思维》01：律师到底能不能把黑的说成白的？",
+      "copy_summary": "标题先把一个大众直觉、网友疑问或辩护命题摆出来，再把观众带进证据、辩护空间与案件判断。",
+      "skills": {
+        "opening": {
+          "label": "系列编号 + 核心命题",
+          "score": 4
+        },
+        "copy": {
+          "label": "辩护策略二分",
+          "score": 4
+        },
+        "suspense": {
+          "label": "大众直觉 vs 案件事实",
+          "score": 4
+        },
+        "narration": {
+          "label": "先抛判断，再拆证据",
+          "score": 4
+        },
+        "camera": {
+          "label": "律师正面口播 + 字幕重点",
+          "score": 4
+        },
+        "interaction": {
+          "label": "邀请观众带着问题听",
+          "score": 3
+        },
+        "compliance": {
+          "label": "案件隐私与法律结论需复核",
+          "score": 5
+        }
+      }
+    },
+    {
+      "creator": "何智娟律师",
+      "source_url": "https://jingxuan.douyin.com/m/video/7599207304986135849",
+      "source_status": "direct",
+      "published_at": "",
+      "title": "何智娟律师｜《辩护思维》02：律师是如何判断一个案件有没有辩护空间的？",
+      "copy_summary": "标题先把一个大众直觉、网友疑问或辩护命题摆出来，再把观众带进证据、辩护空间与案件判断。",
+      "skills": {
+        "opening": {
+          "label": "系列编号 + 核心命题",
+          "score": 4
+        },
+        "copy": {
+          "label": "辩护策略二分",
+          "score": 4
+        },
+        "suspense": {
+          "label": "大众直觉 vs 案件事实",
+          "score": 4
+        },
+        "narration": {
+          "label": "先抛判断，再拆证据",
+          "score": 4
+        },
+        "camera": {
+          "label": "律师正面口播 + 字幕重点",
+          "score": 4
+        },
+        "interaction": {
+          "label": "邀请观众带着问题听",
+          "score": 3
+        },
+        "compliance": {
+          "label": "案件隐私与法律结论需复核",
+          "score": 5
+        }
+      }
+    },
+    {
+      "creator": "何智娟律师",
+      "source_url": "https://jingxuan.douyin.com/m/video/7612192516661710107",
+      "source_status": "direct",
+      "published_at": "",
+      "title": "何智娟律师｜《辩护思维》05：认罪认罚后如何做无罪辩护？",
+      "copy_summary": "标题先把一个大众直觉、网友疑问或辩护命题摆出来，再把观众带进证据、辩护空间与案件判断。",
+      "skills": {
+        "opening": {
+          "label": "系列编号 + 核心命题",
+          "score": 4
+        },
+        "copy": {
+          "label": "证据链拆解",
+          "score": 4
+        },
+        "suspense": {
+          "label": "关键证据能否改变结论",
+          "score": 4
+        },
+        "narration": {
+          "label": "先抛判断，再拆证据",
+          "score": 4
+        },
+        "camera": {
+          "label": "律师正面口播 + 字幕重点",
+          "score": 4
+        },
+        "interaction": {
+          "label": "邀请观众带着问题听",
+          "score": 3
+        },
+        "compliance": {
+          "label": "案件隐私与法律结论需复核",
+          "score": 5
+        }
+      }
+    },
+    {
+      "creator": "何智娟律师",
+      "source_url": "https://jingxuan.douyin.com/m/video/7617369582625426738",
+      "source_status": "direct",
+      "published_at": "",
+      "title": "何智娟律师｜315特辑·《辩护思维》06：消费者维权，律师能做什么？",
+      "copy_summary": "标题先把一个大众直觉、网友疑问或辩护命题摆出来，再把观众带进证据、辩护空间与案件判断。",
+      "skills": {
+        "opening": {
+          "label": "系列编号 + 核心命题",
+          "score": 4
+        },
+        "copy": {
+          "label": "辩护策略二分",
+          "score": 4
+        },
+        "suspense": {
+          "label": "大众直觉 vs 案件事实",
+          "score": 4
+        },
+        "narration": {
+          "label": "先抛判断，再拆证据",
+          "score": 4
+        },
+        "camera": {
+          "label": "律师正面口播 + 字幕重点",
+          "score": 4
+        },
+        "interaction": {
+          "label": "邀请观众带着问题听",
+          "score": 3
+        },
+        "compliance": {
+          "label": "案件隐私与法律结论需复核",
+          "score": 5
+        }
+      }
+    },
+    {
+      "creator": "何智娟律师",
+      "source_url": "https://jingxuan.douyin.com/m/video/7619962607163788570",
+      "source_status": "direct",
+      "published_at": "",
+      "title": "何智娟律师｜《辩护思维》07：为什么有些案件不能只看结果？",
+      "copy_summary": "标题先把一个大众直觉、网友疑问或辩护命题摆出来，再把观众带进证据、辩护空间与案件判断。",
+      "skills": {
+        "opening": {
+          "label": "系列编号 + 核心命题",
+          "score": 4
+        },
+        "copy": {
+          "label": "辩护策略二分",
+          "score": 4
+        },
+        "suspense": {
+          "label": "大众直觉 vs 案件事实",
+          "score": 4
+        },
+        "narration": {
+          "label": "先抛判断，再拆证据",
+          "score": 4
+        },
+        "camera": {
+          "label": "律师正面口播 + 字幕重点",
+          "score": 4
+        },
+        "interaction": {
+          "label": "邀请观众带着问题听",
+          "score": 3
+        },
+        "compliance": {
+          "label": "案件隐私与法律结论需复核",
+          "score": 5
+        }
+      }
+    },
+    {
+      "creator": "何智娟律师",
+      "source_url": "https://jingxuan.douyin.com/m/video/7622583458937752878",
+      "source_status": "direct",
+      "published_at": "",
+      "title": "何智娟律师｜《辩护思维》08：证据不足时，辩护律师如何找到突破口？",
+      "copy_summary": "标题先把一个大众直觉、网友疑问或辩护命题摆出来，再把观众带进证据、辩护空间与案件判断。",
+      "skills": {
+        "opening": {
+          "label": "系列编号 + 核心命题",
+          "score": 4
+        },
+        "copy": {
+          "label": "证据链拆解",
+          "score": 4
+        },
+        "suspense": {
+          "label": "关键证据能否改变结论",
+          "score": 4
+        },
+        "narration": {
+          "label": "先抛判断，再拆证据",
+          "score": 4
+        },
+        "camera": {
+          "label": "律师正面口播 + 字幕重点",
+          "score": 4
+        },
+        "interaction": {
+          "label": "邀请观众带着问题听",
+          "score": 3
+        },
+        "compliance": {
+          "label": "案件隐私与法律结论需复核",
+          "score": 5
+        }
+      }
+    },
+    {
+      "creator": "何智娟律师",
+      "source_url": "https://jingxuan.douyin.com/m/video/7627783270213700918",
+      "source_status": "direct",
+      "published_at": "",
+      "title": "何智娟律师｜《辩护思维》09：还手即互殴？如何用监控还原事实",
+      "copy_summary": "标题先把一个大众直觉、网友疑问或辩护命题摆出来，再把观众带进证据、辩护空间与案件判断。",
+      "skills": {
+        "opening": {
+          "label": "系列编号 + 核心命题",
+          "score": 4
+        },
+        "copy": {
+          "label": "证据链拆解",
+          "score": 4
+        },
+        "suspense": {
+          "label": "关键证据能否改变结论",
+          "score": 4
+        },
+        "narration": {
+          "label": "先抛判断，再拆证据",
+          "score": 4
+        },
+        "camera": {
+          "label": "律师正面口播 + 字幕重点",
+          "score": 4
+        },
+        "interaction": {
+          "label": "邀请观众带着问题听",
+          "score": 3
+        },
+        "compliance": {
+          "label": "案件隐私与法律结论需复核",
+          "score": 5
+        }
+      }
+    },
+    {
+      "creator": "何智娟律师",
+      "source_url": "https://jingxuan.douyin.com/m/video/7630284825068358918",
+      "source_status": "direct",
+      "published_at": "",
+      "title": "何智娟律师｜《辩护思维》10：一份证据，如何改变案件走向？",
+      "copy_summary": "标题先把一个大众直觉、网友疑问或辩护命题摆出来，再把观众带进证据、辩护空间与案件判断。",
+      "skills": {
+        "opening": {
+          "label": "系列编号 + 核心命题",
+          "score": 4
+        },
+        "copy": {
+          "label": "证据链拆解",
+          "score": 4
+        },
+        "suspense": {
+          "label": "关键证据能否改变结论",
+          "score": 4
+        },
+        "narration": {
+          "label": "先抛判断，再拆证据",
+          "score": 4
+        },
+        "camera": {
+          "label": "律师正面口播 + 字幕重点",
+          "score": 4
+        },
+        "interaction": {
+          "label": "邀请观众带着问题听",
+          "score": 3
+        },
+        "compliance": {
+          "label": "案件隐私与法律结论需复核",
+          "score": 5
+        }
+      }
+    },
+    {
+      "creator": "何智娟律师",
+      "source_url": "https://jingxuan.douyin.com/m/video/7645993515117284660",
+      "source_status": "direct",
+      "published_at": "",
+      "title": "何智娟律师｜《辩护思维》14：该打的就打，能谈的就谈！",
+      "copy_summary": "标题先把一个大众直觉、网友疑问或辩护命题摆出来，再把观众带进证据、辩护空间与案件判断。",
+      "skills": {
+        "opening": {
+          "label": "系列编号 + 核心命题",
+          "score": 4
+        },
+        "copy": {
+          "label": "辩护策略二分",
+          "score": 4
+        },
+        "suspense": {
+          "label": "大众直觉 vs 案件事实",
+          "score": 4
+        },
+        "narration": {
+          "label": "先抛判断，再拆证据",
+          "score": 4
+        },
+        "camera": {
+          "label": "律师正面口播 + 字幕重点",
+          "score": 4
+        },
+        "interaction": {
+          "label": "邀请观众带着问题听",
+          "score": 3
+        },
+        "compliance": {
+          "label": "案件隐私与法律结论需复核",
+          "score": 5
+        }
+      }
+    },
+    {
+      "creator": "何智娟律师",
+      "source_url": "https://jingxuan.douyin.com/m/video/7562874189925944591",
+      "source_status": "direct",
+      "published_at": "",
+      "title": "何智娟律师答网友〖第5期〗为弱者撑起一把遮风避雨的伞",
+      "copy_summary": "标题先把一个大众直觉、网友疑问或辩护命题摆出来，再把观众带进证据、辩护空间与案件判断。",
+      "skills": {
+        "opening": {
+          "label": "网友问题直入",
+          "score": 4
+        },
+        "copy": {
+          "label": "问题回答 + 经验判断",
+          "score": 4
+        },
+        "suspense": {
+          "label": "大众直觉 vs 案件事实",
+          "score": 4
+        },
+        "narration": {
+          "label": "先回应，再举例解释",
+          "score": 4
+        },
+        "camera": {
+          "label": "律师正面口播 + 字幕重点",
+          "score": 4
+        },
+        "interaction": {
+          "label": "答网友 / 评论问题",
+          "score": 5
+        },
+        "compliance": {
+          "label": "案件隐私与法律结论需复核",
+          "score": 5
+        }
+      }
+    },
+    {
+      "creator": "何智娟律师",
+      "source_url": "https://jingxuan.douyin.com/m/video/7664183780210429218",
+      "source_status": "direct",
+      "published_at": "",
+      "title": "何智娟律师答网友〖第19期〗遇到过“充当第二公诉人”的律师吗",
+      "copy_summary": "标题先把一个大众直觉、网友疑问或辩护命题摆出来，再把观众带进证据、辩护空间与案件判断。",
+      "skills": {
+        "opening": {
+          "label": "网友问题直入",
+          "score": 4
+        },
+        "copy": {
+          "label": "问题回答 + 经验判断",
+          "score": 4
+        },
+        "suspense": {
+          "label": "大众直觉 vs 案件事实",
+          "score": 4
+        },
+        "narration": {
+          "label": "先回应，再举例解释",
+          "score": 4
+        },
+        "camera": {
+          "label": "律师正面口播 + 字幕重点",
+          "score": 4
+        },
+        "interaction": {
+          "label": "答网友 / 评论问题",
+          "score": 5
+        },
+        "compliance": {
+          "label": "案件隐私与法律结论需复核",
+          "score": 5
+        }
+      }
+    },
+    {
+      "creator": "何智娟律师",
+      "source_url": "https://jingxuan.douyin.com/m/video/7661579153258351910",
+      "source_status": "direct",
+      "published_at": "",
+      "title": "何智娟律师答网友〖第18期〗经验越丰富的律师越能“扛事”？",
+      "copy_summary": "标题先把一个大众直觉、网友疑问或辩护命题摆出来，再把观众带进证据、辩护空间与案件判断。",
+      "skills": {
+        "opening": {
+          "label": "网友问题直入",
+          "score": 4
+        },
+        "copy": {
+          "label": "问题回答 + 经验判断",
+          "score": 4
+        },
+        "suspense": {
+          "label": "大众直觉 vs 案件事实",
+          "score": 4
+        },
+        "narration": {
+          "label": "先回应，再举例解释",
+          "score": 4
+        },
+        "camera": {
+          "label": "律师正面口播 + 字幕重点",
+          "score": 4
+        },
+        "interaction": {
+          "label": "答网友 / 评论问题",
+          "score": 5
+        },
+        "compliance": {
+          "label": "案件隐私与法律结论需复核",
+          "score": 5
+        }
+      }
+    },
+    {
+      "creator": "何智娟律师",
+      "source_url": "https://jingxuan.douyin.com/m/video/7658953628618722579",
+      "source_status": "direct",
+      "published_at": "",
+      "title": "何智娟律师｜《辩护思维》15：有辩护空间但被盖棺定论，怎么破",
+      "copy_summary": "标题先把一个大众直觉、网友疑问或辩护命题摆出来，再把观众带进证据、辩护空间与案件判断。",
+      "skills": {
+        "opening": {
+          "label": "系列编号 + 核心命题",
+          "score": 4
+        },
+        "copy": {
+          "label": "辩护策略二分",
+          "score": 4
+        },
+        "suspense": {
+          "label": "大众直觉 vs 案件事实",
+          "score": 4
+        },
+        "narration": {
+          "label": "先抛判断，再拆证据",
+          "score": 4
+        },
+        "camera": {
+          "label": "律师正面口播 + 字幕重点",
+          "score": 4
+        },
+        "interaction": {
+          "label": "邀请观众带着问题听",
+          "score": 3
+        },
+        "compliance": {
+          "label": "案件隐私与法律结论需复核",
+          "score": 5
+        }
+      }
+    },
+    {
+      "creator": "何智娟律师",
+      "source_url": "https://jingxuan.douyin.com/m/video/7656384527346044166",
+      "source_status": "direct",
+      "published_at": "",
+      "title": "何智娟律师答网友〖第17期〗开箱视频：创了抖音法律播放记录",
+      "copy_summary": "标题先把一个大众直觉、网友疑问或辩护命题摆出来，再把观众带进证据、辩护空间与案件判断。",
+      "skills": {
+        "opening": {
+          "label": "网友问题直入",
+          "score": 4
+        },
+        "copy": {
+          "label": "问题回答 + 经验判断",
+          "score": 4
+        },
+        "suspense": {
+          "label": "大众直觉 vs 案件事实",
+          "score": 4
+        },
+        "narration": {
+          "label": "先回应，再举例解释",
+          "score": 4
+        },
+        "camera": {
+          "label": "律师正面口播 + 字幕重点",
+          "score": 4
+        },
+        "interaction": {
+          "label": "答网友 / 评论问题",
+          "score": 5
+        },
+        "compliance": {
+          "label": "案件隐私与法律结论需复核",
+          "score": 5
+        }
+      }
+    },
+    {
+      "creator": "何智娟律师",
+      "source_url": "https://jingxuan.douyin.com/m/video/7653649999254785321",
+      "source_status": "direct",
+      "published_at": "",
+      "title": "何智娟律师｜《庭审节奏》01：谁掌握庭审节奏，谁就掌握主动权",
+      "copy_summary": "标题先把一个大众直觉、网友疑问或辩护命题摆出来，再把观众带进证据、辩护空间与案件判断。",
+      "skills": {
+        "opening": {
+          "label": "系列编号 + 核心命题",
+          "score": 4
+        },
+        "copy": {
+          "label": "辩护策略二分",
+          "score": 4
+        },
+        "suspense": {
+          "label": "大众直觉 vs 案件事实",
+          "score": 4
+        },
+        "narration": {
+          "label": "先抛判断，再拆证据",
+          "score": 4
+        },
+        "camera": {
+          "label": "律师正面口播 + 字幕重点",
+          "score": 4
+        },
+        "interaction": {
+          "label": "邀请观众带着问题听",
+          "score": 3
+        },
+        "compliance": {
+          "label": "案件隐私与法律结论需复核",
+          "score": 5
+        }
+      }
+    },
+    {
+      "creator": "何智娟律师",
+      "source_url": "https://jingxuan.douyin.com/m/video/7651190397728787747",
+      "source_status": "direct",
+      "published_at": "",
+      "title": "何智娟律师答网友〖第16期〗说和写，哪个更重要？",
+      "copy_summary": "标题先把一个大众直觉、网友疑问或辩护命题摆出来，再把观众带进证据、辩护空间与案件判断。",
+      "skills": {
+        "opening": {
+          "label": "网友问题直入",
+          "score": 4
+        },
+        "copy": {
+          "label": "问题回答 + 经验判断",
+          "score": 4
+        },
+        "suspense": {
+          "label": "大众直觉 vs 案件事实",
+          "score": 4
+        },
+        "narration": {
+          "label": "先回应，再举例解释",
+          "score": 4
+        },
+        "camera": {
+          "label": "律师正面口播 + 字幕重点",
+          "score": 4
+        },
+        "interaction": {
+          "label": "答网友 / 评论问题",
+          "score": 5
+        },
+        "compliance": {
+          "label": "案件隐私与法律结论需复核",
+          "score": 5
+        }
+      }
+    },
+    {
+      "creator": "何智娟律师",
+      "source_url": "https://jingxuan.douyin.com/m/video/7643364811983686952",
+      "source_status": "direct",
+      "published_at": "",
+      "title": "何智娟律师答网友〖第15期〗扎心问题：心态如何“炸后重建”？",
+      "copy_summary": "标题先把一个大众直觉、网友疑问或辩护命题摆出来，再把观众带进证据、辩护空间与案件判断。",
+      "skills": {
+        "opening": {
+          "label": "网友问题直入",
+          "score": 4
+        },
+        "copy": {
+          "label": "问题回答 + 经验判断",
+          "score": 4
+        },
+        "suspense": {
+          "label": "大众直觉 vs 案件事实",
+          "score": 4
+        },
+        "narration": {
+          "label": "先回应，再举例解释",
+          "score": 4
+        },
+        "camera": {
+          "label": "律师正面口播 + 字幕重点",
+          "score": 4
+        },
+        "interaction": {
+          "label": "答网友 / 评论问题",
+          "score": 5
+        },
+        "compliance": {
+          "label": "案件隐私与法律结论需复核",
+          "score": 5
+        }
+      }
+    },
+    {
+      "creator": "何智娟律师",
+      "source_url": "https://jingxuan.douyin.com/m/video/7669335935665982761",
+      "source_status": "direct",
+      "published_at": "",
+      "title": "何智娟律师｜《辩护思维》16：多收集一份证据，就多一分可能",
+      "copy_summary": "标题先把一个大众直觉、网友疑问或辩护命题摆出来，再把观众带进证据、辩护空间与案件判断。",
+      "skills": {
+        "opening": {
+          "label": "系列编号 + 核心命题",
+          "score": 4
+        },
+        "copy": {
+          "label": "证据链拆解",
+          "score": 4
+        },
+        "suspense": {
+          "label": "关键证据能否改变结论",
+          "score": 4
+        },
+        "narration": {
+          "label": "先抛判断，再拆证据",
+          "score": 4
+        },
+        "camera": {
+          "label": "律师正面口播 + 字幕重点",
+          "score": 4
+        },
+        "interaction": {
+          "label": "邀请观众带着问题听",
+          "score": 3
+        },
+        "compliance": {
+          "label": "案件隐私与法律结论需复核",
+          "score": 5
+        }
+      }
+    },
+    {
+      "creator": "何智娟律师",
+      "source_url": "https://jingxuan.douyin.com/m/video/7591458652054129961",
+      "source_status": "profile_related_title_only",
+      "published_at": "",
+      "title": "何智娟律师答网友〖第14期〗再谈律师作用：你相信就是有用的！",
+      "copy_summary": "标题先把一个大众直觉、网友疑问或辩护命题摆出来，再把观众带进证据、辩护空间与案件判断。",
+      "skills": {
+        "opening": {
+          "label": "网友问题直入",
+          "score": 4
+        },
+        "copy": {
+          "label": "问题回答 + 经验判断",
+          "score": 4
+        },
+        "suspense": {
+          "label": "大众直觉 vs 案件事实",
+          "score": 4
+        },
+        "narration": {
+          "label": "先回应，再举例解释",
+          "score": 4
+        },
+        "camera": {
+          "label": "律师正面口播 + 字幕重点",
+          "score": 4
+        },
+        "interaction": {
+          "label": "答网友 / 评论问题",
+          "score": 5
+        },
+        "compliance": {
+          "label": "案件隐私与法律结论需复核",
+          "score": 5
+        }
+      }
+    },
+    {
+      "creator": "何智娟律师",
+      "source_url": "https://jingxuan.douyin.com/m/video/7591458652054129961",
+      "source_status": "profile_related_title_only",
+      "published_at": "",
+      "title": "何智娟律师答网友〖第13期〗坦诚回答：证据确凿律师有什么用？",
+      "copy_summary": "标题先把一个大众直觉、网友疑问或辩护命题摆出来，再把观众带进证据、辩护空间与案件判断。",
+      "skills": {
+        "opening": {
+          "label": "网友问题直入",
+          "score": 4
+        },
+        "copy": {
+          "label": "证据链拆解",
+          "score": 4
+        },
+        "suspense": {
+          "label": "关键证据能否改变结论",
+          "score": 4
+        },
+        "narration": {
+          "label": "先回应，再举例解释",
+          "score": 4
+        },
+        "camera": {
+          "label": "律师正面口播 + 字幕重点",
+          "score": 4
+        },
+        "interaction": {
+          "label": "答网友 / 评论问题",
+          "score": 5
+        },
+        "compliance": {
+          "label": "案件隐私与法律结论需复核",
+          "score": 5
+        }
+      }
+    },
+    {
+      "creator": "何智娟律师",
+      "source_url": "https://jingxuan.douyin.com/m/video/7591458652054129961",
+      "source_status": "profile_related_title_only",
+      "published_at": "",
+      "title": "何智娟律师｜《辩护思维》11：一份关键证据决定案件的最终走向",
+      "copy_summary": "标题先把一个大众直觉、网友疑问或辩护命题摆出来，再把观众带进证据、辩护空间与案件判断。",
+      "skills": {
+        "opening": {
+          "label": "系列编号 + 核心命题",
+          "score": 4
+        },
+        "copy": {
+          "label": "证据链拆解",
+          "score": 4
+        },
+        "suspense": {
+          "label": "关键证据能否改变结论",
+          "score": 4
+        },
+        "narration": {
+          "label": "先抛判断，再拆证据",
+          "score": 4
+        },
+        "camera": {
+          "label": "律师正面口播 + 字幕重点",
+          "score": 4
+        },
+        "interaction": {
+          "label": "邀请观众带着问题听",
+          "score": 3
+        },
+        "compliance": {
+          "label": "案件隐私与法律结论需复核",
+          "score": 5
+        }
+      }
+    }
+  ],
+  "patterns": {
+    "opening": [
+      {
+        "label": "问题追问开场",
+        "count": 14
+      },
+      {
+        "label": "系列编号 + 核心命题",
+        "count": 13
+      },
+      {
+        "label": "数字事故开场",
+        "count": 9
+      },
+      {
+        "label": "网友问题直入",
+        "count": 8
+      },
+      {
+        "label": "身份承诺开场",
+        "count": 2
+      },
+      {
+        "label": "直播行动开场",
+        "count": 1
+      }
+    ],
+    "copy": [
+      {
+        "label": "事故细节 + 责任追问",
+        "count": 21
+      },
+      {
+        "label": "辩护策略二分",
+        "count": 7
+      },
+      {
+        "label": "证据链拆解",
+        "count": 7
+      },
+      {
+        "label": "问题回答 + 经验判断",
+        "count": 7
+      },
+      {
+        "label": "角色对抗 + 规则拆解",
+        "count": 5
+      }
+    ],
+    "suspense": [
+      {
+        "label": "大众直觉 vs 案件事实",
+        "count": 14
+      },
+      {
+        "label": "责任归属悬念",
+        "count": 12
+      },
+      {
+        "label": "赔偿结果悬念",
+        "count": 10
+      },
+      {
+        "label": "关键证据能否改变结论",
+        "count": 7
+      },
+      {
+        "label": "刑责或证据悬念",
+        "count": 4
+      }
+    ],
+    "narration": [
+      {
+        "label": "先抛案情，再回到规则",
+        "count": 20
+      },
+      {
+        "label": "先抛判断，再拆证据",
+        "count": 13
+      },
+      {
+        "label": "先回应，再举例解释",
+        "count": 8
+      },
+      {
+        "label": "模拟法庭对抗式",
+        "count": 5
+      },
+      {
+        "label": "直播预告承接式",
+        "count": 1
+      }
+    ],
+    "camera": [
+      {
+        "label": "律师口播 + 案件素材字幕",
+        "count": 21
+      },
+      {
+        "label": "律师正面口播 + 字幕重点",
+        "count": 21
+      },
+      {
+        "label": "多角色模拟法庭 + 字幕",
+        "count": 5
+      }
+    ],
+    "interaction": [
+      {
+        "label": "评论区追问责任比例",
+        "count": 25
+      },
+      {
+        "label": "邀请观众带着问题听",
+        "count": 13
+      },
+      {
+        "label": "答网友 / 评论问题",
+        "count": 8
+      },
+      {
+        "label": "直播间承接追问",
+        "count": 1
+      }
+    ],
+    "compliance": [
+      {
+        "label": "事实与责任需以证据和裁判为准",
+        "count": 26
+      },
+      {
+        "label": "案件隐私与法律结论需复核",
+        "count": 21
+      }
+    ]
+  },
+  "creators": [
+    {
+      "creator": "交通事故律师余逸飞",
+      "sample_count": 26,
+      "source_count": 26,
+      "patterns": {
+        "opening": {
+          "数字事故开场": 9,
+          "问题追问开场": 14,
+          "身份承诺开场": 2,
+          "直播行动开场": 1
+        },
+        "copy": {
+          "事故细节 + 责任追问": 21,
+          "角色对抗 + 规则拆解": 5
+        },
+        "suspense": {
+          "赔偿结果悬念": 10,
+          "责任归属悬念": 12,
+          "刑责或证据悬念": 4
+        },
+        "narration": {
+          "先抛案情，再回到规则": 20,
+          "模拟法庭对抗式": 5,
+          "直播预告承接式": 1
+        },
+        "camera": {
+          "律师口播 + 案件素材字幕": 21,
+          "多角色模拟法庭 + 字幕": 5
+        },
+        "interaction": {
+          "评论区追问责任比例": 25,
+          "直播间承接追问": 1
+        },
+        "compliance": {
+          "事实与责任需以证据和裁判为准": 26
+        }
+      }
+    },
+    {
+      "creator": "何智娟律师",
+      "sample_count": 21,
+      "source_count": 18,
+      "patterns": {
+        "opening": {
+          "系列编号 + 核心命题": 13,
+          "网友问题直入": 8
+        },
+        "copy": {
+          "辩护策略二分": 7,
+          "证据链拆解": 7,
+          "问题回答 + 经验判断": 7
+        },
+        "suspense": {
+          "大众直觉 vs 案件事实": 14,
+          "关键证据能否改变结论": 7
+        },
+        "narration": {
+          "先抛判断，再拆证据": 13,
+          "先回应，再举例解释": 8
+        },
+        "camera": {
+          "律师正面口播 + 字幕重点": 21
+        },
+        "interaction": {
+          "邀请观众带着问题听": 13,
+          "答网友 / 评论问题": 8
+        },
+        "compliance": {
+          "案件隐私与法律结论需复核": 21
+        }
+      }
+    }
+  ],
+  "legal_corpus": [
+    {
+      "id": "civil-code",
+      "title": "中华人民共和国民法典",
+      "category": "民法商法",
+      "status": "有效",
+      "effective_date": "2021-01-01",
+      "focus": [
+        "民事主体",
+        "合同",
+        "侵权责任",
+        "婚姻家庭",
+        "继承"
+      ],
+      "content_use": "把日常纠纷翻译成当事人听得懂的权利、义务、证据和救济路径。",
+      "source_url": "https://flk.npc.gov.cn/detail?id=ff808081729d1efe01729d50b5c500bf&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E6%B0%91%E6%B3%95%E5%85%B8"
+    },
+    {
+      "id": "company-law",
+      "title": "中华人民共和国公司法",
+      "category": "民法商法 / 企业法",
+      "status": "有效",
+      "effective_date": "2024-07-01",
+      "focus": [
+        "公司设立",
+        "股东责任",
+        "治理结构",
+        "出资与转让",
+        "解散清算"
+      ],
+      "content_use": "把企业经营中的股东、出资、章程、董事高管和清算问题做成场景化内容。",
+      "source_url": "https://flk.npc.gov.cn/detail?fileId=&id=ff8081818c9108eb018cb6922f750c07&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8F%B8%E6%B3%95&type="
+    },
+    {
+      "id": "enterprise-bankruptcy-law",
+      "title": "中华人民共和国企业破产法",
+      "category": "经济法 / 企业法",
+      "status": "有效",
+      "effective_date": "2007-06-01",
+      "focus": [
+        "重整",
+        "和解",
+        "破产清算",
+        "债权申报",
+        "清偿顺序"
+      ],
+      "content_use": "用企业危机、债权人选择和重整路径解释复杂的破产程序，避免只讲结论。",
+      "source_url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf63c7c0343&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E4%BC%81%E4%B8%9A%E7%A0%B4%E4%BA%A7%E6%B3%95"
+    },
+    {
+      "id": "labor-contract-law",
+      "title": "中华人民共和国劳动合同法",
+      "category": "社会法 / 企业法",
+      "status": "有效",
+      "effective_date": "2013-07-01",
+      "focus": [
+        "劳动合同",
+        "试用期",
+        "解除与终止",
+        "经济补偿",
+        "竞业限制"
+      ],
+      "content_use": "从员工最常遇到的合同、离职、补偿和用工证据切入，形成可连续更新的企业法选题。",
+      "source_url": "https://flk.npc.gov.cn/detail?fileId=&id=2c909fdd678bf17901678bf74d7106b3&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&type="
+    },
+    {
+      "id": "personal-information-protection-law",
+      "title": "中华人民共和国个人信息保护法",
+      "category": "数字法 / 企业合规",
+      "status": "有效",
+      "effective_date": "2021-11-01",
+      "focus": [
+        "个人信息处理",
+        "告知同意",
+        "敏感个人信息",
+        "跨境提供",
+        "法律责任"
+      ],
+      "content_use": "把企业收集、使用、共享个人信息的动作拆成风险点、流程和检查清单。",
+      "source_url": "https://flk.npc.gov.cn/detail?fileId=&id=ff8081817b6472a3017b656cc2040044&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF%E4%BF%9D%E6%8A%A4%E6%B3%95&type="
+    },
+    {
+      "id": "data-security-law",
+      "title": "中华人民共和国数据安全法",
+      "category": "数字法 / 企业合规",
+      "status": "有效",
+      "effective_date": "2021-09-01",
+      "focus": [
+        "数据处理",
+        "数据分类分级",
+        "安全保护",
+        "风险监测",
+        "法律责任"
+      ],
+      "content_use": "把数据采集、存储、使用和公开等动作映射到企业日常工作流程。",
+      "source_url": "https://flk.npc.gov.cn/detail?fileId=&id=ff80818179f5e0800179f885c7e70392&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E6%95%B0%E6%8D%AE%E5%AE%89%E5%85%A8%E6%B3%95&type="
+    },
+    {
+      "id": "cybersecurity-law",
+      "title": "中华人民共和国网络安全法",
+      "category": "数字法 / 企业合规",
+      "status": "有效",
+      "effective_date": "2026-01-01",
+      "focus": [
+        "网络运行安全",
+        "网络信息安全",
+        "关键信息基础设施",
+        "法律责任"
+      ],
+      "content_use": "用于企业网络安全、平台运营和数据治理主题的内容选题与复核入口。",
+      "source_url": "https://flk.npc.gov.cn/detail?fileId=&id=021e7d7684474107b8f3febbb1c4f8b5&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%B3%95&type="
+    }
+  ],
+  "skill_prompt": "先选择一个账号的高频开头和悬念，再从官方法源库挑选相关法律入口；输出场景、证据、规则、边界和镜头，不把法条改写成个案结论。"
+}

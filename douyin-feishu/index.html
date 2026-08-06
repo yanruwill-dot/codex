@@ -15,6 +15,7 @@
       <div class="nav-links">
         <a href="#candidates">项目拆解</a>
         <a href="#creator">法律 IP Skills</a>
+        <a href="#lawstack">法源库</a>
         <a href="#method">具体方法</a>
         <a href="#feishu">沉淀输出</a>
       </div>
@@ -92,11 +93,22 @@
       <div class="skill-toolbar">
         <div id="skillTabs" class="skill-tabs" role="tablist" aria-label="按法律 IP 账号筛选"></div>
         <label class="skill-search"><span aria-hidden="true">⌕</span><input id="skillSearch" type="search" placeholder="搜标题、开头、悬念或镜头" autocomplete="off"></label>
+        <div class="skill-actions"><button id="exportSkill" class="button primary" type="button">导出当前 Skill</button><button id="copySkillPrompt" class="button" type="button">复制调用指令</button><small id="skillActionStatus">可下载为 SKILL.md</small></div>
       </div>
       <div id="skillSummary" class="skill-summary" aria-label="技能数据概览"></div>
       <div id="skillBars" class="skill-bars" aria-label="技能模式频率"></div>
       <div id="creatorRows" class="copy-grid skill-sample-grid"></div>
       <p class="table-footnote">公开页能看到的是标题、账号关系和部分可见信息；技能标签是基于公开样本的结构化判断，不是原作者自述，也不构成法律意见。未核验账号不会进入样本卡。</p>
+    </section>
+
+    <section id="lawstack" class="law-panel">
+      <div class="law-head">
+        <div><span class="section-kicker">LAW STACK / 03</span><h2>法典与企业法源库 · <em>只接官方入口</em></h2><p>法源不是“金句素材库”。每张卡保留法律名称、有效状态、施行日期、主题范围与官方入口；生成内容时先匹配场景，再回到原文和最新有效性复核。</p></div>
+        <div class="law-badge"><span class="status-dot"></span><strong id="lawCount">0 部</strong><small>官方来源索引</small></div>
+      </div>
+      <div class="law-toolbar"><label class="skill-search"><span aria-hidden="true">⌕</span><input id="lawSearch" type="search" placeholder="搜民法典、公司法、劳动合同或数据合规" autocomplete="off"></label><a class="button" href="https://flk.npc.gov.cn/" target="_blank" rel="noreferrer">打开国家法律法规数据库 ↗</a></div>
+      <div id="lawRows" class="law-grid"></div>
+      <p class="table-footnote">页面只保存法源索引和内容使用方向，不复制完整法条；具体案件、地区规则、司法解释和时效性必须回到官方原文与专业意见复核。</p>
     </section>
 
     <section id="method" class="method-grid">

@@ -12,6 +12,12 @@ const els = {
   skillSearch: document.querySelector("#skillSearch"),
   skillSummary: document.querySelector("#skillSummary"),
   skillBars: document.querySelector("#skillBars"),
+  exportSkill: document.querySelector("#exportSkill"),
+  copySkillPrompt: document.querySelector("#copySkillPrompt"),
+  skillActionStatus: document.querySelector("#skillActionStatus"),
+  lawSearch: document.querySelector("#lawSearch"),
+  lawRows: document.querySelector("#lawRows"),
+  lawCount: document.querySelector("#lawCount"),
   search: document.querySelector("#searchInput"),
   filter: document.querySelector("#nicheFilter"),
 };
@@ -19,6 +25,7 @@ const els = {
 let videos = [];
 let legalLibrary = [];
 let legalStatus = [];
+let legalCorpus = [];
 let selectedCreator = "all";
 
 const skillLabels = {
@@ -94,7 +101,7 @@ function skillItems() {
   const query = (els.skillSearch.value || "").trim().toLowerCase();
   return legalLibrary.filter(item => {
     const creatorMatch = selectedCreator === "all" || item.creator === selectedCreator;
-    const haystack = [item.creator, item.title, item.copy_summary, item.source_status, ...Object.keys(skillLabels).map(key => skillValue(item, key).label)].join(" ").toLowerCase();
+    const haystack = [item.creator, item.title, item.copy_summary, item.source_status, ...Object.entries(skillLabels).flatMap(([key, label]) => [label, skillValue(item, key).label])].join(" ").toLowerCase();
     return creatorMatch && (!query || haystack.includes(query));
   });
 }
@@ -163,18 +170,68 @@ function renderSkillDashboard() {
   renderSkillSamples(items);
 }
 
+function renderLawCorpus() {
+  const query = (els.lawSearch.value || "").trim().toLowerCase();
+  const filtered = legalCorpus.filter(law => [law.title, law.category, ...(law.focus || []), law.content_use].join(" ").toLowerCase().includes(query));
+  els.lawCount.textContent = `${legalCorpus.length} 部`;
+  els.lawRows.innerHTML = filtered.map(law => `<article class="law-card">
+    <div class="law-card-top"><span class="law-type">${escapeHtml(law.category)}</span><span class="law-status">${escapeHtml(law.status)}</span></div>
+    <h3>${escapeHtml(law.title)}</h3>
+    <p>${escapeHtml(law.content_use)}</p>
+    <div class="law-focus">${(law.focus || []).map(topic => `<span>${escapeHtml(topic)}</span>`).join("")}</div>
+    <div class="law-card-foot"><span>施行 ${escapeHtml(law.effective_date)}</span><a class="source-link" href="${escapeHtml(law.source_url)}" target="_blank" rel="noreferrer">官方原文 ↗</a></div>
+  </article>`).join("") || '<div class="skill-empty-panel"><strong>没有匹配的法源</strong><span>换一个法律名称或企业合规主题。</span></div>';
+}
+
+function buildSkillMarkdown(items) {
+  const sourceNames = [...new Set(items.map(item => item.creator))].join("、") || "法律 IP 样本库";
+  const patterns = Object.entries(skillLabels).map(([key, label]) => {
+    const counts = {};
+    items.forEach(item => { const value = skillValue(item, key).label; counts[value] = (counts[value] || 0) + 1; });
+    const top = Object.entries(counts).sort((a, b) => b[1] - a[1])[0];
+    return `- ${label}：${top ? `${top[0]}（${top[1]}条）` : "待补样本"}`;
+  }).join("\n");
+  const laws = legalCorpus.slice(0, 4).map(law => `- [${law.title}](${law.source_url})：${law.focus.join("、")}`).join("\n");
+  return `# 法律 IP 内容 Skill\n\n> 从公开内容样本提取的可复用结构。生成具体案件内容前，必须回到官方法源和事实证据复核。\n\n## 当前来源\n\n- 账号：${sourceNames}\n- 样本数：${items.length}\n- 导出时间：${new Date().toISOString()}\n\n## 稳定模式\n\n${patterns}\n\n## 调用步骤\n\n1. 用第一句抛出具体场景、反常问题或结果冲突。\n2. 用案件细节推进，不虚构当事人、金额、证据和裁判结果。\n3. 把悬念放在责任、证据或救济路径上，后半段再给规则解释。\n4. 按“案情—证据—规则—行动—边界”组织口播和镜头。\n5. 选择相关官方法源，只作为复核入口，不把法条改写成个案结论。\n6. 结尾提醒：事实、证据、地区规则、司法解释和最新有效文本需进一步核验。\n\n## 官方法源入口\n\n${laws}\n\n## 内容边界\n\n不承诺胜诉，不泄露隐私，不把公开标题当成完整案情，不复制他人原文或固定表达。\n`;
+}
+
+function downloadText(filename, text) {
+  const blob = new Blob([text], { type: "text/markdown;charset=utf-8" });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+  link.href = url; link.download = filename; link.click();
+  URL.revokeObjectURL(url);
+}
+
+async function copySkillPrompt() {
+  const items = skillItems();
+  const prompt = `调用法律 IP 内容 Skill：参考${[...new Set(items.map(item => item.creator))].join("、") || "当前样本"}的高频结构，输出一条原创法律行业短视频，包含开头、案情、悬念、证据、规则、镜头、互动和合规边界；法源只从官方数据库复核，不承诺个案结果。`;
+  try {
+    await navigator.clipboard.writeText(prompt);
+    els.skillActionStatus.textContent = "调用指令已复制";
+  } catch {
+    els.skillActionStatus.textContent = "浏览器未开放剪贴板，请手动复制导出的 Skill";
+  }
+}
+
 async function loadLatest() {
   try {
-    const response = await fetch("./data/latest.json", { cache: "no-store" });
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    const payload = await response.json();
+    const [latestResponse, registryResponse] = await Promise.all([
+      fetch("./data/latest.json", { cache: "no-store" }),
+      fetch("./data/skill_registry.json", { cache: "no-store" }),
+    ]);
+    if (!latestResponse.ok) throw new Error(`HTTP ${latestResponse.status}`);
+    const payload = await latestResponse.json();
+    const registry = registryResponse.ok ? await registryResponse.json() : {};
     videos = payload.videos || [];
-    legalLibrary = payload.legal_ip_library || [];
+    legalLibrary = registry.records || payload.legal_ip_library || [];
     legalStatus = payload.legal_ip_status || [];
+    legalCorpus = registry.legal_corpus || [];
     renderMetrics(payload);
     renderFilters();
     renderRows();
     renderSkillDashboard();
+    renderLawCorpus();
   } catch (error) {
     els.sourceStatus.textContent = `项目加载失败：${error.message}`;
     els.rows.innerHTML = '<tr><td class="empty" colspan="6">项目暂时无法加载，请检查 data/latest.json。</td></tr>';
@@ -185,4 +242,11 @@ async function loadLatest() {
 els.search.addEventListener("input", renderRows);
 els.filter.addEventListener("change", renderRows);
 els.skillSearch.addEventListener("input", renderSkillDashboard);
+els.lawSearch.addEventListener("input", renderLawCorpus);
+els.exportSkill.addEventListener("click", () => {
+  const items = skillItems();
+  downloadText(`legal-ip-skill-${selectedCreator === "all" ? "library" : selectedCreator}.md`, buildSkillMarkdown(items));
+  els.skillActionStatus.textContent = `已导出 ${items.length} 条样本的 Skill`;
+});
+els.copySkillPrompt.addEventListener("click", copySkillPrompt);
 loadLatest();
