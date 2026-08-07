@@ -239,7 +239,7 @@
 .output-empty p { color: #95888b; }
 .result-lead { border-color: var(--avatar-acid); background: rgba(155,28,44,.05); }
 
-/* Formal red means flat color blocks, not a decorative gradient. */
+/* Formal red uses flat color blocks and strict visual hierarchy. */
 .avatar-page::before { opacity: 0; background-image: none; }
 .avatar-gridline { background: none; }
 .persona-manifest, .persona-stage { background: #fff; }
