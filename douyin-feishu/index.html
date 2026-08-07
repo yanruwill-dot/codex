@@ -93,12 +93,22 @@
       <div class="skill-toolbar">
         <div id="skillTabs" class="skill-tabs" role="tablist" aria-label="按法律 IP 账号筛选"></div>
         <label class="skill-search"><span aria-hidden="true">⌕</span><input id="skillSearch" type="search" placeholder="搜标题、开头、悬念或镜头" autocomplete="off"></label>
+        <label class="score-sort"><span>排序</span><select id="scoreSort" aria-label="技能样本排序"><option value="score">爆款结构分</option><option value="original">原始顺序</option></select></label>
         <div class="skill-actions"><button id="exportSkill" class="button primary" type="button">导出当前 Skill</button><button id="copySkillPrompt" class="button" type="button">复制调用指令</button><small id="skillActionStatus">可下载为 SKILL.md</small></div>
       </div>
       <div id="skillSummary" class="skill-summary" aria-label="技能数据概览"></div>
+      <section class="viral-board" aria-label="爆款结构评分">
+        <div class="viral-board-head">
+          <div><span class="section-kicker">VIRAL STRUCTURE SCORE / 03</span><h3>爆款结构评分 · <em>不是播放量预测</em></h3><p>用公开标题、技能标签和来源状态判断“是否值得进入创作测试池”，每一分都能回到具体结构和下一步动作。</p></div>
+          <div id="scoreSummary" class="score-summary"></div>
+        </div>
+        <div id="scoreBars" class="score-bars" aria-label="爆款评分维度"></div>
+        <div class="score-table-head"><span>高潜样本</span><small>按当前账号 / 搜索结果计算，分数越高越先进入测试</small></div>
+        <div id="scoreRows" class="score-rows"></div>
+      </section>
       <div id="skillBars" class="skill-bars" aria-label="技能模式频率"></div>
       <div id="creatorRows" class="copy-grid skill-sample-grid"></div>
-      <p class="table-footnote">公开页能看到的是标题、账号关系和部分可见信息；技能标签是基于公开样本的结构化判断，不是原作者自述，也不构成法律意见。未核验账号不会进入样本卡。</p>
+      <p class="table-footnote">公开页能看到的是标题、账号关系和部分可见信息；技能标签和爆款结构分是基于公开样本的结构化判断，不是原作者自述，也不构成法律意见。未核验账号不会进入样本卡。</p>
     </section>
 
     <section id="lawstack" class="law-panel">

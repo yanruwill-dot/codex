@@ -1,6 +1,6 @@
 {
   "version": "0.2.0",
-  "generated_at": "2026-08-06T15:28:40.912Z",
+  "generated_at": "2026-08-07T02:58:37.173Z",
   "source_note": "技能标签基于公开抖音精选页标题、账号关系和可见信息做结构化拆解；不代表全站热度排名，不替代原始作品核验。",
   "dimensions": [
     "opening",
@@ -48,6 +48,81 @@
           "label": "事实与责任需以证据和裁判为准",
           "score": 5
         }
+      },
+      "viral_score": {
+        "total": 91,
+        "tier": "高潜结构",
+        "confidence": "高",
+        "penalty": 0,
+        "components": [
+          {
+            "key": "opening",
+            "label": "开头冲击",
+            "max": 18,
+            "score": 18,
+            "reason": "第一句具备结果、数字或直接问题"
+          },
+          {
+            "key": "conflict",
+            "label": "冲突清晰",
+            "max": 16,
+            "score": 14,
+            "reason": "标题明确放入责任、结果或常识冲突"
+          },
+          {
+            "key": "suspense",
+            "label": "悬念推进",
+            "max": 16,
+            "score": 16,
+            "reason": "结论没有一次说尽，留下责任、证据或结果缺口"
+          },
+          {
+            "key": "specificity",
+            "label": "细节具体",
+            "max": 12,
+            "score": 12,
+            "reason": "标题里有数字、场景、证据或具体对象"
+          },
+          {
+            "key": "narration",
+            "label": "讲述可懂",
+            "max": 10,
+            "score": 10,
+            "reason": "讲述顺序适合先案情后规则"
+          },
+          {
+            "key": "camera",
+            "label": "画面可拍",
+            "max": 8,
+            "score": 5,
+            "reason": "画面动作还可以更具体"
+          },
+          {
+            "key": "interaction",
+            "label": "互动承接",
+            "max": 10,
+            "score": 6,
+            "reason": "结尾应换成一个可回答的责任或证据问题"
+          },
+          {
+            "key": "trust",
+            "label": "来源可信",
+            "max": 10,
+            "score": 10,
+            "reason": "有独立公开作品页，可回溯核验"
+          }
+        ],
+        "recommendations": [
+          {
+            "key": "interaction",
+            "text": "结尾设置一个能回答的责任比例或证据问题"
+          },
+          {
+            "key": "camera",
+            "text": "为每个结论配字幕重点或一个可见画面动作"
+          }
+        ],
+        "note": "这是内容结构的传播潜力分，不是播放量预测、平台排名或法律效果保证。"
       }
     },
     {
@@ -86,6 +161,85 @@
           "label": "事实与责任需以证据和裁判为准",
           "score": 5
         }
+      },
+      "viral_score": {
+        "total": 87,
+        "tier": "高潜结构",
+        "confidence": "高",
+        "penalty": 0,
+        "components": [
+          {
+            "key": "opening",
+            "label": "开头冲击",
+            "max": 18,
+            "score": 18,
+            "reason": "第一句具备结果、数字或直接问题"
+          },
+          {
+            "key": "conflict",
+            "label": "冲突清晰",
+            "max": 16,
+            "score": 10,
+            "reason": "还需要把双方分歧或代价说得更具体"
+          },
+          {
+            "key": "suspense",
+            "label": "悬念推进",
+            "max": 16,
+            "score": 16,
+            "reason": "结论没有一次说尽，留下责任、证据或结果缺口"
+          },
+          {
+            "key": "specificity",
+            "label": "细节具体",
+            "max": 12,
+            "score": 12,
+            "reason": "标题里有数字、场景、证据或具体对象"
+          },
+          {
+            "key": "narration",
+            "label": "讲述可懂",
+            "max": 10,
+            "score": 10,
+            "reason": "讲述顺序适合先案情后规则"
+          },
+          {
+            "key": "camera",
+            "label": "画面可拍",
+            "max": 8,
+            "score": 5,
+            "reason": "画面动作还可以更具体"
+          },
+          {
+            "key": "interaction",
+            "label": "互动承接",
+            "max": 10,
+            "score": 6,
+            "reason": "结尾应换成一个可回答的责任或证据问题"
+          },
+          {
+            "key": "trust",
+            "label": "来源可信",
+            "max": 10,
+            "score": 10,
+            "reason": "有独立公开作品页，可回溯核验"
+          }
+        ],
+        "recommendations": [
+          {
+            "key": "interaction",
+            "text": "结尾设置一个能回答的责任比例或证据问题"
+          },
+          {
+            "key": "conflict",
+            "text": "把责任双方、损失代价或常识反差放进标题"
+          },
+          {
+            "key": "camera",
+            "text": "为每个结论配字幕重点或一个可见画面动作"
+          }
+        ],
+        "note": "这是内容结构的传播潜力分，不是播放量预测、平台排名或法律效果保证。"
       }
     },
     {
@@ -124,6 +278,85 @@
           "label": "事实与责任需以证据和裁判为准",
           "score": 5
         }
+      },
+      "viral_score": {
+        "total": 76,
+        "tier": "可优化",
+        "confidence": "高",
+        "penalty": 0,
+        "components": [
+          {
+            "key": "opening",
+            "label": "开头冲击",
+            "max": 18,
+            "score": 14,
+            "reason": "第一句具备结果、数字或直接问题"
+          },
+          {
+            "key": "conflict",
+            "label": "冲突清晰",
+            "max": 16,
+            "score": 12,
+            "reason": "标题明确放入责任、结果或常识冲突"
+          },
+          {
+            "key": "suspense",
+            "label": "悬念推进",
+            "max": 16,
+            "score": 16,
+            "reason": "结论没有一次说尽，留下责任、证据或结果缺口"
+          },
+          {
+            "key": "specificity",
+            "label": "细节具体",
+            "max": 12,
+            "score": 3,
+            "reason": "建议补一个金额、时间、地点或证据细节"
+          },
+          {
+            "key": "narration",
+            "label": "讲述可懂",
+            "max": 10,
+            "score": 10,
+            "reason": "讲述顺序适合先案情后规则"
+          },
+          {
+            "key": "camera",
+            "label": "画面可拍",
+            "max": 8,
+            "score": 5,
+            "reason": "画面动作还可以更具体"
+          },
+          {
+            "key": "interaction",
+            "label": "互动承接",
+            "max": 10,
+            "score": 6,
+            "reason": "结尾应换成一个可回答的责任或证据问题"
+          },
+          {
+            "key": "trust",
+            "label": "来源可信",
+            "max": 10,
+            "score": 10,
+            "reason": "有独立公开作品页，可回溯核验"
+          }
+        ],
+        "recommendations": [
+          {
+            "key": "specificity",
+            "text": "补一个金额、时间、地点、证据或行为细节"
+          },
+          {
+            "key": "interaction",
+            "text": "结尾设置一个能回答的责任比例或证据问题"
+          },
+          {
+            "key": "camera",
+            "text": "为每个结论配字幕重点或一个可见画面动作"
+          }
+        ],
+        "note": "这是内容结构的传播潜力分，不是播放量预测、平台排名或法律效果保证。"
       }
     },
     {
@@ -162,6 +395,85 @@
           "label": "事实与责任需以证据和裁判为准",
           "score": 5
         }
+      },
+      "viral_score": {
+        "total": 75,
+        "tier": "可优化",
+        "confidence": "高",
+        "penalty": 0,
+        "components": [
+          {
+            "key": "opening",
+            "label": "开头冲击",
+            "max": 18,
+            "score": 18,
+            "reason": "第一句具备结果、数字或直接问题"
+          },
+          {
+            "key": "conflict",
+            "label": "冲突清晰",
+            "max": 16,
+            "score": 10,
+            "reason": "还需要把双方分歧或代价说得更具体"
+          },
+          {
+            "key": "suspense",
+            "label": "悬念推进",
+            "max": 16,
+            "score": 16,
+            "reason": "结论没有一次说尽，留下责任、证据或结果缺口"
+          },
+          {
+            "key": "specificity",
+            "label": "细节具体",
+            "max": 12,
+            "score": 0,
+            "reason": "建议补一个金额、时间、地点或证据细节"
+          },
+          {
+            "key": "narration",
+            "label": "讲述可懂",
+            "max": 10,
+            "score": 10,
+            "reason": "讲述顺序适合先案情后规则"
+          },
+          {
+            "key": "camera",
+            "label": "画面可拍",
+            "max": 8,
+            "score": 5,
+            "reason": "画面动作还可以更具体"
+          },
+          {
+            "key": "interaction",
+            "label": "互动承接",
+            "max": 10,
+            "score": 6,
+            "reason": "结尾应换成一个可回答的责任或证据问题"
+          },
+          {
+            "key": "trust",
+            "label": "来源可信",
+            "max": 10,
+            "score": 10,
+            "reason": "有独立公开作品页，可回溯核验"
+          }
+        ],
+        "recommendations": [
+          {
+            "key": "specificity",
+            "text": "补一个金额、时间、地点、证据或行为细节"
+          },
+          {
+            "key": "interaction",
+            "text": "结尾设置一个能回答的责任比例或证据问题"
+          },
+          {
+            "key": "conflict",
+            "text": "把责任双方、损失代价或常识反差放进标题"
+          }
+        ],
+        "note": "这是内容结构的传播潜力分，不是播放量预测、平台排名或法律效果保证。"
       }
     },
     {
@@ -200,6 +512,85 @@
           "label": "事实与责任需以证据和裁判为准",
           "score": 5
         }
+      },
+      "viral_score": {
+        "total": 77,
+        "tier": "可优化",
+        "confidence": "高",
+        "penalty": 0,
+        "components": [
+          {
+            "key": "opening",
+            "label": "开头冲击",
+            "max": 18,
+            "score": 18,
+            "reason": "第一句具备结果、数字或直接问题"
+          },
+          {
+            "key": "conflict",
+            "label": "冲突清晰",
+            "max": 16,
+            "score": 12,
+            "reason": "标题明确放入责任、结果或常识冲突"
+          },
+          {
+            "key": "suspense",
+            "label": "悬念推进",
+            "max": 16,
+            "score": 16,
+            "reason": "结论没有一次说尽，留下责任、证据或结果缺口"
+          },
+          {
+            "key": "specificity",
+            "label": "细节具体",
+            "max": 12,
+            "score": 0,
+            "reason": "建议补一个金额、时间、地点或证据细节"
+          },
+          {
+            "key": "narration",
+            "label": "讲述可懂",
+            "max": 10,
+            "score": 10,
+            "reason": "讲述顺序适合先案情后规则"
+          },
+          {
+            "key": "camera",
+            "label": "画面可拍",
+            "max": 8,
+            "score": 5,
+            "reason": "画面动作还可以更具体"
+          },
+          {
+            "key": "interaction",
+            "label": "互动承接",
+            "max": 10,
+            "score": 6,
+            "reason": "结尾应换成一个可回答的责任或证据问题"
+          },
+          {
+            "key": "trust",
+            "label": "来源可信",
+            "max": 10,
+            "score": 10,
+            "reason": "有独立公开作品页，可回溯核验"
+          }
+        ],
+        "recommendations": [
+          {
+            "key": "specificity",
+            "text": "补一个金额、时间、地点、证据或行为细节"
+          },
+          {
+            "key": "interaction",
+            "text": "结尾设置一个能回答的责任比例或证据问题"
+          },
+          {
+            "key": "camera",
+            "text": "为每个结论配字幕重点或一个可见画面动作"
+          }
+        ],
+        "note": "这是内容结构的传播潜力分，不是播放量预测、平台排名或法律效果保证。"
       }
     },
     {
@@ -238,6 +629,85 @@
           "label": "事实与责任需以证据和裁判为准",
           "score": 5
         }
+      },
+      "viral_score": {
+        "total": 80,
+        "tier": "可优化",
+        "confidence": "高",
+        "penalty": 0,
+        "components": [
+          {
+            "key": "opening",
+            "label": "开头冲击",
+            "max": 18,
+            "score": 18,
+            "reason": "第一句具备结果、数字或直接问题"
+          },
+          {
+            "key": "conflict",
+            "label": "冲突清晰",
+            "max": 16,
+            "score": 12,
+            "reason": "标题明确放入责任、结果或常识冲突"
+          },
+          {
+            "key": "suspense",
+            "label": "悬念推进",
+            "max": 16,
+            "score": 16,
+            "reason": "结论没有一次说尽，留下责任、证据或结果缺口"
+          },
+          {
+            "key": "specificity",
+            "label": "细节具体",
+            "max": 12,
+            "score": 3,
+            "reason": "建议补一个金额、时间、地点或证据细节"
+          },
+          {
+            "key": "narration",
+            "label": "讲述可懂",
+            "max": 10,
+            "score": 10,
+            "reason": "讲述顺序适合先案情后规则"
+          },
+          {
+            "key": "camera",
+            "label": "画面可拍",
+            "max": 8,
+            "score": 5,
+            "reason": "画面动作还可以更具体"
+          },
+          {
+            "key": "interaction",
+            "label": "互动承接",
+            "max": 10,
+            "score": 6,
+            "reason": "结尾应换成一个可回答的责任或证据问题"
+          },
+          {
+            "key": "trust",
+            "label": "来源可信",
+            "max": 10,
+            "score": 10,
+            "reason": "有独立公开作品页，可回溯核验"
+          }
+        ],
+        "recommendations": [
+          {
+            "key": "specificity",
+            "text": "补一个金额、时间、地点、证据或行为细节"
+          },
+          {
+            "key": "interaction",
+            "text": "结尾设置一个能回答的责任比例或证据问题"
+          },
+          {
+            "key": "camera",
+            "text": "为每个结论配字幕重点或一个可见画面动作"
+          }
+        ],
+        "note": "这是内容结构的传播潜力分，不是播放量预测、平台排名或法律效果保证。"
       }
     },
     {
@@ -276,6 +746,85 @@
           "label": "事实与责任需以证据和裁判为准",
           "score": 5
         }
+      },
+      "viral_score": {
+        "total": 83,
+        "tier": "可优化",
+        "confidence": "高",
+        "penalty": 0,
+        "components": [
+          {
+            "key": "opening",
+            "label": "开头冲击",
+            "max": 18,
+            "score": 18,
+            "reason": "第一句具备结果、数字或直接问题"
+          },
+          {
+            "key": "conflict",
+            "label": "冲突清晰",
+            "max": 16,
+            "score": 12,
+            "reason": "标题明确放入责任、结果或常识冲突"
+          },
+          {
+            "key": "suspense",
+            "label": "悬念推进",
+            "max": 16,
+            "score": 16,
+            "reason": "结论没有一次说尽，留下责任、证据或结果缺口"
+          },
+          {
+            "key": "specificity",
+            "label": "细节具体",
+            "max": 12,
+            "score": 6,
+            "reason": "标题里有数字、场景、证据或具体对象"
+          },
+          {
+            "key": "narration",
+            "label": "讲述可懂",
+            "max": 10,
+            "score": 10,
+            "reason": "讲述顺序适合先案情后规则"
+          },
+          {
+            "key": "camera",
+            "label": "画面可拍",
+            "max": 8,
+            "score": 5,
+            "reason": "画面动作还可以更具体"
+          },
+          {
+            "key": "interaction",
+            "label": "互动承接",
+            "max": 10,
+            "score": 6,
+            "reason": "结尾应换成一个可回答的责任或证据问题"
+          },
+          {
+            "key": "trust",
+            "label": "来源可信",
+            "max": 10,
+            "score": 10,
+            "reason": "有独立公开作品页，可回溯核验"
+          }
+        ],
+        "recommendations": [
+          {
+            "key": "specificity",
+            "text": "补一个金额、时间、地点、证据或行为细节"
+          },
+          {
+            "key": "interaction",
+            "text": "结尾设置一个能回答的责任比例或证据问题"
+          },
+          {
+            "key": "camera",
+            "text": "为每个结论配字幕重点或一个可见画面动作"
+          }
+        ],
+        "note": "这是内容结构的传播潜力分，不是播放量预测、平台排名或法律效果保证。"
       }
     },
     {
@@ -314,6 +863,85 @@
           "label": "事实与责任需以证据和裁判为准",
           "score": 5
         }
+      },
+      "viral_score": {
+        "total": 84,
+        "tier": "可优化",
+        "confidence": "高",
+        "penalty": 0,
+        "components": [
+          {
+            "key": "opening",
+            "label": "开头冲击",
+            "max": 18,
+            "score": 18,
+            "reason": "第一句具备结果、数字或直接问题"
+          },
+          {
+            "key": "conflict",
+            "label": "冲突清晰",
+            "max": 16,
+            "score": 10,
+            "reason": "还需要把双方分歧或代价说得更具体"
+          },
+          {
+            "key": "suspense",
+            "label": "悬念推进",
+            "max": 16,
+            "score": 16,
+            "reason": "结论没有一次说尽，留下责任、证据或结果缺口"
+          },
+          {
+            "key": "specificity",
+            "label": "细节具体",
+            "max": 12,
+            "score": 9,
+            "reason": "标题里有数字、场景、证据或具体对象"
+          },
+          {
+            "key": "narration",
+            "label": "讲述可懂",
+            "max": 10,
+            "score": 10,
+            "reason": "讲述顺序适合先案情后规则"
+          },
+          {
+            "key": "camera",
+            "label": "画面可拍",
+            "max": 8,
+            "score": 5,
+            "reason": "画面动作还可以更具体"
+          },
+          {
+            "key": "interaction",
+            "label": "互动承接",
+            "max": 10,
+            "score": 6,
+            "reason": "结尾应换成一个可回答的责任或证据问题"
+          },
+          {
+            "key": "trust",
+            "label": "来源可信",
+            "max": 10,
+            "score": 10,
+            "reason": "有独立公开作品页，可回溯核验"
+          }
+        ],
+        "recommendations": [
+          {
+            "key": "interaction",
+            "text": "结尾设置一个能回答的责任比例或证据问题"
+          },
+          {
+            "key": "conflict",
+            "text": "把责任双方、损失代价或常识反差放进标题"
+          },
+          {
+            "key": "camera",
+            "text": "为每个结论配字幕重点或一个可见画面动作"
+          }
+        ],
+        "note": "这是内容结构的传播潜力分，不是播放量预测、平台排名或法律效果保证。"
       }
     },
     {
@@ -352,6 +980,85 @@
           "label": "事实与责任需以证据和裁判为准",
           "score": 5
         }
+      },
+      "viral_score": {
+        "total": 71,
+        "tier": "可优化",
+        "confidence": "高",
+        "penalty": 0,
+        "components": [
+          {
+            "key": "opening",
+            "label": "开头冲击",
+            "max": 18,
+            "score": 14,
+            "reason": "第一句具备结果、数字或直接问题"
+          },
+          {
+            "key": "conflict",
+            "label": "冲突清晰",
+            "max": 16,
+            "score": 8,
+            "reason": "还需要把双方分歧或代价说得更具体"
+          },
+          {
+            "key": "suspense",
+            "label": "悬念推进",
+            "max": 16,
+            "score": 16,
+            "reason": "结论没有一次说尽，留下责任、证据或结果缺口"
+          },
+          {
+            "key": "specificity",
+            "label": "细节具体",
+            "max": 12,
+            "score": 3,
+            "reason": "建议补一个金额、时间、地点或证据细节"
+          },
+          {
+            "key": "narration",
+            "label": "讲述可懂",
+            "max": 10,
+            "score": 8,
+            "reason": "讲述顺序适合先案情后规则"
+          },
+          {
+            "key": "camera",
+            "label": "画面可拍",
+            "max": 8,
+            "score": 6,
+            "reason": "已有清晰口播、字幕或案件素材承接"
+          },
+          {
+            "key": "interaction",
+            "label": "互动承接",
+            "max": 10,
+            "score": 6,
+            "reason": "结尾应换成一个可回答的责任或证据问题"
+          },
+          {
+            "key": "trust",
+            "label": "来源可信",
+            "max": 10,
+            "score": 10,
+            "reason": "有独立公开作品页，可回溯核验"
+          }
+        ],
+        "recommendations": [
+          {
+            "key": "specificity",
+            "text": "补一个金额、时间、地点、证据或行为细节"
+          },
+          {
+            "key": "conflict",
+            "text": "把责任双方、损失代价或常识反差放进标题"
+          },
+          {
+            "key": "interaction",
+            "text": "结尾设置一个能回答的责任比例或证据问题"
+          }
+        ],
+        "note": "这是内容结构的传播潜力分，不是播放量预测、平台排名或法律效果保证。"
       }
     },
     {
@@ -390,6 +1097,85 @@
           "label": "事实与责任需以证据和裁判为准",
           "score": 5
         }
+      },
+      "viral_score": {
+        "total": 68,
+        "tier": "先补结构",
+        "confidence": "高",
+        "penalty": 0,
+        "components": [
+          {
+            "key": "opening",
+            "label": "开头冲击",
+            "max": 18,
+            "score": 14,
+            "reason": "第一句具备结果、数字或直接问题"
+          },
+          {
+            "key": "conflict",
+            "label": "冲突清晰",
+            "max": 16,
+            "score": 8,
+            "reason": "还需要把双方分歧或代价说得更具体"
+          },
+          {
+            "key": "suspense",
+            "label": "悬念推进",
+            "max": 16,
+            "score": 16,
+            "reason": "结论没有一次说尽，留下责任、证据或结果缺口"
+          },
+          {
+            "key": "specificity",
+            "label": "细节具体",
+            "max": 12,
+            "score": 0,
+            "reason": "建议补一个金额、时间、地点或证据细节"
+          },
+          {
+            "key": "narration",
+            "label": "讲述可懂",
+            "max": 10,
+            "score": 8,
+            "reason": "讲述顺序适合先案情后规则"
+          },
+          {
+            "key": "camera",
+            "label": "画面可拍",
+            "max": 8,
+            "score": 6,
+            "reason": "已有清晰口播、字幕或案件素材承接"
+          },
+          {
+            "key": "interaction",
+            "label": "互动承接",
+            "max": 10,
+            "score": 6,
+            "reason": "结尾应换成一个可回答的责任或证据问题"
+          },
+          {
+            "key": "trust",
+            "label": "来源可信",
+            "max": 10,
+            "score": 10,
+            "reason": "有独立公开作品页，可回溯核验"
+          }
+        ],
+        "recommendations": [
+          {
+            "key": "specificity",
+            "text": "补一个金额、时间、地点、证据或行为细节"
+          },
+          {
+            "key": "conflict",
+            "text": "把责任双方、损失代价或常识反差放进标题"
+          },
+          {
+            "key": "interaction",
+            "text": "结尾设置一个能回答的责任比例或证据问题"
+          }
+        ],
+        "note": "这是内容结构的传播潜力分，不是播放量预测、平台排名或法律效果保证。"
       }
     },
     {
@@ -428,6 +1214,85 @@
           "label": "事实与责任需以证据和裁判为准",
           "score": 5
         }
+      },
+      "viral_score": {
+        "total": 73,
+        "tier": "可优化",
+        "confidence": "高",
+        "penalty": 0,
+        "components": [
+          {
+            "key": "opening",
+            "label": "开头冲击",
+            "max": 18,
+            "score": 14,
+            "reason": "第一句具备结果、数字或直接问题"
+          },
+          {
+            "key": "conflict",
+            "label": "冲突清晰",
+            "max": 16,
+            "score": 10,
+            "reason": "还需要把双方分歧或代价说得更具体"
+          },
+          {
+            "key": "suspense",
+            "label": "悬念推进",
+            "max": 16,
+            "score": 16,
+            "reason": "结论没有一次说尽，留下责任、证据或结果缺口"
+          },
+          {
+            "key": "specificity",
+            "label": "细节具体",
+            "max": 12,
+            "score": 3,
+            "reason": "建议补一个金额、时间、地点或证据细节"
+          },
+          {
+            "key": "narration",
+            "label": "讲述可懂",
+            "max": 10,
+            "score": 8,
+            "reason": "讲述顺序适合先案情后规则"
+          },
+          {
+            "key": "camera",
+            "label": "画面可拍",
+            "max": 8,
+            "score": 6,
+            "reason": "已有清晰口播、字幕或案件素材承接"
+          },
+          {
+            "key": "interaction",
+            "label": "互动承接",
+            "max": 10,
+            "score": 6,
+            "reason": "结尾应换成一个可回答的责任或证据问题"
+          },
+          {
+            "key": "trust",
+            "label": "来源可信",
+            "max": 10,
+            "score": 10,
+            "reason": "有独立公开作品页，可回溯核验"
+          }
+        ],
+        "recommendations": [
+          {
+            "key": "specificity",
+            "text": "补一个金额、时间、地点、证据或行为细节"
+          },
+          {
+            "key": "interaction",
+            "text": "结尾设置一个能回答的责任比例或证据问题"
+          },
+          {
+            "key": "conflict",
+            "text": "把责任双方、损失代价或常识反差放进标题"
+          }
+        ],
+        "note": "这是内容结构的传播潜力分，不是播放量预测、平台排名或法律效果保证。"
       }
     },
     {
@@ -466,6 +1331,85 @@
           "label": "事实与责任需以证据和裁判为准",
           "score": 5
         }
+      },
+      "viral_score": {
+        "total": 71,
+        "tier": "可优化",
+        "confidence": "高",
+        "penalty": 0,
+        "components": [
+          {
+            "key": "opening",
+            "label": "开头冲击",
+            "max": 18,
+            "score": 14,
+            "reason": "第一句具备结果、数字或直接问题"
+          },
+          {
+            "key": "conflict",
+            "label": "冲突清晰",
+            "max": 16,
+            "score": 8,
+            "reason": "还需要把双方分歧或代价说得更具体"
+          },
+          {
+            "key": "suspense",
+            "label": "悬念推进",
+            "max": 16,
+            "score": 16,
+            "reason": "结论没有一次说尽，留下责任、证据或结果缺口"
+          },
+          {
+            "key": "specificity",
+            "label": "细节具体",
+            "max": 12,
+            "score": 3,
+            "reason": "建议补一个金额、时间、地点或证据细节"
+          },
+          {
+            "key": "narration",
+            "label": "讲述可懂",
+            "max": 10,
+            "score": 8,
+            "reason": "讲述顺序适合先案情后规则"
+          },
+          {
+            "key": "camera",
+            "label": "画面可拍",
+            "max": 8,
+            "score": 6,
+            "reason": "已有清晰口播、字幕或案件素材承接"
+          },
+          {
+            "key": "interaction",
+            "label": "互动承接",
+            "max": 10,
+            "score": 6,
+            "reason": "结尾应换成一个可回答的责任或证据问题"
+          },
+          {
+            "key": "trust",
+            "label": "来源可信",
+            "max": 10,
+            "score": 10,
+            "reason": "有独立公开作品页，可回溯核验"
+          }
+        ],
+        "recommendations": [
+          {
+            "key": "specificity",
+            "text": "补一个金额、时间、地点、证据或行为细节"
+          },
+          {
+            "key": "conflict",
+            "text": "把责任双方、损失代价或常识反差放进标题"
+          },
+          {
+            "key": "interaction",
+            "text": "结尾设置一个能回答的责任比例或证据问题"
+          }
+        ],
+        "note": "这是内容结构的传播潜力分，不是播放量预测、平台排名或法律效果保证。"
       }
     },
     {
@@ -504,6 +1448,85 @@
           "label": "事实与责任需以证据和裁判为准",
           "score": 5
         }
+      },
+      "viral_score": {
+        "total": 75,
+        "tier": "可优化",
+        "confidence": "高",
+        "penalty": 0,
+        "components": [
+          {
+            "key": "opening",
+            "label": "开头冲击",
+            "max": 18,
+            "score": 18,
+            "reason": "第一句具备结果、数字或直接问题"
+          },
+          {
+            "key": "conflict",
+            "label": "冲突清晰",
+            "max": 16,
+            "score": 10,
+            "reason": "还需要把双方分歧或代价说得更具体"
+          },
+          {
+            "key": "suspense",
+            "label": "悬念推进",
+            "max": 16,
+            "score": 16,
+            "reason": "结论没有一次说尽，留下责任、证据或结果缺口"
+          },
+          {
+            "key": "specificity",
+            "label": "细节具体",
+            "max": 12,
+            "score": 0,
+            "reason": "建议补一个金额、时间、地点或证据细节"
+          },
+          {
+            "key": "narration",
+            "label": "讲述可懂",
+            "max": 10,
+            "score": 10,
+            "reason": "讲述顺序适合先案情后规则"
+          },
+          {
+            "key": "camera",
+            "label": "画面可拍",
+            "max": 8,
+            "score": 5,
+            "reason": "画面动作还可以更具体"
+          },
+          {
+            "key": "interaction",
+            "label": "互动承接",
+            "max": 10,
+            "score": 6,
+            "reason": "结尾应换成一个可回答的责任或证据问题"
+          },
+          {
+            "key": "trust",
+            "label": "来源可信",
+            "max": 10,
+            "score": 10,
+            "reason": "有独立公开作品页，可回溯核验"
+          }
+        ],
+        "recommendations": [
+          {
+            "key": "specificity",
+            "text": "补一个金额、时间、地点、证据或行为细节"
+          },
+          {
+            "key": "interaction",
+            "text": "结尾设置一个能回答的责任比例或证据问题"
+          },
+          {
+            "key": "conflict",
+            "text": "把责任双方、损失代价或常识反差放进标题"
+          }
+        ],
+        "note": "这是内容结构的传播潜力分，不是播放量预测、平台排名或法律效果保证。"
       }
     },
     {
@@ -542,6 +1565,85 @@
           "label": "事实与责任需以证据和裁判为准",
           "score": 5
         }
+      },
+      "viral_score": {
+        "total": 74,
+        "tier": "可优化",
+        "confidence": "高",
+        "penalty": 0,
+        "components": [
+          {
+            "key": "opening",
+            "label": "开头冲击",
+            "max": 18,
+            "score": 14,
+            "reason": "第一句具备结果、数字或直接问题"
+          },
+          {
+            "key": "conflict",
+            "label": "冲突清晰",
+            "max": 16,
+            "score": 10,
+            "reason": "还需要把双方分歧或代价说得更具体"
+          },
+          {
+            "key": "suspense",
+            "label": "悬念推进",
+            "max": 16,
+            "score": 16,
+            "reason": "结论没有一次说尽，留下责任、证据或结果缺口"
+          },
+          {
+            "key": "specificity",
+            "label": "细节具体",
+            "max": 12,
+            "score": 3,
+            "reason": "建议补一个金额、时间、地点或证据细节"
+          },
+          {
+            "key": "narration",
+            "label": "讲述可懂",
+            "max": 10,
+            "score": 10,
+            "reason": "讲述顺序适合先案情后规则"
+          },
+          {
+            "key": "camera",
+            "label": "画面可拍",
+            "max": 8,
+            "score": 5,
+            "reason": "画面动作还可以更具体"
+          },
+          {
+            "key": "interaction",
+            "label": "互动承接",
+            "max": 10,
+            "score": 6,
+            "reason": "结尾应换成一个可回答的责任或证据问题"
+          },
+          {
+            "key": "trust",
+            "label": "来源可信",
+            "max": 10,
+            "score": 10,
+            "reason": "有独立公开作品页，可回溯核验"
+          }
+        ],
+        "recommendations": [
+          {
+            "key": "specificity",
+            "text": "补一个金额、时间、地点、证据或行为细节"
+          },
+          {
+            "key": "interaction",
+            "text": "结尾设置一个能回答的责任比例或证据问题"
+          },
+          {
+            "key": "conflict",
+            "text": "把责任双方、损失代价或常识反差放进标题"
+          }
+        ],
+        "note": "这是内容结构的传播潜力分，不是播放量预测、平台排名或法律效果保证。"
       }
     },
     {
@@ -580,6 +1682,85 @@
           "label": "事实与责任需以证据和裁判为准",
           "score": 5
         }
+      },
+      "viral_score": {
+        "total": 84,
+        "tier": "可优化",
+        "confidence": "高",
+        "penalty": 0,
+        "components": [
+          {
+            "key": "opening",
+            "label": "开头冲击",
+            "max": 18,
+            "score": 18,
+            "reason": "第一句具备结果、数字或直接问题"
+          },
+          {
+            "key": "conflict",
+            "label": "冲突清晰",
+            "max": 16,
+            "score": 10,
+            "reason": "还需要把双方分歧或代价说得更具体"
+          },
+          {
+            "key": "suspense",
+            "label": "悬念推进",
+            "max": 16,
+            "score": 16,
+            "reason": "结论没有一次说尽，留下责任、证据或结果缺口"
+          },
+          {
+            "key": "specificity",
+            "label": "细节具体",
+            "max": 12,
+            "score": 9,
+            "reason": "标题里有数字、场景、证据或具体对象"
+          },
+          {
+            "key": "narration",
+            "label": "讲述可懂",
+            "max": 10,
+            "score": 10,
+            "reason": "讲述顺序适合先案情后规则"
+          },
+          {
+            "key": "camera",
+            "label": "画面可拍",
+            "max": 8,
+            "score": 5,
+            "reason": "画面动作还可以更具体"
+          },
+          {
+            "key": "interaction",
+            "label": "互动承接",
+            "max": 10,
+            "score": 6,
+            "reason": "结尾应换成一个可回答的责任或证据问题"
+          },
+          {
+            "key": "trust",
+            "label": "来源可信",
+            "max": 10,
+            "score": 10,
+            "reason": "有独立公开作品页，可回溯核验"
+          }
+        ],
+        "recommendations": [
+          {
+            "key": "interaction",
+            "text": "结尾设置一个能回答的责任比例或证据问题"
+          },
+          {
+            "key": "conflict",
+            "text": "把责任双方、损失代价或常识反差放进标题"
+          },
+          {
+            "key": "camera",
+            "text": "为每个结论配字幕重点或一个可见画面动作"
+          }
+        ],
+        "note": "这是内容结构的传播潜力分，不是播放量预测、平台排名或法律效果保证。"
       }
     },
     {
@@ -618,6 +1799,85 @@
           "label": "事实与责任需以证据和裁判为准",
           "score": 5
         }
+      },
+      "viral_score": {
+        "total": 71,
+        "tier": "可优化",
+        "confidence": "高",
+        "penalty": 0,
+        "components": [
+          {
+            "key": "opening",
+            "label": "开头冲击",
+            "max": 18,
+            "score": 14,
+            "reason": "第一句具备结果、数字或直接问题"
+          },
+          {
+            "key": "conflict",
+            "label": "冲突清晰",
+            "max": 16,
+            "score": 10,
+            "reason": "还需要把双方分歧或代价说得更具体"
+          },
+          {
+            "key": "suspense",
+            "label": "悬念推进",
+            "max": 16,
+            "score": 16,
+            "reason": "结论没有一次说尽，留下责任、证据或结果缺口"
+          },
+          {
+            "key": "specificity",
+            "label": "细节具体",
+            "max": 12,
+            "score": 0,
+            "reason": "建议补一个金额、时间、地点或证据细节"
+          },
+          {
+            "key": "narration",
+            "label": "讲述可懂",
+            "max": 10,
+            "score": 10,
+            "reason": "讲述顺序适合先案情后规则"
+          },
+          {
+            "key": "camera",
+            "label": "画面可拍",
+            "max": 8,
+            "score": 5,
+            "reason": "画面动作还可以更具体"
+          },
+          {
+            "key": "interaction",
+            "label": "互动承接",
+            "max": 10,
+            "score": 6,
+            "reason": "结尾应换成一个可回答的责任或证据问题"
+          },
+          {
+            "key": "trust",
+            "label": "来源可信",
+            "max": 10,
+            "score": 10,
+            "reason": "有独立公开作品页，可回溯核验"
+          }
+        ],
+        "recommendations": [
+          {
+            "key": "specificity",
+            "text": "补一个金额、时间、地点、证据或行为细节"
+          },
+          {
+            "key": "interaction",
+            "text": "结尾设置一个能回答的责任比例或证据问题"
+          },
+          {
+            "key": "conflict",
+            "text": "把责任双方、损失代价或常识反差放进标题"
+          }
+        ],
+        "note": "这是内容结构的传播潜力分，不是播放量预测、平台排名或法律效果保证。"
       }
     },
     {
@@ -656,6 +1916,85 @@
           "label": "事实与责任需以证据和裁判为准",
           "score": 5
         }
+      },
+      "viral_score": {
+        "total": 71,
+        "tier": "可优化",
+        "confidence": "高",
+        "penalty": 0,
+        "components": [
+          {
+            "key": "opening",
+            "label": "开头冲击",
+            "max": 18,
+            "score": 14,
+            "reason": "第一句具备结果、数字或直接问题"
+          },
+          {
+            "key": "conflict",
+            "label": "冲突清晰",
+            "max": 16,
+            "score": 8,
+            "reason": "还需要把双方分歧或代价说得更具体"
+          },
+          {
+            "key": "suspense",
+            "label": "悬念推进",
+            "max": 16,
+            "score": 16,
+            "reason": "结论没有一次说尽，留下责任、证据或结果缺口"
+          },
+          {
+            "key": "specificity",
+            "label": "细节具体",
+            "max": 12,
+            "score": 3,
+            "reason": "建议补一个金额、时间、地点或证据细节"
+          },
+          {
+            "key": "narration",
+            "label": "讲述可懂",
+            "max": 10,
+            "score": 8,
+            "reason": "讲述顺序适合先案情后规则"
+          },
+          {
+            "key": "camera",
+            "label": "画面可拍",
+            "max": 8,
+            "score": 6,
+            "reason": "已有清晰口播、字幕或案件素材承接"
+          },
+          {
+            "key": "interaction",
+            "label": "互动承接",
+            "max": 10,
+            "score": 6,
+            "reason": "结尾应换成一个可回答的责任或证据问题"
+          },
+          {
+            "key": "trust",
+            "label": "来源可信",
+            "max": 10,
+            "score": 10,
+            "reason": "有独立公开作品页，可回溯核验"
+          }
+        ],
+        "recommendations": [
+          {
+            "key": "specificity",
+            "text": "补一个金额、时间、地点、证据或行为细节"
+          },
+          {
+            "key": "conflict",
+            "text": "把责任双方、损失代价或常识反差放进标题"
+          },
+          {
+            "key": "interaction",
+            "text": "结尾设置一个能回答的责任比例或证据问题"
+          }
+        ],
+        "note": "这是内容结构的传播潜力分，不是播放量预测、平台排名或法律效果保证。"
       }
     },
     {
@@ -694,6 +2033,85 @@
           "label": "事实与责任需以证据和裁判为准",
           "score": 5
         }
+      },
+      "viral_score": {
+        "total": 75,
+        "tier": "可优化",
+        "confidence": "高",
+        "penalty": 0,
+        "components": [
+          {
+            "key": "opening",
+            "label": "开头冲击",
+            "max": 18,
+            "score": 18,
+            "reason": "第一句具备结果、数字或直接问题"
+          },
+          {
+            "key": "conflict",
+            "label": "冲突清晰",
+            "max": 16,
+            "score": 10,
+            "reason": "还需要把双方分歧或代价说得更具体"
+          },
+          {
+            "key": "suspense",
+            "label": "悬念推进",
+            "max": 16,
+            "score": 16,
+            "reason": "结论没有一次说尽，留下责任、证据或结果缺口"
+          },
+          {
+            "key": "specificity",
+            "label": "细节具体",
+            "max": 12,
+            "score": 0,
+            "reason": "建议补一个金额、时间、地点或证据细节"
+          },
+          {
+            "key": "narration",
+            "label": "讲述可懂",
+            "max": 10,
+            "score": 10,
+            "reason": "讲述顺序适合先案情后规则"
+          },
+          {
+            "key": "camera",
+            "label": "画面可拍",
+            "max": 8,
+            "score": 5,
+            "reason": "画面动作还可以更具体"
+          },
+          {
+            "key": "interaction",
+            "label": "互动承接",
+            "max": 10,
+            "score": 6,
+            "reason": "结尾应换成一个可回答的责任或证据问题"
+          },
+          {
+            "key": "trust",
+            "label": "来源可信",
+            "max": 10,
+            "score": 10,
+            "reason": "有独立公开作品页，可回溯核验"
+          }
+        ],
+        "recommendations": [
+          {
+            "key": "specificity",
+            "text": "补一个金额、时间、地点、证据或行为细节"
+          },
+          {
+            "key": "interaction",
+            "text": "结尾设置一个能回答的责任比例或证据问题"
+          },
+          {
+            "key": "conflict",
+            "text": "把责任双方、损失代价或常识反差放进标题"
+          }
+        ],
+        "note": "这是内容结构的传播潜力分，不是播放量预测、平台排名或法律效果保证。"
       }
     },
     {
@@ -732,6 +2150,85 @@
           "label": "事实与责任需以证据和裁判为准",
           "score": 5
         }
+      },
+      "viral_score": {
+        "total": 82,
+        "tier": "可优化",
+        "confidence": "高",
+        "penalty": 0,
+        "components": [
+          {
+            "key": "opening",
+            "label": "开头冲击",
+            "max": 18,
+            "score": 18,
+            "reason": "第一句具备结果、数字或直接问题"
+          },
+          {
+            "key": "conflict",
+            "label": "冲突清晰",
+            "max": 16,
+            "score": 8,
+            "reason": "还需要把双方分歧或代价说得更具体"
+          },
+          {
+            "key": "suspense",
+            "label": "悬念推进",
+            "max": 16,
+            "score": 16,
+            "reason": "结论没有一次说尽，留下责任、证据或结果缺口"
+          },
+          {
+            "key": "specificity",
+            "label": "细节具体",
+            "max": 12,
+            "score": 9,
+            "reason": "标题里有数字、场景、证据或具体对象"
+          },
+          {
+            "key": "narration",
+            "label": "讲述可懂",
+            "max": 10,
+            "score": 10,
+            "reason": "讲述顺序适合先案情后规则"
+          },
+          {
+            "key": "camera",
+            "label": "画面可拍",
+            "max": 8,
+            "score": 5,
+            "reason": "画面动作还可以更具体"
+          },
+          {
+            "key": "interaction",
+            "label": "互动承接",
+            "max": 10,
+            "score": 6,
+            "reason": "结尾应换成一个可回答的责任或证据问题"
+          },
+          {
+            "key": "trust",
+            "label": "来源可信",
+            "max": 10,
+            "score": 10,
+            "reason": "有独立公开作品页，可回溯核验"
+          }
+        ],
+        "recommendations": [
+          {
+            "key": "conflict",
+            "text": "把责任双方、损失代价或常识反差放进标题"
+          },
+          {
+            "key": "interaction",
+            "text": "结尾设置一个能回答的责任比例或证据问题"
+          },
+          {
+            "key": "camera",
+            "text": "为每个结论配字幕重点或一个可见画面动作"
+          }
+        ],
+        "note": "这是内容结构的传播潜力分，不是播放量预测、平台排名或法律效果保证。"
       }
     },
     {
@@ -770,6 +2267,81 @@
           "label": "事实与责任需以证据和裁判为准",
           "score": 5
         }
+      },
+      "viral_score": {
+        "total": 86,
+        "tier": "高潜结构",
+        "confidence": "高",
+        "penalty": 0,
+        "components": [
+          {
+            "key": "opening",
+            "label": "开头冲击",
+            "max": 18,
+            "score": 18,
+            "reason": "第一句具备结果、数字或直接问题"
+          },
+          {
+            "key": "conflict",
+            "label": "冲突清晰",
+            "max": 16,
+            "score": 12,
+            "reason": "标题明确放入责任、结果或常识冲突"
+          },
+          {
+            "key": "suspense",
+            "label": "悬念推进",
+            "max": 16,
+            "score": 16,
+            "reason": "结论没有一次说尽，留下责任、证据或结果缺口"
+          },
+          {
+            "key": "specificity",
+            "label": "细节具体",
+            "max": 12,
+            "score": 9,
+            "reason": "标题里有数字、场景、证据或具体对象"
+          },
+          {
+            "key": "narration",
+            "label": "讲述可懂",
+            "max": 10,
+            "score": 10,
+            "reason": "讲述顺序适合先案情后规则"
+          },
+          {
+            "key": "camera",
+            "label": "画面可拍",
+            "max": 8,
+            "score": 5,
+            "reason": "画面动作还可以更具体"
+          },
+          {
+            "key": "interaction",
+            "label": "互动承接",
+            "max": 10,
+            "score": 6,
+            "reason": "结尾应换成一个可回答的责任或证据问题"
+          },
+          {
+            "key": "trust",
+            "label": "来源可信",
+            "max": 10,
+            "score": 10,
+            "reason": "有独立公开作品页，可回溯核验"
+          }
+        ],
+        "recommendations": [
+          {
+            "key": "interaction",
+            "text": "结尾设置一个能回答的责任比例或证据问题"
+          },
+          {
+            "key": "camera",
+            "text": "为每个结论配字幕重点或一个可见画面动作"
+          }
+        ],
+        "note": "这是内容结构的传播潜力分，不是播放量预测、平台排名或法律效果保证。"
       }
     },
     {
@@ -808,6 +2380,85 @@
           "label": "事实与责任需以证据和裁判为准",
           "score": 5
         }
+      },
+      "viral_score": {
+        "total": 77,
+        "tier": "可优化",
+        "confidence": "高",
+        "penalty": 0,
+        "components": [
+          {
+            "key": "opening",
+            "label": "开头冲击",
+            "max": 18,
+            "score": 18,
+            "reason": "第一句具备结果、数字或直接问题"
+          },
+          {
+            "key": "conflict",
+            "label": "冲突清晰",
+            "max": 16,
+            "score": 12,
+            "reason": "标题明确放入责任、结果或常识冲突"
+          },
+          {
+            "key": "suspense",
+            "label": "悬念推进",
+            "max": 16,
+            "score": 16,
+            "reason": "结论没有一次说尽，留下责任、证据或结果缺口"
+          },
+          {
+            "key": "specificity",
+            "label": "细节具体",
+            "max": 12,
+            "score": 0,
+            "reason": "建议补一个金额、时间、地点或证据细节"
+          },
+          {
+            "key": "narration",
+            "label": "讲述可懂",
+            "max": 10,
+            "score": 10,
+            "reason": "讲述顺序适合先案情后规则"
+          },
+          {
+            "key": "camera",
+            "label": "画面可拍",
+            "max": 8,
+            "score": 5,
+            "reason": "画面动作还可以更具体"
+          },
+          {
+            "key": "interaction",
+            "label": "互动承接",
+            "max": 10,
+            "score": 6,
+            "reason": "结尾应换成一个可回答的责任或证据问题"
+          },
+          {
+            "key": "trust",
+            "label": "来源可信",
+            "max": 10,
+            "score": 10,
+            "reason": "有独立公开作品页，可回溯核验"
+          }
+        ],
+        "recommendations": [
+          {
+            "key": "specificity",
+            "text": "补一个金额、时间、地点、证据或行为细节"
+          },
+          {
+            "key": "interaction",
+            "text": "结尾设置一个能回答的责任比例或证据问题"
+          },
+          {
+            "key": "camera",
+            "text": "为每个结论配字幕重点或一个可见画面动作"
+          }
+        ],
+        "note": "这是内容结构的传播潜力分，不是播放量预测、平台排名或法律效果保证。"
       }
     },
     {
@@ -846,6 +2497,85 @@
           "label": "事实与责任需以证据和裁判为准",
           "score": 5
         }
+      },
+      "viral_score": {
+        "total": 75,
+        "tier": "可优化",
+        "confidence": "高",
+        "penalty": 0,
+        "components": [
+          {
+            "key": "opening",
+            "label": "开头冲击",
+            "max": 18,
+            "score": 18,
+            "reason": "第一句具备结果、数字或直接问题"
+          },
+          {
+            "key": "conflict",
+            "label": "冲突清晰",
+            "max": 16,
+            "score": 10,
+            "reason": "还需要把双方分歧或代价说得更具体"
+          },
+          {
+            "key": "suspense",
+            "label": "悬念推进",
+            "max": 16,
+            "score": 16,
+            "reason": "结论没有一次说尽，留下责任、证据或结果缺口"
+          },
+          {
+            "key": "specificity",
+            "label": "细节具体",
+            "max": 12,
+            "score": 0,
+            "reason": "建议补一个金额、时间、地点或证据细节"
+          },
+          {
+            "key": "narration",
+            "label": "讲述可懂",
+            "max": 10,
+            "score": 10,
+            "reason": "讲述顺序适合先案情后规则"
+          },
+          {
+            "key": "camera",
+            "label": "画面可拍",
+            "max": 8,
+            "score": 5,
+            "reason": "画面动作还可以更具体"
+          },
+          {
+            "key": "interaction",
+            "label": "互动承接",
+            "max": 10,
+            "score": 6,
+            "reason": "结尾应换成一个可回答的责任或证据问题"
+          },
+          {
+            "key": "trust",
+            "label": "来源可信",
+            "max": 10,
+            "score": 10,
+            "reason": "有独立公开作品页，可回溯核验"
+          }
+        ],
+        "recommendations": [
+          {
+            "key": "specificity",
+            "text": "补一个金额、时间、地点、证据或行为细节"
+          },
+          {
+            "key": "interaction",
+            "text": "结尾设置一个能回答的责任比例或证据问题"
+          },
+          {
+            "key": "conflict",
+            "text": "把责任双方、损失代价或常识反差放进标题"
+          }
+        ],
+        "note": "这是内容结构的传播潜力分，不是播放量预测、平台排名或法律效果保证。"
       }
     },
     {
@@ -884,6 +2614,81 @@
           "label": "事实与责任需以证据和裁判为准",
           "score": 5
         }
+      },
+      "viral_score": {
+        "total": 87,
+        "tier": "高潜结构",
+        "confidence": "高",
+        "penalty": 0,
+        "components": [
+          {
+            "key": "opening",
+            "label": "开头冲击",
+            "max": 18,
+            "score": 18,
+            "reason": "第一句具备结果、数字或直接问题"
+          },
+          {
+            "key": "conflict",
+            "label": "冲突清晰",
+            "max": 16,
+            "score": 8,
+            "reason": "还需要把双方分歧或代价说得更具体"
+          },
+          {
+            "key": "suspense",
+            "label": "悬念推进",
+            "max": 16,
+            "score": 16,
+            "reason": "结论没有一次说尽，留下责任、证据或结果缺口"
+          },
+          {
+            "key": "specificity",
+            "label": "细节具体",
+            "max": 12,
+            "score": 12,
+            "reason": "标题里有数字、场景、证据或具体对象"
+          },
+          {
+            "key": "narration",
+            "label": "讲述可懂",
+            "max": 10,
+            "score": 10,
+            "reason": "讲述顺序适合先案情后规则"
+          },
+          {
+            "key": "camera",
+            "label": "画面可拍",
+            "max": 8,
+            "score": 5,
+            "reason": "画面动作还可以更具体"
+          },
+          {
+            "key": "interaction",
+            "label": "互动承接",
+            "max": 10,
+            "score": 8,
+            "reason": "评论问题能自然变成下一条选题"
+          },
+          {
+            "key": "trust",
+            "label": "来源可信",
+            "max": 10,
+            "score": 10,
+            "reason": "有独立公开作品页，可回溯核验"
+          }
+        ],
+        "recommendations": [
+          {
+            "key": "conflict",
+            "text": "把责任双方、损失代价或常识反差放进标题"
+          },
+          {
+            "key": "camera",
+            "text": "为每个结论配字幕重点或一个可见画面动作"
+          }
+        ],
+        "note": "这是内容结构的传播潜力分，不是播放量预测、平台排名或法律效果保证。"
       }
     },
     {
@@ -922,6 +2727,85 @@
           "label": "事实与责任需以证据和裁判为准",
           "score": 5
         }
+      },
+      "viral_score": {
+        "total": 81,
+        "tier": "可优化",
+        "confidence": "高",
+        "penalty": 0,
+        "components": [
+          {
+            "key": "opening",
+            "label": "开头冲击",
+            "max": 18,
+            "score": 18,
+            "reason": "第一句具备结果、数字或直接问题"
+          },
+          {
+            "key": "conflict",
+            "label": "冲突清晰",
+            "max": 16,
+            "score": 10,
+            "reason": "还需要把双方分歧或代价说得更具体"
+          },
+          {
+            "key": "suspense",
+            "label": "悬念推进",
+            "max": 16,
+            "score": 16,
+            "reason": "结论没有一次说尽，留下责任、证据或结果缺口"
+          },
+          {
+            "key": "specificity",
+            "label": "细节具体",
+            "max": 12,
+            "score": 6,
+            "reason": "标题里有数字、场景、证据或具体对象"
+          },
+          {
+            "key": "narration",
+            "label": "讲述可懂",
+            "max": 10,
+            "score": 10,
+            "reason": "讲述顺序适合先案情后规则"
+          },
+          {
+            "key": "camera",
+            "label": "画面可拍",
+            "max": 8,
+            "score": 5,
+            "reason": "画面动作还可以更具体"
+          },
+          {
+            "key": "interaction",
+            "label": "互动承接",
+            "max": 10,
+            "score": 6,
+            "reason": "结尾应换成一个可回答的责任或证据问题"
+          },
+          {
+            "key": "trust",
+            "label": "来源可信",
+            "max": 10,
+            "score": 10,
+            "reason": "有独立公开作品页，可回溯核验"
+          }
+        ],
+        "recommendations": [
+          {
+            "key": "specificity",
+            "text": "补一个金额、时间、地点、证据或行为细节"
+          },
+          {
+            "key": "interaction",
+            "text": "结尾设置一个能回答的责任比例或证据问题"
+          },
+          {
+            "key": "conflict",
+            "text": "把责任双方、损失代价或常识反差放进标题"
+          }
+        ],
+        "note": "这是内容结构的传播潜力分，不是播放量预测、平台排名或法律效果保证。"
       }
     },
     {
@@ -960,6 +2844,85 @@
           "label": "事实与责任需以证据和裁判为准",
           "score": 5
         }
+      },
+      "viral_score": {
+        "total": 77,
+        "tier": "可优化",
+        "confidence": "高",
+        "penalty": 0,
+        "components": [
+          {
+            "key": "opening",
+            "label": "开头冲击",
+            "max": 18,
+            "score": 18,
+            "reason": "第一句具备结果、数字或直接问题"
+          },
+          {
+            "key": "conflict",
+            "label": "冲突清晰",
+            "max": 16,
+            "score": 12,
+            "reason": "标题明确放入责任、结果或常识冲突"
+          },
+          {
+            "key": "suspense",
+            "label": "悬念推进",
+            "max": 16,
+            "score": 16,
+            "reason": "结论没有一次说尽，留下责任、证据或结果缺口"
+          },
+          {
+            "key": "specificity",
+            "label": "细节具体",
+            "max": 12,
+            "score": 0,
+            "reason": "建议补一个金额、时间、地点或证据细节"
+          },
+          {
+            "key": "narration",
+            "label": "讲述可懂",
+            "max": 10,
+            "score": 10,
+            "reason": "讲述顺序适合先案情后规则"
+          },
+          {
+            "key": "camera",
+            "label": "画面可拍",
+            "max": 8,
+            "score": 5,
+            "reason": "画面动作还可以更具体"
+          },
+          {
+            "key": "interaction",
+            "label": "互动承接",
+            "max": 10,
+            "score": 6,
+            "reason": "结尾应换成一个可回答的责任或证据问题"
+          },
+          {
+            "key": "trust",
+            "label": "来源可信",
+            "max": 10,
+            "score": 10,
+            "reason": "有独立公开作品页，可回溯核验"
+          }
+        ],
+        "recommendations": [
+          {
+            "key": "specificity",
+            "text": "补一个金额、时间、地点、证据或行为细节"
+          },
+          {
+            "key": "interaction",
+            "text": "结尾设置一个能回答的责任比例或证据问题"
+          },
+          {
+            "key": "camera",
+            "text": "为每个结论配字幕重点或一个可见画面动作"
+          }
+        ],
+        "note": "这是内容结构的传播潜力分，不是播放量预测、平台排名或法律效果保证。"
       }
     },
     {
@@ -998,6 +2961,85 @@
           "label": "事实与责任需以证据和裁判为准",
           "score": 5
         }
+      },
+      "viral_score": {
+        "total": 69,
+        "tier": "先补结构",
+        "confidence": "高",
+        "penalty": 0,
+        "components": [
+          {
+            "key": "opening",
+            "label": "开头冲击",
+            "max": 18,
+            "score": 14,
+            "reason": "第一句具备结果、数字或直接问题"
+          },
+          {
+            "key": "conflict",
+            "label": "冲突清晰",
+            "max": 16,
+            "score": 8,
+            "reason": "还需要把双方分歧或代价说得更具体"
+          },
+          {
+            "key": "suspense",
+            "label": "悬念推进",
+            "max": 16,
+            "score": 16,
+            "reason": "结论没有一次说尽，留下责任、证据或结果缺口"
+          },
+          {
+            "key": "specificity",
+            "label": "细节具体",
+            "max": 12,
+            "score": 0,
+            "reason": "建议补一个金额、时间、地点或证据细节"
+          },
+          {
+            "key": "narration",
+            "label": "讲述可懂",
+            "max": 10,
+            "score": 10,
+            "reason": "讲述顺序适合先案情后规则"
+          },
+          {
+            "key": "camera",
+            "label": "画面可拍",
+            "max": 8,
+            "score": 5,
+            "reason": "画面动作还可以更具体"
+          },
+          {
+            "key": "interaction",
+            "label": "互动承接",
+            "max": 10,
+            "score": 6,
+            "reason": "结尾应换成一个可回答的责任或证据问题"
+          },
+          {
+            "key": "trust",
+            "label": "来源可信",
+            "max": 10,
+            "score": 10,
+            "reason": "有独立公开作品页，可回溯核验"
+          }
+        ],
+        "recommendations": [
+          {
+            "key": "specificity",
+            "text": "补一个金额、时间、地点、证据或行为细节"
+          },
+          {
+            "key": "conflict",
+            "text": "把责任双方、损失代价或常识反差放进标题"
+          },
+          {
+            "key": "interaction",
+            "text": "结尾设置一个能回答的责任比例或证据问题"
+          }
+        ],
+        "note": "这是内容结构的传播潜力分，不是播放量预测、平台排名或法律效果保证。"
       }
     },
     {
@@ -1036,6 +3078,85 @@
           "label": "案件隐私与法律结论需复核",
           "score": 5
         }
+      },
+      "viral_score": {
+        "total": 70,
+        "tier": "可优化",
+        "confidence": "高",
+        "penalty": 0,
+        "components": [
+          {
+            "key": "opening",
+            "label": "开头冲击",
+            "max": 18,
+            "score": 14,
+            "reason": "第一句具备结果、数字或直接问题"
+          },
+          {
+            "key": "conflict",
+            "label": "冲突清晰",
+            "max": 16,
+            "score": 10,
+            "reason": "还需要把双方分歧或代价说得更具体"
+          },
+          {
+            "key": "suspense",
+            "label": "悬念推进",
+            "max": 16,
+            "score": 13,
+            "reason": "结论没有一次说尽，留下责任、证据或结果缺口"
+          },
+          {
+            "key": "specificity",
+            "label": "细节具体",
+            "max": 12,
+            "score": 3,
+            "reason": "建议补一个金额、时间、地点或证据细节"
+          },
+          {
+            "key": "narration",
+            "label": "讲述可懂",
+            "max": 10,
+            "score": 8,
+            "reason": "讲述顺序适合先案情后规则"
+          },
+          {
+            "key": "camera",
+            "label": "画面可拍",
+            "max": 8,
+            "score": 6,
+            "reason": "已有清晰口播、字幕或案件素材承接"
+          },
+          {
+            "key": "interaction",
+            "label": "互动承接",
+            "max": 10,
+            "score": 6,
+            "reason": "结尾应换成一个可回答的责任或证据问题"
+          },
+          {
+            "key": "trust",
+            "label": "来源可信",
+            "max": 10,
+            "score": 10,
+            "reason": "有独立公开作品页，可回溯核验"
+          }
+        ],
+        "recommendations": [
+          {
+            "key": "specificity",
+            "text": "补一个金额、时间、地点、证据或行为细节"
+          },
+          {
+            "key": "interaction",
+            "text": "结尾设置一个能回答的责任比例或证据问题"
+          },
+          {
+            "key": "conflict",
+            "text": "把责任双方、损失代价或常识反差放进标题"
+          }
+        ],
+        "note": "这是内容结构的传播潜力分，不是播放量预测、平台排名或法律效果保证。"
       }
     },
     {
@@ -1074,6 +3195,85 @@
           "label": "案件隐私与法律结论需复核",
           "score": 5
         }
+      },
+      "viral_score": {
+        "total": 70,
+        "tier": "可优化",
+        "confidence": "高",
+        "penalty": 0,
+        "components": [
+          {
+            "key": "opening",
+            "label": "开头冲击",
+            "max": 18,
+            "score": 14,
+            "reason": "第一句具备结果、数字或直接问题"
+          },
+          {
+            "key": "conflict",
+            "label": "冲突清晰",
+            "max": 16,
+            "score": 10,
+            "reason": "还需要把双方分歧或代价说得更具体"
+          },
+          {
+            "key": "suspense",
+            "label": "悬念推进",
+            "max": 16,
+            "score": 13,
+            "reason": "结论没有一次说尽，留下责任、证据或结果缺口"
+          },
+          {
+            "key": "specificity",
+            "label": "细节具体",
+            "max": 12,
+            "score": 3,
+            "reason": "建议补一个金额、时间、地点或证据细节"
+          },
+          {
+            "key": "narration",
+            "label": "讲述可懂",
+            "max": 10,
+            "score": 8,
+            "reason": "讲述顺序适合先案情后规则"
+          },
+          {
+            "key": "camera",
+            "label": "画面可拍",
+            "max": 8,
+            "score": 6,
+            "reason": "已有清晰口播、字幕或案件素材承接"
+          },
+          {
+            "key": "interaction",
+            "label": "互动承接",
+            "max": 10,
+            "score": 6,
+            "reason": "结尾应换成一个可回答的责任或证据问题"
+          },
+          {
+            "key": "trust",
+            "label": "来源可信",
+            "max": 10,
+            "score": 10,
+            "reason": "有独立公开作品页，可回溯核验"
+          }
+        ],
+        "recommendations": [
+          {
+            "key": "specificity",
+            "text": "补一个金额、时间、地点、证据或行为细节"
+          },
+          {
+            "key": "interaction",
+            "text": "结尾设置一个能回答的责任比例或证据问题"
+          },
+          {
+            "key": "conflict",
+            "text": "把责任双方、损失代价或常识反差放进标题"
+          }
+        ],
+        "note": "这是内容结构的传播潜力分，不是播放量预测、平台排名或法律效果保证。"
       }
     },
     {
@@ -1112,6 +3312,85 @@
           "label": "案件隐私与法律结论需复核",
           "score": 5
         }
+      },
+      "viral_score": {
+        "total": 70,
+        "tier": "可优化",
+        "confidence": "高",
+        "penalty": 0,
+        "components": [
+          {
+            "key": "opening",
+            "label": "开头冲击",
+            "max": 18,
+            "score": 14,
+            "reason": "第一句具备结果、数字或直接问题"
+          },
+          {
+            "key": "conflict",
+            "label": "冲突清晰",
+            "max": 16,
+            "score": 10,
+            "reason": "还需要把双方分歧或代价说得更具体"
+          },
+          {
+            "key": "suspense",
+            "label": "悬念推进",
+            "max": 16,
+            "score": 13,
+            "reason": "结论没有一次说尽，留下责任、证据或结果缺口"
+          },
+          {
+            "key": "specificity",
+            "label": "细节具体",
+            "max": 12,
+            "score": 3,
+            "reason": "建议补一个金额、时间、地点或证据细节"
+          },
+          {
+            "key": "narration",
+            "label": "讲述可懂",
+            "max": 10,
+            "score": 8,
+            "reason": "讲述顺序适合先案情后规则"
+          },
+          {
+            "key": "camera",
+            "label": "画面可拍",
+            "max": 8,
+            "score": 6,
+            "reason": "已有清晰口播、字幕或案件素材承接"
+          },
+          {
+            "key": "interaction",
+            "label": "互动承接",
+            "max": 10,
+            "score": 6,
+            "reason": "结尾应换成一个可回答的责任或证据问题"
+          },
+          {
+            "key": "trust",
+            "label": "来源可信",
+            "max": 10,
+            "score": 10,
+            "reason": "有独立公开作品页，可回溯核验"
+          }
+        ],
+        "recommendations": [
+          {
+            "key": "specificity",
+            "text": "补一个金额、时间、地点、证据或行为细节"
+          },
+          {
+            "key": "interaction",
+            "text": "结尾设置一个能回答的责任比例或证据问题"
+          },
+          {
+            "key": "conflict",
+            "text": "把责任双方、损失代价或常识反差放进标题"
+          }
+        ],
+        "note": "这是内容结构的传播潜力分，不是播放量预测、平台排名或法律效果保证。"
       }
     },
     {
@@ -1150,6 +3429,85 @@
           "label": "案件隐私与法律结论需复核",
           "score": 5
         }
+      },
+      "viral_score": {
+        "total": 71,
+        "tier": "可优化",
+        "confidence": "高",
+        "penalty": 0,
+        "components": [
+          {
+            "key": "opening",
+            "label": "开头冲击",
+            "max": 18,
+            "score": 14,
+            "reason": "第一句具备结果、数字或直接问题"
+          },
+          {
+            "key": "conflict",
+            "label": "冲突清晰",
+            "max": 16,
+            "score": 8,
+            "reason": "还需要把双方分歧或代价说得更具体"
+          },
+          {
+            "key": "suspense",
+            "label": "悬念推进",
+            "max": 16,
+            "score": 13,
+            "reason": "结论没有一次说尽，留下责任、证据或结果缺口"
+          },
+          {
+            "key": "specificity",
+            "label": "细节具体",
+            "max": 12,
+            "score": 6,
+            "reason": "标题里有数字、场景、证据或具体对象"
+          },
+          {
+            "key": "narration",
+            "label": "讲述可懂",
+            "max": 10,
+            "score": 8,
+            "reason": "讲述顺序适合先案情后规则"
+          },
+          {
+            "key": "camera",
+            "label": "画面可拍",
+            "max": 8,
+            "score": 6,
+            "reason": "已有清晰口播、字幕或案件素材承接"
+          },
+          {
+            "key": "interaction",
+            "label": "互动承接",
+            "max": 10,
+            "score": 6,
+            "reason": "结尾应换成一个可回答的责任或证据问题"
+          },
+          {
+            "key": "trust",
+            "label": "来源可信",
+            "max": 10,
+            "score": 10,
+            "reason": "有独立公开作品页，可回溯核验"
+          }
+        ],
+        "recommendations": [
+          {
+            "key": "conflict",
+            "text": "把责任双方、损失代价或常识反差放进标题"
+          },
+          {
+            "key": "specificity",
+            "text": "补一个金额、时间、地点、证据或行为细节"
+          },
+          {
+            "key": "interaction",
+            "text": "结尾设置一个能回答的责任比例或证据问题"
+          }
+        ],
+        "note": "这是内容结构的传播潜力分，不是播放量预测、平台排名或法律效果保证。"
       }
     },
     {
@@ -1188,6 +3546,85 @@
           "label": "案件隐私与法律结论需复核",
           "score": 5
         }
+      },
+      "viral_score": {
+        "total": 70,
+        "tier": "可优化",
+        "confidence": "高",
+        "penalty": 0,
+        "components": [
+          {
+            "key": "opening",
+            "label": "开头冲击",
+            "max": 18,
+            "score": 14,
+            "reason": "第一句具备结果、数字或直接问题"
+          },
+          {
+            "key": "conflict",
+            "label": "冲突清晰",
+            "max": 16,
+            "score": 10,
+            "reason": "还需要把双方分歧或代价说得更具体"
+          },
+          {
+            "key": "suspense",
+            "label": "悬念推进",
+            "max": 16,
+            "score": 13,
+            "reason": "结论没有一次说尽，留下责任、证据或结果缺口"
+          },
+          {
+            "key": "specificity",
+            "label": "细节具体",
+            "max": 12,
+            "score": 3,
+            "reason": "建议补一个金额、时间、地点或证据细节"
+          },
+          {
+            "key": "narration",
+            "label": "讲述可懂",
+            "max": 10,
+            "score": 8,
+            "reason": "讲述顺序适合先案情后规则"
+          },
+          {
+            "key": "camera",
+            "label": "画面可拍",
+            "max": 8,
+            "score": 6,
+            "reason": "已有清晰口播、字幕或案件素材承接"
+          },
+          {
+            "key": "interaction",
+            "label": "互动承接",
+            "max": 10,
+            "score": 6,
+            "reason": "结尾应换成一个可回答的责任或证据问题"
+          },
+          {
+            "key": "trust",
+            "label": "来源可信",
+            "max": 10,
+            "score": 10,
+            "reason": "有独立公开作品页，可回溯核验"
+          }
+        ],
+        "recommendations": [
+          {
+            "key": "specificity",
+            "text": "补一个金额、时间、地点、证据或行为细节"
+          },
+          {
+            "key": "interaction",
+            "text": "结尾设置一个能回答的责任比例或证据问题"
+          },
+          {
+            "key": "conflict",
+            "text": "把责任双方、损失代价或常识反差放进标题"
+          }
+        ],
+        "note": "这是内容结构的传播潜力分，不是播放量预测、平台排名或法律效果保证。"
       }
     },
     {
@@ -1226,6 +3663,85 @@
           "label": "案件隐私与法律结论需复核",
           "score": 5
         }
+      },
+      "viral_score": {
+        "total": 73,
+        "tier": "可优化",
+        "confidence": "高",
+        "penalty": 0,
+        "components": [
+          {
+            "key": "opening",
+            "label": "开头冲击",
+            "max": 18,
+            "score": 14,
+            "reason": "第一句具备结果、数字或直接问题"
+          },
+          {
+            "key": "conflict",
+            "label": "冲突清晰",
+            "max": 16,
+            "score": 10,
+            "reason": "还需要把双方分歧或代价说得更具体"
+          },
+          {
+            "key": "suspense",
+            "label": "悬念推进",
+            "max": 16,
+            "score": 13,
+            "reason": "结论没有一次说尽，留下责任、证据或结果缺口"
+          },
+          {
+            "key": "specificity",
+            "label": "细节具体",
+            "max": 12,
+            "score": 6,
+            "reason": "标题里有数字、场景、证据或具体对象"
+          },
+          {
+            "key": "narration",
+            "label": "讲述可懂",
+            "max": 10,
+            "score": 8,
+            "reason": "讲述顺序适合先案情后规则"
+          },
+          {
+            "key": "camera",
+            "label": "画面可拍",
+            "max": 8,
+            "score": 6,
+            "reason": "已有清晰口播、字幕或案件素材承接"
+          },
+          {
+            "key": "interaction",
+            "label": "互动承接",
+            "max": 10,
+            "score": 6,
+            "reason": "结尾应换成一个可回答的责任或证据问题"
+          },
+          {
+            "key": "trust",
+            "label": "来源可信",
+            "max": 10,
+            "score": 10,
+            "reason": "有独立公开作品页，可回溯核验"
+          }
+        ],
+        "recommendations": [
+          {
+            "key": "specificity",
+            "text": "补一个金额、时间、地点、证据或行为细节"
+          },
+          {
+            "key": "interaction",
+            "text": "结尾设置一个能回答的责任比例或证据问题"
+          },
+          {
+            "key": "conflict",
+            "text": "把责任双方、损失代价或常识反差放进标题"
+          }
+        ],
+        "note": "这是内容结构的传播潜力分，不是播放量预测、平台排名或法律效果保证。"
       }
     },
     {
@@ -1264,6 +3780,85 @@
           "label": "案件隐私与法律结论需复核",
           "score": 5
         }
+      },
+      "viral_score": {
+        "total": 71,
+        "tier": "可优化",
+        "confidence": "高",
+        "penalty": 0,
+        "components": [
+          {
+            "key": "opening",
+            "label": "开头冲击",
+            "max": 18,
+            "score": 14,
+            "reason": "第一句具备结果、数字或直接问题"
+          },
+          {
+            "key": "conflict",
+            "label": "冲突清晰",
+            "max": 16,
+            "score": 8,
+            "reason": "还需要把双方分歧或代价说得更具体"
+          },
+          {
+            "key": "suspense",
+            "label": "悬念推进",
+            "max": 16,
+            "score": 13,
+            "reason": "结论没有一次说尽，留下责任、证据或结果缺口"
+          },
+          {
+            "key": "specificity",
+            "label": "细节具体",
+            "max": 12,
+            "score": 6,
+            "reason": "标题里有数字、场景、证据或具体对象"
+          },
+          {
+            "key": "narration",
+            "label": "讲述可懂",
+            "max": 10,
+            "score": 8,
+            "reason": "讲述顺序适合先案情后规则"
+          },
+          {
+            "key": "camera",
+            "label": "画面可拍",
+            "max": 8,
+            "score": 6,
+            "reason": "已有清晰口播、字幕或案件素材承接"
+          },
+          {
+            "key": "interaction",
+            "label": "互动承接",
+            "max": 10,
+            "score": 6,
+            "reason": "结尾应换成一个可回答的责任或证据问题"
+          },
+          {
+            "key": "trust",
+            "label": "来源可信",
+            "max": 10,
+            "score": 10,
+            "reason": "有独立公开作品页，可回溯核验"
+          }
+        ],
+        "recommendations": [
+          {
+            "key": "conflict",
+            "text": "把责任双方、损失代价或常识反差放进标题"
+          },
+          {
+            "key": "specificity",
+            "text": "补一个金额、时间、地点、证据或行为细节"
+          },
+          {
+            "key": "interaction",
+            "text": "结尾设置一个能回答的责任比例或证据问题"
+          }
+        ],
+        "note": "这是内容结构的传播潜力分，不是播放量预测、平台排名或法律效果保证。"
       }
     },
     {
@@ -1302,6 +3897,85 @@
           "label": "案件隐私与法律结论需复核",
           "score": 5
         }
+      },
+      "viral_score": {
+        "total": 73,
+        "tier": "可优化",
+        "confidence": "高",
+        "penalty": 0,
+        "components": [
+          {
+            "key": "opening",
+            "label": "开头冲击",
+            "max": 18,
+            "score": 14,
+            "reason": "第一句具备结果、数字或直接问题"
+          },
+          {
+            "key": "conflict",
+            "label": "冲突清晰",
+            "max": 16,
+            "score": 10,
+            "reason": "还需要把双方分歧或代价说得更具体"
+          },
+          {
+            "key": "suspense",
+            "label": "悬念推进",
+            "max": 16,
+            "score": 13,
+            "reason": "结论没有一次说尽，留下责任、证据或结果缺口"
+          },
+          {
+            "key": "specificity",
+            "label": "细节具体",
+            "max": 12,
+            "score": 6,
+            "reason": "标题里有数字、场景、证据或具体对象"
+          },
+          {
+            "key": "narration",
+            "label": "讲述可懂",
+            "max": 10,
+            "score": 8,
+            "reason": "讲述顺序适合先案情后规则"
+          },
+          {
+            "key": "camera",
+            "label": "画面可拍",
+            "max": 8,
+            "score": 6,
+            "reason": "已有清晰口播、字幕或案件素材承接"
+          },
+          {
+            "key": "interaction",
+            "label": "互动承接",
+            "max": 10,
+            "score": 6,
+            "reason": "结尾应换成一个可回答的责任或证据问题"
+          },
+          {
+            "key": "trust",
+            "label": "来源可信",
+            "max": 10,
+            "score": 10,
+            "reason": "有独立公开作品页，可回溯核验"
+          }
+        ],
+        "recommendations": [
+          {
+            "key": "specificity",
+            "text": "补一个金额、时间、地点、证据或行为细节"
+          },
+          {
+            "key": "interaction",
+            "text": "结尾设置一个能回答的责任比例或证据问题"
+          },
+          {
+            "key": "conflict",
+            "text": "把责任双方、损失代价或常识反差放进标题"
+          }
+        ],
+        "note": "这是内容结构的传播潜力分，不是播放量预测、平台排名或法律效果保证。"
       }
     },
     {
@@ -1340,6 +4014,85 @@
           "label": "案件隐私与法律结论需复核",
           "score": 5
         }
+      },
+      "viral_score": {
+        "total": 68,
+        "tier": "先补结构",
+        "confidence": "高",
+        "penalty": 0,
+        "components": [
+          {
+            "key": "opening",
+            "label": "开头冲击",
+            "max": 18,
+            "score": 14,
+            "reason": "第一句具备结果、数字或直接问题"
+          },
+          {
+            "key": "conflict",
+            "label": "冲突清晰",
+            "max": 16,
+            "score": 8,
+            "reason": "还需要把双方分歧或代价说得更具体"
+          },
+          {
+            "key": "suspense",
+            "label": "悬念推进",
+            "max": 16,
+            "score": 13,
+            "reason": "结论没有一次说尽，留下责任、证据或结果缺口"
+          },
+          {
+            "key": "specificity",
+            "label": "细节具体",
+            "max": 12,
+            "score": 3,
+            "reason": "建议补一个金额、时间、地点或证据细节"
+          },
+          {
+            "key": "narration",
+            "label": "讲述可懂",
+            "max": 10,
+            "score": 8,
+            "reason": "讲述顺序适合先案情后规则"
+          },
+          {
+            "key": "camera",
+            "label": "画面可拍",
+            "max": 8,
+            "score": 6,
+            "reason": "已有清晰口播、字幕或案件素材承接"
+          },
+          {
+            "key": "interaction",
+            "label": "互动承接",
+            "max": 10,
+            "score": 6,
+            "reason": "结尾应换成一个可回答的责任或证据问题"
+          },
+          {
+            "key": "trust",
+            "label": "来源可信",
+            "max": 10,
+            "score": 10,
+            "reason": "有独立公开作品页，可回溯核验"
+          }
+        ],
+        "recommendations": [
+          {
+            "key": "specificity",
+            "text": "补一个金额、时间、地点、证据或行为细节"
+          },
+          {
+            "key": "conflict",
+            "text": "把责任双方、损失代价或常识反差放进标题"
+          },
+          {
+            "key": "interaction",
+            "text": "结尾设置一个能回答的责任比例或证据问题"
+          }
+        ],
+        "note": "这是内容结构的传播潜力分，不是播放量预测、平台排名或法律效果保证。"
       }
     },
     {
@@ -1378,6 +4131,81 @@
           "label": "案件隐私与法律结论需复核",
           "score": 5
         }
+      },
+      "viral_score": {
+        "total": 75,
+        "tier": "可优化",
+        "confidence": "高",
+        "penalty": 0,
+        "components": [
+          {
+            "key": "opening",
+            "label": "开头冲击",
+            "max": 18,
+            "score": 14,
+            "reason": "第一句具备结果、数字或直接问题"
+          },
+          {
+            "key": "conflict",
+            "label": "冲突清晰",
+            "max": 16,
+            "score": 8,
+            "reason": "还需要把双方分歧或代价说得更具体"
+          },
+          {
+            "key": "suspense",
+            "label": "悬念推进",
+            "max": 16,
+            "score": 13,
+            "reason": "结论没有一次说尽，留下责任、证据或结果缺口"
+          },
+          {
+            "key": "specificity",
+            "label": "细节具体",
+            "max": 12,
+            "score": 6,
+            "reason": "标题里有数字、场景、证据或具体对象"
+          },
+          {
+            "key": "narration",
+            "label": "讲述可懂",
+            "max": 10,
+            "score": 8,
+            "reason": "讲述顺序适合先案情后规则"
+          },
+          {
+            "key": "camera",
+            "label": "画面可拍",
+            "max": 8,
+            "score": 6,
+            "reason": "已有清晰口播、字幕或案件素材承接"
+          },
+          {
+            "key": "interaction",
+            "label": "互动承接",
+            "max": 10,
+            "score": 10,
+            "reason": "评论问题能自然变成下一条选题"
+          },
+          {
+            "key": "trust",
+            "label": "来源可信",
+            "max": 10,
+            "score": 10,
+            "reason": "有独立公开作品页，可回溯核验"
+          }
+        ],
+        "recommendations": [
+          {
+            "key": "conflict",
+            "text": "把责任双方、损失代价或常识反差放进标题"
+          },
+          {
+            "key": "specificity",
+            "text": "补一个金额、时间、地点、证据或行为细节"
+          }
+        ],
+        "note": "这是内容结构的传播潜力分，不是播放量预测、平台排名或法律效果保证。"
       }
     },
     {
@@ -1416,6 +4244,81 @@
           "label": "案件隐私与法律结论需复核",
           "score": 5
         }
+      },
+      "viral_score": {
+        "total": 75,
+        "tier": "可优化",
+        "confidence": "高",
+        "penalty": 0,
+        "components": [
+          {
+            "key": "opening",
+            "label": "开头冲击",
+            "max": 18,
+            "score": 14,
+            "reason": "第一句具备结果、数字或直接问题"
+          },
+          {
+            "key": "conflict",
+            "label": "冲突清晰",
+            "max": 16,
+            "score": 8,
+            "reason": "还需要把双方分歧或代价说得更具体"
+          },
+          {
+            "key": "suspense",
+            "label": "悬念推进",
+            "max": 16,
+            "score": 13,
+            "reason": "结论没有一次说尽，留下责任、证据或结果缺口"
+          },
+          {
+            "key": "specificity",
+            "label": "细节具体",
+            "max": 12,
+            "score": 6,
+            "reason": "标题里有数字、场景、证据或具体对象"
+          },
+          {
+            "key": "narration",
+            "label": "讲述可懂",
+            "max": 10,
+            "score": 8,
+            "reason": "讲述顺序适合先案情后规则"
+          },
+          {
+            "key": "camera",
+            "label": "画面可拍",
+            "max": 8,
+            "score": 6,
+            "reason": "已有清晰口播、字幕或案件素材承接"
+          },
+          {
+            "key": "interaction",
+            "label": "互动承接",
+            "max": 10,
+            "score": 10,
+            "reason": "评论问题能自然变成下一条选题"
+          },
+          {
+            "key": "trust",
+            "label": "来源可信",
+            "max": 10,
+            "score": 10,
+            "reason": "有独立公开作品页，可回溯核验"
+          }
+        ],
+        "recommendations": [
+          {
+            "key": "conflict",
+            "text": "把责任双方、损失代价或常识反差放进标题"
+          },
+          {
+            "key": "specificity",
+            "text": "补一个金额、时间、地点、证据或行为细节"
+          }
+        ],
+        "note": "这是内容结构的传播潜力分，不是播放量预测、平台排名或法律效果保证。"
       }
     },
     {
@@ -1454,6 +4357,81 @@
           "label": "案件隐私与法律结论需复核",
           "score": 5
         }
+      },
+      "viral_score": {
+        "total": 75,
+        "tier": "可优化",
+        "confidence": "高",
+        "penalty": 0,
+        "components": [
+          {
+            "key": "opening",
+            "label": "开头冲击",
+            "max": 18,
+            "score": 14,
+            "reason": "第一句具备结果、数字或直接问题"
+          },
+          {
+            "key": "conflict",
+            "label": "冲突清晰",
+            "max": 16,
+            "score": 8,
+            "reason": "还需要把双方分歧或代价说得更具体"
+          },
+          {
+            "key": "suspense",
+            "label": "悬念推进",
+            "max": 16,
+            "score": 13,
+            "reason": "结论没有一次说尽，留下责任、证据或结果缺口"
+          },
+          {
+            "key": "specificity",
+            "label": "细节具体",
+            "max": 12,
+            "score": 6,
+            "reason": "标题里有数字、场景、证据或具体对象"
+          },
+          {
+            "key": "narration",
+            "label": "讲述可懂",
+            "max": 10,
+            "score": 8,
+            "reason": "讲述顺序适合先案情后规则"
+          },
+          {
+            "key": "camera",
+            "label": "画面可拍",
+            "max": 8,
+            "score": 6,
+            "reason": "已有清晰口播、字幕或案件素材承接"
+          },
+          {
+            "key": "interaction",
+            "label": "互动承接",
+            "max": 10,
+            "score": 10,
+            "reason": "评论问题能自然变成下一条选题"
+          },
+          {
+            "key": "trust",
+            "label": "来源可信",
+            "max": 10,
+            "score": 10,
+            "reason": "有独立公开作品页，可回溯核验"
+          }
+        ],
+        "recommendations": [
+          {
+            "key": "conflict",
+            "text": "把责任双方、损失代价或常识反差放进标题"
+          },
+          {
+            "key": "specificity",
+            "text": "补一个金额、时间、地点、证据或行为细节"
+          }
+        ],
+        "note": "这是内容结构的传播潜力分，不是播放量预测、平台排名或法律效果保证。"
       }
     },
     {
@@ -1492,6 +4470,85 @@
           "label": "案件隐私与法律结论需复核",
           "score": 5
         }
+      },
+      "viral_score": {
+        "total": 68,
+        "tier": "先补结构",
+        "confidence": "高",
+        "penalty": 0,
+        "components": [
+          {
+            "key": "opening",
+            "label": "开头冲击",
+            "max": 18,
+            "score": 14,
+            "reason": "第一句具备结果、数字或直接问题"
+          },
+          {
+            "key": "conflict",
+            "label": "冲突清晰",
+            "max": 16,
+            "score": 8,
+            "reason": "还需要把双方分歧或代价说得更具体"
+          },
+          {
+            "key": "suspense",
+            "label": "悬念推进",
+            "max": 16,
+            "score": 13,
+            "reason": "结论没有一次说尽，留下责任、证据或结果缺口"
+          },
+          {
+            "key": "specificity",
+            "label": "细节具体",
+            "max": 12,
+            "score": 3,
+            "reason": "建议补一个金额、时间、地点或证据细节"
+          },
+          {
+            "key": "narration",
+            "label": "讲述可懂",
+            "max": 10,
+            "score": 8,
+            "reason": "讲述顺序适合先案情后规则"
+          },
+          {
+            "key": "camera",
+            "label": "画面可拍",
+            "max": 8,
+            "score": 6,
+            "reason": "已有清晰口播、字幕或案件素材承接"
+          },
+          {
+            "key": "interaction",
+            "label": "互动承接",
+            "max": 10,
+            "score": 6,
+            "reason": "结尾应换成一个可回答的责任或证据问题"
+          },
+          {
+            "key": "trust",
+            "label": "来源可信",
+            "max": 10,
+            "score": 10,
+            "reason": "有独立公开作品页，可回溯核验"
+          }
+        ],
+        "recommendations": [
+          {
+            "key": "specificity",
+            "text": "补一个金额、时间、地点、证据或行为细节"
+          },
+          {
+            "key": "conflict",
+            "text": "把责任双方、损失代价或常识反差放进标题"
+          },
+          {
+            "key": "interaction",
+            "text": "结尾设置一个能回答的责任比例或证据问题"
+          }
+        ],
+        "note": "这是内容结构的传播潜力分，不是播放量预测、平台排名或法律效果保证。"
       }
     },
     {
@@ -1530,6 +4587,81 @@
           "label": "案件隐私与法律结论需复核",
           "score": 5
         }
+      },
+      "viral_score": {
+        "total": 75,
+        "tier": "可优化",
+        "confidence": "高",
+        "penalty": 0,
+        "components": [
+          {
+            "key": "opening",
+            "label": "开头冲击",
+            "max": 18,
+            "score": 14,
+            "reason": "第一句具备结果、数字或直接问题"
+          },
+          {
+            "key": "conflict",
+            "label": "冲突清晰",
+            "max": 16,
+            "score": 8,
+            "reason": "还需要把双方分歧或代价说得更具体"
+          },
+          {
+            "key": "suspense",
+            "label": "悬念推进",
+            "max": 16,
+            "score": 13,
+            "reason": "结论没有一次说尽，留下责任、证据或结果缺口"
+          },
+          {
+            "key": "specificity",
+            "label": "细节具体",
+            "max": 12,
+            "score": 6,
+            "reason": "标题里有数字、场景、证据或具体对象"
+          },
+          {
+            "key": "narration",
+            "label": "讲述可懂",
+            "max": 10,
+            "score": 8,
+            "reason": "讲述顺序适合先案情后规则"
+          },
+          {
+            "key": "camera",
+            "label": "画面可拍",
+            "max": 8,
+            "score": 6,
+            "reason": "已有清晰口播、字幕或案件素材承接"
+          },
+          {
+            "key": "interaction",
+            "label": "互动承接",
+            "max": 10,
+            "score": 10,
+            "reason": "评论问题能自然变成下一条选题"
+          },
+          {
+            "key": "trust",
+            "label": "来源可信",
+            "max": 10,
+            "score": 10,
+            "reason": "有独立公开作品页，可回溯核验"
+          }
+        ],
+        "recommendations": [
+          {
+            "key": "conflict",
+            "text": "把责任双方、损失代价或常识反差放进标题"
+          },
+          {
+            "key": "specificity",
+            "text": "补一个金额、时间、地点、证据或行为细节"
+          }
+        ],
+        "note": "这是内容结构的传播潜力分，不是播放量预测、平台排名或法律效果保证。"
       }
     },
     {
@@ -1568,6 +4700,85 @@
           "label": "案件隐私与法律结论需复核",
           "score": 5
         }
+      },
+      "viral_score": {
+        "total": 68,
+        "tier": "先补结构",
+        "confidence": "高",
+        "penalty": 0,
+        "components": [
+          {
+            "key": "opening",
+            "label": "开头冲击",
+            "max": 18,
+            "score": 14,
+            "reason": "第一句具备结果、数字或直接问题"
+          },
+          {
+            "key": "conflict",
+            "label": "冲突清晰",
+            "max": 16,
+            "score": 8,
+            "reason": "还需要把双方分歧或代价说得更具体"
+          },
+          {
+            "key": "suspense",
+            "label": "悬念推进",
+            "max": 16,
+            "score": 13,
+            "reason": "结论没有一次说尽，留下责任、证据或结果缺口"
+          },
+          {
+            "key": "specificity",
+            "label": "细节具体",
+            "max": 12,
+            "score": 3,
+            "reason": "建议补一个金额、时间、地点或证据细节"
+          },
+          {
+            "key": "narration",
+            "label": "讲述可懂",
+            "max": 10,
+            "score": 8,
+            "reason": "讲述顺序适合先案情后规则"
+          },
+          {
+            "key": "camera",
+            "label": "画面可拍",
+            "max": 8,
+            "score": 6,
+            "reason": "已有清晰口播、字幕或案件素材承接"
+          },
+          {
+            "key": "interaction",
+            "label": "互动承接",
+            "max": 10,
+            "score": 6,
+            "reason": "结尾应换成一个可回答的责任或证据问题"
+          },
+          {
+            "key": "trust",
+            "label": "来源可信",
+            "max": 10,
+            "score": 10,
+            "reason": "有独立公开作品页，可回溯核验"
+          }
+        ],
+        "recommendations": [
+          {
+            "key": "specificity",
+            "text": "补一个金额、时间、地点、证据或行为细节"
+          },
+          {
+            "key": "conflict",
+            "text": "把责任双方、损失代价或常识反差放进标题"
+          },
+          {
+            "key": "interaction",
+            "text": "结尾设置一个能回答的责任比例或证据问题"
+          }
+        ],
+        "note": "这是内容结构的传播潜力分，不是播放量预测、平台排名或法律效果保证。"
       }
     },
     {
@@ -1606,6 +4817,81 @@
           "label": "案件隐私与法律结论需复核",
           "score": 5
         }
+      },
+      "viral_score": {
+        "total": 75,
+        "tier": "可优化",
+        "confidence": "高",
+        "penalty": 0,
+        "components": [
+          {
+            "key": "opening",
+            "label": "开头冲击",
+            "max": 18,
+            "score": 14,
+            "reason": "第一句具备结果、数字或直接问题"
+          },
+          {
+            "key": "conflict",
+            "label": "冲突清晰",
+            "max": 16,
+            "score": 8,
+            "reason": "还需要把双方分歧或代价说得更具体"
+          },
+          {
+            "key": "suspense",
+            "label": "悬念推进",
+            "max": 16,
+            "score": 13,
+            "reason": "结论没有一次说尽，留下责任、证据或结果缺口"
+          },
+          {
+            "key": "specificity",
+            "label": "细节具体",
+            "max": 12,
+            "score": 6,
+            "reason": "标题里有数字、场景、证据或具体对象"
+          },
+          {
+            "key": "narration",
+            "label": "讲述可懂",
+            "max": 10,
+            "score": 8,
+            "reason": "讲述顺序适合先案情后规则"
+          },
+          {
+            "key": "camera",
+            "label": "画面可拍",
+            "max": 8,
+            "score": 6,
+            "reason": "已有清晰口播、字幕或案件素材承接"
+          },
+          {
+            "key": "interaction",
+            "label": "互动承接",
+            "max": 10,
+            "score": 10,
+            "reason": "评论问题能自然变成下一条选题"
+          },
+          {
+            "key": "trust",
+            "label": "来源可信",
+            "max": 10,
+            "score": 10,
+            "reason": "有独立公开作品页，可回溯核验"
+          }
+        ],
+        "recommendations": [
+          {
+            "key": "conflict",
+            "text": "把责任双方、损失代价或常识反差放进标题"
+          },
+          {
+            "key": "specificity",
+            "text": "补一个金额、时间、地点、证据或行为细节"
+          }
+        ],
+        "note": "这是内容结构的传播潜力分，不是播放量预测、平台排名或法律效果保证。"
       }
     },
     {
@@ -1644,6 +4930,81 @@
           "label": "案件隐私与法律结论需复核",
           "score": 5
         }
+      },
+      "viral_score": {
+        "total": 75,
+        "tier": "可优化",
+        "confidence": "高",
+        "penalty": 0,
+        "components": [
+          {
+            "key": "opening",
+            "label": "开头冲击",
+            "max": 18,
+            "score": 14,
+            "reason": "第一句具备结果、数字或直接问题"
+          },
+          {
+            "key": "conflict",
+            "label": "冲突清晰",
+            "max": 16,
+            "score": 8,
+            "reason": "还需要把双方分歧或代价说得更具体"
+          },
+          {
+            "key": "suspense",
+            "label": "悬念推进",
+            "max": 16,
+            "score": 13,
+            "reason": "结论没有一次说尽，留下责任、证据或结果缺口"
+          },
+          {
+            "key": "specificity",
+            "label": "细节具体",
+            "max": 12,
+            "score": 6,
+            "reason": "标题里有数字、场景、证据或具体对象"
+          },
+          {
+            "key": "narration",
+            "label": "讲述可懂",
+            "max": 10,
+            "score": 8,
+            "reason": "讲述顺序适合先案情后规则"
+          },
+          {
+            "key": "camera",
+            "label": "画面可拍",
+            "max": 8,
+            "score": 6,
+            "reason": "已有清晰口播、字幕或案件素材承接"
+          },
+          {
+            "key": "interaction",
+            "label": "互动承接",
+            "max": 10,
+            "score": 10,
+            "reason": "评论问题能自然变成下一条选题"
+          },
+          {
+            "key": "trust",
+            "label": "来源可信",
+            "max": 10,
+            "score": 10,
+            "reason": "有独立公开作品页，可回溯核验"
+          }
+        ],
+        "recommendations": [
+          {
+            "key": "conflict",
+            "text": "把责任双方、损失代价或常识反差放进标题"
+          },
+          {
+            "key": "specificity",
+            "text": "补一个金额、时间、地点、证据或行为细节"
+          }
+        ],
+        "note": "这是内容结构的传播潜力分，不是播放量预测、平台排名或法律效果保证。"
       }
     },
     {
@@ -1682,6 +5043,85 @@
           "label": "案件隐私与法律结论需复核",
           "score": 5
         }
+      },
+      "viral_score": {
+        "total": 73,
+        "tier": "可优化",
+        "confidence": "高",
+        "penalty": 0,
+        "components": [
+          {
+            "key": "opening",
+            "label": "开头冲击",
+            "max": 18,
+            "score": 14,
+            "reason": "第一句具备结果、数字或直接问题"
+          },
+          {
+            "key": "conflict",
+            "label": "冲突清晰",
+            "max": 16,
+            "score": 10,
+            "reason": "还需要把双方分歧或代价说得更具体"
+          },
+          {
+            "key": "suspense",
+            "label": "悬念推进",
+            "max": 16,
+            "score": 13,
+            "reason": "结论没有一次说尽，留下责任、证据或结果缺口"
+          },
+          {
+            "key": "specificity",
+            "label": "细节具体",
+            "max": 12,
+            "score": 6,
+            "reason": "标题里有数字、场景、证据或具体对象"
+          },
+          {
+            "key": "narration",
+            "label": "讲述可懂",
+            "max": 10,
+            "score": 8,
+            "reason": "讲述顺序适合先案情后规则"
+          },
+          {
+            "key": "camera",
+            "label": "画面可拍",
+            "max": 8,
+            "score": 6,
+            "reason": "已有清晰口播、字幕或案件素材承接"
+          },
+          {
+            "key": "interaction",
+            "label": "互动承接",
+            "max": 10,
+            "score": 6,
+            "reason": "结尾应换成一个可回答的责任或证据问题"
+          },
+          {
+            "key": "trust",
+            "label": "来源可信",
+            "max": 10,
+            "score": 10,
+            "reason": "有独立公开作品页，可回溯核验"
+          }
+        ],
+        "recommendations": [
+          {
+            "key": "specificity",
+            "text": "补一个金额、时间、地点、证据或行为细节"
+          },
+          {
+            "key": "interaction",
+            "text": "结尾设置一个能回答的责任比例或证据问题"
+          },
+          {
+            "key": "conflict",
+            "text": "把责任双方、损失代价或常识反差放进标题"
+          }
+        ],
+        "note": "这是内容结构的传播潜力分，不是播放量预测、平台排名或法律效果保证。"
       }
     },
     {
@@ -1720,6 +5160,81 @@
           "label": "案件隐私与法律结论需复核",
           "score": 5
         }
+      },
+      "viral_score": {
+        "total": 73,
+        "tier": "可优化",
+        "confidence": "中",
+        "penalty": 0,
+        "components": [
+          {
+            "key": "opening",
+            "label": "开头冲击",
+            "max": 18,
+            "score": 14,
+            "reason": "第一句具备结果、数字或直接问题"
+          },
+          {
+            "key": "conflict",
+            "label": "冲突清晰",
+            "max": 16,
+            "score": 8,
+            "reason": "还需要把双方分歧或代价说得更具体"
+          },
+          {
+            "key": "suspense",
+            "label": "悬念推进",
+            "max": 16,
+            "score": 13,
+            "reason": "结论没有一次说尽，留下责任、证据或结果缺口"
+          },
+          {
+            "key": "specificity",
+            "label": "细节具体",
+            "max": 12,
+            "score": 6,
+            "reason": "标题里有数字、场景、证据或具体对象"
+          },
+          {
+            "key": "narration",
+            "label": "讲述可懂",
+            "max": 10,
+            "score": 8,
+            "reason": "讲述顺序适合先案情后规则"
+          },
+          {
+            "key": "camera",
+            "label": "画面可拍",
+            "max": 8,
+            "score": 6,
+            "reason": "已有清晰口播、字幕或案件素材承接"
+          },
+          {
+            "key": "interaction",
+            "label": "互动承接",
+            "max": 10,
+            "score": 10,
+            "reason": "评论问题能自然变成下一条选题"
+          },
+          {
+            "key": "trust",
+            "label": "来源可信",
+            "max": 10,
+            "score": 8,
+            "reason": "目前是账号列表标题，需补独立作品页"
+          }
+        ],
+        "recommendations": [
+          {
+            "key": "conflict",
+            "text": "把责任双方、损失代价或常识反差放进标题"
+          },
+          {
+            "key": "specificity",
+            "text": "补一个金额、时间、地点、证据或行为细节"
+          }
+        ],
+        "note": "这是内容结构的传播潜力分，不是播放量预测、平台排名或法律效果保证。"
       }
     },
     {
@@ -1758,6 +5273,72 @@
           "label": "案件隐私与法律结论需复核",
           "score": 5
         }
+      },
+      "viral_score": {
+        "total": 80,
+        "tier": "可优化",
+        "confidence": "中",
+        "penalty": 0,
+        "components": [
+          {
+            "key": "opening",
+            "label": "开头冲击",
+            "max": 18,
+            "score": 14,
+            "reason": "第一句具备结果、数字或直接问题"
+          },
+          {
+            "key": "conflict",
+            "label": "冲突清晰",
+            "max": 16,
+            "score": 12,
+            "reason": "标题明确放入责任、结果或常识冲突"
+          },
+          {
+            "key": "suspense",
+            "label": "悬念推进",
+            "max": 16,
+            "score": 13,
+            "reason": "结论没有一次说尽，留下责任、证据或结果缺口"
+          },
+          {
+            "key": "specificity",
+            "label": "细节具体",
+            "max": 12,
+            "score": 9,
+            "reason": "标题里有数字、场景、证据或具体对象"
+          },
+          {
+            "key": "narration",
+            "label": "讲述可懂",
+            "max": 10,
+            "score": 8,
+            "reason": "讲述顺序适合先案情后规则"
+          },
+          {
+            "key": "camera",
+            "label": "画面可拍",
+            "max": 8,
+            "score": 6,
+            "reason": "已有清晰口播、字幕或案件素材承接"
+          },
+          {
+            "key": "interaction",
+            "label": "互动承接",
+            "max": 10,
+            "score": 10,
+            "reason": "评论问题能自然变成下一条选题"
+          },
+          {
+            "key": "trust",
+            "label": "来源可信",
+            "max": 10,
+            "score": 8,
+            "reason": "目前是账号列表标题，需补独立作品页"
+          }
+        ],
+        "recommendations": [],
+        "note": "这是内容结构的传播潜力分，不是播放量预测、平台排名或法律效果保证。"
       }
     },
     {
@@ -1796,9 +5377,122 @@
           "label": "案件隐私与法律结论需复核",
           "score": 5
         }
+      },
+      "viral_score": {
+        "total": 73,
+        "tier": "可优化",
+        "confidence": "中",
+        "penalty": 0,
+        "components": [
+          {
+            "key": "opening",
+            "label": "开头冲击",
+            "max": 18,
+            "score": 14,
+            "reason": "第一句具备结果、数字或直接问题"
+          },
+          {
+            "key": "conflict",
+            "label": "冲突清晰",
+            "max": 16,
+            "score": 12,
+            "reason": "标题明确放入责任、结果或常识冲突"
+          },
+          {
+            "key": "suspense",
+            "label": "悬念推进",
+            "max": 16,
+            "score": 13,
+            "reason": "结论没有一次说尽，留下责任、证据或结果缺口"
+          },
+          {
+            "key": "specificity",
+            "label": "细节具体",
+            "max": 12,
+            "score": 6,
+            "reason": "标题里有数字、场景、证据或具体对象"
+          },
+          {
+            "key": "narration",
+            "label": "讲述可懂",
+            "max": 10,
+            "score": 8,
+            "reason": "讲述顺序适合先案情后规则"
+          },
+          {
+            "key": "camera",
+            "label": "画面可拍",
+            "max": 8,
+            "score": 6,
+            "reason": "已有清晰口播、字幕或案件素材承接"
+          },
+          {
+            "key": "interaction",
+            "label": "互动承接",
+            "max": 10,
+            "score": 6,
+            "reason": "结尾应换成一个可回答的责任或证据问题"
+          },
+          {
+            "key": "trust",
+            "label": "来源可信",
+            "max": 10,
+            "score": 8,
+            "reason": "目前是账号列表标题，需补独立作品页"
+          }
+        ],
+        "recommendations": [
+          {
+            "key": "specificity",
+            "text": "补一个金额、时间、地点、证据或行为细节"
+          },
+          {
+            "key": "interaction",
+            "text": "结尾设置一个能回答的责任比例或证据问题"
+          }
+        ],
+        "note": "这是内容结构的传播潜力分，不是播放量预测、平台排名或法律效果保证。"
       }
     }
   ],
+  "score_summary": {
+    "average": 75,
+    "high_potential": 4,
+    "dimension_averages": {
+      "opening": {
+        "label": "开头冲击",
+        "score": 86
+      },
+      "conflict": {
+        "label": "冲突清晰",
+        "score": 60
+      },
+      "suspense": {
+        "label": "悬念推进",
+        "score": 92
+      },
+      "specificity": {
+        "label": "细节具体",
+        "score": 38
+      },
+      "narration": {
+        "label": "讲述可懂",
+        "score": 89
+      },
+      "camera": {
+        "label": "画面可拍",
+        "score": 69
+      },
+      "interaction": {
+        "label": "互动承接",
+        "score": 67
+      },
+      "trust": {
+        "label": "来源可信",
+        "score": 99
+      }
+    }
+  },
   "patterns": {
     "opening": [
       {

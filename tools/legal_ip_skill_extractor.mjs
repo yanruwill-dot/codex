@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import { scoreRecord, summarizeScores } from "./legal_ip_viral_score.mjs";
 
 const root = new URL("..", import.meta.url);
 const latestPath = new URL("douyin-feishu/data/latest.json", root);
@@ -8,7 +9,7 @@ const latest = JSON.parse(fs.readFileSync(latestPath, "utf8"));
 const corpus = JSON.parse(fs.readFileSync(corpusPath, "utf8"));
 
 const dimensions = ["opening", "copy", "suspense", "narration", "camera", "interaction", "compliance"];
-const records = latest.legal_ip_library || [];
+const records = (latest.legal_ip_library || []).map(record => ({ ...record, viral_score: scoreRecord(record) }));
 const patterns = Object.fromEntries(dimensions.map(dimension => {
   const counts = {};
   for (const record of records) {
@@ -38,6 +39,7 @@ const registry = {
   source_note: latest.legal_ip_note,
   dimensions,
   records,
+  score_summary: summarizeScores(records),
   patterns,
   creators: Object.values(byCreator),
   legal_corpus: corpus,
