@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="法律行业 AI 分身工作台：把律师定位、公开内容 Skills、官方法源和合规门禁组合成可追溯的分身流程。">
+  <title>律师 AI 分身工作台 · Legal Persona Lab</title>
+  <link rel="stylesheet" href="./static/style.css">
+  <link rel="stylesheet" href="./static/lawyer-avatar.css">
+</head>
+<body class="avatar-page">
+  <div class="avatar-gridline" aria-hidden="true"></div>
+  <main class="avatar-shell">
+    <nav class="avatar-nav" aria-label="律师分身导航">
+      <a class="avatar-brand" href="./"><span>§</span><strong>LEGAL PERSONA LAB</strong></a>
+      <div class="avatar-nav-links"><a href="./">Skills 库</a><a class="active" href="#workbench">律师分身</a><a href="./#lawstack">法源库</a></div>
+      <div class="avatar-status"><i></i>LOCAL WORKBENCH / TRACEABLE</div>
+    </nav>
+
+    <header class="avatar-hero">
+      <div class="avatar-hero-copy">
+        <p class="avatar-kicker">AI PERSONA · LEGAL INDUSTRY · 001</p>
+        <h1>一个能先问事实<br><em>再说法源</em>的律师分身</h1>
+        <p class="avatar-lead">它不是把律师包装成“万能问答机”。它把定位、说话方式、案件事实、法源入口和合规边界编排成一条可回看、可修改、可导出的工作链。</p>
+        <div class="avatar-hero-tags"><span>先事实</span><span>后法源</span><span>再生成</span><span>全程留痕</span></div>
+      </div>
+      <div class="persona-manifest">
+        <div class="manifest-top"><span>PERSONA MANIFEST</span><strong>LAWYER-001</strong></div>
+        <div class="manifest-name">法律行业<br><em>可信分身</em></div>
+        <div class="manifest-rule"><span>01</span><p>不把公开标题当完整案情</p></div>
+        <div class="manifest-rule"><span>02</span><p>不把法条改写成个案结论</p></div>
+        <div class="manifest-rule"><span>03</span><p>不承诺胜诉，不隐藏不确定性</p></div>
+        <div class="manifest-foot"><span>STATE</span><strong>READY TO TEST</strong></div>
+      </div>
+    </header>
+
+    <section class="avatar-metrics" aria-label="分身数据状态">
+      <article><span>公开样本</span><strong id="metricRecords">47</strong><small>已接入结构化 Skills</small></article>
+      <article><span>法源入口</span><strong id="metricLaws">7</strong><small>官方数据库索引</small></article>
+      <article><span>技能维度</span><strong>08</strong><small>从开头到来源可信</small></article>
+      <article><span>当前状态</span><strong class="ready-text">可测试</strong><small>本地模板引擎 / 可换模型</small></article>
+    </section>
+
+    <section id="workbench" class="avatar-workbench-grid">
+      <aside class="persona-sidebar">
+        <div class="side-label"><span>01 / PERSONA CORE</span><small>分身内核</small></div>
+        <div class="persona-card">
+          <div class="persona-avatar"><span>§</span><i></i></div>
+          <div><strong>法律行业 AI 分身</strong><small id="personaSpecialty">交通事故 · 证据链 · 责任认定</small></div>
+          <b class="persona-level">L.01</b>
+        </div>
+        <label class="field-label" for="creatorSelect">参考账号结构</label>
+        <select id="creatorSelect" class="dark-select" aria-label="选择参考账号"></select>
+        <div class="skill-focus" id="skillFocus"></div>
+        <div class="side-divider"></div>
+        <div class="field-label">分身门禁</div>
+        <label class="toggle-row"><span><strong>先问事实缺口</strong><small>信息不全时先追问</small></span><input id="gateFacts" type="checkbox" checked><i></i></label>
+        <label class="toggle-row"><span><strong>绑定官方法源</strong><small>生成结果显示来源</small></span><input id="gateLaw" type="checkbox" checked><i></i></label>
+        <label class="toggle-row"><span><strong>发布前合规审计</strong><small>过滤绝对化承诺</small></span><input id="gateCompliance" type="checkbox" checked><i></i></label>
+        <button id="exportPersona" class="avatar-button outline" type="button">导出这套分身 Skill ↗</button>
+        <p class="side-note">导出的内容只包含角色规则、结构模式和法源入口，不包含私密账号信息。</p>
+      </aside>
+
+      <section class="persona-stage">
+        <div class="stage-head">
+          <div><span class="side-label">02 / CASE TO OUTPUT</span><h2>把一个问题交给分身</h2></div>
+          <span id="runStatus" class="run-status"><i></i>等待输入</span>
+        </div>
+        <div class="mode-tabs" id="modeTabs" role="tablist" aria-label="分身输出模式">
+          <button class="mode-tab active" data-mode="consult" role="tab" aria-selected="true"><b>A</b><span>咨询分流<small>先识别事实和下一步</small></span></button>
+          <button class="mode-tab" data-mode="script" role="tab" aria-selected="false"><b>B</b><span>短视频口播<small>把结构变成20秒骨架</small></span></button>
+          <button class="mode-tab" data-mode="audit" role="tab" aria-selected="false"><b>C</b><span>合规审计<small>找出不能直接发布的表达</small></span></button>
+        </div>
+        <form id="caseForm" class="case-form">
+          <div class="field-block field-wide"><label for="subject">当事人问题 / 内容题目</label><input id="subject" type="text" placeholder="例如：摩托车撞人后，家属能不能找公司赔？" autocomplete="off"></div>
+          <div class="case-fields">
+            <div class="field-block"><label for="facts">已知事实</label><textarea id="facts" rows="5" placeholder="时间、地点、人物行为、损失结果。只写已知内容，不补想象。"></textarea></div>
+            <div class="field-block"><label for="evidence">已有证据</label><textarea id="evidence" rows="5" placeholder="监控、合同、聊天记录、转账、鉴定、责任认定书……"></textarea></div>
+            <div class="field-block"><label for="goal">希望分身完成什么</label><textarea id="goal" rows="3" placeholder="例如：先做咨询分流，再改成一条20秒口播。"></textarea></div>
+            <div class="field-block"><label for="jurisdiction">地区 / 适用范围</label><select id="jurisdiction"><option>中国大陆 · 待核验地区</option><option>中国大陆 · 交通事故</option><option>中国大陆 · 企业经营</option><option>中国大陆 · 劳动争议</option></select></div>
+          </div>
+          <div class="form-foot"><div class="select-pair"><label>法源入口<select id="lawSelect"></select></label><label>口吻<select id="toneSelect"><option value="clear">清楚直白</option><option value="calm">克制稳健</option><option value="sharp">冲突先行</option></select></label></div><div class="form-actions"><button id="loadSample" class="avatar-button ghost" type="button">载入示例</button><button class="avatar-button primary" type="submit">生成分身结果 <span>↗</span></button></div></div>
+        </form>
+
+        <section class="output-panel" aria-live="polite">
+          <div class="output-head"><div><span class="side-label">03 / TRACEABLE OUTPUT</span><h3 id="outputTitle">分身回复草案</h3></div><div class="output-actions"><button id="copyOutput" type="button">复制结果</button><button id="clearOutput" type="button">清空</button></div></div>
+          <div id="outputEmpty" class="output-empty"><span>◎</span><strong>等待一个真实问题</strong><p>载入示例或输入案件事实，分身会先检查缺口，再给出带法源和合规边界的结果。</p></div>
+          <div id="outputContent" class="output-content" hidden></div>
+        </section>
+      </section>
+
+      <aside class="trace-sidebar">
+        <div class="side-label"><span>04 / MEMORY TRACE</span><small>记忆与追溯</small></div>
+        <div id="traceRows" class="trace-rows"></div>
+        <div class="trace-card">
+          <div class="trace-card-head"><span>生成前门禁</span><b id="gateCount">3 / 3</b></div>
+          <div class="gate-list"><span><i class="gate-on"></i>事实缺口优先</span><span><i class="gate-on"></i>法源已绑定</span><span><i class="gate-on"></i>合规审计开启</span></div>
+        </div>
+        <div class="trace-card source-card"><div class="trace-card-head"><span>当前法源</span><a id="lawSourceLink" href="https://flk.npc.gov.cn/" target="_blank" rel="noreferrer">官方入口 ↗</a></div><strong id="lawSourceTitle">中华人民共和国民法典</strong><small id="lawSourceMeta">有效 · 施行 2021-01-01</small><p id="lawSourceUse">把日常纠纷翻译成听得懂的权利、义务、证据和救济路径。</p></div>
+        <p class="trace-warning">此工作台是内容研究和咨询分流原型，不替代律师执业判断；具体事实、地区规则、司法解释和最新有效文本必须复核。</p>
+      </aside>
+    </section>
+
+    <footer class="avatar-footer"><span>LEGAL PERSONA LAB / YR CODEX</span><span>LOCAL TEMPLATE ENGINE · OFFICIAL LAW SOURCE · HUMAN REVIEW</span></footer>
+  </main>
+  <script src="./static/lawyer-avatar.js"></script>
+</body>
+</html>
