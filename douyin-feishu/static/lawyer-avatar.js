@@ -7,7 +7,7 @@ let registry = { records: [], legal_corpus: [] };
 let mode = "consult";
 let lastResult = "";
 
-const modeTitles = { consult: "分身回复草案", script: "20 秒口播骨架", audit: "发布前合规审计" };
+const modeTitles = { consult: "分身回复草案", script: "完整20秒口播文案", audit: "发布前合规审计" };
 const skillLabels = { opening: "开头", copy: "文案", suspense: "悬念", narration: "讲述", camera: "镜头", interaction: "互动", compliance: "边界" };
 
 function escapeHtml(value) {
@@ -89,11 +89,16 @@ function buildConsult() {
 function buildScript() {
   const law = selectedLaw();
   const top = topRecord();
-  const subject = els.subject.value.trim() || "一个看似简单的法律问题";
-  const facts = els.facts.value.trim() || "先补时间、地点、行为、损失和证据";
-  const opening = els.tone.value === "sharp" ? `${subject}，真正决定结果的，可能不是你第一眼看到的那件事。` : `${subject}，先别急着问能不能赔，先看三个事实。`;
-  const close = "你遇到的是同类问题吗？先把时间线和证据整理好，再结合当地规则核对。";
-  return { title: modeTitles.script, text: opening, script: [{ time: "00–03s", label: "开头钩子", text: opening }, { time: "03–10s", label: "案情与悬念", text: `只讲已知事实：${facts}。悬念放在责任、证据和${law.title || "法源"}如何对应，不提前宣布结果。` }, { time: "10–16s", label: "规则转译", text: `用“事实—证据—规则”解释，不把法条直接改写成个案结论；参考结构：${top?.skills?.narration?.label || "先案情后规则"}。` }, { time: "16–20s", label: "互动与边界", text: close }], cards: [{ label: "推荐镜头", html: "正面口播 + 关键事实字幕 + 证据类型卡片" }, { label: "结构来源", html: `${escapeHtml(top?.creator || "法律 IP 样本")} · ${escapeHtml(top?.skills?.opening?.label || "问题直入")}` }, { label: "法源入口", type: "source", html: `<a href="${escapeHtml(law.source_url)}" target="_blank" rel="noreferrer">${escapeHtml(law.title || "官方法律入口")} ↗</a><small>只作为复核入口</small>` }, { label: "发布边界", type: "risk", html: "不承诺结果，不虚构金额、证据和裁判，不泄露个人隐私。" }] };
+  const subject = (els.subject.value.trim() || "一个看似简单的法律问题").replace(/[。！？!?]+$/, "");
+  const facts = (els.facts.value.trim() || "先补时间、地点、行为、损失和证据").replace(/[。！？!?]+$/, "");
+  const opening = els.tone.value === "sharp" ? `${subject}，真正决定结果的，可能不是你第一眼看到的那件事。` : `${subject}，先别急着问能不能赔，先看事实和证据。`;
+  const close = "先整理时间线和证据，再结合当地规则核对。";
+  const normalizedFacts = facts.replace(/\s+/g, "");
+  const firstFact = normalizedFacts.split(/[。！？!?]/)[0];
+  const shortFacts = firstFact.slice(0, 52) + (firstFact.length > 52 ? "等" : "");
+  const lawName = (law.title || "相关法律").replace(/^中华人民共和国/, "");
+  const fullCopy = `${opening}已知事实是：${shortFacts}。关键不在于谁先受伤，而在责任认定、证据链和${lawName}的适用。先保留监控、责任认定书和相关记录，不提前承诺结果。${close}`;
+  return { title: modeTitles.script, text: "以下是根据当前输入直接生成的可录制成稿；下面再附上结构和镜头拆解。", fullCopy, script: [{ time: "00–03s", label: "开头钩子", text: opening }, { time: "03–10s", label: "案情与悬念", text: `只讲已知事实：${shortFacts}。悬念放在责任、证据和${law.title || "法源"}如何对应，不提前宣布结果。` }, { time: "10–16s", label: "规则转译", text: `用“事实—证据—规则”解释，不把法条直接改写成个案结论；参考结构：${top?.skills?.narration?.label || "先案情后规则"}。` }, { time: "16–20s", label: "互动与边界", text: close }], cards: [{ label: "推荐镜头", html: "正面口播 + 关键事实字幕 + 证据类型卡片" }, { label: "结构来源", html: `${escapeHtml(top?.creator || "法律 IP 样本")} · ${escapeHtml(top?.skills?.opening?.label || "问题直入")}` }, { label: "法源入口", type: "source", html: `<a href="${escapeHtml(law.source_url)}" target="_blank" rel="noreferrer">${escapeHtml(law.title || "官方法律入口")} ↗</a><small>只作为复核入口</small>` }, { label: "发布边界", type: "risk", html: "不承诺结果，不虚构金额、证据和裁判，不泄露个人隐私。" }] };
 }
 
 function buildAudit() {
@@ -109,8 +114,8 @@ function renderResult(result) {
   els.outputTitle.textContent = result.title;
   els.outputEmpty.hidden = true;
   els.outputContent.hidden = false;
-  els.outputContent.innerHTML = `<div class="result-lead"><span>分身第一判断</span><p>${escapeHtml(result.text)}</p></div>${result.script ? `<div class="result-script">${result.script.map(beat => `<div class="script-beat"><b>${escapeHtml(beat.time)}</b><div><strong>${escapeHtml(beat.label)}</strong><p>${escapeHtml(beat.text)}</p></div></div>`).join("")}</div>` : ""}<div class="result-grid">${result.cards.map(card => `<article class="result-card ${card.type || ""}"><span class="result-card-label">${escapeHtml(card.label)}</span>${card.html}</article>`).join("")}</div>`;
-  lastResult = `${result.title}\n\n${result.text}\n\n${result.cards.map(card => `${card.label}\n${card.html.replace(/<[^>]+>/g, " ")}`).join("\n\n")}`;
+  els.outputContent.innerHTML = `<div class="result-lead"><span>分身第一判断</span><p>${escapeHtml(result.text)}</p></div>${result.fullCopy ? `<div class="full-copy"><div class="full-copy-head"><span>完整口播文案</span><small>可直接录制 · 已保留法律边界</small></div><p>${escapeHtml(result.fullCopy)}</p></div>` : ""}${result.script ? `<div class="script-breakdown"><span>结构与镜头拆解</span><div class="result-script">${result.script.map(beat => `<div class="script-beat"><b>${escapeHtml(beat.time)}</b><div><strong>${escapeHtml(beat.label)}</strong><p>${escapeHtml(beat.text)}</p></div></div>`).join("")}</div></div>` : ""}<div class="result-grid">${result.cards.map(card => `<article class="result-card ${card.type || ""}"><span class="result-card-label">${escapeHtml(card.label)}</span>${card.html}</article>`).join("")}</div>`;
+  lastResult = `${result.title}\n\n${result.fullCopy ? `完整口播文案\n${result.fullCopy}\n\n` : ""}${result.text}\n\n${result.cards.map(card => `${card.label}\n${card.html.replace(/<[^>]+>/g, " ")}`).join("\n\n")}`;
 }
 
 function loadSample() {

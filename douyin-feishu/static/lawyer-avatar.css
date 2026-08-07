@@ -302,3 +302,11 @@
 .result-card.source { border-top-color: var(--avatar-acid); }
 .trace-row i, .gate-list i { background: var(--avatar-acid); }
 .trace-card { border-color: #d8d5d1; }
+.full-copy { margin-top: 14px; padding: 16px; border: 1px solid #d8d5d1; border-top: 4px solid var(--avatar-acid); background: #fff; }
+.full-copy-head, .script-breakdown > span { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; }
+.full-copy-head span, .script-breakdown > span { color: var(--avatar-acid); font-size: 10px; font-weight: 900; letter-spacing: .08em; }
+.full-copy-head small { color: #8a8581; font-size: 9px; }
+.full-copy p { margin: 12px 0 0; color: #242021; font-family: Georgia, "Songti SC", serif; font-size: 16px; line-height: 1.85; }
+.output-empty[hidden], .output-content[hidden] { display: none; }
+.script-breakdown { margin-top: 15px; }
+.script-breakdown > span { padding-bottom: 8px; border-bottom: 1px solid #d8d5d1; }
