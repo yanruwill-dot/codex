@@ -16,16 +16,16 @@
 
 ## 现场图片
 
-以下图片由用户在当前任务中提供，已压缩为适合网页加载的 JPG，未使用生成图片：
+图片来源：用户分享的夸克网盘相册《8.7盈科律师事务所》：https://pan.quark.cn/s/b4f94f107bbf 。从 208 张现场原图中筛选出 8 张，均下载为 1500×1000 JPG，未使用生成图片：
 
-- `assets/01-classroom-wide.jpg`：课堂全景
-- `assets/02-audience-room.jpg`：听课现场
-- `assets/03-speaker-podium.jpg`：讲台现场
-- `assets/04-speaker-close.jpg`：分享特写
-- `assets/05-yingke-podium.jpg`：盈科讲台
-- `assets/06-guest-speaker.jpg`：现场嘉宾发言
-- `assets/07-my-lecture-action.jpg`：本人现场讲解动作
-- `assets/08-event-poster.jpg`：用户提供的活动海报
+- `assets/01-yingke-lobby.jpg`：盈科前台与机构标识
+- `assets/02-yingke-group.jpg`：现场合影
+- `assets/03-lecture-skills.jpg`：本人讲解“内容能力蒸馏台”
+- `assets/04-classroom-audience.jpg`：课堂与听众
+- `assets/05-viral-score.jpg`：爆款结构评分演示
+- `assets/06-lawyer-ip-method.jpg`：律师做 IP 的方法演示
+- `assets/07-lecture-action.jpg`：本人现场讲解动作
+- `assets/08-classroom-wide.jpg`：课程现场全景
 
 图片使用规则：每张现场图片在 HTML 页面中只出现一次，不重复承担多个版位。
 
