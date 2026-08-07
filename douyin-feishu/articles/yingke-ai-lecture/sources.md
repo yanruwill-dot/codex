@@ -16,12 +16,12 @@
 
 ## 现场图片
 
-图片来源：用户分享的夸克网盘相册《8.7盈科律师事务所》：https://pan.quark.cn/s/b4f94f107bbf 。从 208 张现场原图中筛选出 8 张，均下载为 1500×1000 JPG，未使用生成图片：
+图片来源：用户分享的夸克网盘相册《8.7盈科律师事务所》：https://pan.quark.cn/s/b4f94f107bbf 。从 208 张现场原图中筛选出 6 张；本次又使用用户补充提供的 2 张现场照片替换原先的前台与合影，最终共 8 张，未使用生成图片：
 
-- `assets/01-yingke-lobby.jpg`：盈科前台与机构标识
-- `assets/02-yingke-group.jpg`：现场合影
+- `assets/09-ip-chain-talk.jpg`：用户在现场讲解律师 IP 全链路和 AI 工作方法（用户补充提供）
+- `assets/10-guest-speaker-yingke.jpg`：嘉宾在盈科讲台前分享律师 AI 与个人品牌主题（用户补充提供）
 - `assets/03-lecture-skills.jpg`：本人讲解“内容能力蒸馏台”
-- `assets/04-classroom-audience.jpg`：课堂与听众
+- `assets/04-classroom-audience.jpg`：本人在课堂现场讲解，听众与课程大屏同框（用户补充提供）
 - `assets/05-viral-score.jpg`：爆款结构评分演示
 - `assets/06-lawyer-ip-method.jpg`：律师做 IP 的方法演示
 - `assets/07-lecture-action.jpg`：本人现场讲解动作
