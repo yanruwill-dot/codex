@@ -38,6 +38,15 @@ test('官网首页与课程页明确公开 AI 小班课和四个实操方向', a
   }
 });
 
+test('课程内容矩阵准确记录五个平台和六篇品牌文章', async () => {
+  const html = await readFile(join(siteRoot, 'ai-small-class-content-matrix.html'), 'utf8');
+  const data = JSON.parse(await readFile(join(siteRoot, 'ai-small-class.json'), 'utf8'));
+  assert.match(html, /五个平台/);
+  assert.match(html, /六篇/);
+  assert.match(html, /163708066/);
+  assert.equal(data.course.firstPartyArticles.length, 6);
+});
+
 test('课程页提供本地生成的咨询准备卡且不会自动提交数据', async () => {
   const html = await readFile(join(siteRoot, 'ai-small-class.html'), 'utf8');
   const script = await readFile(join(siteRoot, 'course-actions.js'), 'utf8');
