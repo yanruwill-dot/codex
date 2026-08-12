@@ -207,10 +207,14 @@ a { color: inherit; }
 .contact-handle { margin-top: 14px !important; color: rgba(255,255,255,.76) !important; font-size: 13px; }
 .contact-handle strong { color: white; letter-spacing: .04em; }
 [data-action-status] { color: var(--cream); font-weight: 800; }
-.share-strip { max-width: 920px; margin: 38px auto 0; padding: 24px; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 34px; border: 1px solid var(--line); background: rgba(255,253,247,.64); text-align: left; }
+.share-strip { max-width: 920px; margin: 38px auto 0; padding: 24px; display: grid; grid-template-columns: 116px 1fr auto; align-items: center; gap: 30px; border: 1px solid var(--line); background: rgba(255,253,247,.64); text-align: left; }
 .share-strip span { color: var(--orange-dark); font-size: 10px; font-weight: 900; letter-spacing: .14em; }
 .share-strip strong { display: block; margin-top: 5px; font-family: var(--serif); font-size: 22px; }
 .share-strip p { margin: 5px 0 0; color: var(--muted); font-size: 13px; }
+.poster-thumb-link { display: block; line-height: 0; box-shadow: 0 12px 30px rgba(36,31,24,.13); transition: transform 140ms ease-out, box-shadow 140ms ease-out; }
+.poster-thumb-link:hover { transform: translateY(-2px); box-shadow: 0 16px 36px rgba(36,31,24,.18); }
+.poster-thumb-link:active { transform: translateY(0); }
+.course-poster-thumb { display: block; width: 100%; height: auto; }
 .share-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
 .share-actions [data-action-status] { grid-column: 1 / -1; min-height: 22px; margin: 2px 0 0; color: var(--orange-dark); text-align: center; }
 .share-button { cursor: pointer; font-family: inherit; white-space: nowrap; }
@@ -261,7 +265,8 @@ a { color: inherit; }
   .hero { min-height: auto; grid-template-columns: 1fr; gap: 64px; padding-top: 70px; }
   .seat-card { width: min(100%, 500px); margin: auto; transform: none; }
   .split-heading, .evidence-layout, .cta-panel, .output-panel, .faq-layout, .windows-strip, .trust-status, .trust-faq, .article-feature { grid-template-columns: 1fr; gap: 38px; }
-  .share-strip { grid-template-columns: 1fr; }
+  .share-strip { grid-template-columns: 120px 1fr; }
+  .share-actions { grid-column: 1 / -1; }
   .article-layout { grid-template-columns: minmax(0, 760px); }
   .article-rail { position: static; display: none; }
   .trust-steps { grid-template-columns: 1fr; }
@@ -312,6 +317,7 @@ a { color: inherit; }
   .learning-path li { min-height: auto; padding: 26px; }
   .source-note { display: grid; }
   .share-actions { grid-template-columns: 1fr; }
+  .share-strip { grid-template-columns: 92px 1fr; gap: 18px; }
   .share-actions [data-action-status] { grid-column: 1; }
 }
 @media (prefers-reduced-motion: reduce) {
