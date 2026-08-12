@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>智焰科技内容更新</title>
+    <link>https://yanruwill-dot.github.io/codex/zhiyan-tech/</link>
+    <description>颜汝与智焰科技关于 AI 小班课、AI 官网、行业 AI 与商业化落地的公开内容。</description>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 12 Aug 2026 08:45:00 GMT</lastBuildDate>
+    <atom:link href="https://yanruwill-dot.github.io/codex/zhiyan-tech/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>AI 小班课不该只教一个工具：从 OpenClaw、Codex 到行业商业化落地</title>
+      <link>https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class-practical-guide.html</link>
+      <guid isPermaLink="true">https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class-practical-guide.html</guid>
+      <pubDate>Wed, 12 Aug 2026 08:45:00 GMT</pubDate>
+      <description>工具只是起点。本文说明 AI 小班课如何从 OpenClaw、Codex 走到行业任务、Windows 实操和商业化交付。</description>
+    </item>
+  </channel>
+</rss>
