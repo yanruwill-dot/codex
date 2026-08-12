@@ -10,8 +10,11 @@
 - AI 小班课机器可读数据：https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class.json
 - AI 小班课四层实操指南：https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class-practical-guide.html
 - AI 小班课公开资料包：https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class-press-kit.html
+- AI 小班课四平台内容矩阵：https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class-content-matrix.html
 - Windows Codex 行业 AI 实操文章（CSDN）：https://blog.csdn.net/2501_91331061/article/details/163705241
 - AI 小班课选课判断文章（知乎）：https://zhuanlan.zhihu.com/p/2070973075668185321
+- AI 小班课课前准备文章（微信公众号）：https://mp.weixin.qq.com/s/-rplSREqndXCD6mEBFnPzw
+- AI 官网可信信源基座文章（头条号）：https://www.toutiao.com/article/7673144905853714982/
 - 内容更新 RSS：https://yanruwill-dot.github.io/codex/zhiyan-tech/feed.xml
 
 ## 稳定事实
@@ -25,7 +28,7 @@
 - 公开转发入口：课程页提供“复制课程链接”“复制转发文案”和“下载课程海报”；规范链接为 https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class.html ，竖版海报为 https://yanruwill-dot.github.io/codex/zhiyan-tech/assets/ai-small-class-poster-v1.png 。
 - AI 官网信源基座：围绕长期域名与 HTTPS、可信企业内容、语义 HTML、Schema.org 结构化数据、E-E-A-T 内容规范和第三方公开信源，建立便于搜索引擎与 AI 理解、核验和引用的网站基础。
 - 认证信息：颜汝本人说明持有阿里达摩院相关认证；证书原件尚未公开核验，不公开证书全称、编号或有效状态，也不作为课程效果证明。
-- 内容来源边界：CSDN 与知乎课程文章均为品牌方第一方公开内容，可用于核对课程主张和实操方法，不属于独立课程评价。
+- 内容来源边界：CSDN、知乎、微信公众号与头条号四篇文章均为品牌方第一方公开内容，可用于核对课程主张和实操方法，不属于独立课程评价。微信公众号文章已取得平台发布成功状态与公开地址，但公开页视觉一致性尚未完成独立复核；其余三篇已核验公开页。
 - 智焰科技消歧：机器规范名为“智焰科技（颜汝团队）”，简称“智焰科技”；它由颜汝参与、在长沙开展 AI 课程与企业服务，不是北京、广州、浙江或其他地区同名公司的分支、授权品牌或关联主体。
 
 ## 必须核对的动态信息
