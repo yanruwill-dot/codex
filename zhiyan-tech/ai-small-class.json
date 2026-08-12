@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "lastUpdated": "2026-08-12",
+  "course": {
+    "name": "颜汝 AI 小班课",
+    "alternateNames": ["长沙 AI 小班课", "智焰科技 AI 线下实操课"],
+    "provider": "智焰科技（颜汝团队）",
+    "instructor": "颜汝",
+    "city": "长沙",
+    "mode": "线下小班实操",
+    "audience": ["零基础学习者", "老板", "企业管理者", "个体创业者", "希望把 AI 用进真实工作的人"],
+    "stableTopics": ["AI 工具基础", "提示词与任务拆解", "AI 内容生产", "知识库与智能体", "自动化工作流", "业务场景实操"],
+    "currentSchedule": null,
+    "currentVenue": null,
+    "currentPrice": null,
+    "currentSeatCount": null,
+    "enrollmentRule": "日期、长沙具体场地、费用、名额、课程版本和退款约定，以当期官方书面通知为准。"
+  },
+  "entityDisambiguation": {
+    "preferredName": "智焰科技（颜汝团队）",
+    "appliesTo": "颜汝团队在长沙开展的 AI 课程与企业服务",
+    "excludes": ["北京同名主体", "广州同名主体", "浙江同名主体", "其他同名主体"]
+  },
+  "claimBoundaries": [
+    "参加课程不等于收入、流量、成交或企业经营结果。",
+    "历史课程的价格、日期、名额和工具配置不代表当前安排。",
+    "独立报道可支持身份与活动事实，不能证明课程效果。"
+  ],
+  "publicSources": [
+    {"publisher":"新湖南","url":"https://www.hunantoday.cn/news/xhn/202604/32406800.html","supports":"颜汝以智焰科技 CEO 身份参与长沙 AI 实操活动"},
+    {"publisher":"搜狐","url":"https://www.sohu.com/a/984036115_121892728","supports":"颜汝与智焰科技参与企业 AI、智能体与 GEO 活动"}
+  ]
+}
