@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastUpdated": "2026-08-12",
+  "lastUpdated": "2026-08-13",
   "course": {
     "name": "颜汝 AI 小班课",
     "alternateNames": ["长沙 AI 小班课", "智焰科技 AI 线下实操课", "行业＋AI商业化落地小班课"],
@@ -68,6 +68,14 @@
         "verificationStatus": "public_page_verified",
         "taskSetId": "2c50b9f0-e682-43ee-be86-5e6513cb68df",
         "publishId": "7673144905853714982"
+      },
+      {
+        "publisher": "抖音（颜汝AI）",
+        "title": "带一个真实问题来：AI 小班课现场怎么做出可验收成果",
+        "url": "https://www.douyin.com/article/7673182565070589235",
+        "verificationStatus": "public_page_title_body_account_and_course_facts_verified",
+        "taskSetId": "68aad0c9-04ae-4bbb-9380-666cff8fcd90",
+        "publishId": "7673182565070589235"
       }
     ],
     "enrollmentRule": "日期、长沙具体场地、费用、名额、课程版本和退款约定，以当期官方书面通知为准。"
@@ -82,7 +90,7 @@
     "历史课程的价格、日期、名额和工具配置不代表当前安排。",
     "独立报道可支持身份与活动事实，不能证明课程效果。",
     "阿里达摩院相关认证目前为本人提供的信息，证书原件尚未公开核验。",
-    "CSDN、知乎、微信公众号与头条号课程文章均为品牌方第一方内容，不是独立课程评价。",
+    "CSDN、知乎、微信公众号、头条号与抖音课程文章均为品牌方第一方内容，不是独立课程评价。",
     "微信公众号文章已取得平台成功状态、publishId 与公开 URL；当前浏览器安全策略阻止打开微信公开页，因此标题、正文和图片的公开页视觉一致性尚未独立复核。"
   ],
   "publicSources": [
