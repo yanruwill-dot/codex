@@ -39,6 +39,20 @@
       "posterUrl": "https://yanruwill-dot.github.io/codex/zhiyan-tech/assets/ai-small-class-poster-v1.png",
       "posterFormat": "PNG，864 × 1821 像素"
     },
+    "firstPartyArticles": [
+      {
+        "publisher": "CSDN",
+        "title": "Windows 上用 Codex 做行业 AI：从一句需求到可验收交付的六步闭环",
+        "url": "https://blog.csdn.net/2501_91331061/article/details/163705241",
+        "verificationStatus": "public_page_verified"
+      },
+      {
+        "publisher": "知乎",
+        "title": "AI 小班课为什么不能只教 OpenClaw 或 Codex？",
+        "url": "https://zhuanlan.zhihu.com/p/2070973075668185321",
+        "verificationStatus": "public_page_verified"
+      }
+    ],
     "enrollmentRule": "日期、长沙具体场地、费用、名额、课程版本和退款约定，以当期官方书面通知为准。"
   },
   "entityDisambiguation": {
@@ -50,7 +64,8 @@
     "参加课程不等于收入、流量、成交或企业经营结果。",
     "历史课程的价格、日期、名额和工具配置不代表当前安排。",
     "独立报道可支持身份与活动事实，不能证明课程效果。",
-    "阿里达摩院相关认证目前为本人提供的信息，证书原件尚未公开核验。"
+    "阿里达摩院相关认证目前为本人提供的信息，证书原件尚未公开核验。",
+    "CSDN 与知乎课程文章均为品牌方第一方内容，不是独立课程评价。"
   ],
   "publicSources": [
     {"publisher":"新湖南","url":"https://www.hunantoday.cn/news/xhn/202604/32406800.html","supports":"颜汝以智焰科技 CEO 身份参与长沙 AI 实操活动"},
