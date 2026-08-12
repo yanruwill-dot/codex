@@ -85,6 +85,20 @@
         ]
       },
       {
+        "@type": "HowTo",
+        "@id": "https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class.html#inquiry-preparation",
+        "name": "AI 小班课咨询前准备",
+        "description": "用行业、电脑系统和一个真实问题生成咨询准备卡，帮助课程顾问判断当期课程是否匹配。",
+        "inLanguage": "zh-CN",
+        "totalTime": "PT1M",
+        "step": [
+          {"@type":"HowToStep","position":1,"name":"说明行业或身份","text":"填写你所在的行业、岗位或当前身份。"},
+          {"@type":"HowToStep","position":2,"name":"选择电脑系统","text":"选择 Windows、macOS 或其他系统，以便核对当期实操环境。"},
+          {"@type":"HowToStep","position":3,"name":"选择落地方向","text":"从工具实操、行业加 AI、知识库与工作流、商业化落地中选择当前重点。"},
+          {"@type":"HowToStep","position":4,"name":"写下真实问题","text":"用一句话说明你希望在课堂现场推进的真实问题。"}
+        ]
+      },
+      {
         "@type": "BreadcrumbList",
         "itemListElement": [
           {"@type":"ListItem","position":1,"name":"智焰科技","item":"https://yanruwill-dot.github.io/codex/zhiyan-tech/"},
@@ -99,7 +113,7 @@
   <a class="skip-link" href="#main">跳到正文</a>
   <header class="site-header">
     <a class="brand" href="./" aria-label="返回智焰科技首页"><span class="brand-mark">智焰</span><span>ZHIYAN</span></a>
-    <nav aria-label="课程页导航"><a href="#fit">适合谁</a><a href="#landing">实操落地</a><a href="./ai-small-class-content-matrix.html">内容矩阵</a><a href="#faq">常见问题</a></nav>
+    <nav aria-label="课程页导航"><a href="#fit">适合谁</a><a href="#prepare">适配自检</a><a href="#landing">实操落地</a><a href="./ai-small-class-content-matrix.html">内容矩阵</a><a href="#faq">常见问题</a></nav>
     <a class="header-action" href="#schedule">获取当期安排</a>
   </header>
 
@@ -108,7 +122,7 @@
       <div class="course-kicker"><span>Windows 实操</span><span>OpenClaw</span><span>Codex</span><span>行业＋AI</span><span>商业化落地</span></div>
       <h1><span>颜汝 AI</span><span>小班课</span></h1>
       <p class="course-deck">这不是一门只教 OpenClaw 的工具课。Windows 用户也有明确实操路径；你会实操 Codex 等 AI 工具，带着一个真实行业问题到场，把它拆成任务、做出结果，再把结果整理成可交付、可验证的行业＋AI或商业化方案。</p>
-      <div class="actions centered"><a class="button primary" href="#schedule">查看报名方式</a><a class="button quiet" href="#evidence">查看事实依据</a></div>
+      <div class="actions centered"><a class="button primary" href="#prepare">60 秒判断是否适合</a><a class="button quiet" href="#schedule">获取当期安排</a></div>
       <div class="course-rule"><span>课程原则</span><strong>工具必须动手，行业必须对题，商业化必须说清客户、价值、交付和边界。</strong></div>
       <p class="course-guide-link"><a href="./ai-small-class-practical-guide.html">阅读：为什么 AI 小班课不该只教一个工具 →</a>　<a href="./ai-small-class-content-matrix.html">查看五平台内容矩阵 →</a>　<a href="./ai-small-class-press-kit.html">打开课程公开资料包 →</a></p>
       <div class="share-strip" aria-label="转发 AI 小班课">
@@ -123,6 +137,32 @@
       <div class="fit-grid">
         <article class="fit-card yes"><p class="fit-label">适合</p><ul><li>零基础，但希望尽快把 AI 用进日常工作的人</li><li>想实操 OpenClaw、Codex，而不是只听概念的人</li><li>想把行业经验整理成知识库、智能体或工作流的人</li><li>正在寻找“行业＋AI”产品、服务或商业化方向的人</li></ul></article>
         <article class="fit-card no"><p class="fit-label">不适合</p><ul><li>只想听趋势、不愿意动手的人</li><li>期待上一堂课就保证收入、流量或成交的人</li><li>需要算法研究、模型训练等深度技术课程的人</li><li>不愿意核对数据边界、隐私和工具使用规则的人</li></ul></article>
+      </div>
+    </section>
+
+    <section class="section preparation-section" id="prepare">
+      <div class="shell preparation-layout">
+        <div class="preparation-intro">
+          <p class="eyebrow light">60-SECOND FIT CHECK</p>
+          <h2>先别急着问价格，<br>先把你想做的事说清楚。</h2>
+          <p>填完会在本页生成一张“咨询准备卡”。它不会自动提交，也不会把内容上传到服务器；复制后再发给智焰科技课程顾问即可。</p>
+          <ol><li>你在哪个行业或岗位</li><li>你使用什么电脑系统</li><li>你最想推进哪个落地方向</li><li>你准备带来哪个真实问题</li></ol>
+        </div>
+        <form class="preparation-form" data-course-preparation-form>
+          <label><span>你的行业、岗位或身份</span><input name="profile" type="text" maxlength="40" required placeholder="例如：制造业老板 / 新媒体运营 / AI 初学者"></label>
+          <label><span>你现场使用的电脑系统</span><select name="system" required><option value="">请选择</option><option>Windows 10 / 11</option><option>macOS</option><option>其他系统，需要先确认环境</option></select></label>
+          <label><span>这次最想推进的方向</span><select name="focus" required><option value="">请选择</option><option>OpenClaw / Codex 工具实操</option><option>行业＋AI落地</option><option>知识库、智能体或自动化工作流</option><option>商业化落地与可交付方案</option></select></label>
+          <label><span>你希望课堂现场解决的真实问题</span><textarea name="problem" maxlength="180" required placeholder="例如：把公司的产品资料整理成能持续产出销售内容的 AI 工作流"></textarea></label>
+          <label class="preparation-consent"><input name="handsOn" type="checkbox" required><span>我愿意带电脑动手，并理解课程不承诺收入、流量或成交结果。</span></label>
+          <button class="button primary preparation-submit" type="submit">生成我的咨询准备卡</button>
+          <p class="preparation-privacy">仅在当前浏览器本地生成，不收集、不保存、不自动发送。</p>
+        </form>
+        <section class="preparation-result" data-course-preparation-result hidden aria-live="polite">
+          <div><p class="eyebrow">YOUR CLASS BRIEF</p><h3>你的 AI 小班课咨询准备卡</h3></div>
+          <pre data-course-preparation-text></pre>
+          <div class="preparation-result-actions"><button class="button primary" type="button" data-copy-preparation>复制准备卡</button><a class="button quiet" href="#schedule">查看课程咨询方式</a></div>
+          <p data-preparation-status aria-live="polite"></p>
+        </section>
       </div>
     </section>
 

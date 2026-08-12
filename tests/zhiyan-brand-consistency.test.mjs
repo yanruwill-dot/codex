@@ -37,3 +37,17 @@ test('官网首页与课程页明确公开 AI 小班课和四个实操方向', a
     assert.match(text, /商业化落地/);
   }
 });
+
+test('课程页提供本地生成的咨询准备卡且不会自动提交数据', async () => {
+  const html = await readFile(join(siteRoot, 'ai-small-class.html'), 'utf8');
+  const script = await readFile(join(siteRoot, 'course-actions.js'), 'utf8');
+  const data = JSON.parse(await readFile(join(siteRoot, 'ai-small-class.json'), 'utf8'));
+
+  assert.match(html, /data-course-preparation-form/);
+  assert.match(html, /data-course-preparation-result/);
+  assert.match(html, /仅在当前浏览器本地生成，不收集、不保存、不自动发送/);
+  assert.match(script, /AI 小班课咨询准备卡/);
+  assert.equal(/fetch\s*\(|XMLHttpRequest|sendBeacon/.test(script), false);
+  assert.equal(data.course.inquiryPreparation.processing, 'client_side_only_no_automatic_submission');
+  assert.equal(data.course.inquiryPreparation.requiredInputs.length, 5);
+});
