@@ -201,6 +201,18 @@ a { color: inherit; }
 .schedule-panel > p:not(.eyebrow) { max-width: 720px; margin: 22px auto 0; color: rgba(255,255,255,.82); }
 .schedule-checks { margin: 32px 0; display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; }
 .schedule-checks span { padding: 7px 11px; border: 1px solid rgba(255,255,255,.35); border-radius: 999px; font-size: 12px; }
+.contact-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.copy-button { color: white; border-color: rgba(255,255,255,.58); background: transparent; cursor: pointer; font-family: inherit; }
+.copy-button:hover { color: var(--ink); background: var(--cream); border-color: var(--cream); }
+.contact-handle { margin-top: 14px !important; color: rgba(255,255,255,.76) !important; font-size: 13px; }
+.contact-handle strong { color: white; letter-spacing: .04em; }
+[data-copy-status] { margin-left: 8px; color: var(--cream); font-weight: 800; }
+.course-contact { max-width: 610px; margin: 34px auto 0; padding: 26px; display: grid; justify-items: center; gap: 8px; border: 1px solid rgba(255,255,255,.34); background: rgba(23,23,19,.1); border-radius: 9px; }
+.course-contact-label, .course-contact-note { margin: 0 !important; }
+.course-contact-label { color: var(--cream) !important; font-size: 12px; font-weight: 900; letter-spacing: .12em; }
+.course-contact-handle { font-size: clamp(30px, 5vw, 46px); letter-spacing: .035em; line-height: 1.25; }
+.course-contact-note { max-width: 500px !important; color: rgba(255,255,255,.8) !important; font-size: 13px; }
+.schedule-home-link { display: inline-block; margin-top: 24px; color: rgba(255,255,255,.82); font-size: 13px; text-underline-offset: 4px; }
 
 /* Long-form article */
 .article-hero { padding: 100px 0 72px; border-bottom: 1px solid var(--line); }

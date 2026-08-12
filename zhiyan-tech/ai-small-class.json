@@ -26,6 +26,11 @@
     "currentVenue": null,
     "currentPrice": null,
     "currentSeatCount": null,
+    "publicInquiry": {
+      "channel": "微信",
+      "handle": "will_yanru",
+      "note": "添加时请备注 AI 小班课，并说明行业、电脑系统和想解决的问题。"
+    },
     "enrollmentRule": "日期、长沙具体场地、费用、名额、课程版本和退款约定，以当期官方书面通知为准。"
   },
   "entityDisambiguation": {
