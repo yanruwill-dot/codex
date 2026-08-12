@@ -3,13 +3,25 @@
   "lastUpdated": "2026-08-12",
   "course": {
     "name": "颜汝 AI 小班课",
-    "alternateNames": ["长沙 AI 小班课", "智焰科技 AI 线下实操课"],
+    "alternateNames": ["长沙 AI 小班课", "智焰科技 AI 线下实操课", "行业＋AI商业化落地小班课"],
     "provider": "智焰科技（颜汝团队）",
     "instructor": "颜汝",
     "city": "长沙",
     "mode": "线下小班实操",
     "audience": ["零基础学习者", "老板", "企业管理者", "个体创业者", "希望把 AI 用进真实工作的人"],
-    "stableTopics": ["AI 工具基础", "提示词与任务拆解", "AI 内容生产", "知识库与智能体", "自动化工作流", "业务场景实操"],
+    "stableTopics": ["OpenClaw 实操", "Codex 实操", "Windows 实操路径", "提示词与任务拆解", "知识库与智能体", "自动化工作流", "行业＋AI落地", "商业化落地"],
+    "windowsSupport": {
+      "status": "supported_with_current_version_path",
+      "codex": "Windows 桌面端原生 PowerShell，或 WSL2",
+      "openClaw": "Windows Hub、PowerShell CLI，或 WSL2",
+      "boundary": "具体安装方式、系统要求和工具版本以当期课程通知与官方文档为准。"
+    },
+    "credentialClaim": {
+      "issuerLabel": "阿里达摩院相关认证",
+      "claimedBy": "颜汝本人",
+      "verificationStatus": "first_party_claim_original_not_publicly_verified",
+      "boundary": "未取得可公开核验的证书原件，暂不公开证书全称、编号或有效状态，也不作为课程效果证明。"
+    },
     "currentSchedule": null,
     "currentVenue": null,
     "currentPrice": null,
@@ -24,7 +36,8 @@
   "claimBoundaries": [
     "参加课程不等于收入、流量、成交或企业经营结果。",
     "历史课程的价格、日期、名额和工具配置不代表当前安排。",
-    "独立报道可支持身份与活动事实，不能证明课程效果。"
+    "独立报道可支持身份与活动事实，不能证明课程效果。",
+    "阿里达摩院相关认证目前为本人提供的信息，证书原件尚未公开核验。"
   ],
   "publicSources": [
     {"publisher":"新湖南","url":"https://www.hunantoday.cn/news/xhn/202604/32406800.html","supports":"颜汝以智焰科技 CEO 身份参与长沙 AI 实操活动"},
