@@ -257,6 +257,33 @@ a { color: inherit; }
 .article-cta h2 { margin-top: 0; }
 .article-cta > p:not(.eyebrow) { color: rgba(255,255,255,.82); font-family: var(--sans); font-size: 15px; line-height: 1.8; }
 
+/* Public course kit */
+.press-hero { min-height: 760px; padding: 90px 0; display: grid; grid-template-columns: 1fr 330px; align-items: center; gap: 92px; }
+.press-hero h1 { margin: 18px 0 28px; font-family: var(--serif); font-size: clamp(60px, 8vw, 112px); line-height: 1.03; letter-spacing: -.055em; }
+.press-hero h1 em { color: var(--orange); font-style: normal; }
+.press-hero-copy > p:not(.eyebrow,.press-status) { max-width: 720px; color: var(--muted); font-family: var(--serif); font-size: clamp(20px, 2.1vw, 28px); line-height: 1.7; }
+.press-poster { display: block; line-height: 0; box-shadow: 0 30px 70px rgba(36,31,24,.2); transform: rotate(1.4deg); transition: transform 160ms ease-out, box-shadow 160ms ease-out; }
+.press-poster:hover { transform: rotate(0) translateY(-4px); box-shadow: 0 36px 80px rgba(36,31,24,.24); }
+.press-poster img { display: block; width: 100%; height: auto; }
+.press-status { min-height: 24px; margin-top: 12px; color: var(--orange-dark); font-weight: 800; }
+.press-facts { margin: 48px 0 0; border-top: 1px solid var(--line); }
+.press-facts div { padding: 22px 0; display: grid; grid-template-columns: 180px 1fr; gap: 28px; border-bottom: 1px solid var(--line); }
+.press-facts dt { color: var(--orange-dark); font-size: 11px; font-weight: 900; letter-spacing: .12em; }
+.press-facts dd { margin: 0; font-family: var(--serif); font-size: 22px; }
+.copy-card-grid { margin-top: 48px; display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; }
+.copy-card { min-height: 440px; padding: 30px; display: flex; flex-direction: column; border: 1px solid var(--line); background: var(--paper); }
+.copy-card > span { color: var(--orange-dark); font-size: 10px; font-weight: 900; letter-spacing: .12em; }
+.copy-card h3 { margin: 36px 0 14px; font-family: var(--serif); font-size: 27px; }
+.copy-card p { margin: 0 0 26px; color: var(--muted); }
+.copy-card .button { width: 100%; margin-top: auto; cursor: pointer; font-family: inherit; }
+.asset-links { margin-top: 48px; display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; }
+.asset-links a { min-height: 150px; padding: 25px; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid var(--line); background: var(--paper); transition: transform 140ms ease-out, border-color 140ms ease-out; }
+.asset-links a:hover { transform: translateY(-2px); border-color: var(--orange); }
+.asset-links span { color: var(--orange-dark); font-size: 10px; font-weight: 900; letter-spacing: .1em; }
+.asset-links strong { font-family: var(--serif); font-size: 21px; }
+.press-boundary { margin-top: 28px; padding: 28px; display: grid; grid-template-columns: 170px 1fr; gap: 28px; color: white; background: var(--green); }
+.press-boundary p { margin: 0; color: rgba(255,255,255,.8); }
+
 :focus-visible { outline: 3px solid var(--cream); outline-offset: 3px; }
 @media (max-width: 900px) {
   .site-header { flex-wrap: wrap; gap: 12px; }
@@ -265,6 +292,8 @@ a { color: inherit; }
   .hero { min-height: auto; grid-template-columns: 1fr; gap: 64px; padding-top: 70px; }
   .seat-card { width: min(100%, 500px); margin: auto; transform: none; }
   .split-heading, .evidence-layout, .cta-panel, .output-panel, .faq-layout, .windows-strip, .trust-status, .trust-faq, .article-feature { grid-template-columns: 1fr; gap: 38px; }
+  .press-hero { grid-template-columns: 1fr 250px; gap: 48px; }
+  .copy-card-grid, .asset-links { grid-template-columns: 1fr 1fr; }
   .share-strip { grid-template-columns: 120px 1fr; }
   .share-actions { grid-column: 1 / -1; }
   .article-layout { grid-template-columns: minmax(0, 760px); }
@@ -314,6 +343,13 @@ a { color: inherit; }
   .article-body blockquote { margin: 58px -14px; padding: 34px 26px; }
   .windows-article, .article-boundary, .article-cta { padding: 28px 22px; }
   .fit-grid, .learning-path, .landing-grid, .verify-grid { grid-template-columns: 1fr; }
+  .press-hero { min-height: auto; padding: 64px 0 84px; grid-template-columns: 1fr; }
+  .press-hero h1 { font-size: 55px; }
+  .press-poster { width: min(72%, 300px); margin: 8px auto 0; transform: none; }
+  .press-facts div, .press-boundary { grid-template-columns: 1fr; gap: 10px; }
+  .press-facts dd { font-size: 19px; }
+  .copy-card-grid, .asset-links { grid-template-columns: 1fr; }
+  .copy-card { min-height: auto; }
   .learning-path li { min-height: auto; padding: 26px; }
   .source-note { display: grid; }
   .share-actions { grid-template-columns: 1fr; }
