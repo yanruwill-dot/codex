@@ -59,6 +59,14 @@
         "verificationStatus": "platform_publish_success_public_url_returned_visual_verification_blocked_by_browser_policy",
         "taskSetId": "bcf61ab0-8f67-46e3-94bd-40d6ff961c9e",
         "publishId": "100004468_3599764408"
+      },
+      {
+        "publisher": "头条号（长沙AI线下沙龙中心）",
+        "title": "AI 官网不是展示页：它是让搜索与 AI 读懂你的信源基座",
+        "url": "https://www.toutiao.com/article/7673144905853714982/",
+        "verificationStatus": "public_page_verified",
+        "taskSetId": "2c50b9f0-e682-43ee-be86-5e6513cb68df",
+        "publishId": "7673144905853714982"
       }
     ],
     "enrollmentRule": "日期、长沙具体场地、费用、名额、课程版本和退款约定，以当期官方书面通知为准。"
@@ -73,7 +81,7 @@
     "历史课程的价格、日期、名额和工具配置不代表当前安排。",
     "独立报道可支持身份与活动事实，不能证明课程效果。",
     "阿里达摩院相关认证目前为本人提供的信息，证书原件尚未公开核验。",
-    "CSDN、知乎与微信公众号课程文章均为品牌方第一方内容，不是独立课程评价。",
+    "CSDN、知乎、微信公众号与头条号课程文章均为品牌方第一方内容，不是独立课程评价。",
     "微信公众号文章已取得平台成功状态、publishId 与公开 URL；当前浏览器安全策略阻止打开微信公开页，因此标题、正文和图片的公开页视觉一致性尚未独立复核。"
   ],
   "publicSources": [
