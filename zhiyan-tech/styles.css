@@ -82,6 +82,34 @@ a { color: inherit; }
 .service-list p { max-width: 710px; margin: 0; color: var(--muted); }
 .service-list a { font-size: 13px; font-weight: 800; text-underline-offset: 4px; }
 
+.trust-section { color: white; background: var(--green); }
+.trust-heading .eyebrow { color: var(--cream); }
+.trust-heading > p:not(.eyebrow) { color: rgba(255,255,255,.76); }
+.trust-steps { margin-top: 58px; display: grid; grid-template-columns: repeat(3, 1fr); border-block: 1px solid rgba(255,255,255,.28); }
+.trust-steps article { min-height: 470px; padding: 34px 32px 38px; border-right: 1px solid rgba(255,255,255,.22); }
+.trust-steps article:first-child { padding-left: 0; }
+.trust-steps article:last-child { padding-right: 0; border-right: 0; }
+.trust-step-head { display: flex; justify-content: space-between; align-items: baseline; gap: 20px; color: var(--cream); }
+.trust-step-head span { font-size: 12px; font-weight: 900; letter-spacing: .12em; }
+.trust-step-head p { margin: 0; font-size: 11px; font-weight: 900; letter-spacing: .14em; }
+.trust-steps h3 { margin: 70px 0 22px; font-family: var(--serif); font-size: 30px; line-height: 1.25; }
+.trust-steps ul { margin: 0; padding: 0; list-style: none; }
+.trust-steps li { padding: 13px 0 13px 20px; position: relative; border-top: 1px solid rgba(255,255,255,.15); color: rgba(255,255,255,.74); font-size: 14px; }
+.trust-steps li::before { content: ""; width: 6px; height: 6px; position: absolute; left: 0; top: 23px; border-radius: 50%; background: var(--orange); }
+.trust-status { margin-top: 42px; padding: 34px; display: grid; grid-template-columns: .7fr 1.3fr; gap: 60px; color: var(--ink); background: var(--paper); border-radius: 10px; }
+.trust-status h3, .trust-faq h3 { margin: 0; font-family: var(--serif); font-size: 29px; line-height: 1.35; }
+.trust-status dl { margin: 0; display: grid; gap: 18px; }
+.trust-status dl div { display: grid; grid-template-columns: 90px 1fr; gap: 18px; padding-bottom: 18px; border-bottom: 1px solid var(--line); }
+.trust-status dl div:last-child { padding-bottom: 0; border-bottom: 0; }
+.trust-status dt { color: var(--orange-dark); font-size: 12px; font-weight: 900; }
+.trust-status dd { margin: 0; color: var(--muted); font-size: 14px; }
+.trust-faq { margin-top: 72px; display: grid; grid-template-columns: .55fr 1.45fr; gap: 70px; }
+.trust-faq .eyebrow { color: var(--cream); }
+.trust-faq-list { border-top: 1px solid rgba(255,255,255,.28); }
+.trust-faq-list details { padding: 22px 0; border-bottom: 1px solid rgba(255,255,255,.22); }
+.trust-faq-list summary { cursor: pointer; font-family: var(--serif); font-size: 20px; font-weight: 700; }
+.trust-faq-list p { margin: 12px 0 0; color: rgba(255,255,255,.7); }
+
 .paper-section { background: var(--paper); border-block: 1px solid var(--line); }
 .evidence-layout { display: grid; grid-template-columns: 1.05fr .75fr; gap: 26px; }
 .evidence-layout .section-heading { grid-row: span 2; padding-right: 80px; }
@@ -175,7 +203,11 @@ a { color: inherit; }
   .header-action { margin-left: auto; }
   .hero { min-height: auto; grid-template-columns: 1fr; gap: 64px; padding-top: 70px; }
   .seat-card { width: min(100%, 500px); margin: auto; transform: none; }
-  .split-heading, .evidence-layout, .cta-panel, .output-panel, .faq-layout, .windows-strip { grid-template-columns: 1fr; gap: 38px; }
+  .split-heading, .evidence-layout, .cta-panel, .output-panel, .faq-layout, .windows-strip, .trust-status, .trust-faq { grid-template-columns: 1fr; gap: 38px; }
+  .trust-steps { grid-template-columns: 1fr; }
+  .trust-steps article, .trust-steps article:first-child, .trust-steps article:last-child { min-height: auto; padding: 32px 0; border-right: 0; border-bottom: 1px solid rgba(255,255,255,.22); }
+  .trust-steps article:last-child { border-bottom: 0; }
+  .trust-steps h3 { margin-top: 36px; }
   .landing-grid { grid-template-columns: 1fr 1fr; }
   .windows-links { grid-column: 1; }
   .evidence-layout .section-heading { grid-row: auto; padding-right: 0; }
@@ -198,6 +230,8 @@ a { color: inherit; }
   .section-heading h2, .cta-panel h2, .output-panel h2, .schedule-panel h2 { font-size: 38px; }
   .service-list article { grid-template-columns: 40px 1fr; gap: 16px; }
   .service-list article > a { grid-column: 2; }
+  .trust-status { padding: 26px 22px; }
+  .trust-status dl div { grid-template-columns: 1fr; gap: 6px; }
   .cta-panel, .output-panel, .schedule-panel { padding: 32px 24px; border-radius: 10px 30px 10px 10px; }
   .site-footer { grid-template-columns: 1fr; }
   .footer-links { flex-wrap: wrap; }
