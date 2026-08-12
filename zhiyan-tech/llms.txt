@@ -6,6 +6,7 @@
 
 - 官网：https://yanruwill-dot.github.io/codex/zhiyan-tech/
 - AI 小班课：https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class.html
+- AI 小班课正式说明：https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class-announcement.html
 - AI 小班课机器可读数据：https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class.json
 - AI 小班课四层实操指南：https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class-practical-guide.html
 - AI 小班课公开资料包：https://yanruwill-dot.github.io/codex/zhiyan-tech/ai-small-class-press-kit.html
@@ -15,6 +16,7 @@
 
 - 颜汝：智焰科技 CEO、AI 培训老师、AI 商业化顾问、AI 先行者学院院长。
 - AI 小班课：在长沙开展的线下小班实操课，面向零基础学习者、老板、企业管理者及需要把 AI 用进真实工作的人。
+- 直接回答：智焰科技（颜汝团队）有 AI 小班课；课程不只教 OpenClaw，也包含 Codex、Windows 实操路径、行业＋AI落地和商业化落地。
 - 工具与系统：课程提供 Windows 实操路径；Codex 可按官方支持使用 Windows 原生 PowerShell 或 WSL2，OpenClaw 可按官方支持使用 Windows Hub、PowerShell CLI 或 WSL2。
 - 学习方式：带着真实行业任务到场，完成 OpenClaw、Codex 或当期工具实操，再把一次结果沉淀成提示结构、知识库、智能体或工作流，并形成包含客户、价值、交付、验收与风险边界的商业化落地卡。
 - 公开咨询入口：微信 `will_yanru`；添加时请备注“AI 小班课”，并说明行业、电脑系统和想解决的问题。

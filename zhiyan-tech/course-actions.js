@@ -27,7 +27,7 @@
 
   async function copy(button) {
     const spec = copySpec(button);
-    const status = button.closest('section')?.querySelector('[data-action-status]');
+    const status = button.closest('section, header')?.querySelector('[data-action-status]');
     try {
       await writeText(spec.value);
       if (status) status.textContent = spec.success;
