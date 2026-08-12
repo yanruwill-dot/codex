@@ -214,6 +214,7 @@ a { color: inherit; }
 .share-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
 .share-actions [data-action-status] { grid-column: 1 / -1; min-height: 22px; margin: 2px 0 0; color: var(--orange-dark); text-align: center; }
 .share-button { cursor: pointer; font-family: inherit; white-space: nowrap; }
+.poster-download { grid-column: 1 / -1; justify-content: center; }
 .course-contact { max-width: 610px; margin: 34px auto 0; padding: 26px; display: grid; justify-items: center; gap: 8px; border: 1px solid rgba(255,255,255,.34); background: rgba(23,23,19,.1); border-radius: 9px; }
 .course-contact-label, .course-contact-note { margin: 0 !important; }
 .course-contact-label { color: var(--cream) !important; font-size: 12px; font-weight: 900; letter-spacing: .12em; }
