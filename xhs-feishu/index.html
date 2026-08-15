@@ -3,130 +3,65 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>小红书抓取 → 飞书复盘系统</title>
-  <link rel="stylesheet" href="../douyin-feishu/static/style.css">
+  <meta name="description" content="真实抓取小红书热门帖子，按互动数据筛选爆款并沉淀复盘。">
+  <title>小红书爆款雷达 · 真实抓取</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+  <div class="ambient" aria-hidden="true"></div>
   <main class="shell">
     <nav class="nav" aria-label="页面导航">
-      <a class="brand" href="../">YR Codex</a>
-      <div class="nav-links">
-        <a href="../">总入口</a>
-        <a href="../douyin-feishu/">抖音抓取</a>
-        <a href="#runbook">本地运行</a>
-      </div>
+      <a class="brand" href="../"><span>YR</span> Codex</a>
+      <div class="nav-links"><a href="#viral-posts">爆款帖子</a><a href="#method">抓取方法</a><a href="../douyin-feishu/">抖音抓取</a></div>
     </nav>
 
-    <section id="pet-trends" class="pet-feature" aria-labelledby="pet-trends-title">
-      <div class="pet-feature-head">
-        <div>
-          <p class="eyebrow">REAL XHS FEED / PET ECOMMERCE</p>
-          <h2 id="pet-trends-title">近期宠物电商爆款</h2>
-          <p class="pet-feature-intro">2026-07-15 从小红书推荐流真实抓取，筛选近一个月宠物用品帖子；点赞数为抓取时快照。</p>
-        </div>
-        <div class="pet-feature-kpi" aria-label="三条真实帖子">
-          <strong>3</strong>
-          <span>条真实帖子</span>
-        </div>
-      </div>
-
-      <div class="pet-note-grid">
-        <article class="pet-note-card">
-          <span class="pet-note-rank">01</span>
-          <p class="pet-note-category">狗玩具</p>
-          <h3>这玩具逗我都手拿把掐</h3>
-          <p class="pet-note-meta">甜心汤圆 · 2026-06-13</p>
-          <strong class="pet-note-likes">1.1 万赞</strong>
-          <a class="button" href="https://www.xiaohongshu.com/explore/6a2cd1e300000000060333da?xsec_token=ABECBE4FTMDZiYv2rtAPNccjZUiMiDXXobiMz4u6KGc54%3D&amp;xsec_source=pc_feed" target="_blank" rel="noopener noreferrer">打开小红书原文</a>
-        </article>
-        <article class="pet-note-card">
-          <span class="pet-note-rank">02</span>
-          <p class="pet-note-category">猫抓板</p>
-          <h3>养猫人一定没见过这样的猫抓板吧？</h3>
-          <p class="pet-note-meta">好想睡觉 · 2026-06-17</p>
-          <strong class="pet-note-likes">2866 赞</strong>
-          <a class="button" href="https://www.xiaohongshu.com/explore/6a3203ff00000000060200ca?xsec_token=ABRiGZ26Fk5njd4REBi_1Cpw2ITJYP3VeJJ6n7Sm5m8do%3D&amp;xsec_source=pc_feed" target="_blank" rel="noopener noreferrer">打开小红书原文</a>
-        </article>
-        <article class="pet-note-card">
-          <span class="pet-note-rank">03</span>
-          <p class="pet-note-category">猫砂盆</p>
-          <h3>怎么会有这么好看的猫砂盆</h3>
-          <p class="pet-note-meta">星爪宠物用品店 · 2026-06-16</p>
-          <strong class="pet-note-likes">1906 赞</strong>
-          <a class="button" href="https://www.xiaohongshu.com/explore/6a30d713000000001101e3bf?xsec_token=AB6QQdQhsOscwyr1BA-SwnFu5R3_SId05ZPqBn8UdHC5A%3D&amp;xsec_source=pc_feed" target="_blank" rel="noopener noreferrer">打开小红书原文</a>
-        </article>
-      </div>
-    </section>
-
     <header class="hero">
-      <section class="hero-copy">
-        <p class="eyebrow">CreatorBench OS / Xiaohongshu to Feishu</p>
-        <h1>小红书抓取 → 飞书复盘系统</h1>
-        <p class="lead">把小红书关键词、笔记、评论、收藏、标题钩子、封面角度和可复刻结构，沉淀成和抖音并排的内容对标看板。</p>
+      <div class="hero-copy">
+        <p class="eyebrow">REAL DATA · XIAOHONGSHU</p>
+        <h1>小红书<br><em>爆款雷达</em></h1>
+        <p class="lead">不是手写案例。系统通过本机已授权的 xhs-cli 真实检索，把热门帖子、封面和互动快照整理进来，再按点赞、收藏、评论、分享综合排序。</p>
         <div class="hero-actions">
-          <a class="button primary" href="#runbook">看本地运行命令</a>
-          <a class="button" href="../douyin-feishu/">旁边的抖音抓取</a>
+          <a class="button primary" href="#viral-posts">直接看爆款</a>
+          <button class="button" id="refresh-button" type="button">刷新页面数据</button>
         </div>
-      </section>
-
-      <section class="command-card" aria-label="工作流">
-        <span class="live-dot">LOCAL CRAWLER</span>
-        <ol class="flow">
-          <li><b>1</b><span>输入小红书关键词、主页或笔记候选</span></li>
-          <li><b>2</b><span>抓取标题、正文、互动、评论和作者信息</span></li>
-          <li><b>3</b><span>拆封面、标题、人群、痛点和转化钩子</span></li>
-          <li><b>4</b><span>同步到飞书，进入选题池和内容复盘</span></li>
+        <p class="load-status" id="load-status" aria-live="polite">正在读取最新抓取快照…</p>
+      </div>
+      <aside class="radar-card" aria-label="抓取链路">
+        <div class="radar-top"><span class="pulse"></span><b>抓取链路已接通</b><small id="captured-at">—</small></div>
+        <div class="radar-visual"><span></span><span></span><span></span><i></i></div>
+        <ol>
+          <li><b>01</b><span>关键词热门检索</span></li><li><b>02</b><span>真实互动指标归一化</span></li>
+          <li><b>03</b><span>爆款阈值筛选与排序</span></li><li><b>04</b><span>详情抽样核验后展示</span></li>
         </ol>
-      </section>
+      </aside>
     </header>
 
-    <section class="notice">
-      <strong>和抖音抓取并排使用。</strong>
-      <span>小红书侧负责种草、封面和笔记结构；抖音侧负责口播、视频节奏和互动指标。两边都进入飞书后，才方便做统一复盘。</span>
+    <section class="metrics" aria-label="抓取概览">
+      <article><span>候选帖子</span><strong id="candidate-count">—</strong><small>去重后的真实搜索结果</small></article>
+      <article><span>当前展示</span><strong id="result-count">—</strong><small>通过爆款门槛</small></article>
+      <article><span>详情核验</span><strong id="verified-count">—</strong><small>逐条读取抽样</small></article>
+      <article><span>数据来源</span><strong>XHS</strong><small>登录态授权抓取</small></article>
     </section>
 
-    <section class="metrics" aria-label="抓取范围">
-      <article><span>平台</span><strong>小红书</strong><small>关键词 / 笔记 / 作者</small></article>
-      <article><span>底层</span><strong>XHS</strong><small>MediaCrawler 本地抓取</small></article>
-      <article><span>去向</span><strong>飞书</strong><small>结构化复盘看板</small></article>
-      <article><span>状态</span><strong>本地</strong><small>登录态和风控需现场确认</small></article>
+    <section class="viral-section" id="viral-posts">
+      <div class="section-head">
+        <div><p class="eyebrow">VIRAL POSTS</p><h2>真实爆款帖子</h2><p>搜索词：<span id="query-list">—</span></p></div>
+        <div class="threshold"><span>入选门槛</span><strong id="threshold">—</strong></div>
+      </div>
+      <div class="toolbar">
+        <label class="search-box"><span>⌕</span><input id="search-input" type="search" placeholder="搜标题、作者、关键词"></label>
+        <label class="sort-box">排序<select id="sort-select"><option value="score">综合互动</option><option value="likes">点赞最多</option><option value="collects">收藏最多</option><option value="comments">评论最多</option></select></label>
+      </div>
+      <div class="note-grid" id="note-grid" aria-live="polite"></div>
     </section>
 
-    <section class="dashboard">
-      <article class="panel">
-        <div class="panel-head">
-          <h2>系统适合做什么</h2>
-          <span>小红书对标</span>
-        </div>
-        <div class="use-grid">
-          <div><b>封面拆解</b><p>看首图标题、视觉结构、强对比词和评论区真实关注点。</p></div>
-          <div><b>笔记复刻</b><p>把爆款笔记拆成开头、正文节奏、痛点表达、种草理由和行动句。</p></div>
-          <div><b>飞书沉淀</b><p>把小红书字段和抖音字段放到同一个中台，方便横向复盘。</p></div>
-        </div>
-      </article>
-
-      <article class="panel accent">
-        <div class="panel-head">
-          <h2>当前边界</h2>
-          <span>真实运行在本机</span>
-        </div>
-        <p class="big-copy">公开页面只作为中台入口；真正抓取依赖本机登录态、关键词配置、平台风控和飞书写入权限。</p>
-        <dl class="mini-list">
-          <div><dt>登录</dt><dd>小红书二维码或本地浏览器登录态。</dd></div>
-          <div><dt>输出</dt><dd>CSV / SQLite / DB，再按字段写入飞书。</dd></div>
-        </dl>
-      </article>
+    <section class="method" id="method">
+      <article><p class="eyebrow">HOW IT WORKS</p><h2>这次真的接了抓取</h2><p>公开页展示最近一次成功快照；真实抓取在本机运行，避免把登录 Cookie、搜索令牌和平台会话暴露到 GitHub Pages。每次运行都会保留私有原始 JSON，并生成去敏后的公开数据和本地封面。</p></article>
+      <article class="command"><span>本机刷新命令</span><code>python3 xhs-feishu/scripts/capture_xhs.py</code><p>默认抓取“AI智能体、AI工具、AI获客”，也可以在命令后直接传入新的关键词。页面按钮只重载最新快照，不会假装在浏览器里绕过平台登录与风控。</p></article>
     </section>
 
-    <section id="runbook" class="runbook single">
-      <article>
-        <h2>本地抓取命令</h2>
-        <p>在本机 MediaCrawler 项目里运行。首次运行可能需要扫码登录，抓取前先确认关键词和保存方式。</p>
-        <pre><code>cd /Users/will/Desktop/02-项目代码/MediaCrawler
-python main.py --platform xhs --lt qrcode --type search
-python main.py --platform xhs --lt qrcode --type search --save_data_option sqlite</code></pre>
-      </article>
-    </section>
+    <footer><span>YR CODEX · XHS VIRAL RADAR</span><span>公开数据快照，不含登录凭证 / 临时令牌</span></footer>
   </main>
+  <script src="./app.js" defer></script>
 </body>
 </html>
