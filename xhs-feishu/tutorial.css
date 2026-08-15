@@ -1,0 +1,98 @@
+.tutorial {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 360px);
+  gap: 36px;
+  align-items: center;
+  margin: 16px 0;
+  padding: 34px;
+  border: 1px solid var(--line);
+  background: linear-gradient(145deg, rgba(22, 57, 39, .9), rgba(9, 20, 14, .98));
+}
+
+.tutorial-copy h2 {
+  max-width: 700px;
+  margin: 14px 0 18px;
+  font-family: Georgia, "Songti SC", serif;
+  font-size: clamp(38px, 5vw, 66px);
+  font-weight: 400;
+  line-height: 1.02;
+  letter-spacing: -.055em;
+}
+
+.tutorial-copy > p:not(.eyebrow) {
+  max-width: 700px;
+  margin: 0;
+  color: #b6c5bd;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.tutorial-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin: 24px 0;
+}
+
+.tutorial-facts span {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.tutorial-facts b {
+  color: var(--green);
+  font: 30px Georgia, serif;
+}
+
+.tutorial-player {
+  overflow: hidden;
+  border: 1px solid rgba(201, 255, 97, .28);
+  background: #050b08;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, .3);
+}
+
+.tutorial-player video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  background: #050b08;
+  object-fit: cover;
+}
+
+.tutorial-caption {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 14px;
+  color: #aebeb4;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.tutorial-caption span:last-child {
+  color: var(--green);
+}
+
+@media (max-width: 900px) {
+  .tutorial {
+    grid-template-columns: 1fr;
+  }
+
+  .tutorial-player {
+    width: min(100%, 390px);
+    justify-self: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .tutorial {
+    padding: 20px;
+  }
+
+  .tutorial-copy h2 {
+    font-size: 40px;
+  }
+}
