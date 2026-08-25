@@ -21,6 +21,7 @@ test("home makes the content dashboard the primary workbench entry", () => {
 
 test("home exposes the AI pioneer competitor-search entry", () => {
   assert.match(home, /class="brain-entry"/);
+  assert.match(home, /AI智脑/);
   assert.match(home, /对标博主搜索/);
   assert.match(home, /youmi-ai-workbench\.yanru0731\.chatgpt\.site\/agent\/.*\/monitor/);
 });
