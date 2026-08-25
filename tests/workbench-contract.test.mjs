@@ -19,6 +19,12 @@ test("home makes the content dashboard the primary workbench entry", () => {
   assert.doesNotMatch(home, /card-body/);
 });
 
+test("home exposes the AI pioneer competitor-search entry", () => {
+  assert.match(home, /class="brain-entry"/);
+  assert.match(home, /对标博主搜索/);
+  assert.match(home, /youmi-ai-workbench\.yanru0731\.chatgpt\.site\/agent\/.*\/monitor/);
+});
+
 test("home uses a concise Apple-style editorial hierarchy", () => {
   assert.match(home, /backdrop-filter: saturate\(180%\) blur\(22px\)/);
   assert.match(home, /--radius: 30px/);

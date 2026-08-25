@@ -226,6 +226,86 @@
       background: #fff;
     }
 
+    .quick-nav .brain-entry {
+      min-height: 46px;
+      padding: 5px 15px 5px 8px;
+      gap: 9px;
+      border-color: rgba(10, 132, 255, .22);
+      background: linear-gradient(135deg, rgba(235, 247, 255, .96), rgba(249, 242, 255, .96));
+      box-shadow: 0 8px 20px rgba(10, 132, 255, .09);
+      transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+    }
+
+    .quick-nav .brain-entry:hover {
+      border-color: rgba(10, 132, 255, .38);
+      box-shadow: 0 10px 24px rgba(10, 132, 255, .15);
+      transform: translateY(-1px);
+    }
+
+    .brain-logo {
+      position: relative;
+      width: 28px;
+      height: 28px;
+      flex: 0 0 28px;
+      border-radius: 9px;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      color: #fff;
+      background: linear-gradient(145deg, #0a84ff, #5e5ce6 58%, #bf5af2);
+      box-shadow: 0 5px 12px rgba(94, 92, 230, .24);
+    }
+
+    .brain-logo::before {
+      content: "";
+      position: absolute;
+      inset: 5px;
+      border: 1px solid rgba(255, 255, 255, .78);
+      border-radius: 50%;
+      opacity: .86;
+    }
+
+    .brain-logo::after {
+      content: "";
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      top: 5px;
+      right: 5px;
+      border-radius: 50%;
+      background: #fff;
+      box-shadow: -14px 13px 0 rgba(255, 255, 255, .72);
+    }
+
+    .brain-logo > span {
+      position: relative;
+      z-index: 1;
+      font-size: 9px;
+      line-height: 1;
+      font-weight: 800;
+      letter-spacing: -.08em;
+    }
+
+    .brain-entry-text {
+      display: grid;
+      gap: 2px;
+      text-align: left;
+      line-height: 1.05;
+    }
+
+    .brain-entry-text strong {
+      color: #193860;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: -.02em;
+    }
+
+    .brain-entry-text small {
+      color: #6e6e73;
+      font-size: 10px;
+      font-weight: 550;
+    }
+
     .content {
       width: min(var(--content), calc(100% - 40px));
       margin: 0 auto;
@@ -931,6 +1011,10 @@
   </header>
 
   <div class="quick-nav" aria-label="工作台快速入口">
+    <a class="brain-entry" href="https://youmi-ai-workbench.yanru0731.chatgpt.site/agent/%E5%AF%B9%E6%A0%87%E4%B8%93%E5%91%98/monitor" target="_blank" rel="noopener" aria-label="打开 AI先行者智脑对标博主搜索">
+      <span class="brain-logo" aria-hidden="true"><span>AI</span></span>
+      <span class="brain-entry-text"><strong>对标博主搜索</strong><small>AI先行者智脑 · 同行监控</small></span>
+    </a>
     <a href="./media-data-dashboard/">内容数据</a>
     <a href="./skill-stand/">能力看台</a>
     <a href="./calabash-automation/">自动化中控</a>
